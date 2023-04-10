@@ -1133,11 +1133,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-ביצענו בעזרת תוכנת המחשב 
+בעזרת תוכנת המחשב 
 \begin_inset Formula $\text{FranckHertz}$
 \end_inset
 
- שינוי הדרגתי במתח ההאצה מ
+ שינינו את מתח ההאצה מ
 \begin_inset Formula $0V$
 \end_inset
 
@@ -1208,11 +1208,11 @@ y=\left(2760\pm50\right)x+\left(-32400\pm650\right)
 \end_layout
 
 \begin_layout Standard
-נקודת החיתוך עם ציר ה
+ונקודת החיתוך עם ציר ה
 \begin_inset Formula $x$
 \end_inset
 
- המתקבלת ממנה 
+ המתקבלת ממנה ב
 \begin_inset Formula 
 \[
 V=11.7\pm0.3
@@ -1224,17 +1224,7 @@ V=11.7\pm0.3
 \end_layout
 
 \begin_layout Standard
-מתוכה בעזרת משוואה 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:1"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- ומתוך מתח המגע קיבלנו את אנרגית היינון
+מתוכה בעזרת משוואה )#השלם משוואה#( ומתוך מתח המגע קיבלנו את אנרגית היינון
 \begin_inset Formula 
 \[
 E_{ion}=10.9\pm0.4eV
