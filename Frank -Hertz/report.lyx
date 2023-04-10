@@ -93,7 +93,7 @@ End
 \bibtex_command default
 \index_command default
 \paperfontsize 12
-\spacing onehalf
+\spacing other 1.5
 \use_hyperref false
 \papersize default
 \use_geometry true
@@ -151,7 +151,7 @@ End
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "../../../../../AppData/Local/LyX 2.3/Resources/templates/_templates/MacrosHeb.lyx"
+filename "C:/Users/dorsh/AppData/Local/LyX 2.3/Resources/templates/_templates/MacrosHeb.lyx"
 
 \end_inset
 
@@ -175,9 +175,11 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\paragraph_spacing double
 \align center
 
+\series bold
+ניסוי פרנק הרץ - מדידת אנרגית ערעור ואנרגית יינון של אטומי כספית ואישוש
+ דיסקרטיזציה של רמות האנרגיה
 \end_layout
 
 \begin_layout Plain Layout
@@ -359,10 +361,6 @@ today
 
 \begin_layout Section*
 מבוא
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Section*
