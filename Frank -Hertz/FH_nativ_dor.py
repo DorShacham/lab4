@@ -75,7 +75,8 @@ I,V = plot_I_V(0.28,1,"_1_280_ion_good")
 #plt.plot(V[V>12],I[V>12])
 plt.legend()
 #plt.yscale("log")
-x,y = V[V>12],I[V>12]
+TH = 11.7
+x,y = V[V>TH],I[V>TH]
 #x=x.reshape((-1,1))
 reg1 = linregress(x,y)
 #model = linreg().fit(x,y)
