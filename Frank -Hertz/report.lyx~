@@ -40,10 +40,12 @@
 \makeatother
 \end_preamble
 \use_default_options true
-\begin_modules
-theorems-ams
+\begin_removed_modules
 eqs-within-sections
 figs-within-sections
+\end_removed_modules
+\begin_modules
+theorems-ams
 enumitem
 fixltx2e
 \end_modules
@@ -92,6 +94,7 @@ End
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize 12
 \spacing other 1.5
 \use_hyperref false
@@ -369,7 +372,7 @@ today
  בשני החלקים הואצו אלקטרונים לתוך שפופרת המכילה גז אטומי כספית ונמדד זרם
  היוצא מן השפופרת כתוצאה מכך.
  בחלק הראשון, נמדד זרם היוצא מהשפופרת כתלות במתח ההאצה של האלקטרונים, מהפרש
- המתחים בין שני שיאים עוקבים הוסקה אנרגית הרמה המעוררת.
+ מתחי האצה בין שני שיאים עוקבים של הזרם הוסקה אנרגית הרמה המעוררת.
  בחלק זה הזרם הוא כתוצאה מאלקלטרונים המגיעים אל הקתודה.
  בחלק השני, נמדד שוב זרם היוצא מהשפופרת כתלות במתח ההאצה, אך הפעם בקונפיגורציה
  שונה של מתחים על חלקי הרכיבים בשפופרת בצורה כזאת שנצפה שהזרם יהיה כתוצאה
@@ -468,13 +471,6 @@ today
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename fig/circ1.png
@@ -485,11 +481,59 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
 \begin_layout Plain Layout
-חיבורי המעגל החשמלי עבור החלק הראשון של הניסוי )נלקח מציור 
+\align center
+
+\series bold
+איור
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\series default
+ חיבורי המעגל החשמלי עבור החלק הראשון של הניסוי )נלקח מציור 
 \begin_inset Formula $1$
 \end_inset
 
@@ -501,10 +545,12 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
 
-\end_layout
 
+\begin_inset Newline newline
 \end_inset
 
 בדרכם של האלקטרונים אל עבר האנודה הם מתנגשים עם אטומי הכספית.
@@ -626,13 +672,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename fig/circ2.png
@@ -643,11 +682,59 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
 \begin_layout Plain Layout
-חיבורי המעגל החשמלי עבור החלק השני של הניסוי )נלקח מציור 
+\align center
+
+\series bold
+איור
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\series default
+ חיבורי המעגל החשמלי עבור החלק השני של הניסוי )נלקח מציור 
 \begin_inset Formula $4$
 \end_inset
 
@@ -659,18 +746,24 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset space \space{}
 \end_inset
 
 
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
 בחלק זה, מתח ההאצה שבו מתחיל זרם היונים הוא המתח שניתן לגזור ממנו את אנרגיית
  היינון לפי נוסחא 
 \begin_inset Formula $\ref{eq:1}$
 \end_inset
 
 , שכן אנרגית היינון במקרה זה היא
+\begin_inset space \space{}
+\end_inset
+
+ 
 \begin_inset Formula $E_{k}$
 \end_inset
 
@@ -777,13 +870,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename fig/_1.5_260.jpg
@@ -794,16 +880,59 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
 \begin_layout Plain Layout
-זרם הפיקואמרפמטר כתלות במתח ההאצה
-\end_layout
+\align center
 
-\end_inset
-
-
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\series default
+ זרם הפיקואמרפמטר כתלות במתח ההאצה
 \end_layout
 
 \end_inset
@@ -844,15 +973,11 @@ E_{exc}=4.97\pm0.08eV
 \begin_inset Formula $E_{exc}=4.888eV$
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-בין גדלים אלו יש הפרש יחסית של 
-\begin_inset Formula $1.61\%$
+ )מתוך הקשר 
+\begin_inset Formula $E=h\nu=\frac{hc}{\lambda}$
 \end_inset
 
-.
+(, כלומר הערך בקצה התחום של השגיאה.
 \end_layout
 
 \begin_layout Standard
@@ -895,13 +1020,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename fig/graph2.jpg
@@ -912,11 +1030,59 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
 \begin_layout Plain Layout
-זרם הפיקואמרפמטר כתלות במתח ההאצה עבור זרמים הבאים:
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\series default
+ זרם הפיקואמרפמטר כתלות במתח ההאצה עבור זרמים הבאים:
 \begin_inset Formula $250\pm10mA,260\pm10mA,280\pm10mA$
 \end_inset
 
@@ -928,18 +1094,20 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset space \space{}
 \end_inset
 
 
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
 ניתן לראות באופן איכותי כצפוי מהתאוריה שככל שזרם החימום גדול יותר הזרם הנמדד
  גבוה יותר, זאת בשל כך שלאלקטרונים הנפלטים יש יותר אנרגיה קינטית.
 \end_layout
 
 \begin_layout Standard
-)@אילו שינויים נוספים קרו בשל שינוי הזרם בקתודה@(
+מעבר לכך נראה שהאקסטרימות התקבלו באותן מתחים ולא נראו שינויים נוספים.
 \end_layout
 
 \begin_layout Standard
@@ -955,13 +1123,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename fig/graph3.jpg
@@ -972,43 +1133,31 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
 \begin_layout Plain Layout
-\begin_inset Caption Standard
+\align center
 
-\begin_layout Plain Layout
-זרם הפיקואמרפמטר כתלות במתח ההאצה עבור מתחי העצירה הבאים:
-\begin_inset Formula $1\pm0.1V,1.5\pm0.1V,2\pm0.1V,5.5\pm0.1V$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-ניתן לראות באופן איכותי שככל שמתח העצירה גבוה יותר הזרם הנמדד נמוך יותר.
- זאת בשל כך שמתח העצירה מעט את האלקטרונים לפני הגעתם לגלאי.
-\end_layout
-
-\begin_layout Standard
-עבור מתח שגדול ממתח עצירה המתאים לאנרגיה של ערעור הכספית )הגרף האדום( ניתן
- לראות שאין זרם כלל, זאת מכיוון שאילו לאלטרון היה מספיק אנרגיה בשביל לעבור,
- היה לו גם מספיק אנרגיה בשביל לערער אטום ולכן היה מערער אטום ומאבד מהאנרגיה.
- בשל כך לרוב המוחלט של האלקטרונים אין מספיק אנרגיה בשביל להתגבר על מתח העצירה.
-\end_layout
-
-\begin_layout Standard
-)@ שאלה
+\series bold
+גרף
 \family roman
-\series medium
 \shape up
 \size normal
 \emph off
@@ -1021,7 +1170,6 @@ status open
 \color none
  
 \family default
-\series default
 \shape default
 \size default
 \emph default
@@ -1033,34 +1181,39 @@ status open
 \uwave default
 \noun default
 \color inherit
-16
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
+3
 \numeric off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
+:
 \series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-אולי@(
+ זרם הפיקואמרפמטר כתלות במתח ההאצה עבור מתחי העצירה הבאים:
+\begin_inset Formula $1\pm0.1V,1.5\pm0.1V,2\pm0.1V,5.5\pm0.1V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ניתן לראות באופן איכותי שככל שמתח העצירה גבוה יותר הזרם הנמדד נמוך יותר.
+ זאת בשל כך שמתח העצירה מעט את האלקטרונים לפני הגעתם לגלאי.
+\end_layout
+
+\begin_layout Standard
+עבור מתח שגדול ממתח עצירה המתאים לאנרגיה של ערעור הכספית )הגרף האדום( ניתן
+ לראות שאין זרם כלל, זאת מכיוון שאילו לאלקטרון היה מספיק אנרגיה בשביל לעבור,
+ היה לו גם מספיק אנרגיה בשביל לערער אטום ולכן היה מערער אטום ומאבד מהאנרגיה.
+ בשל כך לרוב המוחלט של האלקטרונים אין מספיק אנרגיה בשביל להתגבר על מתח העצירה.
 \end_layout
 
 \begin_layout Standard
@@ -1158,13 +1311,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename fig/graph4.jpg
@@ -1175,16 +1321,59 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
 \begin_layout Plain Layout
-זרם הפיקואמרפמטר כתלות במתח ההאצה )בכחול( ורגרסיה של המקטע האחרון )בכתום(
-\end_layout
+\align center
 
-\end_inset
-
-
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+:
+\series default
+ זרם הפיקואמרפמטר כתלות במתח ההאצה )בכחול( ורגרסיה של המקטע האחרון )בכתום(
 \end_layout
 
 \end_inset
@@ -1193,18 +1382,42 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
 כפי שניתן לראות מהגרף, הזרם הנמדד מתאפס לאורך רוב המתחים ולפתע מתחיל לעלות.
- בשביל לקבוע באופן מדויק את נקודת הינון ביצענו אקסטרפולציה לחלק האחרון של
- הגרף.
+ ניתן להבחין שהעלייה מחולקת לשני שלבים, עלייה הדרגתית ועלייה שנמצאה להיות
+ בקירוב טוב לינארית.
+ אנו מייחסים את התופעה של העלייה ההדרגתית לאפקטים נוספים בניסוי שאינם בהכרח
+ הינון )למשל השערה לכך היא מעבר אלקטרונים ברמות אנרגיה שונות ועקב כך פליטת
+ פוטונים שמגיעים ל
+\begin_inset Formula $A$
+\end_inset
+
+ ומייצרים זרם עקב אפקט פוטואלקטרי(.
+ בשביל לקבוע באופן מדויק את נקודת הינון ביצענו אקסטרפולציה לחלק הלינארי
+ של הגרף.
  מתוך הרגרסיה לינארית על המקטע האחרון התקבלה המשוואה
 \begin_inset Formula 
 \[
-y=\left(2760\pm50\right)x+\left(-32400\pm650\right)
+y=\left(2570\pm67\right)x+\left(-30000\pm850\right)
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+בעל 
+\begin_inset Formula $R^{2}=0.990$
+\end_inset
+
+ המעיד על התאמה לינארית סבירה.
 \end_layout
 
 \begin_layout Standard
@@ -1215,7 +1428,7 @@ y=\left(2760\pm50\right)x+\left(-32400\pm650\right)
  המתקבלת ממנה 
 \begin_inset Formula 
 \[
-V=11.7\pm0.3
+V=11.7\pm0.5V
 \]
 
 \end_inset
@@ -1237,7 +1450,7 @@ noprefix "false"
  ומתוך מתח המגע קיבלנו את אנרגית היינון
 \begin_inset Formula 
 \[
-E_{ion}=10.9\pm0.4eV
+E_{ion}=10.8\pm0.5eV
 \]
 
 \end_inset
@@ -1246,11 +1459,7 @@ E_{ion}=10.9\pm0.4eV
 \begin_inset Formula $E_{ion}=10.4375eV$
 \end_inset
 
- כלומר ההפרש היחסי בינהם הוא בין 
-\begin_inset Formula $4-9\%$
-\end_inset
-
- מגודל הערך.
+ כלומר הערך נמצא בתחום השגיאה.
 \end_layout
 
 \begin_layout Standard
@@ -1262,6 +1471,120 @@ E_{ion}=10.9\pm0.4eV
 
 \begin_layout Section*
 דיון בתוצאות
+\end_layout
+
+\begin_layout Standard
+בחלקו הראשון של הניסוי קיבלנו עקום פרנק-הרץ המתאים באופן איכותי לתאוריה
+ לפיה יש רמות אנרגיה בדידות.
+ מתוך הגרף חילצנו את אנרגית הערעור הראשונה של כספית 
+\begin_inset Formula 
+\[
+E_{exc}=4.97\pm0.08eV
+\]
+
+\end_inset
+
+ בעלת שגיאה יחסית של 
+\begin_inset Formula $\pm1.6\%$
+\end_inset
+
+, שגיאה זו נבעה מרמת הדיוק של מכשיר המדידה ורזולוצית המתחים שדגמנו.
+ סיבה אפשרית נוספת היא שהתאוריה על פיה חישבנו את אנרגית הערעור גורסת כי
+ המרווח בין נקודות המינימום בגרף שווה עבור כל שתי נקודות סמוכות כאשר בפועל
+ יש הפרש קטן שמוסבר במאמר )#השלם מאמר#( ולכן חוסר התחשבות באפקט זה עלול
+ להניב שגיאות נוספות.
+\end_layout
+
+\begin_layout Standard
+כמו כן חישבנו את הערך התיאורטי המתקבל ממדידות ספקטרוסקופטיות וקיבלנו ערך
+ הנמצא בקצה תחום השגיאה.
+\end_layout
+
+\begin_layout Standard
+מתוך גרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ חילצנו גם את מתח המגע והתקבל הערך 
+\begin_inset Formula $\phi_{A}-\phi_{K}=0.8\pm0.2V$
+\end_inset
+
+ בעל שגיאה יחסית גדולה של 
+\begin_inset Formula $25\%$
+\end_inset
+
+ הנובעת ישירות מרזולוצית הדגימה שהתבצעה.
+\end_layout
+
+\begin_layout Standard
+בהמשך הניסוי ביצענו מדידות נוספת כאשר שינינו את זרם החימום של הקתודה ומתח
+ העצירה.
+ בהתאם לתאוריה קיבלנו שעבור זרם חימום גבוה הזרם הנמדד בפיקואמפרמטר גדל וזאת
+ מפני שהאלקטרונים נפלטים עם אנרגיה קינטית גבוהה יותר.
+ באופן דומה עבור מתח העצירה, ככל שהגדלנו את מתח העצירה הזרמים שנמדדו היו
+ קטנים יותר וזאת היות והמתח הפעיל כוח אשר בלם את האלקטרונים וגרע מהאנרגיה
+ הקינטית שלהם טרם הגעתם לגלאי.
+ עבור מדידה בה מתח העצירה היה גבוה מהמתח המתאים לאנרגית הערעור התקבל, בהתאם
+ לצפוי מהתאוריה, שלא היה זרם כלל.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+בחלקו השני של הניסוי נמדדה אנרגית הינון של כספית והתקבלה התוצאה 
+\begin_inset Formula 
+\[
+E_{ion}=10.8\pm0.5eV
+\]
+
+\end_inset
+
+ בעלת שגיאה יחסית של 
+\begin_inset Formula $\pm4.63\%$
+\end_inset
+
+, גם כאן שגיאה זו נבעה מדיוק מכשירי המדידה והרזולוציה הנדגמת, בנוסף לכך
+ היה שימוש במתח המגע ולכן נוספה גם השגיאה הנגררת.
+\end_layout
+
+\begin_layout Standard
+בהשוואה לגודל המקובל בספרות 
+\begin_inset Formula $E_{ion}=10.4375eV$
+\end_inset
+
+ ניתן לראות שערך זה נמצא בתחום השגיאה.
+ 
 \end_layout
 
 \begin_layout Standard
