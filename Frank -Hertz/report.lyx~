@@ -1491,8 +1491,36 @@ E_{exc}=4.97\pm0.08eV
 , שגיאה זו נבעה מרמת הדיוק של מכשיר המדידה ורזולוצית המתחים שדגמנו.
  סיבה אפשרית נוספת היא שהתאוריה על פיה חישבנו את אנרגית הערעור גורסת כי
  המרווח בין נקודות המינימום בגרף שווה עבור כל שתי נקודות סמוכות כאשר בפועל
- יש הפרש קטן שמוסבר במאמר )#השלם מאמר#( ולכן חוסר התחשבות באפקט זה עלול
- להניב שגיאות נוספות.
+ יש הפרש קטן שמוסבר במאמר )מקור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+( ולכן חוסר התחשבות באפקט זה עלול להניב שגיאות נוספות.
 \end_layout
 
 \begin_layout Standard
@@ -1599,31 +1627,33 @@ E_{ion}=10.8\pm0.5eV
 \end_layout
 
 \begin_layout Standard
-משני חלקיו של הניסוי מצאנו התאמה לכך שישנן הפרשי אנרגיה בדידים בין רמות
+משני חלקיו של הניסוי מצאנו התאמה לכך שישנם הפרשי אנרגיה בדידים בין רמות
  האנרגיה ושאכן ניתן לערר וליינן אטומים בעזרת התנגשות עם אלקטרונים.
- הפרש האנרגיה בין רמת היסוד לרמה המעוררת הראשונה מכילה בטווח השגיאה שלה
- את הערך המקובל בספרות, עם שגיאה יחסית של 
-\begin_inset Quotes eld
+ הפרש האנרגיה בין רמת היסוד לרמה המעוררת הראשונה שנמצא מכיל בטווח השגיאה
+ שלו את הערך המקובל בספרות, עם שגיאה יחסית של 
+\begin_inset Formula $1.6\%$
 \end_inset
 
- 
-\begin_inset Quotes eld
-\end_inset
-
- .
- אנרגיית היינון שנמצאה מתאימה גם היא לערך המקובלים בספרות ומכילה אותו בטווח
+.
+ אנרגיית היינון שנמצאה מתאימה גם היא לערך המקובל בספרות ומכילה אותו בטווח
  השגיאה עם שגיאה יחסית של 
-\begin_inset Quotes eld
-\end_inset
-
- 
-\begin_inset Quotes erd
+\begin_inset Formula $4.63\%$
 \end_inset
 
 .
  תוצאות הניסוי מספקות באופן כללי התאמה לציפיה מהתיאוריה והערכים המקובלים
  בספרות.
- אומנם, יש לציין ששיטת המדידה בחלק של מציאת אנרגית היינון, בה בוצעה אקסטרפולציה
+\end_layout
+
+\begin_layout Standard
+תנאים אופטימליים למדידת עקום פרנק-הרץ יהיו תנאים שיביאו לעקום מרווח עם אקסטרימות
+ מובהקות, מתוך המדידות שביצענו קיבלנו שתנאים אלו יתקיימו עבור זרם חימום
+ גבוה ומתח עצירה נמוך משום שתנאים אלו מעצמים את הזרמים הנמדדים ובשל כך מקצינים
+ את התופעות הנמדדות.
+\end_layout
+
+\begin_layout Standard
+אומנם, יש לציין ששיטת המדידה בחלק של מציאת אנרגית היינון, בה בוצעה אקסטרפולציה
  לחלקו הלינארי של עקום המתח-זרם, הניחה קיום אפקטים נוספים שלא נחקרו לעומק.
  ניסוי המשך צריך לבדוק בצורה איכותית וכמותית את תופעות אלה ולתת להן הסבר
  מספק.
@@ -1638,6 +1668,26 @@ E_{ion}=10.8\pm0.5eV
 
 \begin_layout Section*
 מקורות מידע
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\numeric off
+( תדריך פרנק-הרץ.
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\numeric off
+( 
+\lang english
+Rapior, Gerald, Klaus Sengstock, and Valery Baev.
+ "New features of the Franck- Hertz experiment." American journal of physics
+ 74.5 (2006): 423-428
 \end_layout
 
 \begin_layout Section*
@@ -1699,9 +1749,5 @@ E_{ion}=10.8\pm0.5eV
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
-שלום עולם
-\end_layout
-
 \end_body
 \end_document
