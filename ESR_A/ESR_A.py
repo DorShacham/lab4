@@ -72,36 +72,86 @@ def Reg_print(fit):
     b = ufloat(fit.intercept,fit.intercept_stderr*2)
     print("==> y =(",m,")x + (",b,") , R^2=",fit.rvalue**2)
 
+#part 0
+V_max = 565e-3 #volt
+V_min = 395e-3 #volt
+V = np.mean([V_max,V_min])
+I = 0.5804 #A
+r = V/I
+print(f"r={r}")
 #%% part 1
 r = 0.82 #ohm
 r_err = 0.05*r
 
 min_C=0
-min_f = 0
+min_f = 96.6e6 #Hz
 min_f_err = 0
 
-max_C = 6
-max_f = 1
+max_C = 60
+max_f = 95.5e6 #Hz
 max_f_err = 0
 
-C = 3
+C = 55.5
+C_err = 0.5
 
-v_RF = (max_f - min_f)*(max_C - min_C) * (C - min_C) + min_f
+v_RF = (max_f - min_f)/(max_C - min_C) * (C - min_C) + min_f
 
 h = 6.624e-34 # J*s
 g = 2.0023
 mu_B = 0.927e-23 # J/T
-
+mu0 = 1.25663706212e-6
 B_res = h * v_RF / (g * mu_B)
 
-print(f"v_RF={v_RF}Hz\nB_res={B_res}T")
+print(f"v_RF={v_RF/1e6}MHz\nB_res={B_res*1e3}mT")
+
+#%% part 1
+V_min = 460e-3 #volt (negativ)
+V_max = 440e-3 #volt
+
+V = np.mean([V_min,V_max])
+
+V = 432.623e-3 # volt
+I = V/r
+H = B_res / mu0
+
+k1 = H / I
+
+print(f"k_1={k1}")
+
 
 #%% part 2
 
-R_data = pd.read_csv("measure1.csv",header=1, usecols=["Time (s)", "1 (VOLT)", "2 (VOLT)"]) #header = 1 means that the line 1 (the second line) is the header
-t = R_data["Time (s)"]
-V1, V2 = R_data["1 (VOLT)"], R_data["2 (VOLT)"]
+I = 0.4766 #A
+I_second = 0.5120#A
+I_third = 0.5241#A
 
-plt.plot(t,V1)
-plt.plot(t,V2)
+k2 = H / I
+
+print(f"k_2={k2}")
+
+R_data = pd.read_csv("part2 0.csv",header=1, usecols=["Time (s)", "1 (VOLT)", "2 (VOLT)"]) #header = 1 means that the line 1 (the second line) is the header
+t = R_data["Time (s)"]
+x, y = R_data["1 (VOLT)"], R_data["2 (VOLT)"]
+
+plt.plot(x,y)
 plt.grid()
+
+
+#%% part 3
+
+I = 0.5513 #A
+
+k3 = H / I
+
+print(f"k_3={k3}")
+
+
+R_data = pd.read_csv("part3 0.csv",header=1, usecols=["Time (s)", "1 (VOLT)", "2 (VOLT)"]) #header = 1 means that the line 1 (the second line) is the header
+t = R_data["Time (s)"]
+x, y = R_data["1 (VOLT)"], R_data["2 (VOLT)"]
+
+plt.plot(x,y)
+plt.grid()
+
+#%% k theory
+
