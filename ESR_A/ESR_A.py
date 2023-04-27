@@ -72,45 +72,53 @@ def Reg_print(fit):
     b = ufloat(fit.intercept,fit.intercept_stderr*2)
     print("==> y =(",m,")x + (",b,") , R^2=",fit.rvalue**2)
 
+#%%
 #part 0
-V_max = 565e-3 #volt
-V_min = 395e-3 #volt
+V_max = ufloat(565e-3,1e-3)#volt
+V_min = ufloat(395e-3,1e-3) #volt
 V = np.mean([V_max,V_min])
-I = 0.5804 #A
+I = ufloat(0.5804,1e-4) #A
 r = V/I
 print(f"r={r}")
 #%% part 1
-r = 0.82 #ohm
-r_err = 0.05*r
+# r = 0.82 #ohm
+# r_err = 0.05*r
+# r = ufloat(r,r_err)
 
-min_C=0
-min_f = 96.6e6 #Hz
-min_f_err = 0
+min_C=ufloat(0,0.5)
+min_f = ufloat(96.6e6,0.1e6) #Hz
 
-max_C = 60
-max_f = 95.5e6 #Hz
-max_f_err = 0
+max_C = ufloat(60,0.5)
+max_f = ufloat(95.5e6,0.1e6) #Hz
 
-C = 55.5
-C_err = 0.5
+C = ufloat(55.5,0.5)
 
 v_RF = (max_f - min_f)/(max_C - min_C) * (C - min_C) + min_f
 
-h = 6.624e-34 # J*s
+
+from scipy.constants import h, physical_constants
+h = h # Planck constant in J*s
 g = 2.0023
-mu_B = 0.927e-23 # J/T
-mu0 = 1.25663706212e-6
+mu_B = physical_constants['Bohr magneton'][0] # Bohr magneton in J/T
+mu0 = physical_constants['vacuum mag. permeability'][0] # vacuum magnetic permeability
 B_res = h * v_RF / (g * mu_B)
+
+# h = 6.624e-34 # J*s
+# g = 2.0023
+# mu_B = 0.927e-23 # J/T
+# mu0 = 1.25663706212e-6
+# B_res = h * v_RF / (g * mu_B)
+
 
 print(f"v_RF={v_RF/1e6}MHz\nB_res={B_res*1e3}mT")
 
 #%% part 1
-V_min = 460e-3 #volt (negativ)
-V_max = 440e-3 #volt
+V_min = ufloat(460e-3,1e-3) #volt (negativ)
+V_max = ufloat(440e-3,1e-3) #volt
 
 V = np.mean([V_min,V_max])
 
-V = 432.623e-3 # volt
+V = ufloat(432.623e-3,0.001e-3) # volt
 I = V/r
 H = B_res / mu0
 
@@ -121,10 +129,12 @@ print(f"k_1={k1}")
 
 #%% part 2
 
-I = 0.4766 #A
+I_first = 0.4766 #A
 I_second = 0.5120#A
 I_third = 0.5241#A
-
+I = np.array([I_first,I_second,I_third])
+I_err = 0.0001
+I = unumpy.uarray(I,I_err)
 k2 = H / I
 
 print(f"k_2={k2}")
@@ -139,7 +149,7 @@ plt.grid()
 
 #%% part 3
 
-I = 0.5513 #A
+I = ufloat(0.5513,0.0001) #A
 
 k3 = H / I
 
