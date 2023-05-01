@@ -1,5 +1,6 @@
 #%% init
 
+import dis
 import numpy as np
 import scipy
 import matplotlib.pyplot as plt
@@ -164,4 +165,69 @@ plt.plot(x,y)
 plt.grid()
 
 #%% k theory
+
+
+#%% ESR_B
+
+# 5)
+amplitude_of_wave_gen_sin= 0 #mV
+
+# 7)
+
+amp_X= 0 #mV
+amp_Y= 0 #mV
+phase_diff_Y_X= 0  # or pi?
+
+
+avg_X=0 #mV
+I0=avg_X/r #mA
+'''
+## alternative way to calculate avg_X (?)
+max_X=0 #mV
+min_X=0 #mV
+alt_avg_X=(max_X+min_X)/2
+'''
+
+
+# 8) measure amplitude of absorption and phase difference for different I0 values (calculated from Avg_X)
+
+avg_Vx_arr = np.array([]) #
+amp_Vy_arr=np.array([])
+phase_diff_arr=np.array([])
+
+I0_arr=avg_Vx_arr/r
+
+diff_I0= np.diff(I0_arr)
+diff_Y=np.diff(amp_Vy_arr)
+
+discrete_derivative_absorption_by_I0= np.divide(diff_Y,diff_I0)
+plt.figure(dpi=300)
+plt.plot(discrete_derivative_absorption_by_I0,I0_arr[:-1])
+plt.grid(True)
+plt.title('derivative of absorption by I0')
+plt.xlabel('I0')
+plt.ylabel('dA/dI0')
+
+
+# 9
+absorption_reconstructed=scipy.integrate.cumtrapz(discrete_derivative_absorption_by_I0, I0, dx=1.0, axis=-1, initial=None)
+
+#10
+plt.figure(dpi=300)
+plt.plot(absorption_reconstructed,I0_arr[:-1])
+plt.grid(True)
+plt.title('absorption reconstructed by I0')
+plt.xlabel('I0')
+plt.ylabel('Abs_reconstructed')
+
+
+#11
+
+
+
+'''
+R_data = pd.read_csv("ESR_B_0.csv",header=1, usecols=["Time (s)", "1 (VOLT)", "2 (VOLT)"]) #header = 1 means that the line 1 (the second line) is the header
+t = R_data["Time (s)"]
+x, y = R_data["1 (VOLT)"], R_data["2 (VOLT)"]
+'''
 
