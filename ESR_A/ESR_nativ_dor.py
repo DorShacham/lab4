@@ -8,7 +8,7 @@ import pandas as pd
 from scipy.stats import linregress
 from scipy.optimize import curve_fit as cfit
 
-from uncertainties import unumpy
+from uncertainties.unumpy import uarray
 from uncertainties import ufloat
 from uncertainties.umath import *
 from uncertainties.unumpy import nominal_values as uval
@@ -135,7 +135,7 @@ I_second = 0.5120#A
 I_third = 0.5241#A
 I = np.array([I_first,I_second,I_third])
 I_err = 0.0001
-I = unumpy.uarray(I,I_err)
+I = uarray(I,I_err)
 k2 = H / I
 
 print(f"k_2={k2}")
@@ -145,10 +145,11 @@ t = R_data["Time (s)"]
 x, y = R_data["1 (VOLT)"], R_data["2 (VOLT)"]
 
 plt.plot(x,y,".")
-plt.xlabel("The voltage on the resistor next to the coil [Volt]", fontsize=14)
-plt.ylabel("The signal of the Feed-Back loop [V]",fontsize=14)
+plt.xlabel(r"$V_r$ [Volt]", fontsize=14)
+plt.ylabel("~A [V]",fontsize=14)
 plt.plot(2*[np.mean([min(x),max(x)])],[min(y),max(y)],"-.",color="orange")
 plt.grid()
+plt.savefig("figs/A_part2")
 
 #%% part 3
 
@@ -164,10 +165,12 @@ t = R_data["Time (s)"]
 x, y = R_data["1 (VOLT)"], R_data["2 (VOLT)"]
 
 plt.plot(x,y,".")
-plt.xlabel("The voltage on the resistor next to the coil [Volt]", fontsize=14)
-plt.ylabel("The signal of the Feed-Back loop [V]",fontsize=14)
+plt.xlabel(r"$V_r$ [Volt]", fontsize=14)
+plt.ylabel("~A [V]",fontsize=14)
 plt.plot(2*[np.mean([min(x),max(x)])],[min(y),max(y)],"-.",color="orange")
 plt.grid()
+plt.savefig("figs/A_part3")
+
 
 #%% k theory
 
@@ -229,7 +232,7 @@ phase_diff_arr_old=(-1)**(np.array([0,0,0,0,0,0,0,0,0, 1,1,
 pp_Vx_arr = np.array([2,1.5 ,1.7, 1.8, 1.9, 2, 2, 2,
                      1.4,1.4, 1.4, 1.4,1.5])*1e-3 #V
 pp_Vx_arr_err=np.array([ 0.1, 0.1, 0.1, 0.1, 0.1,0.1,
-                        0.1,0.1,0.1,0.1,0.1])*1e-3 #v
+                        0.1,0.1,0.1,0.1,0.1,0.1,0.1])*1e-3 #v
 
 
 
@@ -238,7 +241,7 @@ amp_Vy_arr=np.array([ 17,30, 51, 60, 62, 44,29,
                     
                      65, 62, 53, 42,29 ,11])*1e-3 #V
 amp_Vy_arr_err=np.array([ 2, 2, 2, 2, 1,1,
-                         1,2,2,2,1])*1e-3 #V
+                         1,2,2,2,1,1,1])*1e-3 #V
 
 phase_diff_arr=-(-1)**(np.array([0,0,0,0,0, 0,1,
                                 1,1,1,1,1,1]))
@@ -249,42 +252,50 @@ phase_diff_arr=-(-1)**(np.array([0,0,0,0,0, 0,1,
 V_avg=np.array([479, 477 , 475, 472 ,468, 465,462
 
                 ,456,452,448,445,441, 435])*1e-3 #V
-V_avg_err=np.array([1,1,1,1,1,1,1,1,1 ,1,1,1,1,1,1,1,1])*1e-3 #V
+V_avg_err=np.array([1,1,1,1,1,1,1,1,1 ,1,1,1,1])*1e-3 #V
+
+
+V_avg = uarray(V_avg,V_avg_err)[::-1]
+amp_Vy_arr = uarray(amp_Vy_arr,amp_Vy_arr_err)[::-1]
+pp_Vx_arr = uarray(pp_Vx_arr,pp_Vx_arr_err)[::-1]
 
 #%%
 
-r=0.82
+# r=0.82
 I0_arr=V_avg/r
-discrete_derivative_absorption_by_I0=amp_Vy_arr/pp_Vx_arr*phase_diff_arr
-I0_arr,discrete_derivative_absorption_by_I0 = zip(*sorted(zip(I0_arr,discrete_derivative_absorption_by_I0)))
-I0_arr = np.array(I0_arr)
-discrete_derivative_absorption_by_I0 = np.array(discrete_derivative_absorption_by_I0)
+discrete_derivative_absorption_by_I0=-amp_Vy_arr/pp_Vx_arr*phase_diff_arr
+# I0_arr,discrete_derivative_absorption_by_I0 = zip(*sorted(zip(I0_arr,discrete_derivative_absorption_by_I0)))
+# I0_arr = np.array(I0_arr)
+# discrete_derivative_absorption_by_I0 = np.array(discrete_derivative_absorption_by_I0)
 
-C0 =k3.n * mu0 * g * mu_B / (h / (2*np.pi))
-f = lambda I0, w, c, T2: c*C0*w*T2*((w*T2)**2-(C0*T2*I0)**2+1)/(1+T2**2*(w-C0*I0)**2)**2
-# one4all(I0_arr,discrete_derivative_absorption_by_I0,xlabel=r"$I_0[mA]$",ylabel=r"$~\frac{dA}{dI_0}$[mV]",mode="general function", f=f)
-plt.figure(dpi=300)
-plt.plot(I0_arr,discrete_derivative_absorption_by_I0,"o",label="measured")
-plt.xlabel(r"$I_0[A]$",fontsize=14)
-plt.ylabel(r"$~\frac{dA}{dI_0}$[mV]",fontsize=14)
-plt.grid()
-bounds=([0.56*C0,0,0],[0.57*C0,np.inf,1e-7])
-fit = cfit(f=f,xdata=I0_arr,ydata=discrete_derivative_absorption_by_I0,bounds=bounds)
-I0 = np.linspace(min(I0_arr),max(I0_arr),100)
+# C0 =k3.n * mu0 * g * mu_B / (h / (2*np.pi))
+# f = lambda I0, w, c, T2: c*C0*w*T2*((w*T2)**2-(C0*T2*I0)**2+1)/(1+T2**2*(w-C0*I0)**2)**2
+fig,fit = one4all(uval(I0_arr),uval(discrete_derivative_absorption_by_I0),xerr=uerr(I0_arr),yerr=uerr(discrete_derivative_absorption_by_I0),xlabel=r"$I_0[A]$",ylabel=r"~$\frac{dA}{dI_0}$[mV]",mode="none")
+fig.savefig("figs/B_deriv")
+# plt.figure(dpi=300)
+# plt.plot(I0_arr,discrete_derivative_absorption_by_I0,"o",label="measured")
+# plt.xlabel(r"$I_0[A]$",fontsize=14)
+# plt.ylabel(r"$~\frac{dA}{dI_0}$[mV]",fontsize=14)
+# plt.grid()
+# bounds=([0.56*C0,0,0],[0.57*C0,np.inf,1e-7])
+# fit = cfit(f=f,xdata=I0_arr,ydata=discrete_derivative_absorption_by_I0,bounds=bounds)
+# I0 = np.linspace(min(I0_arr),max(I0_arr),100)
 # plt.plot(I0,f(I0,*fit[0]),"-.")
 # plt.plot(I0,f(I0,*(6.13350773e+11,2.03368596e+01, 6.52595646e-11)),"-.")
 # w,c,T2 = (6.13350773e+11,2.03368596e+01, 6.52595646e-11)
 # plt.ylim(min(discrete_derivative_absorption_by_I0),max(discrete_derivative_absorption_by_I0))
-print(fit[0])
+# print(fit[0])
 
 #%%
 # 9
+I0_arr = uval(I0_arr)
+discrete_derivative_absorption_by_I0 = uval(discrete_derivative_absorption_by_I0)
 
 absorption_reconstructed=scipy.integrate.cumtrapz(discrete_derivative_absorption_by_I0, I0_arr, dx=1.0, axis=-1, initial=0)
 
 #10
-one4all(np.sort(I0_arr),absorption_reconstructed,xlabel=r"$I_0[A]$",ylabel=r"$~A$")
-
+fig,fit = one4all(I0_arr,absorption_reconstructed,xlabel=r"$I_0[A]$",ylabel=r"~$A[V]$")
+fig.savefig("figs/B_A(I)")
 
 #11
 # u as a function of B as a function of I
@@ -297,7 +308,7 @@ x, y = R_data["1 (VOLT)"], R_data["2 (VOLT)"]
 '''
 
 #%% transforming to w,w0 and calculating T2
-w_measured = v_RF.n * 2*np.pi
+w_measured = v_RF * 2*np.pi
 B = k3.n * mu0 * I0_arr 
 w0 = B * g * mu_B / (h / (2*np.pi))
 
@@ -307,18 +318,19 @@ plt.plot(w0,absorption_reconstructed,"o",label="measured")
 plt.xlabel(r"$\omega_0$",fontsize=14)
 plt.ylabel(r"$~A$",fontsize=14)
 plt.grid()
-fit = cfit(f=f,xdata=w0,ydata=absorption_reconstructed,bounds=([6e8,0,0],[6.2e8,1e-7,1e-9]))
+fit = cfit(f=f,xdata=w0,ydata=absorption_reconstructed,bounds=([6e8,0,0],[6.15e8,1e-7,1e-9]))
 
 x = np.linspace(min(w0),max(w0),100)
-plt.plot(x,f(x,*fit[0]),"-.")
-# plt.plot(w0,f(w0,w,T2,c),"-.")
-# plt.ylim(0,max(absorption_reconstructed))
-print(fit[0])
-# w0 = np.arange(-w,2*w,w/10)
-# plt.plot(w0,f(w0,1,1))
+plt.plot(x,f(x,*fit[0]),"-.",label="fit")
+plt.legend()
+plt.savefig("figs/B_A(w0)")
 
-print(f"w form fit ={fit[0][0]}\nw from measure = {w_measured}")
-print(f"T2 form fit ={fit[0][1]}")
+errs  = np.sqrt(np.diag(fit[1]))
+w_fit = ufloat(fit[0][0],2*errs[0])
+T2_fit = ufloat(fit[0][1],2*errs[1])
+
+print(f"w form fit ={w_fit}\nw from measure = {w_measured}")
+print(f"T2 form fit ={T2_fit}")
 print(f"R^2={Rsqrue(f(w0,*fit[0]),absorption_reconstructed)}")
 #%%
 C0 =k3.n * mu0 * g * mu_B / (h / (2*np.pi))
