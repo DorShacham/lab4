@@ -16,9 +16,9 @@ from uncertainties.unumpy import std_devs as uerr
 
 
 # helper function for plotting data and regression
-def one4all(xdata,ydata,yerr=0,xerr=0,mode="none",f=None,xlabel="x",ylabel="y",show=True):
+def one4all(xdata,ydata,yerr=0,xerr=0,mode="none",f=None,xlabel="x",ylabel="y",show=True,label="Data"):
     fig = plt.figure(dpi=300)
-    plt.errorbar(xdata,ydata,yerr,xerr,"o",label="Data")
+    plt.errorbar(xdata,ydata,yerr,xerr,".",label=label)
 
     
     if mode == "none":
@@ -113,13 +113,35 @@ B_res = h * v_RF / (g * mu_B)
 
 print(f"v_RF={v_RF/1e6}MHz\nB_res={B_res*1e3}mT")
 
+#%% part 1 graphs
+files = ["part1_1mod6.5 0","part1_2mod7 0","part1_3mod7.1 0","part1_4mod8 0","part1_5 0"]
+for file in files:
+    R_data = pd.read_csv(str(file+".csv"),header=1, usecols=["Time (s)", "1 (VOLT)", "2 (VOLT)"]) #header = 1 means that the line 1 (the second line) is the header
+    t = R_data["Time (s)"]
+    x, y = R_data["1 (VOLT)"], R_data["2 (VOLT)"]
+    Verr = 1e-4
+    Terr = 1e-6
+    fig,fit = one4all(t,y,Verr,Terr,xlabel="Time[sec]",ylabel="V[V]",label="~A",show=False)
+    plt.figure(fig)
+    plt.errorbar(t,x,Verr,Terr,".",label=r"$V_r$[A]")
+    plt.legend()
+    fig.savefig(str("figs/A_"+file+".png"))
+    if file == "part1_3mod7.1 0":
+        x3 = x
+
+
+
+
 #%% part 1
-V_min = ufloat(460e-3,1e-3) #volt (negativ)
-V_max = ufloat(440e-3,1e-3) #volt
+# V_min = ufloat(460e-3,1e-3) #volt (negativ)
+# V_max = ufloat(440e-3,1e-3) #volt
+
+V_min = ufloat(abs(min(x3)),1e-4)
+V_max = ufloat(abs(max(x3)),1e-4)
 
 V = np.mean([V_min,V_max])
 
-V = ufloat(432.623e-3,0.001e-3) # volt
+# V = ufloat(432.623e-3,0.001e-3) # volt
 I = V/r
 H = B_res / mu0
 
@@ -144,12 +166,19 @@ R_data = pd.read_csv("part2 0.csv",header=1, usecols=["Time (s)", "1 (VOLT)", "2
 t = R_data["Time (s)"]
 x, y = R_data["1 (VOLT)"], R_data["2 (VOLT)"]
 
+fig,fit = one4all(t,y,Verr,Terr,xlabel="Time[sec]",ylabel="V[V]",label="~A",show=False)
+plt.figure(fig)
+plt.errorbar(t,x,Verr,Terr,".",label=r"$V_r$[A]")
+plt.legend()
+fig.savefig("figs/A_part2_ty")
+
+plt.figure(dpi=300)
 plt.plot(x,y,".")
 plt.xlabel(r"$V_r$ [Volt]", fontsize=14)
 plt.ylabel("~A [V]",fontsize=14)
 plt.plot(2*[np.mean([min(x),max(x)])],[min(y),max(y)],"-.",color="orange")
 plt.grid()
-plt.savefig("figs/A_part2")
+plt.savefig("figs/A_part2_xy")
 
 #%% part 3
 
@@ -164,6 +193,7 @@ R_data = pd.read_csv("part3 0.csv",header=1, usecols=["Time (s)", "1 (VOLT)", "2
 t = R_data["Time (s)"]
 x, y = R_data["1 (VOLT)"], R_data["2 (VOLT)"]
 
+plt.figure(dpi=300)
 plt.plot(x,y,".")
 plt.xlabel(r"$V_r$ [Volt]", fontsize=14)
 plt.ylabel("~A [V]",fontsize=14)
