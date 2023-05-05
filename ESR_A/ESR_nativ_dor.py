@@ -203,9 +203,12 @@ plt.savefig("figs/A_part3")
 
 
 #%% k theory
-
+h = L = 70e-3
+d1 = 43e-3
+N = 440
 cosa=(h/2)/np.sqrt((h/2)**2+(d1/2)**2)
 
+k_theory = N/L*cosa
 #%% ESR_B
 min_C=ufloat(0,0.5)
 min_f = ufloat(96.6e6,0.1e6) #Hz
