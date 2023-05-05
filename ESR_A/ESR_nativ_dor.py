@@ -204,6 +204,7 @@ plt.savefig("figs/A_part3")
 
 #%% k theory
 
+cosa=(h/2)/np.sqrt((h/2)**2+(d1/2)**2)
 
 #%% ESR_B
 min_C=ufloat(0,0.5)

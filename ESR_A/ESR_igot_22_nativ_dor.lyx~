@@ -389,8 +389,8 @@ today
 \end_inset
 
  בשלוש דרכים שונות.
- בניסוי השני, בעזרת מדידות אות התהודה כתלות בזרם הישר ב בסליל החיצוני נמדדה
- נגזרת אות הבליעה לפי הזרם ,ממנה שוחזר אות הבליעה כתלות בזרם, וממנו חושב
+ בניסוי השני, בעזרת מדידות אות התהודה כתלות בזרם הישר בסליל החיצוני נמדדה
+ נגזרת אות הבליעה לפי הזרם, ממנה שוחזר אות הבליעה כתלות בזרם, וממנו חושב
  מקדם הרלקסציה 
 \begin_inset Formula $T_{2}$
 \end_inset
@@ -400,7 +400,7 @@ today
 \end_inset
 
 .
- קיבלנו תוצאות ש)לא?( עומדות בקנה אחד עם התיאוריה והערכים המקובלים בספרות.
+ קיבלנו תוצאות שעומדות בקנה אחד עם התיאוריה והערכים המקובלים בספרות.
 \end_layout
 
 \begin_layout Section*
@@ -419,7 +419,7 @@ today
 \begin_inset Newline newline
 \end_inset
 
- לחלקיקים בעלי ספין כגון אלקטרונים יש מומנט מגנטי, לכן בעת צימוד לשדה מגנט
+לחלקיקים בעלי ספין כגון אלקטרונים יש מומנט מגנטי, לכן בעת צימוד לשדה מגנט
  האנרגיה במצבים השונים נקבעת לפי אפקט זימן 
 \begin_inset Formula $U=-\vec{\mu}\cdot\vec{B}=g\mu_{B}m_{s}B$
 \end_inset
@@ -459,7 +459,7 @@ today
 \begin_layout Standard
 \begin_inset Formula 
 \[
-(1)\,\Delta U=g\mu_{B}B
+\Delta U=g\mu_{B}B
 \]
 
 \end_inset
@@ -486,12 +486,48 @@ today
 
 \begin_layout Standard
 הדגם הוצב בתוך שני סלילים, סליל חיצוני המכיל סליל פנימי , שניהם ניצבים אחד
- לשני, כפי שמוצג בתרשים הבא:
+ לשני, כפי שמוצג באיור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Graphics
-	filename ../../../../Documents/technion/semester8/lab4/lab4/ESR_A/ESR_fig1_the_system.png
+	filename figs/ESR_fig2_the_system_whole.png
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figs/ESR_fig1_the_system.png
 
 \end_inset
 
@@ -518,7 +554,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\align center
+\align right
 
 \series bold
 איור
@@ -546,11 +582,70 @@ status open
 \uwave default
 \noun default
 \color inherit
-1
+1-2
 \numeric off
 :
 \series default
- תרשים מערכת הסלילים בניסוי )איור
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+איור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תרשים מערכת הסלילים בניסוי )איור
 \family roman
 \series medium
 \shape up
@@ -607,6 +702,132 @@ status open
 בתדריך(
 \end_layout
 
+\begin_layout Plain Layout
+\align right
+איור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תרשים מערכת הניסוי )איור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתדריך(, הסליל החיצוני, הפנימי והדגם מתוארים על ידי הגליל שמעל המלבן המציג
+ את מתנד ה
+\begin_inset Formula $ESR$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 השדה החיצוני 
@@ -659,9 +880,9 @@ status open
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-(2)\,\frac{h\nu_{RF}}{g\mu_{B}}=B_{res}
-\]
+\begin{equation}
+\frac{h\nu_{RF}}{g\mu_{B}}=B_{res}\label{eq:2}
+\end{equation}
 
 \end_inset
 
@@ -682,22 +903,6 @@ status open
 \end_inset
 
  היא תדירות הגל המתאימה לרזוננס עבור השדה המגנטי.
-\end_layout
-
-\begin_layout Standard
-בניסוי נמדד בעזרת אוסצילוסקופ המתח על הגליל החיצוני - שממנו ניתן לגזור את
- הזרם בגליל בעזרת חוק אוהם:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-(3)\,V=I\cdot R
-\]
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -729,14 +934,14 @@ status open
 \end_layout
 
 \begin_layout Standard
-הזרם קשור השדה המגנטי לפי:
+הזרם קשור לשדה המגנטי לפי:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-(4)\,\frac{B}{\mu_{0}}=kI
-\]
+\begin{equation}
+\frac{B}{\mu_{0}}=kI\label{eq:4}
+\end{equation}
 
 \end_inset
 
@@ -766,43 +971,9 @@ status open
 \end_layout
 
 \begin_layout Standard
-מערכת הניסוי בשני חלקיה מתוארים בתרשים הבא:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename ../../../../Documents/technion/semester8/lab4/lab4/ESR_A/ESR_fig2_the_system_whole.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\series bold
-איור
+מערכת הניסוי בשני חלקיה מתוארים באיור
 \family roman
+\series medium
 \shape up
 \size normal
 \emph off
@@ -815,6 +986,7 @@ status open
 \color none
  
 \family default
+\series default
 \shape default
 \size default
 \emph default
@@ -828,77 +1000,7 @@ status open
 \color inherit
 2
 \numeric off
-:
-\series default
- תרשים מערכת הניסוי )איור
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-3
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-בתדריך(
-\end_layout
-
-\begin_layout Plain Layout
-הסליל החיצוני, הפנימי והדגם מתוארים על ידי הגליל שמעל המלבן המציג את מתנד
- ה
-\begin_inset Formula $ESR$
-\end_inset
-
 .
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -955,14 +1057,14 @@ status open
 \end_layout
 
 \begin_layout Standard
-הזרם העובר דרך הסליל החיצוני הוא שדה משתנה:
+הזרם העובר דרך הסליל החיצוני הוא זרם משתנה היוצר שדה משתנה:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-(5)\,B=\mu_{0}k(I_{0}+I_{m}sin(2\pi ft))
-\]
+\begin{equation}
+B=\mu_{0}k(I_{0}+I_{m}sin(2\pi ft))\label{5}
+\end{equation}
 
 \end_inset
 
@@ -1078,9 +1180,9 @@ status open
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-(6)\,V_{absorb}\propto\frac{\omega_{0}\cdot\omega\cdot T_{2}}{1+(\omega_{0}-\omega)^{2}\cdot T_{2}^{2}}
-\]
+\begin{equation}
+V_{absorb}\propto\frac{\omega_{0}\cdot\omega\cdot T_{2}}{1+(\omega_{0}-\omega)^{2}\cdot T_{2}^{2}}\label{eq:6}
+\end{equation}
 
 \end_inset
 
@@ -1181,16 +1283,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-)צריך להפנות לשגיאות, לסדר גדלים של גרפים, להשלים נוסחאות והערות אחרות שרשמתי.
- 
-\series bold
-הכי חשוב
-\series default
- להסביר את 
-\begin_inset Formula $\sim A$
-\end_inset
-
- ויחידות של אות הבליעה, לדעתי רק פרופורציוני לכן אין משמעות(
+)לסדר גדלים של גרפים, והערות אחרות שרשמתי.(
 \end_layout
 
 \begin_layout Standard
@@ -1233,10 +1326,11 @@ status open
 \begin_layout Standard
 לשם חישוב הזרמים הזורמים בסליל בהמשך הניסוי, מדדנו את התנגדות הנגד המחובר
  בטור אל הסליל.
- על ידי הפעלת מתח על הנגד ומדידת הזרם קיבלנו שהתנגדות הנגד היא 
+ על ידי הפעלת מתח על הנגד ומדידת הזרם קיבלנו בעזרת חוק אוהם שהתנגדות הנגד
+ היא 
 \begin_inset Formula 
 \[
-r=0.827\pm0.0012
+r=0.827\pm0.0012\Omega
 \]
 
 \end_inset
@@ -1245,7 +1339,15 @@ r=0.827\pm0.0012
 \end_layout
 
 \begin_layout Standard
-ערך זה מוכל בערך הנתון בתדריך.
+השגיאה )וכל שאר השגיאות( חושבו לפי הנוסחא לחישוב שגיאות נגררות בנספח.
+\end_layout
+
+\begin_layout Standard
+ערך זה בחפיפה עם הערך הנתון בתדריך שהוא 
+\begin_inset Formula $0.82\pm0.004\Omega$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1268,7 +1370,17 @@ v_{RF}=95.58\pm0.09MHz
 \end_layout
 
 \begin_layout Standard
-מתוך נוסחה )?( חישבנו את עוצמת השדה המגנטי שיצור תהודה בתדר זה 
+מתוך נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ חישבנו את עוצמת השדה המגנטי שיצור תהודה בתדר זה 
 \begin_inset Formula 
 \[
 B_{res}=3.4107\pm0.0033mT
@@ -1487,8 +1599,13 @@ status open
 \end_layout
 
 \begin_layout Standard
-גרפים אלו מתאימים איכותית לתאוריה.
- מתוך גרף
+גרפים אלו מתאימים איכותית לתאוריה כאשר המודלציה היא גבולית בשביל לקבל בליעה
+ יתקבלו בליעות רק כאשר מתח המודלציה אקסטרימלי.
+ 
+\end_layout
+
+\begin_layout Standard
+מתוך גרף
 \family roman
 \series medium
 \shape up
@@ -1542,12 +1659,22 @@ status open
 \uwave default
 \noun default
 \color inherit
-אשר מהווה את הרגע בו הבליעה מקסימלית נחלץ את המתח המקסימלי בסליל בעזרת ערך
- הנגד שמדדנו נמצא את הזרם המקסימלי.
+אשר מהווה את הרגע בו הבליעה מקסימלית נחלץ את הזרם המקסימלי בסליל בעזרת ערך
+ הנגד שמדדנו.
 \end_layout
 
 \begin_layout Standard
-בעזרת נתונים אלו על פי נוסחה )?( נקבל 
+בעזרת נתונים אלו על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נקבל 
 \begin_inset Formula 
 \[
 k_{1}=\frac{H}{I}=\frac{\nicefrac{B_{res}}{\mu_{0}}}{I}=4438\pm8\frac{1}{m}
@@ -1596,8 +1723,8 @@ k_{1}=\frac{H}{I}=\frac{\nicefrac{B_{res}}{\mu_{0}}}{I}=4438\pm8\frac{1}{m}
 
  בעזרת הוספת זרם ישר.
  חיברנו את המעגל בטור לספק מתח ישר והעלנו באיטיות את מתח הספק עד שזיהינו
- איכותית שיש מרחק שווה בין השיאים, המרחק בלתי תלוי במתח על הסליל החיצוני
- ושהשיאים מתקבלים בנקודת ההתאפסות של המודולציה.
+ איכותית שמתקיימים הקריטריונים הבאים: מרחק שווה בין השיאים, המרחק בלתי תלוי
+ במתח על הסליל החיצוני ושהשיאים מתקבלים בנקודת ההתאפסות של המודולציה.
 \end_layout
 
 \begin_layout Standard
@@ -1747,10 +1874,36 @@ status open
 \end_layout
 
 \begin_layout Standard
-על פי נוסחה )?( נקבל 
+על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נקבל 
 \begin_inset Formula 
 \[
 k_{2}=5178\pm5\frac{1}{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משום שהקריטריון האיכותי היה קשה לזיהוי חזרנו על מדידה זו פעמיים נוספות וקיבלנו
+ את הערכים 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+k_{2}^{\prime}=5694\pm6\frac{1}{m},k_{2}^{\prime\prime}=5301\pm6\frac{1}{m}
 \]
 
 \end_inset
@@ -1798,7 +1951,11 @@ k_{2}=5178\pm5\frac{1}{m}
 \begin_inset Formula $I_{0}$
 \end_inset
 
- כך שתתקבל תמונה סימטרית.
+ כך שתתקבל תמונה סימטרית בציר 
+\begin_inset Formula $x$
+\end_inset
+
+.
  עבור הזרם
 \begin_inset Formula 
 \[
@@ -2234,7 +2391,17 @@ status open
 \begin_inset Formula $I_{0}$
 \end_inset
 
- על פי נוסחה )?( חושב 
+ על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ חושב 
 \begin_inset Formula 
 \[
 k_{3}=4923\pm5\frac{1}{m}
@@ -2281,7 +2448,7 @@ v_{RF}=\left(9.583\pm0.008\right)\cdot10^{7}Hz
 התדירות הזווית המתאימה לגודל זה היא 
 \begin_inset Formula 
 \[
-\omega=6.021\pm0.005\cdot10^{8}
+\omega=\left(6.021\pm0.005\right)\cdot10^{8}\frac{rad}{sec}
 \]
 
 \end_inset
@@ -2613,19 +2780,28 @@ status open
 \begin_inset Formula $I_{0}\rightarrow\omega_{0}$
 \end_inset
 
- לפי נוסחה )?( ועשינו התאמה לפונקציה 
-\begin_inset Formula 
-\[
-P=\frac{\omega\omega_{0}T_{2}C}{1+\left(\omega-\omega_{0}\right)^{2}T_{2}^{2}}
-\]
+ לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+ ועשינו התאמה לפונקציה הפרופוציונית לאות הבליעה לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:6"
+plural "false"
+caps "false"
+noprefix "false"
 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-)שייך למבוא? להגדיר משתנים(
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2743,6 +2919,11 @@ status open
  הוא אות הבליעה.
 \end_layout
 
+\begin_layout Plain Layout
+הנקודות הכחולות מייצגות את הערך שחושב באינטגרציה ואילו הקו הכתום הוא הפונקציה
+ שהותאמה.
+\end_layout
+
 \end_inset
 
 
@@ -2766,7 +2947,10 @@ status open
 
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
 T_{2}=67\pm10ns
@@ -2778,7 +2962,19 @@ T_{2}=67\pm10ns
 \end_layout
 
 \begin_layout Standard
-)אולי שייך לדיון(
+עבור 
+\begin_inset Formula $\omega_{fit}$
+\end_inset
+
+ רשמנו את השגיאה כ
+\begin_inset Formula $0$
+\end_inset
+
+ משום שהיא קטנה בהרבה בכ
+\begin_inset Formula $74$
+\end_inset
+
+ סדרי גודל מהערך עצמו.
 \end_layout
 
 \begin_layout Standard
@@ -2786,7 +2982,7 @@ T_{2}=67\pm10ns
 \begin_inset Formula $\omega_{fit}$
 \end_inset
 
- נמצא לא בטווח השגיאה של הגודל שחושב בהאקסטרפולציה לינארית 
+ לא נמצא בטווח השגיאה של הגודל שחושב בהאקסטרפולציה לינארית 
 \begin_inset Formula $\omega=6.021\pm0.005\cdot10^{8}$
 \end_inset
 
@@ -2852,11 +3048,23 @@ T_{2}=67\pm10ns
 \numeric on
 2
 \numeric off
+( ספר קיטל?
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+3
+\numeric off
 ( 
 \begin_inset Formula $\text{https://arxiv.org/pdf/1503.06145.pdf}$
 \end_inset
 
- )לכתוב כמו שצריך(
+ - 
+\begin_inset Formula $\text{A. Ghirri, C. Bonizzoni, D. Gerace, S. Sanna, A. Cassinese, M. Affronte; YBa2Cu3O7}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
