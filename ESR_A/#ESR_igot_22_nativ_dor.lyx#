@@ -558,10 +558,33 @@ status open
 גרף 
 \numeric on
 1-4
+\family roman
+\shape up
+\size normal
+\emph off
 \numeric off
-: 
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)כאשר המספור משמאל לימין ומלמעלה למטה(:
 \series default
-כאשר המספור משמאל לימין ומלמעלה למטה.
+ אות הבליעה, המתח על הנגד שבטור לסליל כפונקציה של הזמן.
 \end_layout
 
 \begin_layout Plain Layout
@@ -774,7 +797,7 @@ I=0.5241\pm0.0001A
 \end_layout
 
 \begin_layout Standard
-התקבלו הגרפים הבאים:
+התקבלו הגרף:
 \end_layout
 
 \begin_layout Standard
@@ -797,6 +820,14 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/A_part2_ty.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
 
 \end_layout
 
@@ -826,7 +857,951 @@ status open
 
 \begin_layout Plain Layout
 
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+:
+\series default
+ אות הבליעה, המתח על הנגד שבטור לסליל כפונקציה של הזמן.
 \end_layout
+
+\begin_layout Plain Layout
+\align right
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ זמנים בשניות וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ מייצג מתחים בוולט.
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+הנקודות הכחולות הן מדידות המתח של אות הבליעה 
+\begin_inset Formula $\sim A$
+\end_inset
+
+ )ולכן פרפורציוני לבליעה(, הכתומות המתח על הנגד שנמצא בטור לסליל 
+\begin_inset Formula $V_{r}$
+\end_inset
+
+ ופרופורציוני למודלציה + המתח הישר.
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+קווי השגיאה קטנים מכדי לראותם בגרף.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לראות שהקריטיריונים מתקיימת מבחינה איכותית בקירוב.
+\end_layout
+
+\begin_layout Standard
+על פי נוסחה )?( נקבל 
+\begin_inset Formula 
+\[
+k_{2}=5178\pm5\frac{1}{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+מדידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+בשלב זה העברנו את הסקופ למצב 
+\begin_inset Formula $XY$
+\end_inset
+
+ ושינינו את הזרם הישר 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+ כך שתתקבל תמונה סימטרית.
+ עבור הזרם
+\begin_inset Formula 
+\[
+I_{0}=0.5513\pm0.0001A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התקבל הגרף הבא )לשם השוואה נצרף גם את הגרף המתאים עבור מדידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/A_part3.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figs/A_part2_xy.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6-7
+\family roman
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)משמאל לימין(:
+\series default
+ אות הבליעה כפונקציה של המתח על הנגד שבטור לסליל.
+\end_layout
+
+\begin_layout Plain Layout
+גרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מייצג את מדידה 
+\begin_inset Formula $2$
+\end_inset
+
+ וגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מייצג את מדידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ זמנים בוולט וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ מייצג מתחים בוולט.
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+הנקודות הכחולות הן מדידות המתח של אות הבליעה 
+\begin_inset Formula $\sim A$
+\end_inset
+
+ )ולכן פרפורציוני לבליעה(, הקו הכתום מייצג את המרכז בין המדידה הכי שמאלית
+ להכי ימנית.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לראות באופן איכותי שגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)של מדידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+( אכן סימטרי ביחס לקצוות הגרף.
+ כמו כן ניתן לראות שמדידה 
+\begin_inset Formula $2$
+\end_inset
+
+ אינה סימטרית באופן זה.
+\end_layout
+
+\begin_layout Standard
+מתוך הזרם הנמדד 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+ על פי נוסחה )?( חושב 
+\begin_inset Formula 
+\[
+k_{3}=4923\pm5\frac{1}{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+חלק שני
+\end_layout
+
+\begin_layout Standard
+חיברנו את המערכת בצורה בה הזרם הזורם בסליל החיצוני הוא סכום הזרמים של המודלציה
+ וספק הזרם הישר.
+ הדלקנו את המערכת ובחרנו קיבול במערכת ה
+\begin_inset Formula $feedback$
+\end_inset
+
+ כך שיראו בירור קווי בליעה, בדומה לחלק הראשון ביצענו אקסטרפולציה לינארית
+ וקיבלנו 
+\begin_inset Formula 
+\[
+v_{RF}=\left(9.583\pm0.008\right)\cdot10^{7}Hz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התדירות הזווית המתאימה לגודל זה היא 
+\begin_inset Formula 
+\[
+\omega=6.021\pm0.005\cdot10^{8}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+העברנו את הסקופ להצגת 
+\begin_inset Formula $XY$
+\end_inset
+
+ ובחרנו זרם ישר 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+ כך שהתמונה תהיה סימטרית )באופן זהה למדידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בחלק הראשון(.
+\end_layout
+
+\begin_layout Standard
+בשלב זה כיבינו את המודלציה והפעלנו את מייצר הגלים של הסקופ על תדירות 
+\begin_inset Formula $1kHz$
+\end_inset
+
+ ומשרעת מקסימלית, שינינו באיטיות את הזרם 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+ בשביל לזהות את התחום שלו שבו מתקיימת בליעה.
+ לשם מדידת הנגזרת של אות הבליעה הקטנו את משרעת מכולל הגלים כך שבכל התחום
+ האות בסקופ יהיה פונקציה לינארית.
+\end_layout
+
+\begin_layout Standard
+עברנו על כל התחום של 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+ בו מתקיימת בליעה ומדדנו את מתח מכולל הגלים ומתח הבליעה והפאזה בינהם.
+ בעזרת גדלים אלו קיבלנו קירוב לנגזרת של אות הבליעה ביחס לזרם הישר, התקבל
+ הגרף הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/B_deriv.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+:
+\series default
+ נגזרת אות הבליעה לפי הזרם הישר 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ הוא הזרם הישר באמפר וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ מייצג את הנגזרת של אות הבליעה )חושב כיחס בין מתחים ולכן חסדר יחידות(.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בשלב זה ביצענו אינטגרציה נומרית על הנגזרת בשביל לקבל את אות הבליעה כפונקציה
+ של הזרם הישר, התקבל הגרף הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/B_A(I).png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\numeric off
+:
+\series default
+ אות הבליעה לפי הזרם הישר 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ הוא הזרם הישר באמפר וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ הוא אות הבליעה )היות ובוצעה אינטגרציה על הזרם היחידות כעת הם באמפר(.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לגרף זה עשינו המרה מ
+\begin_inset Formula $I_{0}\rightarrow\omega_{0}$
+\end_inset
+
+ לפי נוסחה )?( ועשינו התאמה לפונקציה 
+\begin_inset Formula 
+\[
+P=\frac{\omega\omega_{0}T_{2}C}{1+\left(\omega-\omega\right)}
+\]
 
 \end_inset
 

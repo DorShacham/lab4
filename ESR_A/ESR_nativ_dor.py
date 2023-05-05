@@ -300,7 +300,7 @@ discrete_derivative_absorption_by_I0=-amp_Vy_arr/pp_Vx_arr*phase_diff_arr
 
 # C0 =k3.n * mu0 * g * mu_B / (h / (2*np.pi))
 # f = lambda I0, w, c, T2: c*C0*w*T2*((w*T2)**2-(C0*T2*I0)**2+1)/(1+T2**2*(w-C0*I0)**2)**2
-fig,fit = one4all(uval(I0_arr),uval(discrete_derivative_absorption_by_I0),xerr=uerr(I0_arr),yerr=uerr(discrete_derivative_absorption_by_I0),xlabel=r"$I_0[A]$",ylabel=r"~$\frac{dA}{dI_0}$[mV]",mode="none")
+fig,fit = one4all(uval(I0_arr),uval(discrete_derivative_absorption_by_I0),xerr=uerr(I0_arr),yerr=uerr(discrete_derivative_absorption_by_I0),xlabel=r"$I_0[A]$",ylabel=r"~$\frac{dA}{dI_0}$",mode="none")
 fig.savefig("figs/B_deriv")
 # plt.figure(dpi=300)
 # plt.plot(I0_arr,discrete_derivative_absorption_by_I0,"o",label="measured")
@@ -324,7 +324,7 @@ discrete_derivative_absorption_by_I0 = uval(discrete_derivative_absorption_by_I0
 absorption_reconstructed=scipy.integrate.cumtrapz(discrete_derivative_absorption_by_I0, I0_arr, dx=1.0, axis=-1, initial=0)
 
 #10
-fig,fit = one4all(I0_arr,absorption_reconstructed,xlabel=r"$I_0[A]$",ylabel=r"~$A[V]$")
+fig,fit = one4all(I0_arr,absorption_reconstructed,xlabel=r"$I_0[A]$",ylabel=r"~$A[A]$")
 fig.savefig("figs/B_A(I)")
 
 #11
@@ -345,8 +345,8 @@ w0 = B * g * mu_B / (h / (2*np.pi))
 f = lambda w0,w,T2,C: w0*w*C*T2/(1+(w0-w)**2*T2**2)
 plt.figure(dpi=300)
 plt.plot(w0,absorption_reconstructed,"o",label="measured")
-plt.xlabel(r"$\omega_0$",fontsize=14)
-plt.ylabel(r"$~A$",fontsize=14)
+plt.xlabel(r"$\omega_0[rad/sec]$",fontsize=14)
+plt.ylabel(r"$~A[A]$",fontsize=14)
 plt.grid()
 fit = cfit(f=f,xdata=w0,ydata=absorption_reconstructed,bounds=([6e8,0,0],[6.15e8,1e-7,1e-9]))
 
