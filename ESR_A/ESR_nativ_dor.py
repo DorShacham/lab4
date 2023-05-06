@@ -384,3 +384,26 @@ print(f"R^2={Rsqrue(f(w0,*fit[0]),absorption_reconstructed)}")
 #%%
 C0 =k3.n * mu0 * g * mu_B / (h / (2*np.pi))
 f = lambda I0, w, c0, c, T2: 2*w*c0*c*T2**3*(w-c0*I0) / (1+(w-c0*I0)**2*T2**2)**2
+
+#%%
+def calculate_theoretical_k(d,h,L,N):
+    cosa=(h/2)/np.sqrt((h/2)**2+(d/2)**2)
+    k=cosa*N/h
+    return k
+
+d_inner=38 #mm
+d_outer=43 #mm
+d_linspace=np.linspace(d_inner,d_outer,4)
+L=70 #mm
+h=L
+N=440
+
+k_arr=[calculate_theoretical_k(d,h,L,N/d_linspace.size) for d in d_linspace]
+
+print(f'k for each layer {k_arr}')
+print(f'k sum {np.sum(k_arr)}')
+
+k_inner=calculate_theoretical_k(d_inner,h,L,N)
+print(f'k inner = {k_inner}')
+k_outer=calculate_theoretical_k(d_outer,h,L,N)
+print(f'k inner = {k_outer}')
