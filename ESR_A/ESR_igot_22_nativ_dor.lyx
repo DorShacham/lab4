@@ -177,7 +177,11 @@ backgroundcolor "none"
 status open
 
 \begin_layout Title
-ניסוי 
+מדידת המקדם הקבוע של סליל וחישוב זמן הרלקסציה של 
+\begin_inset Formula $\text{DPPH}$
+\end_inset
+
+ במערכת 
 \begin_inset Formula $\text{ESR}$
 \end_inset
 
@@ -390,7 +394,9 @@ today
 \begin_inset Formula $H=kI$
 \end_inset
 
- בשלוש דרכים שונות.
+ בשלוש דרכים שונות, קבלנו התאמה חלקית בין התוצאות של המדידות השונות.
+ כמו כן בהשוואה של תוצאות המדידה עם ערך שחושב ממדידות המערכת קבלנו הכלה
+ של הערך רק עבור אחת מהדרכים.
  בניסוי השני, בעזרת מדידות אות התהודה כתלות בזרם הישר בסליל החיצוני נמדדה
  נגזרת אות הבליעה לפי הזרם, ממנה שוחזר אות הבליעה כתלות בזרם, וממנו חושב
  מקדם הרלקסציה 
@@ -455,15 +461,8 @@ today
 \end_inset
 
 .
- ולכן ההפרש בין האנרגיות של שני המצבים הוא
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\Delta U=g\mu_{B}B
-\]
-
+ ולכן ההפרש בין האנרגיות של שני המצבים הוא 
+\begin_inset Formula $\Delta U=g\mu_{B}B$
 \end_inset
 
 
@@ -1171,6 +1170,51 @@ B=\mu_{0}k(I_{0}+I_{m}sin(2\pi ft))\label{5}
 \end_layout
 
 \begin_layout Standard
+השוונו את הערכים לערך תיאורטי שחושב מהגאומטריה של המערכת לפי 
+\begin_inset Formula 
+\begin{equation}
+k=\frac{N}{2L}\left(\cos\left(\alpha\right)+\cos\left(\beta\right)\right)\label{eq:5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $N$
+\end_inset
+
+ מספר הליפופים 
+\begin_inset Formula $440$
+\end_inset
+
+, 
+\begin_inset Formula $L$
+\end_inset
+
+ אורך הסליל 
+\begin_inset Formula $70mm$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ הזוויות בין קצוות הסליל למיקום המערכת.
+ הקוטר החיצוני 
+\begin_inset Formula $43mm$
+\end_inset
+
+ והפנימי 
+\begin_inset Formula $38mm$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 בחלק השני של הניסוי, 
 \begin_inset Formula $I_{m}$
 \end_inset
@@ -1284,10 +1328,6 @@ V_{absorb}\propto\frac{\omega_{0}\cdot\omega\cdot T_{2}}{1+(\omega_{0}-\omega)^{
 
 \begin_layout Section*
 תוצאות הניסוי
-\end_layout
-
-\begin_layout Standard
-)לסדר גדלים של גרפים, (
 \end_layout
 
 \begin_layout Standard
@@ -3137,8 +3177,7 @@ T_{2}=67\pm10ns
 \begin_inset Formula $k$
 \end_inset
 
- דרך חיפוש רכיב הזרם הישיר בסליל שעבורו מתקבלת בליעה בזמנים שבהם הרכיב המתנדנד
- מתאפס.
+ דרך חיפוש רכיב הזרם הישיר בסליל שעבורו מתקבלת בליעה בזמנים שבהם המתח מתאפס.
  זיהינו את תופעה זו על ידי עמידה ב
 \numeric on
 3
@@ -3182,6 +3221,7 @@ T_{2}=67\pm10ns
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3203,7 +3243,24 @@ T_{2}=67\pm10ns
 \begin_inset Formula $k_{3}=4923\pm5\frac{1}{m}$
 \end_inset
 
+ עם שגיאה יחסית של 
+\begin_inset Formula $0.1\%$
+\end_inset
+
 .
+ שווה לציין, שבהצגה של 
+\begin_inset Formula $XY$
+\end_inset
+
+ ניתן לראות שהזרם שהוביל למדידה 
+\begin_inset Formula $3$
+\end_inset
+
+ מוביל לתמונה סימטרית בהרבה מהמדידה של 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+ שבאופן מובהק אינה סימטרית.
 \end_layout
 
 \begin_layout Standard
@@ -3253,41 +3310,14 @@ T_{2}=67\pm10ns
 \begin_inset Formula $DPPH$
 \end_inset
 
- הוא בדיוק במרכז הציר של הסליל החיצוני לפי נוסחא
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-4
-\begin_inset Quotes erd
-\end_inset
+ הוא בדיוק במרכז הציר של הסליל החיצוני לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:5"
+plural "false"
+caps "false"
+noprefix "false"
 
-
-\numeric off
-
-\begin_inset Quotes erd
 \end_inset
 
 .
@@ -3438,6 +3468,13 @@ T_{2}=67\pm10ns
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \series bold
 חלק שני
@@ -3516,10 +3553,9 @@ T_{2}=67\pm10ns
 \end_layout
 
 \begin_layout Standard
-המדידות אינן היו מדיוקות - במהלך הניסוי נתקלנו בתופעה שמכשיר שהסקופ גורם
- להזזה של חלק מהערכים הנמדדים במהלך הזזת הסמנים שלו, תופעה זו הקשת על ביצוע
- המדידות )שכן לא יכולנו להשתמש בסמנים( ובנוסף, יכול להיות שחלק מהמדידות
- הושפעו מבלי שהיינו מודעים לכך.
+המדידות לא היו מדיוקות - במהלך הניסוי נתקלנו בתופעה שמכשיר שהסקופ גורם להזזה
+ של חלק מהערכים הנמדדים במהלך הזזת הסמנים שלו, תופעה זו הקשת על ביצוע המדידות
+ )שכן לא יכולנו להשתמש בסמנים(.
 \end_layout
 
 \begin_layout Standard
@@ -3590,6 +3626,10 @@ T_{2}=67\pm10ns
 \end_inset
 
  ומכאן נסיק ששיטת המדידה השלישית היא המדויקת ביותר.
+ ואומנם, השוואה עם הערך שחושב לפי מידות הסליל לא תואם למדידה זו.
+ יתכן שהפער נובע מכך שמיקום הדגם בתוך הסליל הוא לא בדיוק במרכז.
+ בניסוי המשך יש לאשש זאת עם מדידות יותר מדויקות של מיקום הדגם בסליל הפנימי
+ וחישוב של ערך תיאורטי מדויק יותר.
 \end_layout
 
 \begin_layout Standard
@@ -3602,7 +3642,7 @@ T_{2}=67\pm10ns
 \end_inset
 
  תחום המכיל את הערך המקובל בספרות.
- כמסקנות מהשגיאות האפשרויות שעלו בדיון ניתן לשפר את המדידות הבאות על ידי
+ כמסקנות מהשגיאות האפשרויות שעלו בדיון ניתן להקטין את טווח השגיאה על ידי
  בדיקת תקינות הסקופ וביצוע מספר גדול בהרבה של מדידות לשם הקטנת שגיאת האינטגרציה.
 \end_layout
 
@@ -3622,10 +3662,39 @@ T_{2}=67\pm10ns
 \numeric on
 1
 \numeric off
-( תדריך 
+( תדריך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+
 \begin_inset Formula $\text{ESR A,B}$
 \end_inset
 
+
+\lang hebrew
 .
 \end_layout
 
@@ -3635,6 +3704,8 @@ T_{2}=67\pm10ns
 2
 \numeric off
 ( 
+\lang english
+
 \begin_inset Formula $\text{C. Kittel, Introduction to Solid State Physics, Wiley, 2004}$
 \end_inset
 
@@ -3647,7 +3718,9 @@ T_{2}=67\pm10ns
 3
 \numeric off
 ( 
-\begin_inset Formula $\text{7D. Zilic, D. Pajic, M. Juric, K. Molcanov, B. Rakvin, P. Planinic, and K. Zadro, J. Mag. Reson. 207 34 (2010)}$
+\lang english
+
+\begin_inset Formula $\text{\text{A. Ghirri, C. Bonizzoni, D. Gerace, S. Sanna, A. Cassinese, M. Affronte; YBa2Cu3O7}}$
 \end_inset
 
 

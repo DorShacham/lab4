@@ -3662,39 +3662,10 @@ T_{2}=67\pm10ns
 \numeric on
 1
 \numeric off
-( תדריך
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang english
-
+( תדריך 
 \begin_inset Formula $\text{ESR A,B}$
 \end_inset
 
-
-\lang hebrew
 .
 \end_layout
 
@@ -3716,9 +3687,7 @@ T_{2}=67\pm10ns
 3
 \numeric off
 ( 
-\lang english
-
-\begin_inset Formula $\text{\text{A. Ghirri, C. Bonizzoni, D. Gerace, S. Sanna, A. Cassinese, M. Affronte; YBa2Cu3O7}}$
+\begin_inset Formula $\text{7D. Zilic, D. Pajic, M. Juric, K. Molcanov, B. Rakvin, P. Planinic, and K. Zadro, J. Mag. Reson. 207 34 (2010)}$
 \end_inset
 
 
