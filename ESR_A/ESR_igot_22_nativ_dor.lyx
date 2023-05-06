@@ -1688,6 +1688,21 @@ k_{1}=\frac{H}{I}=\frac{\nicefrac{B_{res}}{\mu_{0}}}{I}=4438\pm8\frac{1}{m}
 \end_layout
 
 \begin_layout Standard
+משום שהתופעה נמדדה בצורה איכותית )ייתכן שבחרנו מודלוציה נמוכה או גבוהה מדי(
+ חישבנו מחדש את השגיאה בתור הפרש מתחים עבור המחמיר מבין המדידה עם המודלציה
+ המינמלית )כאשר תופעת הבליעה מתחילה( לבין המדידה שנלקחה או המקסימלית )כאשר
+ תופעת הבליעה מסתיימת( וקיבלנו 
+\begin_inset Formula 
+\[
+k_{1}=4400\pm400\frac{1}{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \bar under
 מדידה
@@ -1906,6 +1921,20 @@ k_{2}=5178\pm5\frac{1}{m}
 \begin_inset Formula 
 \[
 k_{2}^{\prime}=5694\pm6\frac{1}{m},k_{2}^{\prime\prime}=5301\pm6\frac{1}{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באופן דומה לסעיף קודם בשביל לכתוב באופן כמותי את השגיאה של הזיהוי האיכותי
+ לקחנו כשגיאה על הזרם את ההפרש בין הזרם שנמדד בין שתי המדידות שמקיימות את
+ הקריטריונים עם הפרש הזרמים הגדול )המחמיר( וקיבלנו 
+\begin_inset Formula 
+\[
+k_{2}=5200\pm500\frac{1}{m}
 \]
 
 \end_inset
@@ -2973,7 +3002,7 @@ T_{2}=67\pm10ns
 \end_inset
 
  משום שהיא קטנה בהרבה בכ
-\begin_inset Formula $74$
+\begin_inset Formula $30$
 \end_inset
 
  סדרי גודל מהערך עצמו.
@@ -2996,7 +3025,11 @@ T_{2}=67\pm10ns
 \begin_inset Formula $T_{2}$
 \end_inset
 
- מכיל את הערך המקובל בספרות 
+ מכיל את הערך המקובל בספרות [
+\numeric on
+3
+\numeric off
+] 
 \begin_inset Formula $T_{2}^{theory}=62ns$
 \end_inset
 
@@ -3039,7 +3072,11 @@ T_{2}=67\pm10ns
 \end_layout
 
 \begin_layout Standard
-תחום זה מכיל את הערך המקובל בספרות 
+תחום זה מכיל את הערך המקובל בספרות [
+\numeric on
+3
+\numeric off
+] 
 \begin_inset Formula $T_{2}^{theory}=62ns$
 \end_inset
 
@@ -3047,7 +3084,8 @@ T_{2}=67\pm10ns
 \begin_inset Formula $15\%$
 \end_inset
 
- ולכן טווח די גדול.
+ )חושב לפי נוסחא לחישוב שגיאות יחסיות בנספח( ולכן הטווח די גדול אשר מעיד
+ על דיוק נמוך.
  
 \end_layout
 
@@ -3081,7 +3119,7 @@ T_{2}=67\pm10ns
 \end_layout
 
 \begin_layout Standard
-כמו כן ניתן לראות שרמת ההתאמה לגרף היא 
+בנוסף, ניתן לראות שרמת ההתאמה לגרף היא 
 \begin_inset Formula $R^{2}=0.9893$
 \end_inset
 
@@ -3105,6 +3143,10 @@ T_{2}=67\pm10ns
  שגיאות )עקב הקירובים הנומריים( ועקב כך שיש מעט דגימות.
 \end_layout
 
+\begin_layout Standard
+תופעות אלו עלולות להשפיע לרעה על התאמת העקום ועקב כך על הערכים שחולצו ממנו.
+\end_layout
+
 \begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
@@ -3114,6 +3156,70 @@ T_{2}=67\pm10ns
 
 \begin_layout Section*
 מסקנות
+\end_layout
+
+\begin_layout Standard
+בחלקו הראשון של הניסוי מדדנו את קבוע הסליל ב
+\begin_inset Formula $3$
+\end_inset
+
+ דרכים שונות, בדרך הראשונה קיבלנו 
+\begin_inset Formula $k_{1}=4400\pm400\frac{1}{m}$
+\end_inset
+
+ בעל שגיאה יחסית של כ 
+\begin_inset Formula $9.1\%$
+\end_inset
+
+ בשנייה 
+\begin_inset Formula $k_{2}=5200\pm500\frac{1}{m}$
+\end_inset
+
+ בעל שגיאה יחסית של כ
+\begin_inset Formula $9.6\%$
+\end_inset
+
+ ובשלישית 
+\begin_inset Formula $k_{3}=4923\pm5\frac{1}{m}$
+\end_inset
+
+ בעל שגיאה יחסית של 
+\begin_inset Formula $0.1\%$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+ניתן לראות על פי השגיאה היחסית ש
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ מדוייק משמעותית משאר הערכים.
+ בנוסף הוא מוכל בתחום הערכים של 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+ ומשיק לקצה התחום של 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ ומכאן נסיק ששיטת המדידה השלישית היא המדויקת ביותר.
+\end_layout
+
+\begin_layout Standard
+בחלקו השני של הניסוי קיבלנו ש
+\begin_inset Formula $T_{2}=67\pm10ns$
+\end_inset
+
+ בעל שגיאה של כ
+\begin_inset Formula $15\%$
+\end_inset
+
+ תחום המכיל את הערך המקובל בספרות.
+ כמסקנות מהשגיאות האפשרויות שעלו בדיון ניתן לשפר את המדידות הבאות על ידי
+ בדיקת תקינות הסקופ וביצוע מספר גדול בהרבה של מדידות לשם הקטנת שגיאת האינטגרציה.
 \end_layout
 
 \begin_layout Standard
@@ -3144,7 +3250,11 @@ T_{2}=67\pm10ns
 \numeric on
 2
 \numeric off
-( ספר קיטל?
+( 
+\begin_inset Formula $\text{C. Kittel, Introduction to Solid State Physics, Wiley, 2004}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3153,11 +3263,7 @@ T_{2}=67\pm10ns
 3
 \numeric off
 ( 
-\begin_inset Formula $\text{https://arxiv.org/pdf/1503.06145.pdf}$
-\end_inset
-
- - 
-\begin_inset Formula $\text{A. Ghirri, C. Bonizzoni, D. Gerace, S. Sanna, A. Cassinese, M. Affronte; YBa2Cu3O7}$
+\begin_inset Formula $\text{7D. Zilic, D. Pajic, M. Juric, K. Molcanov, B. Rakvin, P. Planinic, and K. Zadro, J. Mag. Reson. 207 34 (2010)}$
 \end_inset
 
 
