@@ -128,6 +128,8 @@ for file in files:
     fig.savefig(str("figs/A_"+file+".png"))
     if file == "part1_3mod7.1 0":
         x3 = x
+    if file == "part1_2mod7 0":
+        x2 = x
 
 
 
@@ -138,6 +140,19 @@ for file in files:
 
 V_min = ufloat(abs(min(x3)),1e-4)
 V_max = ufloat(abs(max(x3)),1e-4)
+
+V = np.mean([V_min,V_max])
+
+# V = ufloat(432.623e-3,0.001e-3) # volt
+I = V/r
+H = B_res / mu0
+
+k1 = H / I
+
+print(f"k_1={k1}")
+### k_1'
+V_min = ufloat(abs(min(x2)),1e-4)
+V_max = ufloat(abs(max(x2)),1e-4)
 
 V = np.mean([V_min,V_max])
 
