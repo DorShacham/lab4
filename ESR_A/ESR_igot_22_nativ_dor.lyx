@@ -524,12 +524,14 @@ today
 \align center
 \begin_inset Graphics
 	filename figs/ESR_fig2_the_system_whole.png
+	scale 50
 
 \end_inset
 
 
 \begin_inset Graphics
 	filename figs/ESR_fig1_the_system.png
+	scale 50
 
 \end_inset
 
@@ -1394,6 +1396,13 @@ B_{res}=3.4107\pm0.0033mT
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 בשלב זה שינינו את ערך המדולציה ומצאנו את הערך הגבולי בו מתחילה הבליעה אלו
  הגרפים שהתקבלו:
 \end_layout
@@ -1757,7 +1766,7 @@ I=0.5241\pm0.0001A
 \end_layout
 
 \begin_layout Standard
-התקבלו הגרף:
+התקבל הגרף:
 \end_layout
 
 \begin_layout Standard
@@ -1784,7 +1793,7 @@ status open
 \begin_inset Graphics
 	filename figs/A_part2_ty.png
 	lyxscale 20
-	scale 50
+	scale 70
 
 \end_inset
 
@@ -1993,6 +2002,13 @@ k_{2}=5200\pm500\frac{1}{m}
 I_{0}=0.5513\pm0.0001A
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -2601,7 +2617,7 @@ status open
 \begin_inset Graphics
 	filename figs/B_deriv.png
 	lyxscale 20
-	scale 50
+	scale 70
 
 \end_inset
 
@@ -2690,6 +2706,9 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
 בשלב זה ביצענו אינטגרציה נומרית על הנגזרת בשביל לקבל את אות הבליעה כפונקציה
  של הזרם הישר, התקבל הגרף הבא:
 \end_layout
@@ -2718,7 +2737,7 @@ status open
 \begin_inset Graphics
 	filename figs/B_A(I).png
 	lyxscale 20
-	scale 50
+	scale 70
 
 \end_inset
 
@@ -2863,7 +2882,7 @@ status open
 \begin_inset Graphics
 	filename figs/B_A(w0).png
 	lyxscale 20
-	scale 50
+	scale 70
 
 \end_inset
 
