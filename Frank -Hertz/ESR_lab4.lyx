@@ -1,0 +1,1327 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+ניסוי 
+\begin_inset Formula $\text{ESR}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+מגישים: נתיב מאור
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+319002911
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, דור חי-שחם 
+\end_layout
+
+\begin_layout Section*
+תקציר
+\end_layout
+
+\begin_layout Standard
+ניסוי זה מורכב משני חלקים שהתבצעו על אותה מערכת עד כדי שינויים קלים.
+ בשני החלקים, בתוך סליל חיצוני הוצב סליל פנימי ניצב לו שבתוכו הוצב דגם פחמימן
+ מוצק - 
+\begin_inset Formula $DPPH$
+\end_inset
+
+.
+ שדה מגנטי שנוצר עקב הזרמת זרם בסליל החיצוני גורם להפרדה של רמות האנרגיה
+ של האלקטרונים ב
+\begin_inset Formula $DPPH$
+\end_inset
+
+.
+ כאשר קרינה מהסליל הפנימי בתדר מתאים לרמות של מצב התהודה )הנקבעות על ידי
+ השדה הנוצר מהסליל החיצוני( פוגעת בדגם, משתנה הסוספטביליות המגנטית שלו וכך
+ גם ההשראות וההתנגדות האפקטיבית של הסליל.
+ הסליל הפנימי היה מחובר למעגל תהודה עם משוב חיובי של המחולל.
+ האות המתקבל ביציאה מהמחולל פרופורציונאלי להספק של הבליעה בדגם וכך ניתן
+ לזהות מצב של תהודה במערכת.
+ 
+\begin_inset Newline newline
+\end_inset
+
+בניסוי הראשון, בעזרת זיהוי תכונות מצב התהודה בתנאים שונים חושב המקדם k בקשר
+ 
+\begin_inset Formula $H=kI$
+\end_inset
+
+ בשלוש דרכים שונות.
+ בניסוי השני, בעזרת מדידות אות התהודה כתלות בזרם הישר ב בסליל החיצוני נמדדה
+ נגזרת אות הבליעה לפי הזרם ,ממנה שוחזר אות הבליעה כתלות בזרם, וממנו חושב
+ מקדם הרלקסציה 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ של דגם 
+\begin_inset Formula $DPPH$
+\end_inset
+
+.
+ קיבלנו תוצאות ש)לא?( עומדות בקנה אחד עם התיאוריה והערכים המקובלים בספרות.
+\end_layout
+
+\begin_layout Section*
+מבוא
+\end_layout
+
+\begin_layout Standard
+מערכת הניסוי תוארה בקצרה בתקציר, בחלק זה נרחיב על המודל התיאורטי אודותיה.
+\begin_inset Newline newline
+\end_inset
+
+ לחלקיקים בעלי ספין כגון אלקטרונים יש מומנט מגנטי, לכן בעת צימוד לשדה מגנט
+ האנרגיה במצבים השונים נקבעת לפי אפקט זימן 
+\begin_inset Formula $U=-\vec{\mu}\cdot\vec{B}=g\mu_{B}m_{s}B$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $g$
+\end_inset
+
+ קבוע הפיצול, 
+\begin_inset Formula $\mu_{B}=0.927\cdot10^{-23}[\frac{J}{T}]$
+\end_inset
+
+ הוא המגנטון של בוהר ,
+\begin_inset Formula $m_{s}$
+\end_inset
+
+ הוא ערך הספין שעבור אלקטרונים 
+\begin_inset Formula $m_{s}\in\{-\frac{1}{2},\frac{1}{2}\}$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ הוא השדה המגנטי ביחידות 
+\begin_inset Formula $[T]$
+\end_inset
+
+.
+ ולכן ההפרש בין האנרגיות של שני המצבים הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(1)\,\Delta U=g\mu_{B}B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בניסויים השתמשנו בדגם 
+\begin_inset Formula $DPPH$
+\end_inset
+
+, לו יש רדיקלים חופשיים כלומר מכיל אלקטרונים בלתי מזווגים ולהם צימוד חלש
+ לסריג האטומי ולכן ערך 
+\begin_inset Formula $g$
+\end_inset
+
+ שלהם בו נשתמש בניסוי הוא 
+\begin_inset Formula $g(DPPH)=2.0036\pm0.0002$
+\end_inset
+
+ בדומה לזה של אלקטרונים חופשיים.
+\end_layout
+
+\begin_layout Standard
+הדגם הוצב בתוך שני סלילים, סליל חיצוני המכיל סליל פנימי , שניהם ניצבים אחד
+ לשני, כפי שמוצג בתרשים הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ESR_fig1_the_system.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+איור
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\series default
+ תרשים מערכת הסלילים בניסוי )איור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתדריך(
+\end_layout
+
+\end_inset
+
+השדה החיצוני 
+\begin_inset Formula $\vec{B}$
+\end_inset
+
+ נוצר על ידי הסליל החיצוני ויוצר הפרדה של רמות האנרגיה לפי משוואה )
+\numeric on
+1
+\numeric off
+(.
+ כאשר קרינה אלקטרומגנטית מ 
+\begin_inset Formula $B_{RF}$
+\end_inset
+
+, הנוצרת מזרם בסליל הפנימי, פוגעת בדגם בתדר המתאים לערור של אלקטרונים מהרמה
+ התחתונה לעליונה היא מעררת אלקטרונים מהרמה התחתונה ובכך גורמת לבליעה של
+ אנרגיה בדגם.
+ התדר המתאים לשדה מהסליל החיצוני נתון לפי נוסחא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(2)\,\frac{h\nu_{RF}}{g\mu_{B}}=B_{res}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $B_{res}$
+\end_inset
+
+ הוא השדה המגנטי החיצוני , 
+\begin_inset Formula $h=6.624\cdot10^{-34}J\cdot s$
+\end_inset
+
+ קבוע פלאנק ו 
+\begin_inset Formula $\nu_{RF}$
+\end_inset
+
+ היא תדירות הגל המתאימה לרזוננס עבור השדה המגנטי.
+\end_layout
+
+\begin_layout Standard
+בניסוי נמדד בעזרת אוסצילוסקופ המתח על הגליל החיצוני - שממנו ניתן לגזור את
+ הזרם בגליל בעזרת חוק אוהם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(3)\,V=I\cdot R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $R$
+\end_inset
+
+ היא התנגדות הסליל ב
+\begin_inset Formula $[ohm]$
+\end_inset
+
+, 
+\begin_inset Formula $I$
+\end_inset
+
+ הזרם ב
+\begin_inset Formula $[A]$
+\end_inset
+
+ ו 
+\begin_inset Formula $V$
+\end_inset
+
+ המתח ב
+\begin_inset Formula $[Volt]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הזרם קשור השדה המגנטי לפי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(4)\,\frac{B}{\mu_{0}}=kI
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $k$
+\end_inset
+
+ הוא פקטור גיאומטרי הנובע ממידות הסליל ביחידות 
+\begin_inset Formula $[1/m]$
+\end_inset
+
+.
+ במהלך החלק הראשון של הניסוי נמדוד את 
+\begin_inset Formula $k$
+\end_inset
+
+ ב
+\numeric on
+3
+\numeric off
+ דרכים.
+ 
+\end_layout
+
+\begin_layout Standard
+מערכת הניסוי בשני חלקיה מתוארים בתרשים הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ESR_fig2_the_system_whole.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+איור
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\series default
+ תרשים מערכת הניסוי )איור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתדריך(
+\end_layout
+
+\begin_layout Plain Layout
+הסליל החיצוני, הפנימי והדגם מתוארים על ידי הגליל שמעל המלבן המציג את מתנד
+ ה
+\begin_inset Formula $ESR$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסליל הפנימי חובר למתנד 
+\begin_inset Formula $ESR$
+\end_inset
+
+ בתדירות קבועה שמתאזנת על ידי משוב חיובי של המחולל.
+ כשהסליל הפנימי מתפקד כמשרן עם השראות שמשתנה בעת הגעת הדגם לרזוננס עקב שינוי
+ הסוספטביליות של הדגם.
+ עקב המשוב החיובי מדידת מתח על המתנד בערוץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ היא פרופורציונות להספק הבליעה המתרחש בדגם.
+ על ידי אות מערוץ זה אנו מזהים את תופעת הרזוננס בניסויים השונים.
+\end_layout
+
+\begin_layout Standard
+הזרם העובר דרך הסליל החיצוני הוא שדה משתנה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(5)\,B=\mu_{0}k(I_{0}+I_{m}sin(2\pi ft))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $f$
+\end_inset
+
+ היא תדירות ב
+\begin_inset Formula $[Hz]$
+\end_inset
+
+ ו 
+\begin_inset Formula $I_{m/0}$
+\end_inset
+
+ הם אמפליטודות הזרמים ב 
+\begin_inset Formula $[A]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+על ידי שינוי של אמפליטודות הזרמים, עקב הקשר שלהם לשדה המגנטי והקשר של השדה
+ המגנטי לתדירות הרזוננס, משתנה גם תבנית אות הבליעה.
+ בחלק הראשון של הניסוי זיהינו את הזרמים המתאימים לתבנית אות בליעה איכותית
+ רצויה ומהן הסקנו את 
+\begin_inset Formula $k$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ ב
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דרכים שונות.
+ בחלק הזה 
+\begin_inset Formula $I_{m}$
+\end_inset
+
+ נקבע על ידי מודולציה דרך ספק ה
+\begin_inset Formula $ESR$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בחלק השני של הניסוי, 
+\begin_inset Formula $I_{m}$
+\end_inset
+
+ נשלט על ידי המחולל של האוסצילוסקופ.
+ אז, על ידי שליטה בגודל חלון המדידה כך שהקשר בין אות הזרם לאות הבליעה יהיה
+ בקירוב טוב לינארי, נמדדה הנגזרת של תבנית הבליעה כתלות בזרם ושוחזרה ממנה
+ תבנית הבליעה על ידי אנטגרציה נומרית שעל פי התיאוריה צריכה לקיים את הקשר
+ הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(6)\,V_{absorb}\propto\frac{\omega_{0}\cdot\omega\cdot T_{2}}{1+(\omega_{0}-\omega)^{2}\cdot T_{2}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ הוא זמן הרלקסציה ב
+\begin_inset Formula $[sec]$
+\end_inset
+
+, 
+\begin_inset Formula $\omega_{0}=\frac{B\cdot g\cdot\mu_{B}}{\hbar}$
+\end_inset
+
+ תדירות הפרסציה החופשית, 
+\begin_inset Formula $\omega=\nu_{RF}\cdot2\pi$
+\end_inset
+
+ תדירות המתנד.
+\end_layout
+
+\begin_layout Standard
+בוצעה רגרסיה של הנתונים למשוואה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על מנת לקבל את 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+דיון בתוצאות
+\end_layout
+
+\begin_layout Subsection*
+חלק ראשון
+\end_layout
+
+\begin_layout Standard
+בחלק הראשון של הניסוי, בו מדדנו את 
+\begin_inset Formula $k$
+\end_inset
+
+ ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דרכים שונות התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
+במדידה הראשונה, בה חיפשנו את 
+\begin_inset Formula $k$
+\end_inset
+
+ דרך חיפוש המודולציה הגבולית שבה מתקבלת תופעת הבליעה ודרכה הערכנו את המתח
+ בו מתרחשת התהודה מצאנו ש 
+\begin_inset Formula $k_{1}=4400\pm400\frac{1}{m}$
+\end_inset
+
+, שגיאה יחסית של כ 
+\begin_inset Formula $9.1\%$
+\end_inset
+
+ .
+ נציין שההערכה של ערך המודולציה הגבולית הייתה תוך חיפוש אחר תופעה איכותית
+ שקשה להעריכה באופן מדויק והטווח שבו היא מתרחשת איננו מוגדר היטב לכן גם
+ הערכת שגיאת המדידה נתונה לפרשנות.
+ אנו חושדים שהערכת השגיאה שלנו במדידה זו הייתה מקלה מידי )כלומר ייחסנו לשגיאת
+ המדידה טווח קטן משהיינו אמורים(.
+ הערכת השגיאה נקבעה לפי התחום של המתחים הממוצעים בהם תופעת הבליעה התרחשה.
+\end_layout
+
+\begin_layout Standard
+במדידה השניה, בה חיפשנו את 
+\begin_inset Formula $k$
+\end_inset
+
+ דרך חיפוש רכיב הזרם הישיר בסליל שעבורו מתקבלת בליעה בזמנים שבהם הרכיב המתנדנד
+ מתאפס.
+ זיהינו את תופעה זו על ידי עמידה ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הקריטריונים שצויני בחלק הקודם.
+ גם במדידה זו ההערכה של קיום הקריטריונים הייתה איכותית במהותה וראינו אותה
+ עבור ערכים שונים של גודל ישיר שמדדנו, שקללנו את טווח הערכים שהתקבל בהערכת
+ שגיאת המדידה.
+ מצאנו ש 
+\begin_inset Formula $k_{2}=5200\pm500\frac{1}{m}$
+\end_inset
+
+.
+ עם שגיאה יחסית של כ 
+\begin_inset Formula $9.6\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במדידה השלישית, עברנו להצגת האותות משני ערוצי הסקופ כתלות אחד בשני, בהצגה
+ זו ניתן לזהות את תופעת הבליעה כשהתבנית המתקבלת בגרף 
+\begin_inset Formula $XY$
+\end_inset
+
+ היא סמטרית סביב 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ גם כאן התופעה היא איכותית, אך במקרה הזה זיהוי התופעה ברור יותר וטווח הערכים
+ הנמדדים בו היא מתרחשת קטן יחסית )סטייה קטנה מהערך המדוד הורסת את התבנית
+ הסמטרית( לכן הערכת שגיאת המדידה של הגדלים הנמדדים במדידה זו הייתה קטנה
+ יחסית למדידות האחרות.
+ התקבל 
+\begin_inset Formula $k_{3}=4923\pm5\frac{1}{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת נשווה בין תחומי הערכים שהתקבלו מהמדידות השונות.
+\end_layout
+
+\begin_layout Standard
+ניתן לראות שהתחום של 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+ מכיל את התחום של 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ וחופף במקצת לתחום של 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ ,בתחום 
+\begin_inset Formula $k_{1}\cap k_{2}=(4700,4800)\frac{1}{m}$
+\end_inset
+
+.
+ זאת בעוד שהתחומים של 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ ו
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ אינם חופפים.
+ יתכן שהערכת שגיאת המדידה של 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ הייתה קטנה מידי.
+\end_layout
+
+\begin_layout Standard
+כמו כן, חושב הערך תיאורטי של 
+\begin_inset Formula $k$
+\end_inset
+
+ לפי מידות הסליל בהנחה שמיקום דגם ה
+\begin_inset Formula $DPPH$
+\end_inset
+
+ הוא בדיוק במרכז הציר של הסליל החיצוני לפי נוסחא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\begin_inset Quotes erd
+\end_inset
+
+
+\numeric off
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ הערך התיאורטי שחושב הוא 
+\begin_inset Formula $k_{theory}=5440\frac{1}{m}$
+\end_inset
+
+ )חושב כסופרפוזיציה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שכבות עם קטרים משתנים בצורה לינארית בין הקוטר הפנימי והחיצוני שכל אחת מהן
+ עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+110
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ליפופים(.
+ הערך התיאורטי מוכל רק בתחום של 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נראה שישנה התאמה חלקית בין תוצאות מדידת 
+\begin_inset Formula $k$
+\end_inset
+
+ השונות, אומנם לא כל התחומים של 
+\begin_inset Formula $k$
+\end_inset
+
+ שנמדדו חופפים אחד עם השני אך ישנו תחום )של 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+( המכיל את שאר הערכים.
+ אנו מעריכים שהערכת שגיאת המדידה של 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ ו
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ לא הייתה נוקשית מספיק.
+\end_layout
+
+\end_body
+\end_document
