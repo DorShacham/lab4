@@ -154,6 +154,21 @@ for x in [x3,x1,x4]:
     print(f"k_1={k1}")
 
 
+V_min = ufloat(abs(min(x3)),abs(min(x3)-min(x4)))
+V_max = ufloat(abs(max(x3)),abs(max(x3)-max(x4)))
+
+V = np.mean([V_min,V_max])
+
+# V = ufloat(432.623e-3,0.001e-3) # volt
+I = V/r
+H = B_res / mu0
+
+k1 = H / I
+
+print(f"k_1={k1}")
+
+
+
 #%% part 2
 
 I_first = 0.4766 #A

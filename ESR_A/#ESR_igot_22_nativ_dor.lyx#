@@ -3048,16 +3048,69 @@ T_{2}=67\pm10ns
 \end_inset
 
  ולכן טווח די גדול.
- כמו כן, קריטריון נוסף לבדיקת ההתאמה הוא השוואה בין התדירות הזוויתית שחושבה
+ 
+\end_layout
+
+\begin_layout Standard
+כמו כן, קריטריון נוסף לבדיקת ההתאמה הוא השוואה בין התדירות הזוויתית שחושבה
  והתדירות שחולצה מההתאמה לגרף
 \begin_inset Formula 
 \[
-\omega=
+\omega=6.021\pm0.005\cdot10^{8}\frac{rad}{sec}
 \]
 
 \end_inset
 
 
+\begin_inset Formula 
+\[
+\omega_{fit}=6.07415078\cdot10^{8}\pm0\frac{rad}{sec}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למרות שאין חפיפה בתחום השגיאה המרחק היחסי בין הערכים הנונמלים הוא 
+\begin_inset Formula $\frac{\left|\omega-\omega_{fit}\right|}{\omega}\cdot100\%\approx0.88\%$
+\end_inset
+
+ כלומר פחות מאחוז מהגודל הכולל המעיד על התאמה לא רעה.
+\end_layout
+
+\begin_layout Standard
+כמו כן ניתן לראות שרמת ההתאמה לגרף היא 
+\begin_inset Formula $R^{2}=0.9893$
+\end_inset
+
+.
+ ערך זה מראה קירוב טוב, אך רחוק מלהיות מדויק.
+\end_layout
+
+\begin_layout Standard
+פערים אלו יכולים להיגרם ממספר סיבות והשילוב בינהן:
+\end_layout
+
+\begin_layout Standard
+המדידות אינן היו מדיוקות - במהלך הניסוי נתקלנו בתופעה שמכשיר שהסקופ גורם
+ להזזה של חלק מהערכים הנמדדים במהלך הזזת הסמנים שלו, תופעה זו הקשת על ביצוע
+ המדידות )שכן לא יכולנו להשתמש בסמנים( ובנוסף, יכול להיות שחלק מהמדידות
+ הושפעו מבלי שהיינו מודעים לכך.
+\end_layout
+
+\begin_layout Standard
+שגיאות אינטגרציה - במהלך אנליזת הנתונים מתבצעת אינטגרציה נומרית אשר מוספיה
+ שגיאות )עקב הקירובים הנומריים( ועקב כך שיש מעט דגימות.
+\end_layout
+
+\begin_layout Standard
+שימוש ב
+\begin_inset Formula $k$
+\end_inset
+
+ מסעיף קודם - 
 \end_layout
 
 \begin_layout Section*
