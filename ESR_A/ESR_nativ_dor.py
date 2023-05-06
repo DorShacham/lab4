@@ -174,8 +174,8 @@ print(f"k_1={k1}")
 I_first = 0.4766 #A
 I_second = 0.5120#A
 I_third = 0.5241#A
-I = np.array([I_first,I_second,I_third])
-I_err = 0.0001
+I = I_third
+I_err = I_third-I_first
 I = uarray(I,I_err)
 k2 = H / I
 
