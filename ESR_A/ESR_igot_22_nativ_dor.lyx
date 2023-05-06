@@ -465,7 +465,7 @@ today
 \begin_inset Formula $\Delta U=g\mu_{B}B$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -586,8 +586,31 @@ status open
 \noun default
 \color inherit
 1-2
+\family roman
+\shape up
+\size normal
+\emph off
 \numeric off
-:
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)משמאל לימין(:
 \series default
  
 \end_layout
@@ -837,11 +860,7 @@ status open
 \begin_inset Formula $\vec{B}$
 \end_inset
 
- נוצר על ידי הסליל החיצוני ויוצר הפרדה של רמות האנרגיה לפי משוואה )
-\numeric on
-1
-\numeric off
-(.
+ נוצר על ידי הסליל החיצוני ויוצר הפרדה של רמות האנרגיה לפי משוואה לעיל.
  כאשר קרינה אלקטרומגנטית מ 
 \begin_inset Formula $B_{RF}$
 \end_inset
@@ -876,7 +895,17 @@ status open
 \uwave default
 \noun default
 \color inherit
-3
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \numeric off
 :
 \end_layout
@@ -1190,7 +1219,44 @@ k=\frac{N}{2L}\left(\cos\left(\alpha\right)+\cos\left(\beta\right)\right)\label{
 \begin_inset Formula $440$
 \end_inset
 
-, 
+ )
+\numeric on
+
+\begin_inset Formula $110$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ליפופים עבור 
+\begin_inset Formula $4$
+\end_inset
+
+ שכבות(, 
 \begin_inset Formula $L$
 \end_inset
 
@@ -1285,7 +1351,17 @@ V_{absorb}\propto\frac{\omega_{0}\cdot\omega\cdot T_{2}}{1+(\omega_{0}-\omega)^{
 \uwave default
 \noun default
 \color inherit
-6
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -1383,7 +1459,8 @@ r=0.827\pm0.0012\Omega
 \end_layout
 
 \begin_layout Standard
-השגיאה )וכל שאר השגיאות( חושבו לפי הנוסחא לחישוב שגיאות נגררות בנספח.
+השגיאה )כאן, וכמו כן בכל שאר השגיאות בדוח זה( חושבו לפי הנוסחא לחישוב שגיאות
+ נגררות בנספח.
 \end_layout
 
 \begin_layout Standard
@@ -1650,8 +1727,8 @@ status open
 \end_layout
 
 \begin_layout Standard
-גרפים אלו מתאימים איכותית לתאוריה כאשר המודלציה היא גבולית בשביל לקבל בליעה
- יתקבלו בליעות רק כאשר מתח המודלציה אקסטרימלי.
+גרפים אלו מתאימים איכותית לתאוריה לפיה - כאשר המודלציה היא גבולית, יתקבלו
+ בליעות רק כאשר מתח המודלציה אקסטרימלי.
  
 \end_layout
 
@@ -3038,9 +3115,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 T_{2}=67\pm10ns
@@ -3060,7 +3134,7 @@ T_{2}=67\pm10ns
 \begin_inset Formula $0$
 \end_inset
 
- משום שהיא קטנה בהרבה בכ
+ משום שהיא קטנה בכ
 \begin_inset Formula $30$
 \end_inset
 
@@ -3092,7 +3166,7 @@ T_{2}=67\pm10ns
 \begin_inset Formula $T_{2}^{theory}=62ns$
 \end_inset
 
- אך שווה לציין שטווח השגיאה גדול כנראה עקב אי-התאמה גבוהה.
+ אך שווה לציין שטווח השגיאה גדול.
 \end_layout
 
 \begin_layout Standard
@@ -3769,7 +3843,7 @@ T_{2}=67\pm10ns
 
 \end_deeper
 \begin_layout Itemize
-הנוסחה בה השתמשנו לחישוב השגיאה היחסית בין הערכים המדודים לתיאורטיים בניסוי:
+הנוסחא בה השתמשנו לחישוב השגיאה היחסית בין הערכים המדודים לתיאורטיים בניסוי:
 \end_layout
 
 \begin_deeper
