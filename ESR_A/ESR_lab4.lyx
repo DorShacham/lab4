@@ -950,5 +950,378 @@ status open
 .
 \end_layout
 
+\begin_layout Section*
+דיון בתוצאות
+\end_layout
+
+\begin_layout Subsection*
+חלק ראשון
+\end_layout
+
+\begin_layout Standard
+בחלק הראשון של הניסוי, בו מדדנו את 
+\begin_inset Formula $k$
+\end_inset
+
+ ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דרכים שונות התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
+במדידה הראשונה, בה חיפשנו את 
+\begin_inset Formula $k$
+\end_inset
+
+ דרך חיפוש המודולציה הגבולית שבה מתקבלת תופעת הבליעה ודרכה הערכנו את המתח
+ בו מתרחשת התהודה מצאנו ש 
+\begin_inset Formula $k_{1}=4400\pm400\frac{1}{m}$
+\end_inset
+
+, שגיאה יחסית של כ 
+\begin_inset Formula $9.1\%$
+\end_inset
+
+ .
+ נציין שההערכה של ערך המודולציה הגבולית הייתה תוך חיפוש אחר תופעה איכותית
+ שקשה להעריכה באופן מדויק והטווח שבו היא מתרחשת איננו מוגדר היטב לכן גם
+ הערכת שגיאת המדידה נתונה לפרשנות.
+ אנו חושדים שהערכת השגיאה שלנו במדידה זו הייתה מקלה מידי )כלומר ייחסנו לשגיאת
+ המדידה טווח קטן משהיינו אמורים(.
+ הערכת השגיאה נקבעה לפי התחום של המתחים הממוצעים בהם תופעת הבליעה התרחשה.
+\end_layout
+
+\begin_layout Standard
+במדידה השניה, בה חיפשנו את 
+\begin_inset Formula $k$
+\end_inset
+
+ דרך חיפוש רכיב הזרם הישיר בסליל שעבורו מתקבלת בליעה בזמנים שבהם הרכיב המתנדנד
+ מתאפס.
+ זיהינו את תופעה זו על ידי עמידה ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הקריטריונים שצויני בחלק הקודם.
+ גם במדידה זו ההערכה של קיום הקריטריונים הייתה איכותית במהותה וראינו אותה
+ עבור ערכים שונים של גודל ישיר שמדדנו, שקללנו את טווח הערכים שהתקבל בהערכת
+ שגיאת המדידה.
+ מצאנו ש 
+\begin_inset Formula $k_{2}=5200\pm500\frac{1}{m}$
+\end_inset
+
+.
+ עם שגיאה יחסית של כ 
+\begin_inset Formula $9.6\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במדידה השלישית, עברנו להצגת האותות משני ערוצי הסקופ כתלות אחד בשני, בהצגה
+ זו ניתן לזהות את תופעת הבליעה כשהתבנית המתקבלת בגרף 
+\begin_inset Formula $XY$
+\end_inset
+
+ היא סמטרית סביב 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ גם כאן התופעה היא איכותית, אך במקרה הזה זיהוי התופעה ברור יותר וטווח הערכים
+ הנמדדים בו היא מתרחשת קטן יחסית )סטייה קטנה מהערך המדוד הורסת את התבנית
+ הסמטרית( לכן הערכת שגיאת המדידה של הגדלים הנמדדים במדידה זו הייתה קטנה
+ יחסית למדידות האחרות.
+ התקבל 
+\begin_inset Formula $k_{3}=4923\pm5\frac{1}{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת נשווה בין תחומי הערכים שהתקבלו מהמדידות השונות.
+\end_layout
+
+\begin_layout Standard
+ניתן לראות שהתחום של 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+ מכיל את התחום של 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ וחופף במקצת לתחום של 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ ,בתחום 
+\begin_inset Formula $k_{1}\cap k_{2}=(4700,4800)\frac{1}{m}$
+\end_inset
+
+.
+ זאת בעוד שהתחומים של 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ ו
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ אינם חופפים.
+ יתכן שהערכת שגיאת המדידה של 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ הייתה קטנה מידי.
+\end_layout
+
+\begin_layout Standard
+כמו כן, חושב הערך תיאורטי של 
+\begin_inset Formula $k$
+\end_inset
+
+ לפי מידות הסליל בהנחה שמיקום דגם ה
+\begin_inset Formula $DPPH$
+\end_inset
+
+ הוא בדיוק במרכז הציר של הסליל החיצוני לפי נוסחא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\begin_inset Quotes erd
+\end_inset
+
+
+\numeric off
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ הערך התיאורטי שחושב הוא 
+\begin_inset Formula $k_{theory}=5440\frac{1}{m}$
+\end_inset
+
+ )חושב כסופרפוזיציה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שכבות עם קטרים משתנים בצורה לינארית בין הקוטר הפנימי והחיצוני שכל אחת מהן
+ עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+110
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ליפופים(.
+ הערך התיאורטי מוכל רק בתחום של 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נראה שישנה התאמה חלקית בין תוצאות מדידת 
+\begin_inset Formula $k$
+\end_inset
+
+ השונות, אומנם לא כל התחומים של 
+\begin_inset Formula $k$
+\end_inset
+
+ שנמדדו חופפים אחד עם השני אך ישנו תחום )של 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+( המכיל את שאר הערכים.
+ אנו מעריכים שהערכת שגיאת המדידה של 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ ו
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ לא הייתה נוקשית מספיק.
+\end_layout
+
 \end_body
 \end_document
