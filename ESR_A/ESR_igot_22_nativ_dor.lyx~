@@ -40,10 +40,12 @@
 \makeatother
 \end_preamble
 \use_default_options true
-\begin_modules
-theorems-ams
+\begin_removed_modules
 eqs-within-sections
 figs-within-sections
+\end_removed_modules
+\begin_modules
+theorems-ams
 enumitem
 fixltx2e
 \end_modules
@@ -1283,7 +1285,7 @@ V_{absorb}\propto\frac{\omega_{0}\cdot\omega\cdot T_{2}}{1+(\omega_{0}-\omega)^{
 \end_layout
 
 \begin_layout Standard
-)לסדר גדלים של גרפים, והערות אחרות שרשמתי.(
+)לסדר גדלים של גרפים, (
 \end_layout
 
 \begin_layout Standard
@@ -3010,6 +3012,91 @@ T_{2}=67\pm10ns
 
 \begin_layout Section*
 דיון בתוצאות
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+חלק ראשון
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+חלק שני
+\end_layout
+
+\begin_layout Standard
+מתוך אנליזת הנתונים קיבלנו את קבוע הדעיכה 
+\begin_inset Formula 
+\[
+T_{2}=67\pm10ns
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחום זה מכיל את הערך המקובל בספרות 
+\begin_inset Formula $T_{2}^{theory}=62ns$
+\end_inset
+
+, עם זאת השגיאה היחסית היא כ
+\begin_inset Formula $15\%$
+\end_inset
+
+ ולכן טווח די גדול.
+ 
+\end_layout
+
+\begin_layout Standard
+כמו כן, קריטריון נוסף לבדיקת ההתאמה הוא השוואה בין התדירות הזוויתית שחושבה
+ והתדירות שחולצה מההתאמה לגרף
+\begin_inset Formula 
+\[
+\omega=6.021\pm0.005\cdot10^{8}\frac{rad}{sec}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\omega_{fit}=6.07415078\cdot10^{8}\pm0\frac{rad}{sec}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למרות שאין חפיפה בתחום השגיאה המרחק היחסי בין הערכים הנונמלים הוא 
+\begin_inset Formula $\frac{\left|\omega-\omega_{fit}\right|}{\omega}\cdot100\%\approx0.88\%$
+\end_inset
+
+ כלומר פחות מאחוז מהגודל הכולל המעיד על התאמה לא רעה.
+\end_layout
+
+\begin_layout Standard
+פערים אלו יכולים להיגרם ממספר סיבות והשילוב בינהן:
+\end_layout
+
+\begin_layout Standard
+המדידות אינן היו מדיוקות - במהלך הניסוי נתקלנו בתופעה שמכשיר שהסקופ גורם
+ להזזה של חלק מהערכים הנמדדים במהלך הזזת הסמנים שלו, תופעה זו הקשת על ביצוע
+ המדידות )שכן לא יכולנו להשתמש בסמנים( ובנוסף, יכול להיות שחלק מהמדידות
+ הושפעו מבלי שהיינו מודעים לכך.
+\end_layout
+
+\begin_layout Standard
+שגיאות אינטגרציה - במהלך אנליזת הנתונים מתבצעת אינטגרציה נומרית אשר מוספיה
+ שגיאות )עקב הקירובים הנומריים( ועקב כך שיש מעט דגימות.
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 

@@ -3020,6 +3020,46 @@ T_{2}=67\pm10ns
 חלק ראשון
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+חלק שני
+\end_layout
+
+\begin_layout Standard
+מתוך אנליזת הנתונים קיבלנו את קבוע הדעיכה 
+\begin_inset Formula 
+\[
+T_{2}=67\pm10ns
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחום זה מכיל את הערך המקובל בספרות 
+\begin_inset Formula $T_{2}^{theory}=62ns$
+\end_inset
+
+, עם זאת השגיאה היחסית היא כ
+\begin_inset Formula $15\%$
+\end_inset
+
+ ולכן טווח די גדול.
+ כמו כן, קריטריון נוסף לבדיקת ההתאמה הוא השוואה בין התדירות הזוויתית שחושבה
+ והתדירות שחולצה מההתאמה לגרף
+\begin_inset Formula 
+\[
+\omega=
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
