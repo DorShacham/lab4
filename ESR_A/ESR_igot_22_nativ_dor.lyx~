@@ -2706,6 +2706,9 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
 בשלב זה ביצענו אינטגרציה נומרית על הנגזרת בשביל לקבל את אות הבליעה כפונקציה
  של הזרם הישר, התקבל הגרף הבא:
 \end_layout
