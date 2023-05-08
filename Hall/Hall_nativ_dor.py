@@ -192,11 +192,26 @@ Up_err = np.array([ 0]) #V
 T = uarray(T,T_err)
 Up = uarray(Up,Up_err)
 
-fig,fit = one4all(xdata=uval(1/T),ydata=uval(1/Up),xerr=uerr(1/T_err),yerr=uerr(1/Up),xlabel=r"$T^{-1}[K^{-1}]$",ylabel=r"$U_p^{-1}[V^{-1}]$",mode="none")
+fig,fit = one4all(xdata=uval(1/T),ydata=uval(1/Up),xerr=uerr(1/T),yerr=uerr(1/Up),xlabel=r"$T^{-1}[K^{-1}]$",ylabel=r"$U_p^{-1}[V^{-1}]$",mode="none")
 
-fig,fit = one4all(xdata=uval(1/T),ydata=uval(np.log(Up)),xerr=uerr(1/T_err),yerr=uerr(np.log(Up),xlabel=r"$T^{-1}[K^{-1}]$",ylabel=r"$\ln(U_p)$",mode="linear")
+fig,fit = one4all(xdata=uval(1/T),ydata=uval(np.log(Up)),xerr=uerr(1/T),yerr=uerr(np.log(Up)),xlabel=r"$T^{-1}[K^{-1}]$",ylabel=r"$\ln(U_p)$",mode="linear")
 
 #%% part 5
 B= 250e-3 #T
 B_err =0 
 B = ufloat(B,B_err)
+
+I = 30e-3 #A
+I_err = 0
+I = ufloat(I,I_err)
+
+T = np.array([     0]) #C
+T_err = np.array([ 0]) #C
+UH = np.array([    0]) #V
+UH_err = np.array([ 0]) #V
+
+T = uarray(T,T_err)
+UH = uarray(UH,UH_err)
+
+fig,fit = one4all(xdata=uval(1/T),ydata=uval(np.log(UH)),xerr=uerr(1/T),yerr=uerr(np.log(UH)),xlabel=r"$T^{-1}[K^{-1}]$",ylabel=r"$\ln(U_p)$",mode="linear")
+
