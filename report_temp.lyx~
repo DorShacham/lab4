@@ -354,126 +354,29 @@ today
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section*
 תקציר
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section*
 מבוא
-\begin_inset Newpage newpage
-\end_inset
+\end_layout
 
+\begin_layout Standard
 
 \end_layout
 
 \begin_layout Section*
 תוצאות הניסוי
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section*
 דיון בתוצאות
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section*
 מסקנות
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
-\begin_layout Section*
-מקורות מידע
-\end_layout
-
-\begin_layout Standard
-
-\numeric on
-1
-\numeric off
-( תדריך __.
-\end_layout
-
-\begin_layout Section*
-נספח
-\end_layout
-
-\begin_layout Itemize
-הנוסחא בה השתמשנו לחישוב השגיאות הנגררות בניסוי:
-\begin_inset Formula 
-\[
-\delta F=\sqrt{\left(\frac{\partial F}{\partial x}\delta x\right)^{2}+\left(\frac{\partial F}{\partial y}\delta y\right)^{2}+\ldots}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-כאשר 
-\begin_inset Formula $\delta x,\delta y,\ldots$
-\end_inset
-
- הן השגיאות של 
-\begin_inset Formula $x,y,\ldots$
-\end_inset
-
- ו-
-\begin_inset Formula $\delta F$
-\end_inset
-
- היא השגיאה הנגררת של 
-\begin_inset Formula $F$
-\end_inset
-
-, שהיא פונקציה של המשתנים 
-\begin_inset Formula $x,y,\ldots$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-הנוסחה בה השתמשנו לחישוב השגיאה היחסית בין הערכים המדודים לתיאורטיים בניסוי:
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\xi_{rel\ err}=\frac{\delta v}{v}\cdot100\%
-\]
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \end_body
 \end_document
