@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from scipy.stats import linregress
 from scipy.optimize import curve_fit as cfit
+from scipy.constants import physical_constants
 
 from uncertainties.unumpy import uarray
 from uncertainties import ufloat
@@ -94,6 +95,9 @@ print("r=",R0,"ohm")
 
 rho0 = R0*d*W/L
 
+plt.figure(fig)
+plt.savefig("fig/part0_1")
+
 #%% part 1
 
 B = 251e-3 #T
@@ -109,9 +113,12 @@ U_err = 1e-4 #V
 fig,fit = one4all(xdata=Ip,ydata=UH,xerr=I_err,yerr=U_err,xlabel=r"$I_p[A]$",ylabel=r"$U_H[V]$",mode="linear")
 Reg_print(fit)
 
+plt.figure(fig)
+plt.savefig("fig/part1_1")
+
 slope = ufloat(fit.slope,fit.stderr*2)
 RH1 = slope * d / B
-print("RH=",RH1,"m^-3*C-1")
+print("RH=",RH1,"m^3*C-1")
 
 if RH1<0:
     print("The s/c is of P-type!")
@@ -122,7 +129,7 @@ n = 1/np.abs(RH1)/e
 print("n=",n,"m^-3")
 
 mu = np.abs(RH1)/rho0
-print("mu=",mu,"m^-4*(ohm*C)-1")
+print("mu=",mu,"m^2*(ohm*C)-1")
 
 
 #%% part 2
@@ -144,9 +151,13 @@ U_err = 1e-5 #V
 fig,fit = one4all(xdata=B,ydata=UH,xerr=B_err,yerr=U_err,xlabel=r"$B[T]$",ylabel=r"$U_H[V]$",mode="linear")
 Reg_print(fit)
 
+
+plt.figure(fig)
+plt.savefig("fig/part2_1")
+
 slope = ufloat(fit.slope,fit.stderr*2)
 RH2 = slope * d / I
-print("RH=",RH2,"m^-3*C-1")
+print("RH=",RH2,"m^3*C-1")
 
 if RH2<0:
     print("The s/c is of P-type!")
@@ -164,7 +175,7 @@ print("The differnce between RH1 to RH2 is:",rel_dif,"%")
 
 #%% part 3
 Ip = 30e-3 # A
-Ip_err = 1e-3 #A
+Ip_err = 5e-5 #A
 Ip = ufloat(Ip,Ip_err)
 
 # Take only the higest precesion
@@ -175,12 +186,28 @@ B_err = 1e-3#T
 Up_err = 1e-4 #V
 
 B = uarray(B,B_err)
+BB = B**2
 Up = uarray(Up,Up_err)
 
 R = Up/Ip
 
-fig,fit = one4all(xdata=uval(B),ydata=uval(R),xerr=uerr(B),yerr=uerr(R),xlabel=r"$B[T]$",ylabel=r"$R[\Omega]$",mode="linear")
+fig1,fit = one4all(xdata=uval(B),ydata=uval(R),xerr=uerr(B),yerr=uerr(R),xlabel=r"$B[T]$",ylabel=r"$R[\Omega]$",mode="linear")
 Reg_print(fit)
+plt.figure(fig1)
+plt.savefig("fig/part3_1")
+
+fig2,fit = one4all(xdata=uval(BB),ydata=uval(R),xerr=uerr(BB),yerr=uerr(R),xlabel=r"$B^2[T^2]$",ylabel=r"$R[\Omega]$",mode="linear")
+Reg_print(fit)
+plt.figure(fig2)
+C=RH1.n
+f = lambda BB: 4*rho0.n/(np.pi*d)*BB*(C/rho0.n)**2/((np.pi/2)**2-BB*(C/rho0.n)**2)+uval(R[0])
+plt.plot(uval(BB),f(uval(BB)),label="Geometric expection")
+plt.legend()
+
+
+
+plt.savefig("fig/part3_2")
+
 
 #%% part 4
 I = 30e-3 #A
@@ -188,16 +215,39 @@ I_err = 1e-3
 I = ufloat(I,I_err)
 
 T = np.append(np.arange(30,111, 10), np.arange(120,141,1)) + 273.15 #K
-T_err = np.array([ 0]) #C
+T_err = 1 #C
 Up = np.append(np.array([1.5889, 1.6950, 1.7942, 1.8710, 1.8837, 1.7948, 1.5679, 1.2828, 0.9825]), np.array([    7343, 7068, 6876, 6718, 6549, 6299, 6156, 5884, 5771, 5659, 5455, 5319, 5201, 5073, 4895, 4727, 4637, 4599, 4470, 4326, 4211])*1e-4) #V
-Up_err = np.array([ 0]) #V
+Up_err = 1e-4 #V
 
-# T = uarray(T,T_err)
-# Up = uarray(Up,Up_err)
+T = uarray(T,T_err)
+Up = uarray(Up,Up_err)
 
-fig,fit = one4all(xdata=uval(1/T),ydata=uval(1/Up),xlabel=r"$T^{-1}[K^{-1}]$",ylabel=r"$U_p^{-1}[V^{-1}]$",mode="none")
+fig,fit = one4all(xdata=uval(1/T),ydata=uval(1/Up),xerr=uerr(1/T),yerr=uerr(1/Up),xlabel=r"$T^{-1}[K^{-1}]$",ylabel=r"$U_p^{-1}[V^{-1}]$",mode="none",show=False)
 
-fig,fit = one4all(xdata=uval(1/T),ydata=uval(np.log(Up)),xlabel=r"$T^{-1}[K^{-1}]$",ylabel=r"$\ln(U_p)$",mode="linear")
+
+plt.figure(fig)
+plt.savefig("fig/part4_1")
+
+logU = np.array([log(u) for u in Up])
+
+
+fig,fit = one4all(xdata=uval(1/T),ydata=uval(logU),xerr=uerr(1/T),yerr=uerr(logU),xlabel=r"$T^{-1}[K^{-1}]$",ylabel=r"$\ln(U_p)$",mode="none",show=False)
+X = uval(1/T[::-1])[:21]
+Y = uval(logU[::-1])[:21]
+
+plt.figure(fig)
+fit = linregress(X,Y)
+Reg_print(fit)
+f = lambda x,a,b: a*x+b
+plt.plot(X,f(X,fit.slope,fit.intercept),"-.",label="Regression")
+plt.legend()
+plt.savefig("fig/part4_2")
+
+
+m = ufloat(fit.slope,fit.stderr*2)
+kB = physical_constants["Boltzmann constant in eV/K"]
+Eg = 2*kB*m
+
 
 #%% part 5
 B= 300e-3 #T
@@ -221,8 +271,8 @@ for t,uh in TUH:
 T = np.array(T) + 273.15 #K
 UH = np.array(UH)*1e-3 #V
 
-T = T[T>(130 + 273.15)]
 UH = UH[T>(130 + 273.15)]
+T = T[T>(130 + 273.15)]
 
 T_err = 1 #k
 UH_err = 1e-4 #V
