@@ -580,7 +580,7 @@ status open
  לגרף בוצעה רגרסיה לינארית והתקבלה הפונקציה הבאה 
 \begin_inset Formula 
 \[
-y=\left(53.3\pm0.9\right)x+\left(-0.087\pm0.016\right)
+y=\left(53.3\pm0.9\right)x+\left(-0.09\pm0.02\right)
 \]
 
 \end_inset
@@ -600,7 +600,7 @@ y=\left(53.3\pm0.9\right)x+\left(-0.087\pm0.016\right)
 על פי חוק אוהם חילצנו את ההתנגדות 
 \begin_inset Formula 
 \[
-R_{0}=53.3\pm0.8\Omega
+R_{0}=53.3\pm0.9\Omega
 \]
 
 \end_inset
@@ -814,7 +814,7 @@ status open
  לגרף בוצעה רגרסיה לניארית והתקבלה הפונקציה 
 \begin_inset Formula 
 \[
-y=\left(-1.910\pm0.025\right)x+\left(0.0024+/-0.0005\right)
+y=\left(-1.91\pm0.03\right)x+\left(0.0024\pm0.0005\right)
 \]
 
 \end_inset
@@ -831,7 +831,7 @@ y=\left(-1.910\pm0.025\right)x+\left(0.0024+/-0.0005\right)
  על פי נוסחה )?( ונתוני המערכת חולץ קבוע הול והתקבל 
 \begin_inset Formula 
 \[
-R_{H}^{\left(1\right)}=-0.00761\pm0.00011\frac{m^{3}}{C}
+R_{H}^{\left(1\right)}=-0.0076\pm0.0002\frac{m^{3}}{C}
 \]
 
 \end_inset
@@ -840,9 +840,10 @@ R_{H}^{\left(1\right)}=-0.00761\pm0.00011\frac{m^{3}}{C}
 \end_layout
 
 \begin_layout Standard
-)
+\align center
+
 \series bold
-האם צריך להסיר את המטען(
+__האם צריך להסיר את המטען?__
 \end_layout
 
 \begin_layout Standard
@@ -875,7 +876,7 @@ R_{H}^{\left(1\right)}=-0.00761\pm0.00011\frac{m^{3}}{C}
 מתוך הקשר )?( חולצה צפיפות רוב המטענים )החיובים( והתקבלה התוצאה:
 \begin_inset Formula 
 \[
-n^{\left(1\right)}=\left(8.21\pm0.11\right)10^{20}m^{-3}
+p^{\left(1\right)}=\left(8.2\pm0.2\right)10^{20}m^{-3}
 \]
 
 \end_inset
@@ -898,7 +899,7 @@ n^{\left(1\right)}=\left(8.21\pm0.11\right)10^{20}m^{-3}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mu^{\left(1\right)}=0.229\pm0.005\frac{m^{2}}{\Omega C}
+\mu_{h}^{\left(1\right)}=0.229\pm0.005\frac{m^{2}}{V\cdot sec}
 \]
 
 \end_inset
@@ -1110,7 +1111,7 @@ status open
  לגרף בוצעה רגרסיה לניארית והתקבלה הפונקציה 
 \begin_inset Formula 
 \[
-y=\left(-0.2170+/-0.0022\right)x+\left(0.0015+/-0.0004\right)
+y=\left(-0.217+/-0.003\right)x+\left(0.0015+/-0.0004\right)
 \]
 
 \end_inset
@@ -1127,7 +1128,7 @@ y=\left(-0.2170+/-0.0022\right)x+\left(0.0015+/-0.0004\right)
  על פי נוסחה )?( ונתוני המערכת חולץ קבוע הול והתקבל 
 \begin_inset Formula 
 \[
-R_{H}^{\left(2\right)}=-0.00723+/-0.0003\frac{m^{3}}{C}
+R_{H}^{\left(2\right)}=-0.0072+/-0.0003\frac{m^{3}}{C}
 \]
 
 \end_inset
@@ -1136,9 +1137,10 @@ R_{H}^{\left(2\right)}=-0.00723+/-0.0003\frac{m^{3}}{C}
 \end_layout
 
 \begin_layout Standard
-)
+\align center
+
 \series bold
-האם צריך להסיר את המטען?(
+__האם צריך להסיר את המטען?__
 \end_layout
 
 \begin_layout Standard
@@ -1149,7 +1151,7 @@ R_{H}^{\left(2\right)}=-0.00723+/-0.0003\frac{m^{3}}{C}
 מתוך הקשר )?( חולצה צפיפות רוב המטענים )החיובים( והתקבלה התוצאה:
 \begin_inset Formula 
 \[
-n^{\left(2\right)}=\left(8.6\pm0.3\right)10^{20}m^{-3}
+p^{\left(2\right)}=\left(8.6\pm0.3\right)10^{20}m^{-3}
 \]
 
 \end_inset
@@ -1176,7 +1178,7 @@ n^{\left(2\right)}=\left(8.6\pm0.3\right)10^{20}m^{-3}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mu^{\left(2\right)}=0.217\pm0.008\frac{m^{2}}{\Omega C}
+\mu_{h}^{\left(2\right)}=0.217\pm0.008\frac{m^{2}}{V\cdot sec}
 \]
 
 \end_inset
@@ -1425,7 +1427,7 @@ status open
 
 \begin_layout Plain Layout
 כמו כן עבור גרף 
-\begin_inset Formula $5$
+\begin_inset Formula $4$
 \end_inset
 
  סרטטנו בקו ירוק את התחזית של השינוי בהתנגדות מהאפקט הגאומטרי לפי נוסחה
@@ -1445,10 +1447,39 @@ status open
 \begin_inset Newline newline
 \end_inset
 
-עבור גרף 
-\begin_inset Formula $1$
+עבור גרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $4$
 \end_inset
 
+
+\numeric off
 , ניתן לראות איכותית כי ההתאמה הלינארית לא טובה מאוד.
  מתוך הרגרסיה התקבלה הפונקציה
 \begin_inset Formula 
@@ -1478,7 +1509,7 @@ y=\left(4.7\pm0.5\right)x+\left(51.82\pm0.09\right)
  מתוך הרגרסיה התקבלה הפונקציה
 \begin_inset Formula 
 \[
-y=\left(15.6\pm0.5\right)x+\left(52.037\pm0.019\right)
+y=\left(15.6\pm0.5\right)x+\left(52.04\pm0.02\right)
 \]
 
 \end_inset
@@ -1503,8 +1534,7 @@ __לוודא את המסקנה הבאה__
 
 \begin_layout Standard
 כפי שציינו ניתן לראות שההתנגדות מתנהגת בקירוב טוב באופן לינארי לריבוע השדה
- בהתאם לנוסחה )?( ואילו האפקט הנובע מהגאומטריה של הבעיה זניח אינו מתאים
- וזניח לעומתו.
+ בהתאם לנוסחה )?( ואילו האפקט הנובע מהגאומטריה של הבעיה זניח לעומתו.
 \end_layout
 
 \begin_layout Standard
@@ -1869,7 +1899,7 @@ status open
 \uwave default
 \noun default
 \color inherit
-6
+7
 \numeric off
 :
 \series default
@@ -1911,7 +1941,7 @@ status open
 ביצענו רגרסיה לינארית על התחום הלינארי )טמפ' גבוהות( והתקבלה הפונקציה הבא:
 \begin_inset Formula 
 \[
-y=\left(4.48\pm0.09\right)10^{3}x+\left(-11.71+/-0.21\right)
+y=\left(4.48\pm0.09\right)10^{3}x+\left(-11.7\pm0.3\right)
 \]
 
 \end_inset
@@ -1925,6 +1955,386 @@ y=\left(4.48\pm0.09\right)10^{3}x+\left(-11.71+/-0.21\right)
 \end_inset
 
 .
+ מתוך השיפוע נחלץ את האנרגיה 
+\begin_inset Formula 
+\[
+m=\frac{E_{g}}{2k_{B}}\Rightarrow E_{g}=2mk_{B}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ונקבל 
+\begin_inset Formula 
+\[
+E_{g}=0.77\pm0.02eV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+: מדידה של מתח הול 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ כפונקציה של הטמפ'
+\end_layout
+
+\begin_layout Standard
+חיברנו את המולטימטר במקביל למתח הול 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ וכילנו אותו להיות אפס כאשר הזרם במערכת מתאפס.
+ קבענו את הזרם 
+\begin_inset Formula $I_{p}=30\pm1mA$
+\end_inset
+
+ ואת השדה המגנטי ל
+\begin_inset Formula $300\pm1mT$
+\end_inset
+
+ ולבסוף חיממנו את המערכת עד כ
+\begin_inset Formula $140^{\circ}$
+\end_inset
+
+ צלזיוס.
+ במהלך ההתקררות של המערכת לטמפ' החדר צילמנו את המערכת ומכשירי המדידה ולאחר
+ מכן חילצנו מהם את מדידות הטמפ' ומתח הול.
+\end_layout
+
+\begin_layout Standard
+כפי שנחזה מהתדריך לפי נוסחה )?( 
+\begin_inset Formula $R_{H}$
+\end_inset
+
+ מחליף סימן ומכאן ש
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ מחליף סימן, לכן חישבנו את 
+\begin_inset Formula $\ln\left|U_{H}\right|$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+, התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part5_1.png
+	lyxscale 50
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+:
+\series default
+ 
+\begin_inset Formula $\ln\left|U_{H}\right|$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מייצג את אחד חלקי טמפ' המערכת ב
+\begin_inset Formula $K^{-1}$
+\end_inset
+
+ וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ את לן המתח הנדגם )בערך מוחלט(.
+ הנקודות הכחולות מייצגות את הדגימות .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בטמפ' גבוהות כאשר המל
+\begin_inset Quotes erd
+\end_inset
+
+מ בתחום האינטרינזי מתקיים 
+\begin_inset Formula 
+\[
+U_{H}\sim\frac{1}{n_{i}}\sim e^{\frac{E_{g}}{2k_{B}T}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן 
+\begin_inset Formula 
+\[
+\ln U_{H}=K+\frac{E_{g}}{2k_{B}}T^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נזהה את התחום הלינארי עבור הטמפ' הגבוהות ונבצע עליו רגרסיה לינארית, התקבל
+ הגרף הבא )טמפ' 
+\begin_inset Formula $120^{\circ}-140^{\circ}$
+\end_inset
+
+(:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part5_2.png
+	lyxscale 50
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\numeric off
+:
+\series default
+ 
+\begin_inset Formula $\ln\left|U_{H}\right|$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מייצג את אחד חלקי טמפ' המערכת ב
+\begin_inset Formula $K^{-1}$
+\end_inset
+
+ וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ את לן המתח הנדגם )בערך מוחלט(.
+ הנקודות הכחולות מייצגות את הדגימות והקו הכתום את הרגרסיה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ביצענו רגרסיה לינארית על התחום הלינארי )טמפ' גבוהות( והתקבלה הפונקציה הבא:
+\begin_inset Formula 
+\[
+y=\left(1.48\pm0.08\right)\cdot10^{3}x+\left(-8.9\pm0.2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עם התאמה של 
+\begin_inset Formula $R^{2}=0.9939$
+\end_inset
+
+.
+ מתוך השיפוע נחלץ את האנרגיה 
+\begin_inset Formula 
+\[
+m=\frac{E_{g}}{2k_{B}}\Rightarrow E_{g}=2mk_{B}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ונקבל 
+\begin_inset Formula 
+\[
+E_{g}=0.26\pm0.02eV
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*

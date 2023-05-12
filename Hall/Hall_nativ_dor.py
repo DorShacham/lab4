@@ -125,11 +125,11 @@ if RH1<0:
 else:
     print("The s/c is of N-type!")
 
-n = 1/np.abs(RH1)/e
-print("n=",n,"m^-3")
+n1 = 1/np.abs(RH1)/e
+print("n=",n1,"m^-3")
 
-mu = np.abs(RH1)/rho0
-print("mu=",mu,"m^2*(ohm*C)-1")
+mu1 = np.abs(RH1)/rho0
+print("mu=",mu1,"m^2*(ohm*C)-1")
 
 
 #%% part 2
@@ -164,11 +164,11 @@ if RH2<0:
 else:
     print("The s/c is of N-type!")
 
-n = 1/np.abs(RH2)/e
-print("n=",n,"m^-3")
+n2 = 1/np.abs(RH2)/e
+print("n=",n2,"m^-3")
 
-mu = np.abs(RH2)/rho0
-print("mu=",mu,"m^-4*(ohm*C)-1")
+mu2 = np.abs(RH2)/rho0
+print("mu=",mu2,"m^-4*(ohm*C)-1")
 
 rel_dif = np.abs(RH1-RH2)/max(np.abs(RH1.n),np.abs(RH2.n)) * 100
 print("The differnce between RH1 to RH2 is:",rel_dif,"%")
@@ -191,18 +191,39 @@ Up = uarray(Up,Up_err)
 
 R = Up/Ip
 
-fig1,fit = one4all(xdata=uval(B),ydata=uval(R),xerr=uerr(B),yerr=uerr(R),xlabel=r"$B[T]$",ylabel=r"$R[\Omega]$",mode="linear")
+
+
+fig1,fit = one4all(xdata=uval(B),ydata=uval(R),xerr=uerr(B),yerr=uerr(R),xlabel=r"$B[T]$",ylabel=r"$R[\Omega]$",mode="linear",show=False)
 Reg_print(fit)
 plt.figure(fig1)
+
+
+muH = 0.19#mu1.n
+muE = 0.39
+p = n1.n
+ni = 2.4e19
+n = ni**2/p
+
+rxx = lambda B: 1/(e*(muE*n+muH*p))+B**2*(muE*ni**2*muH*(muE+muH)**2)/(e*(muE*n+muH*p)**3)
+ryx = lambda B: B*(muH**2*p-muE**2*n)/(e*(muE*n+muH*p)**2)
+theta = lambda B: ryx(B)/rxx(B)
+
+f_geo = lambda B: 4*rxx(B)/(np.pi*d)*theta(B)**2/((np.pi/2)**2-theta(B)**2)+uval(R[0])
+plt.plot(uval(B),f_geo(uval(B)),label="Geometric expection")
+
+f_hall = lambda B: rxx(B)*L/(W*d)
+plt.plot(uval(B),f_hall(uval(B)),label="Double carrie expection")
+
+plt.legend()
+
+
+
 plt.savefig("fig/part3_1")
 
-fig2,fit = one4all(xdata=uval(BB),ydata=uval(R),xerr=uerr(BB),yerr=uerr(R),xlabel=r"$B^2[T^2]$",ylabel=r"$R[\Omega]$",mode="linear")
+fig2,fit = one4all(xdata=uval(BB),ydata=uval(R),xerr=uerr(BB),yerr=uerr(R),xlabel=r"$B^2[T^2]$",ylabel=r"$R[\Omega]$",mode="linear",show=False)
 Reg_print(fit)
 plt.figure(fig2)
-C=RH1.n
-f = lambda BB: 4*rho0.n/(np.pi*d)*BB*(C/rho0.n)**2/((np.pi/2)**2-BB*(C/rho0.n)**2)+uval(R[0])
-plt.plot(uval(BB),f(uval(BB)),label="Geometric expection")
-plt.legend()
+
 
 
 
@@ -245,8 +266,9 @@ plt.savefig("fig/part4_2")
 
 
 m = ufloat(fit.slope,fit.stderr*2)
-kB = physical_constants["Boltzmann constant in eV/K"]
+kB = physical_constants["Boltzmann constant in eV/K"][0]
 Eg = 2*kB*m
+print(f"Eg = {Eg}")
 
 
 #%% part 5
@@ -258,26 +280,45 @@ I = 30e-3 #A
 I_err = 1e-3
 I = ufloat(I,I_err)
 
-TUH = [(137,4.94), (136,5.02),(134,5.04),  (133,5.14), (132,5.20), (131,5.25), (130,5.30), (129,5.32), (128,5.37), (127,5.41), (126,5.45), (125,5.47),(123,5.47), (120,5.41),
+TUH = [(137,4.95), (136,5.00),(135,5.04),(134,5.09),  (133,5.14), (132,5.20), (131,5.25), (130,5.30), (129,5.32), (128,5.37), (127,5.41), (126,5.45), (125,5.47),(123,5.47), (120,5.41),
        (119,5.36),  (117,5.24), (115,4.95), (112,4.4),(109,3.24),(106,1.99),    (102,-0.59),(99,-3.48),(93,-11),(85,-23.23),    (75,-40.71),(65,-53.75),
        (55,-60.52), (45,-62.96),    (35,-63.43),    (31,-63.27)]
-T = UH =[]
+T =[]
+UH = []
 for t,uh in TUH:
     T.append(t)
     UH.append(uh)
 
-
-
 T = np.array(T) + 273.15 #K
 UH = np.array(UH)*1e-3 #V
-
-UH = UH[T>(130 + 273.15)]
-T = T[T>(130 + 273.15)]
-
 T_err = 1 #k
-UH_err = 1e-4 #V
+UH_err = 1e-5 #V
 
-#T = uarray(T,T_err)
-#UH = uarray(UH,UH_err)
+T = uarray(T,T_err)
+UH = uarray(UH,UH_err) 
 
-fig,fit = one4all(xdata=(1/T),ydata=(np.log(UH)),xlabel=r"$T^{-1}[K^{-1}]$",ylabel=r"$\ln(U_p)$",mode="linear")
+# UH = UH[T>(130 + 273.15)]
+# T = T[T>(130 + 273.15)]
+
+
+logU = np.array([log(abs(u)) for u in UH])
+
+
+fig,fit = one4all(xdata=uval(1/T),ydata=uval(logU),xerr=uerr(1/T),yerr=uerr(logU),xlabel=r"$T^{-1}[K^{-1}]$",ylabel=r"$ln(|U_H|)$",mode="none",show=False)
+plt.figure(fig)
+plt.savefig("fig/part5_1")
+
+N = 11
+X = (1/T)[:N]
+Y = (logU)[:N]
+fig,fit = one4all(xdata=uval(X),ydata=uval(Y),xerr=uerr(X),yerr=uerr(Y),xlabel=r"$T^{-1}[K^{-1}]$",ylabel=r"$\ln(U_H)$",mode="linear",show=False)
+plt.figure(fig)
+plt.savefig("fig/part5_2")
+
+Reg_print(fit)
+
+
+m = ufloat(fit.slope,fit.stderr*2)
+kB = physical_constants["Boltzmann constant in eV/K"][0]
+Eg = 2*kB*m
+print(f"Eg = {Eg}")
