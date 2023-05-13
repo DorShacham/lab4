@@ -584,7 +584,7 @@ today
 \noun default
 \color inherit
 נמדדו המתחים כתלות בטמפרטורה ומתלות זו בחלק מתחום מהמדידות הוסק פער האנרגיה
- - הפרש האנרגיה בין פס ההולכה לפס הערכיות, ערך זה הושבה לערך המקובל בספרות.
+ - הפרש האנרגיה בין פס ההולכה לפס הערכיות, ערך זה הושווה לערך המקובל בספרות.
  
 \end_layout
 
@@ -3820,7 +3820,15 @@ noprefix "false"
 \begin_inset Formula $R_{H}^{\left(1\right)}=0.0076\pm0.0002\frac{m^{3}}{C}$
 \end_inset
 
-, שנושאי המטען הם חיוביים והמל
+ )שגיאה יחסית של כ
+\numeric on
+
+\begin_inset Formula $2\%$
+\end_inset
+
+
+\numeric off
+( , שנושאי המטען הם חיוביים והמל
 \begin_inset Quotes erd
 \end_inset
 
@@ -3832,11 +3840,23 @@ noprefix "false"
 \begin_inset Formula $p^{\left(1\right)}=\left(8.2\pm0.2\right)10^{20}m^{-3}$
 \end_inset
 
- והמוביליות שלהם היא 
+)שגיאה יחסית של כ
+\begin_inset Formula $2.5\%$
+\end_inset
+
+( והמוביליות שלהם היא 
 \begin_inset Formula $\mu_{h}^{\left(1\right)}=0.229\pm0.005\frac{m^{2}}{V\cdot sec}$
 \end_inset
 
-.
+ )שגיאה יחסית של כ
+\numeric on
+
+\begin_inset Formula $2\%$
+\end_inset
+
+
+\numeric off
+( .
 \end_layout
 
 \begin_layout Standard
@@ -3891,7 +3911,15 @@ noprefix "false"
 \begin_inset Formula $R_{H}^{\left(2\right)}=0.0072\pm0.0003\frac{m^{3}}{C}$
 \end_inset
 
- , שנושאי המטען הם חיוביים והמל
+ )שגיאה יחסית של כ
+\numeric on
+
+\begin_inset Formula $4\%$
+\end_inset
+
+
+\numeric off
+( , שנושאי המטען הם חיוביים והמל
 \begin_inset Quotes erd
 \end_inset
 
@@ -3903,11 +3931,27 @@ noprefix "false"
 \begin_inset Formula $p^{\left(2\right)}=\left(8.6\pm0.3\right)10^{20}m^{-3}$
 \end_inset
 
- והמבוליות שלהם היא 
+)שגיאה יחסית של כ
+\numeric on
+
+\begin_inset Formula $3.5\%$
+\end_inset
+
+
+\numeric off
+( והמוביליות שלהם היא 
 \begin_inset Formula $\mu_{h}^{\left(2\right)}=0.217\pm0.008\frac{m^{2}}{V\cdot sec}$
 \end_inset
 
-.
+ )שגיאה יחסית של כ
+\numeric on
+
+\begin_inset Formula $3.7\%$
+\end_inset
+
+
+\numeric off
+(.
 \end_layout
 
 \begin_layout Standard
@@ -3937,8 +3981,11 @@ noprefix "false"
 \end_inset
 
  התקבלה חפיפה מסוימת בין תחומי השגיאה של הערכים.
- ואומנם הערכים המקובלים בספרות של המוביליות לא מוכלים בתחומי השגיאה של המדידות
- של שני החלקים, כש 
+ ואומנם הערכים המקובלים בספרות [
+\numeric on
+3
+\numeric off
+] של המוביליות לא מוכלים בתחומי השגיאה של המדידות של שני החלקים, כש 
 \begin_inset Formula $\mu_{h,literature}=0.19\frac{m^{2}}{Vs}$
 \end_inset
 
@@ -3949,6 +3996,342 @@ noprefix "false"
 \end_layout
 
 \begin_layout Subsubsection*
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+חלק
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $3$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מדדנו את ההתנגדות במל
+\begin_inset Quotes erd
+\end_inset
+
+מ כפונקציה של השדה המגנטי המופעל עליו.
+ בדקנו השפעה של שתי תופעות של השינוי בהתנגדות עקב השדה המגנטי - הופעה של
+ שני סוגי נושאי מטען ואפקט שנובע מהגאומטריה של המל
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ מצאנו שיש התאמה טובה של הגרף 
+\begin_inset Formula $\left(R^{2}=0.9965\right)$
+\end_inset
+
+ לפונקציה לינארית בריבוע השדה, כפי שצפוי מנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rxx,rxy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ אשר מתחשבת באפקט של שני סוגי נושאי מטען.
+ בנוסף, חשיבנו את האפקט הגאומטרי התיאורטי בעזרת גדלים שנמצאו במהלך הניסוי
+ וגדלים מקובלים בספרות [
+\numeric on
+3
+\numeric off
+] וקיבלנו שהוא זניח לעומת ההתנגדות שהתקבלה.
+ משתי הסיבות הללו קבענו שהאפקט הראשון )שני סוגי נושאי מטען( הינו האפקט הדומיננטי
+ בהשפעת השדה המגנטי על ההתנגדות )בתנאים הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+חלק
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+בחלק 
+\begin_inset Formula $4$
+\end_inset
+
+ מדדנו את המתח 
+\begin_inset Formula $U_{p}$
+\end_inset
+
+ כפונקציה של הטמפ', ראינו שבטמפ' גבוהות יש קשר לינארי בין 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+ לבין 
+\begin_inset Formula $U_{p}^{-1}$
+\end_inset
+
+ כפי שהיינו מצפים מהתאוריה של מל
+\begin_inset Quotes erd
+\end_inset
+
+מ אינטריזי.
+ בנוסף בעזרת נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:part4_5_eq"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ חילצנו את פער האנרגיה בין פסי ההולכה של המל
+\begin_inset Quotes erd
+\end_inset
+
+מ וקיבלנו 
+\begin_inset Formula $E_{g}=0.77\pm0.02eV$
+\end_inset
+
+ כאשר השגיאה היחסית היא 
+\begin_inset Formula $2.6\%$
+\end_inset
+
+ מהערך הנמדד.
+ על פי הספרות [
+\numeric on
+2
+\numeric off
+] ערך פער האנרגיה משתנה כתלות בטמפ', בטווח הטמפ' בו חישבנו את האנרגיה )
+\begin_inset Formula $120^{\circ}-140^{\circ}C$
+\end_inset
+
+( על פי הספרות מתקיים:
+\begin_inset Formula 
+\[
+E_{g}^{theory}\in\left(0.745,0.756\right)eV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר אכן יש חפיפה עם הערך התיאורטי.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+חלק
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+בחלק 
+\begin_inset Formula $5$
+\end_inset
+
+ ביצענו מדידה דומה עבור 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ כפונקציה של הטמפ'.
+ ראינו שמתח הול החליף סימן במהלך שינוי הטמפ' בהלימה עם נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rxx,rxy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ עבור מל
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $p-type$
+\end_inset
+
+.
+ בדומה לחלק 
+\begin_inset Formula $4$
+\end_inset
+
+ הבחנו שעבור טמפ' גבוהות יש התנהגות של מל
+\begin_inset Quotes erd
+\end_inset
+
+מ אינטרנזי ולכן יש התנהגות לינארית וממנה בוצע ניסיון לחלץ את פער האנרגיה.
+ התקבל 
+\begin_inset Formula $E_{g}=0.26\pm0.02eV$
+\end_inset
+
+ עם שגיאה יחסית של 
+\begin_inset Formula $7.8\%$
+\end_inset
+
+, תוצאה זו רחוקה משמעותית מן תוצאת המדידה הקודמת ומהתוצאה התיאורטית ועל
+ כן נסיק שאין אפשרות לבצע מדידת פער האנרגיה בדרך זו ממל
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $p-type$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
@@ -3957,6 +4340,440 @@ noprefix "false"
 
 \begin_layout Section*
 מסקנות
+\end_layout
+
+\begin_layout Standard
+בחלקים מסוימים בניסוי קיבלנו תוצאות המתיישבות עם הציפייה עקב התיאוריה בעוד
+ שבחלקים אחרים היו פערים.
+ בחלקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ הקשרים שציפינו שיהיו לינארים אכן היו בהתאמה טובה מאוד לינארים עם ערכי 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ המקיימים 
+\begin_inset Formula $R^{2}>0.99$
+\end_inset
+
+.
+ בנוסף, הערכים שהתקבלו בשני החלקים חופפים אחד לשני בתחומי השגיאה שלהם כשהשגיאות
+ היחסיות של הגדלים שהוסקו היו קטנים מ
+\begin_inset Formula $5\%$
+\end_inset
+
+.
+ ואומנם ערך המוביליות שאליו השווינו את הערכים שהתקבלו לא תואם לערכים שקיבלנו.
+ הנחנו שפער זה התקבל בגלל שגיאה שיטתית הקשורה למערכת, כדי לאשש הנחה זו היינו
+ מחפשים דרכים נוספת למצוא את המוביליות של החורים באותה מערכת ניסוי ולראות
+ אם התוצאות עומדת בקנה אחד עם התוצאות של שני החלקים או דווקא לערך מהספרות.
+\begin_inset Newline newline
+\end_inset
+
+ בחלק 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+, קיבלנו שהתלות של התנגדות הדגם בשדה המגנטי הפועל עליו היא ריבועית בהתאמה
+ טובה עם 
+\begin_inset Formula $R^{2}=0.9965$
+\end_inset
+
+.
+ כש
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רצינו לבדוק אילו מבין האפקטים התורמים למגנטורסיסטנס הם משמעותיים יותר במערכת
+ שלנו קיבלנו שהאפקט הגיאומטרי זניח לעומת האפקט עקב קיום של שני סוגי נושאי
+ מטען.
+\begin_inset Newline newline
+\end_inset
+
+בחלקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ כחיפשנו את פער האנרגיה ראינו שבחלק 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ ערך פער האנרגיה 
+\begin_inset Formula $E_{g}$
+\end_inset
+
+ שהתקבל מכיל בתחום השגיאה שלו את תחום הערך המקובל בספרות ואומנם הערך שחולץ
+ מהמדידות בחלק 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היה רחוק מהערך המקובל והערך שהתקבל בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הקודם.
+ אומנם שתי המדידות בוצעו בדרכים דומות, כששתיהן איפשרו לקיחת מדידות מרובות
+ ולא נתנו הרבה מקום לשגיאה אנושית בלקיחת המדידות על ידי שימוש במצלמה שמתעדת
+ מדידות לאורך זמן.
+ אך יתכן והשיטה דרכה חולץ 
+\begin_inset Formula $E_{g}$
+\end_inset
+
+ בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מניחה הנחות שגויות למשל שניתן להעריך את 
+\begin_inset Formula $E_{g}$
+\end_inset
+
+ על ידי שימוש ב 
+\begin_inset Formula $n_{i}\propto e^{-\frac{E_{g}}{2k_{B}T}}$
+\end_inset
+
+.
+ כדי להעריך בכל זאת את פער האנרגיה במדידה זו יש להגיע להבנה טובה יותר של
+ התיאוריה ולמצוא היכן הקירובים שהשתמשנו בהם קורסים וכיצד ניתן לשפר אותם.
+\end_layout
+
+\begin_layout Standard
+בסך הכל כמסקנה כללית מהניסוי נראה שאפקט הול אכן מתקיים ומערכת הניסוי והשיטה
+ בה הוא נערך מאפשרת לחזות ממנו תכונות של המל
+\begin_inset Quotes erd
+\end_inset
+
+מ, אך בחלקים מסוימים )בעיקר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+( יתכן ונדרשת זהירות בקירובים ובהנחות עליהן אנו מסתמכים.
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
@@ -3972,7 +4789,31 @@ noprefix "false"
 \numeric on
 1
 \numeric off
-( תדריך __.
+( תדריך אפקט הול.
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\numeric off
+( 
+\series bold
+)מקור של איתי(
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+3
+\numeric off
+( 
+\series bold
+
+\begin_inset Formula $\text{Jensen,\,H.H. (1972).\,Geometrical effects in measurments of magnetoresisance.\,Journal of Physics C: Solid State Physics, 2867.}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
