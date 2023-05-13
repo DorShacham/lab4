@@ -178,7 +178,8 @@ status open
 \align center
 
 \series bold
-כותרת
+אפקט הול במוליך למחצה עשוי גרמניום - מציאת סוג תכונות נושאי המטען, מגנטורסיסטנס
+ ופער האנרגיה בין פס ההולכה לפס הערכיות
 \end_layout
 
 \begin_layout Plain Layout
@@ -366,6 +367,237 @@ today
 \end_layout
 
 \begin_layout Standard
+בניסוי זה נחקרה התופעה של אפקט הול במוליך למחצה העשוי מדגם גרמניום )
+\begin_inset Formula $Ge$
+\end_inset
+
+(.
+ הניסוי בוצע במספר שלבים שבכל אחד מהם חובר המוליך למחצה למעגל חשמלי בתנאים
+ משתנים )כגון זרם משתנה העובר דרך המוליך, שדה מגנטי הניצב לדוגמית וטמפרטורה(
+ נמדדו תכונות המעגל כתלות בתנאים אלו ומהם הוסקו תכונות המערכת.
+ בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, כחלק מקדים על מנת למדוד את התנגדות הדגם נמדד המתח עליו כתלות בזרם.
+ לאחר מכן, בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, הופעל שדה מגנטי קבוע ונמדד מתח הול כתלות בזרם, לפי מתח זה וכיוון השדה
+ המגנטי נקבע סוג נושאי המטען, צפיפותם והמוביליות שלהם - ערכים שהשווינו לערכים
+ המקובלים בספרות ונמצאו להיות 
+\begin_inset Quotes eld
+\end_inset
+
+?
+\begin_inset Quotes erd
+\end_inset
+
+.
+ בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, הוסקו גדלים אלו במדידה אחרת, של מתח הול כאשר הזרם היה קבוע והשדה הומגנטי
+ הוא זה שהשתנה.
+ בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, נמדדה התנגדות הדגם כתלות בשדה המגנטי - תלות הנקראת מגנטורסיסטנס.
+ בדקנו האם התלות הנצפית מוסברת במידה מספקת על ידי קיום שני סוגי נושאי מטען
+ או שלאפקט של גודל סופי של הדגם יש גם תרומה לאפקט ואם כן איזה מהתופעות היא
+ הדומיננטית יותר.
+ בחלקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נמדדו המתחים כתלות בטמפרטורה ומתלות זו בחלק מתחום מהמדידות הוסק פער האנרגיה
+ - הפרש האנרגיה בין פס ההולכה לפס הערכיות, ערך זה הושבה לערך המקובל בספרות.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -374,6 +606,868 @@ today
 
 \begin_layout Section*
 מבוא
+\end_layout
+
+\begin_layout Standard
+מערכת הניסוי בחלקיו השונים הורכבה מרכיב 
+\begin_inset Quotes eld
+\end_inset
+
+מודול-אפקט הול
+\begin_inset Quotes erd
+\end_inset
+
+ המכיל דגם 
+\begin_inset Formula $Ge$
+\end_inset
+
+ שניתן לשלוט דרכו על הזרם 
+\begin_inset Formula $I_{p}$
+\end_inset
+
+ העובר ברכיב, במתח ההול ולמדוד את המתחים, 
+\begin_inset Formula $U_{p}$
+\end_inset
+
+ המתח במעגל דרכו זורם הזרם דרך הרכיב ואת 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+.
+ כמו כן, המרכיב מכיל צג בו ניתן לצפות בטמפרטורה של הדגם 
+\begin_inset Formula $T_{p}$
+\end_inset
+
+ או ב
+\begin_inset Formula $I_{p}$
+\end_inset
+
+.
+ בנוסף ישנה אפשרות לחמם את הדגם על ידי לחיצה על כפתור חימום.
+ הרכיב מוצג בתמונה הבאה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/hall_intro_module_pic.png
+	lyxscale 50
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+איור
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\series default
+חלקו הקדמי של מרכיב 
+\begin_inset Quotes eld
+\end_inset
+
+מודול- אפקט הול
+\begin_inset Quotes erd
+\end_inset
+
+ )איור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתדריך(
+\end_layout
+
+\begin_layout Plain Layout
+בתמונה מוצג דגם ה 
+\begin_inset Formula $Ge$
+\end_inset
+
+ והמעגל אליו הוא מחובר עם מתגי השליטה בו ,הצג וחיבורים למדידת המתח.
+ כפתור החימום נמצא בצד האחורי.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המודול הורכב על גבי ליבת ברזל בצורת 
+\begin_inset Formula $U$
+\end_inset
+
+ שעל כל זרוע בה הוצב סליל בצורה כזו כך שבעת הזרמת זרם דרך הסליל נוצר שדה
+ מכנטי דרך הליבה ועובר דרך רכיב ה
+\begin_inset Formula $Ge$
+\end_inset
+
+ שעל המודול.
+ 
+\end_layout
+
+\begin_layout Standard
+סידור מערכת הניסוי בשלמותו, יחד עם ספק הזרם, מד המתח והמגנטומטר מוצגים בתמונה
+ הבאה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/hall_intro_experiment_pic.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+איור
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\series default
+תמונה של מערכת הניסוי עם מכשירי המדידה )איור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתדריך(
+\end_layout
+
+\begin_layout Plain Layout
+בצד ימין ניתן לראות את הולטמטר מתחת למגנטומטר, באמצע את המודול שהורכב על
+ הליבה המגנטית והסלילים ומימין את ספק הזרם.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפקט הול במוליך מלבני הוא אפקט שבו בעת הזרמת זרם דרך מוליך, עקב הפעלת שדה
+ מגנטי ניצב לכיוון הזרם, נוצר כוח על נושאי המטען הניצב לזרם ולשדה )לפי כוח
+ לורנץ( וגורם להצטברות מטענים מנוגדים בשניים מדפנות המוליך - הצטברות המטענים
+ על הדפנות מבוטאת בהפרש מתחים הניתן למדידה הנקרא מתח הול ומסומן בניסוי זה
+ ב
+\begin_inset Formula $U_{H}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+במקרה שבו יש נושא מטען יחיד עקרי, בהנתן זרם דרך הדגם 
+\begin_inset Formula $I-[A]$
+\end_inset
+
+, עובי הדגם 
+\begin_inset Formula $d-[m]$
+\end_inset
+
+ ושדה מגנטי 
+\begin_inset Formula $B-[T]$
+\end_inset
+
+ קבועים הביטוי למתח הול פרופורציוני לגודל הנקרא קבוע הול 
+\begin_inset Formula $R_{H}-[\frac{m^{3}}{C}]$
+\end_inset
+
+ על ידי הנוסחא הבאה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(1)\,R_{H}=\frac{U_{H}d}{IB}=\frac{1}{nq}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n-[\frac{1}{m^{3}}]$
+\end_inset
+
+ היא צפיפות המטען ו
+\begin_inset Formula $q-[C]$
+\end_inset
+
+ הוא מטען נושאי המטען.
+ 
+\end_layout
+
+\begin_layout Standard
+המוביליות של נושאי המטען 
+\begin_inset Formula $\mu-[\frac{m^{2}}{V\cdot sec}]$
+\end_inset
+
+ נתונה על ידי הקשר הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(2)\,\mu=\frac{\sigma}{nq}=\frac{|R_{H}|}{\rho_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $\sigma-[\frac{1}{\Omega\cdot m}]$
+\end_inset
+
+ היא המוליכות ו 
+\begin_inset Formula $\rho_{0}$
+\end_inset
+
+ היא ההתנגדות הסגולית של הדגם בהנחה של חומר איזוטרופי כשהשדה המגנטי הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ונתון על ידי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(3)\,\rho_{0}=\frac{R_{0}\cdot d\cdot W}{L}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $R_{0}-[\Omega]$
+\end_inset
+
+ היא התנגדות הדגם כשלא מופעל עליו שדה מגנטי , 
+\begin_inset Formula $W-[m]$
+\end_inset
+
+ רוחב הדגם ו
+\begin_inset Formula $L-[m]$
+\end_inset
+
+ הוא אורכו.
+ במערכת שלנו 
+\begin_inset Formula $d=1[mm],\,L=16[mm]\,W=10[mm]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+בחלקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של הניסוי השתמשנו בהתאמה של המדידות לנוסחאות אלה כדי למצוא את המוביליות
+ של נושאי המטען בהנחה שיש נושא מטען יחיד עיקרי.
+\end_layout
+
+\begin_layout Standard
+בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, אנו מודדים את 
+\begin_inset Formula $U_{p}$
+\end_inset
+
+ כתלות בשדה המגנטי ובודקים האם ישנה התאמה להיותה של הרכיבים האלכסוניים של
+ טנזור ההתנגדות הסגולית תלויה ריבועית בשדה המגנטי ושהרכיבים הלא אלכסוניים
+ תלויים לינארית לפי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(4)\,\rho_{xx}=\frac{1}{e(\mu_{e}n+\mu_{h}p)}+B^{2}\frac{\mu_{e}n\mu_{h}p(\mu_{e}+\mu_{h})^{2}}{e\cdot(\mu_{e}n+\mu_{p}p)^{3}}\,\rho_{yx}=-\rho_{xy}=B\cdot\frac{\mu_{h}^{2}p-\mu_{e}^{2}n}{e\cdot(\mu_{e}n+\mu_{p}p)^{2}}=B\cdot R_{H}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $\mu_{e,p}-[\frac{m^{2}}{V\cdot sec}]$
+\end_inset
+
+ הן המוביליות של האלקטרונים )
+\begin_inset Formula $e$
+\end_inset
+
+( או החורים )
+\begin_inset Formula $p$
+\end_inset
+
+(, 
+\begin_inset Formula $p-[\frac{1}{m^{3}}]$
+\end_inset
+
+ צפיפות החורים ו 
+\begin_inset Formula $e-[C]$
+\end_inset
+
+ הוא גודל מטען נושאי המטען שבמקרה שלנו הוא כמטען האלקטרון.
+ בנוסף 
+\begin_inset Formula $R_{H}$
+\end_inset
+
+ מוגדר בנוסחא זו ברכיב 
+\begin_inset Formula $\rho_{yx}$
+\end_inset
+
+ עבור יותר מנושא מטען אחד )שונה מההגדרה הקודמת(.
+\end_layout
+
+\begin_layout Standard
+קיימת תלות נוספת של שינוי ההתנגדות של הדגם כתלות בשדה המגנטי עקב אפקט גיאומטרי
+ הנתון לפי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(5)\,R(B)-R(0)=\frac{4\rho_{xx}}{\pi d}\frac{\Theta^{2}}{(\frac{\pi}{2})^{2}-\Theta^{2}}=\frac{4}{\pi d}\frac{\rho_{xx}\rho_{xy}^{2}}{(\frac{\pi}{2})^{2}-\rho_{xy}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אנו מודדים איזה מן ההשפעות נצפית בצורה משמעותית יותר בתוצאות הניסוי שלנו.
+\end_layout
+
+\begin_layout Standard
+במוליכים למחצה כמו דגם ה
+\begin_inset Formula $Ge$
+\end_inset
+
+ איתו עבדו קיים קשר בין טמפרטורת הרכיב להתנגדות שלו - קשר זה נבדק בחלקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ כשהציפיה מהתיאוריה היא שיתקיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(6)\,\sigma=\sigma_{0}\cdot e^{-\frac{E_{g}}{2k_{B}T}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $\sigma-[\frac{sec^{3}A^{2}}{kg\cdot m^{3}}]$
+\end_inset
+
+ היא המוליכות הסגולית, 
+\begin_inset Formula $k_{B}=1.38\cdot10^{-23}[\frac{J}{K}]$
+\end_inset
+
+ קבוע בולצמן, 
+\begin_inset Formula $E_{g}-[J]$
+\end_inset
+
+ פער האנרגיה ו
+\begin_inset Formula $T-[K]$
+\end_inset
+
+ טמפרטורת הדגם.
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
