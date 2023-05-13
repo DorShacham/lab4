@@ -270,7 +270,6 @@ kB = physical_constants["Boltzmann constant in eV/K"][0]
 Eg = 2*kB*m
 print(f"Eg = {Eg}")
 
-
 #%% part 5
 B= 300e-3 #T
 B_err =1e-3 

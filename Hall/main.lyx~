@@ -3541,6 +3541,11 @@ E_{g}=0.26\pm0.02eV
 
 \end_layout
 
+\begin_layout Standard
+נשים לב שערך זה הוא כשליש מהערך הקודם שחישבנו עבור האנרגיה, נדון בפער זה
+ בדיון.
+\end_layout
+
 \begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
@@ -3550,6 +3555,248 @@ E_{g}=0.26\pm0.02eV
 
 \begin_layout Section*
 דיון בתוצאות
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מדדנו את ההתנגדות במל
+\begin_inset Quotes erd
+\end_inset
+
+מ כפונקציה של השדה המגנטי המופעל עליו.
+ בדקנו השפעה של שתי תופעות של השינוי בהתנגדות עקב השדה המגנטי - הופעה של
+ שני סוגי נושאי מטען ואפקט שנובע מהגאומטריה של המל
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ מצאנו שיש התאמה טובה של הגרף 
+\begin_inset Formula $\left(R^{2}=0.9965\right)$
+\end_inset
+
+ לפונקציה לינארית בריבוע השדה, כפי שצפוי מנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rxx,rxy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ אשר מתחשבת באפקט של שני סוגי נושאי מטען.
+ בנוסף, חשיבנו את האפקט הגאומטרי התיאורטי בעזרת גדלים שנמצאו במהלך הניסוי
+ וגדלים מקובלים בספרות [
+\numeric on
+3
+\numeric off
+] וקיבלנו שהוא זניח לעומת ההתנגדות שהתקבלה.
+ משתי הסיבות הללו קבענו שהאפקט הראשון )שני סוגי נושאי מטען( הינו האפקט הדומיננטי
+ בהשפעת השדה המגנטי על ההתנגדות )בתנאים הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בחלק 
+\begin_inset Formula $4$
+\end_inset
+
+ מדדנו את המתח 
+\begin_inset Formula $U_{p}$
+\end_inset
+
+ כפונקציה של הטמפ', ראינו שבטמפ' גבוהות יש קשר לינארי בין 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+ לבין 
+\begin_inset Formula $U_{p}^{-1}$
+\end_inset
+
+ כפי שהיינו מצפים מהתאוריה של מל
+\begin_inset Quotes erd
+\end_inset
+
+מ אינטריזי.
+ בנוסף בעזרת נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:part4_5_eq"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ חילצנו את פער האנרגיה בין פסי ההולכה של המל
+\begin_inset Quotes erd
+\end_inset
+
+מ וקיבלנו 
+\begin_inset Formula $E_{g}=0.77\pm0.02eV$
+\end_inset
+
+ כאשר השגיאה היחסית היא 
+\begin_inset Formula $2.6\%$
+\end_inset
+
+ מהערך הנמדד.
+ על פי הספרות [
+\numeric on
+2
+\numeric off
+] ערך פער האנרגיה משתנה כתלות בטמפ', בטווח הטמפ' בו חישבנו את האנרגיה )
+\begin_inset Formula $120^{\circ}-140^{\circ}C$
+\end_inset
+
+(על פי הספרות מתקיים:
+\begin_inset Formula 
+\[
+E_{g}^{theory}\in\left(0.745,0.756\right)eV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר אכן יש חפיפה עם הערך התיאורטי.
+\end_layout
+
+\begin_layout Standard
+בחלק 
+\begin_inset Formula $5$
+\end_inset
+
+ ביצענו מדידה דומה עבור 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ כפונקציה של הטמפ'.
+ ראינו שמתח הול החליף סימן במהלך שינוי הטמפ' בהלימה עם נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rxx,rxy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ עבור מל
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $p-type$
+\end_inset
+
+.
+ בדומה לחלק 
+\begin_inset Formula $4$
+\end_inset
+
+ הבחנו שעבור טמפ' גבוהות יש התנהגות של מל
+\begin_inset Quotes erd
+\end_inset
+
+מ אינטרנזי ולכן יש התנהגות לינארית וממנה בוצע ניסיון לחלץ את פער האנרגיה.
+ התקבל 
+\begin_inset Formula $E_{g}=0.26\pm0.02eV$
+\end_inset
+
+ עם שגיאה יחסית של 
+\begin_inset Formula $7.8\%$
+\end_inset
+
+, תוצאה זו רחוקה משמעותית מן תוצאת המדידה הקודמת ומהתוצאה התיאורטית ועל
+ כן נסיק שאין אפשרות לבצע מדידת פער האנרגיה בדרך זו ממל
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $p-type$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
@@ -3574,6 +3821,26 @@ E_{g}=0.26\pm0.02eV
 1
 \numeric off
 ( תדריך __.
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\numeric off
+( 
+\series bold
+)מקור של איתי(
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+3
+\numeric off
+( 
+\series bold
+)המקור שמפנים אליו בדוח(
 \end_layout
 
 \begin_layout Section*

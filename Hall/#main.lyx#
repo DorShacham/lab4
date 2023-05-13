@@ -3592,11 +3592,7 @@ E_{g}=0.26\pm0.02eV
 \uwave default
 \noun default
 \color inherit
-
-\begin_inset Formula $3$
-\end_inset
-
-
+3
 \family roman
 \series medium
 \shape up
@@ -3628,39 +3624,17 @@ E_{g}=0.26\pm0.02eV
 \end_inset
 
 מ כפונקציה של השדה המגנטי המופעל עליו.
- בדקנו השפעה של שתי תופעות של השינוי בהתנגדות עקב השדה המגנטי - הופעה של
+ בדקנו, השפעה של שתי תופעות של השינוי בהתנגדות עקב השדה המגנטי - הופעה של
  שני סוגי נושאי מטען ואפקט שנובע מהגאומטריה של המל
 \begin_inset Quotes erd
 \end_inset
 
 מ.
  מצאנו שיש התאמה טובה של הגרף 
-\begin_inset Formula $\left(R^{2}=0.9965\right)$
+\begin_inset Formula $\left(R^{2}=\right)$
 \end_inset
 
- לפונקציה לינארית בריבוע השדה, כפי שצפוי מנוסחא 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:rxx,rxy"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- אשר מתחשבת באפקט של שני סוגי נושאי מטען.
- בנוסף, חשיבנו את האפקט הגאומטרי התיאורטי בעזרת גדלים שנמצאו במהלך הניסוי
- וגדלים מקובלים בספרות [
-\numeric on
-3
-\numeric off
-] וקיבלנו שהוא זניח לעומת ההתנגדות שהתקבלה.
- משתי הסיבות הללו קבענו שהאפקט הראשון )שני סוגי נושאי מטען( הינו האפקט הדומיננטי
- בהשפעת השדה המגנטי על ההתנגדות )בתנאים הנ
-\begin_inset Quotes erd
-\end_inset
-
-ל(.
+לפונקציה לינארית 
 \end_layout
 
 \begin_layout Standard
@@ -3835,16 +3809,6 @@ noprefix "false"
 ( 
 \series bold
 )מקור של איתי(
-\end_layout
-
-\begin_layout Standard
-
-\numeric on
-3
-\numeric off
-( 
-\series bold
-)המקור שמפנים אליו בדוח(
 \end_layout
 
 \begin_layout Section*
