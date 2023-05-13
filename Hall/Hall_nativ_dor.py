@@ -198,9 +198,9 @@ Reg_print(fit)
 plt.figure(fig1)
 
 
-muH = 0.19#mu1.n
+muH = mu2.n
 muE = 0.39
-p = n1.n
+p = n2.n
 ni = 2.4e19
 n = ni**2/p
 
@@ -212,7 +212,7 @@ f_geo = lambda B: 4*rxx(B)/(np.pi*d)*theta(B)**2/((np.pi/2)**2-theta(B)**2)+uval
 plt.plot(uval(B),f_geo(uval(B)),label="Geometric expection")
 
 f_hall = lambda B: rxx(B)*L/(W*d)
-plt.plot(uval(B),f_hall(uval(B)),label="Double carrie expection")
+# plt.plot(uval(B),f_hall(uval(B)),label="Double carrie expection")
 
 plt.legend()
 
