@@ -4797,9 +4797,38 @@ noprefix "false"
 \numeric on
 2
 \numeric off
-( 
+(
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
 \series bold
-)מקור של איתי(
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+
+\begin_inset Formula $\text{Y. P. VARSHNI.(1967).\ TEMPERATURE DEPENDENCE OF THE ENERGY GAP IN SEMICONDUCTORS:Physica,34\ (149-154)}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4807,8 +4836,33 @@ noprefix "false"
 \numeric on
 3
 \numeric off
-( 
+(
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
 \series bold
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
 
 \begin_inset Formula $\text{Jensen,\,H.H. (1972).\,Geometrical effects in measurments of magnetoresisance.\,Journal of Physics C: Solid State Physics, 2867.}$
 \end_inset
