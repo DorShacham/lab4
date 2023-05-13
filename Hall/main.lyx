@@ -40,9 +40,11 @@
 \makeatother
 \end_preamble
 \use_default_options true
+\begin_removed_modules
+eqs-within-sections
+\end_removed_modules
 \begin_modules
 theorems-ams
-eqs-within-sections
 figs-within-sections
 enumitem
 fixltx2e
@@ -648,7 +650,7 @@ today
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../../../../Documents/technion/semester8/lab4/lab4/Hall/fig/hall_intro_module_pic.png
+	filename fig/hall_intro_module_pic.png
 	lyxscale 50
 	scale 80
 
@@ -810,7 +812,7 @@ status open
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../../../../Documents/technion/semester8/lab4/lab4/Hall/fig/hall_intro_experiment_pic.png
+	filename fig/hall_intro_experiment_pic.png
 	lyxscale 50
 
 \end_inset
@@ -1241,7 +1243,11 @@ R_{H}=\frac{U_{H}d}{IB}=\frac{1}{nq}\label{eq:RH - simple}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\rho_{xx}=\frac{1}{e(\mu_{e}n+\mu_{h}p)}+B^{2}\frac{\mu_{e}n\mu_{h}p(\mu_{e}+\mu_{h})^{2}}{e\cdot(\mu_{e}n+\mu_{p}p)^{3}}\ \ \ \ \,\rho_{yx}=-\rho_{xy}=B\cdot\frac{\mu_{h}^{2}p-\mu_{e}^{2}n}{e\cdot(\mu_{e}n+\mu_{p}p)^{2}}=B\cdot R_{H}\label{eq:rxx,rxy}
+\rho_{ij}=\begin{cases}
+\frac{1}{e(\mu_{e}n+\mu_{h}p)}+B^{2}\frac{\mu_{e}n\mu_{h}p(\mu_{e}+\mu_{h})^{2}}{e\cdot(\mu_{e}n+\mu_{p}p)^{3}} & ij=xx\\
+B\cdot\frac{\mu_{h}^{2}p-\mu_{e}^{2}n}{e\cdot(\mu_{e}n+\mu_{p}p)^{2}}=B\cdot R_{H} & ij=yx\\
+-B\cdot\frac{\mu_{h}^{2}p-\mu_{e}^{2}n}{e\cdot(\mu_{e}n+\mu_{p}p)^{2}}=-B\cdot R_{H} & ij=xy
+\end{cases}\label{eq:rxx,rxy}
 \end{equation}
 
 \end_inset
@@ -1432,13 +1438,30 @@ R(B)-R(0)=\frac{4\rho_{xx}}{\pi d}\frac{\Theta^{2}}{(\frac{\pi}{2})^{2}-\Theta^{
 \noun off
 \color none
  כשהציפיה מהתיאוריה היא שיתקיים
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ שבטמפ' גבוהות כאשר המל
+\begin_inset Quotes erd
+\end_inset
+
+מ בתחום האינטרינזי מתקיים 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-(6)\,\sigma=\sigma_{0}\cdot e^{-\frac{E_{g}}{2k_{B}T}}
-\]
+\begin{equation}
+U_{H/p}\sim\frac{1}{n_{i}}\sim e^{\frac{E_{g}}{2k_{B}T}}\Rightarrow\ln U_{H/p}=K+\frac{E_{g}}{2k_{B}}T^{-1}\label{eq:part4_5_eq}
+\end{equation}
 
 \end_inset
 
@@ -1446,16 +1469,20 @@ R(B)-R(0)=\frac{4\rho_{xx}}{\pi d}\frac{\Theta^{2}}{(\frac{\pi}{2})^{2}-\Theta^{
 \end_layout
 
 \begin_layout Standard
-כש 
-\begin_inset Formula $\sigma-[\frac{sec^{3}A^{2}}{kg\cdot m^{3}}]$
+כאשר 
+\begin_inset Formula $K$
 \end_inset
 
- היא המוליכות הסגולית, 
-\begin_inset Formula $k_{B}=1.38\cdot10^{-23}[\frac{J}{K}]$
+ הוא קבוע פרופורציה חסר יחידות המתאים לפרופורציה בין 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ לאקספוננט, 
+\begin_inset Formula $k_{B}=8.617\cdot10^{-5}[\frac{eV}{K}]$
 \end_inset
 
  קבוע בולצמן, 
-\begin_inset Formula $E_{g}-[J]$
+\begin_inset Formula $E_{g}-[eV]$
 \end_inset
 
  פער האנרגיה ו
@@ -1574,7 +1601,7 @@ R(B)-R(0)=\frac{4\rho_{xx}}{\pi d}\frac{\Theta^{2}}{(\frac{\pi}{2})^{2}-\Theta^{
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../../../../Documents/technion/semester8/lab4/lab4/Hall/fig/part0_1.png
+	filename fig/part0_1.png
 	lyxscale 50
 	scale 80
 
@@ -1808,7 +1835,7 @@ R_{0}=53.3\pm0.9\Omega
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../../../../Documents/technion/semester8/lab4/lab4/Hall/fig/part1_1.png
+	filename fig/part1_1.png
 	lyxscale 50
 	scale 80
 
@@ -2148,7 +2175,7 @@ noprefix "false"
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../../../../Documents/technion/semester8/lab4/lab4/Hall/fig/part2_1.png
+	filename fig/part2_1.png
 	lyxscale 50
 	scale 80
 
@@ -2465,7 +2492,7 @@ noprefix "false"
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../../../../Documents/technion/semester8/lab4/lab4/Hall/fig/part3_2.png
+	filename fig/part3_2.png
 	lyxscale 40
 	scale 50
 
@@ -2473,7 +2500,7 @@ noprefix "false"
 
 
 \begin_inset Graphics
-	filename ../../../../Documents/technion/semester8/lab4/lab4/Hall/fig/part3_1.png
+	filename fig/part3_1.png
 	lyxscale 40
 	scale 50
 
@@ -2829,7 +2856,7 @@ noprefix "false"
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../../../../Documents/technion/semester8/lab4/lab4/Hall/fig/part4_1.png
+	filename fig/part4_1.png
 	lyxscale 50
 	scale 80
 
@@ -2928,20 +2955,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-\align center
-
-\series bold
-_להסביר את החלק הימני של הגרף_
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\series bold
-_להעביר את הפיתוחים הבאים למבוא_
-\end_layout
-
-\begin_layout Standard
 בחלקו השמאלי של הגרף המתייחס לטמפ' גבוהות ניתן לראות כי הגרף בקירוב טוב
  לינארי ניתן להבין זאת באופן הבא: 
 \end_layout
@@ -2951,39 +2964,21 @@ _להעביר את הפיתוחים הבאים למבוא_
 \begin_inset Quotes erd
 \end_inset
 
-מ נמצא במשטר האינטרינזי, במשטר זה מתקיים 
-\begin_inset Formula 
-\[
-n=p=n_{i}\sim e^{-\frac{E_{g}}{2k_{B}T}}
-\]
+מ נמצא במשטר האינטרינזי, לכן נעזר בנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:part4_5_eq"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-כמו כן 
-\begin_inset Formula 
-\[
-U_{p}=\frac{\rho_{xx}L}{Wd}I_{x},\rho_{xx}=\frac{1}{e\left(n\mu_{e}+\mu_{h}p\right)}=\frac{1}{n_{i}e\left(\mu_{e}+\mu_{h}\right)}
-\]
-
+ )בביטוי לפני ביצוע ה
+\begin_inset Formula $\ln$
 \end_inset
 
-
-\begin_inset Formula 
-\[
-\Rightarrow U_{p}^{-1}\sim n_{i}\sim e^{-\frac{E_{g}}{2k_{B}T}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-בנוסף, בטמפ' אלו מתקיים 
+(, בטמפ' אלו מתקיים 
 \begin_inset Formula $T^{-1}<<1$
 \end_inset
 
@@ -3015,20 +3010,21 @@ U_{p}^{-1}\sim1-\frac{E_{g}}{2k_{B}}\cdot T^{-1}
 \begin_inset Formula $T^{-1}$
 \end_inset
 
- במקרה זה ניתן לכתוב 
-\begin_inset Formula 
-\[
-U_{p}=Ke^{\frac{E_{g}}{2k_{B}T}}\Rightarrow\ln U_{p}=\frac{E_{g}}{2k_{B}}T^{-1}+\ln K
-\]
+ במקרה זה נעזר בחלק השני של הנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:part4_5_eq"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
- כאשר 
-\begin_inset Formula $K$
+ )לאחר ביצוע ה
+\begin_inset Formula $\ln$
 \end_inset
 
- קבוע כלשהו.
- 
+(.
 \end_layout
 
 \begin_layout Standard
@@ -3046,7 +3042,7 @@ U_{p}=Ke^{\frac{E_{g}}{2k_{B}T}}\Rightarrow\ln U_{p}=\frac{E_{g}}{2k_{B}}T^{-1}+
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../../../../Documents/technion/semester8/lab4/lab4/Hall/fig/part4_2.png
+	filename fig/part4_2.png
 	lyxscale 50
 	scale 80
 
@@ -3250,7 +3246,17 @@ E_{g}=0.77\pm0.02eV
 \end_layout
 
 \begin_layout Standard
-כפי שנחזה מהתדריך לפי נוסחה )?( 
+כפי שנחזה מהתדריך לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rxx,rxy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
 \begin_inset Formula $R_{H}$
 \end_inset
 
@@ -3272,7 +3278,7 @@ E_{g}=0.77\pm0.02eV
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../../../../Documents/technion/semester8/lab4/lab4/Hall/fig/part5_1.png
+	filename fig/part5_1.png
 	lyxscale 50
 	scale 80
 
@@ -3367,31 +3373,25 @@ status open
 \end_layout
 
 \begin_layout Standard
-בטמפ' גבוהות כאשר המל
-\begin_inset Quotes erd
-\end_inset
-
-מ בתחום האינטרינזי מתקיים 
-\begin_inset Formula 
-\[
-U_{H}\sim\frac{1}{n_{i}}\sim e^{\frac{E_{g}}{2k_{B}T}}
-\]
+בשנית עבור הטמפ' הגבוהות נעזר בנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:part4_5_eq"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-ולכן 
-\begin_inset Formula 
-\[
-\ln U_{H}=K+\frac{E_{g}}{2k_{B}}T^{-1}
-\]
-
+ ונזהה קשר לינארי בין 
+\begin_inset Formula $\ln\left(U_{H}\right)$
 \end_inset
 
+ ל
+\begin_inset Formula $T^{-1}$
+\end_inset
 
+.
 \end_layout
 
 \begin_layout Standard
@@ -3406,7 +3406,7 @@ U_{H}\sim\frac{1}{n_{i}}\sim e^{\frac{E_{g}}{2k_{B}T}}
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../../../../Documents/technion/semester8/lab4/lab4/Hall/fig/part5_2.png
+	filename fig/part5_2.png
 	lyxscale 50
 	scale 80
 
@@ -3539,6 +3539,11 @@ E_{g}=0.26\pm0.02eV
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+נשים לב שערך זה הוא כשליש מהערך הקודם שחישבנו עבור האנרגיה, נדון בפער זה
+ בדיון.
 \end_layout
 
 \begin_layout Section*
