@@ -3557,6 +3557,416 @@ E_{g}=0.26\pm0.02eV
 דיון בתוצאות
 \end_layout
 
+\begin_layout Subsection*
+חלק
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\end_layout
+
+\begin_layout Standard
+בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוסקה התנגדות הדגם לפי חוק אוהם על ידי מדידה של מתח כתלות בזרם וקיבלנו 
+\begin_inset Formula $R_{0}=53.3\pm0.9\Omega$
+\end_inset
+
+.
+ אומנם אין לנו ערך להשוות אליו אך ההתאמה לקשר הלינארי בין המתח לזרם הייתה
+ טובה עם 
+\begin_inset Formula $R^{2}=0.9992$
+\end_inset
+
+ לכן אנו מניחים לפי קריטריון זה שמדידה זו הייתה מוצלחת.
+\end_layout
+
+\begin_layout Subsection*
+חלקים
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+בחלקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ מצאנו את סוג נושאי המטען, המוביליות שלהם וצפיפותם בשתי דרכים שונות.
+\begin_inset Newline newline
+\end_inset
+
+ בחלק 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, מרגרסיה לינארית של מדידות 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $I_{p}$
+\end_inset
+
+ הוסק ממשוואה 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ קבוע הול 
+\begin_inset Formula $R_{H}^{\left(1\right)}=0.0076\pm0.0002\frac{m^{3}}{C}$
+\end_inset
+
+, שנושאי המטען הם חיוביים והמל
+\begin_inset Quotes erd
+\end_inset
+
+מ הוא מסוג 
+\begin_inset Formula $P$
+\end_inset
+
+ ,שצפיפות המטענים 
+\begin_inset Formula $p^{\left(1\right)}=\left(8.2\pm0.2\right)10^{20}m^{-3}$
+\end_inset
+
+ והמוביליות שלהם היא 
+\begin_inset Formula $\mu_{h}^{\left(1\right)}=0.229\pm0.005\frac{m^{2}}{V\cdot sec}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, מרגרגסיה לינארית של מדידות 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $B$
+\end_inset
+
+ הוסק מנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ קבוע הול 
+\begin_inset Formula $R_{H}^{\left(2\right)}=0.0072\pm0.0003\frac{m^{3}}{C}$
+\end_inset
+
+ , שנושאי המטען הם חיוביים והמל
+\begin_inset Quotes erd
+\end_inset
+
+מ הוא מסוג 
+\begin_inset Formula $P$
+\end_inset
+
+, שצפיפות המטענים היא 
+\begin_inset Formula $p^{\left(2\right)}=\left(8.6\pm0.3\right)10^{20}m^{-3}$
+\end_inset
+
+ והמוביליות שלהם היא 
+\begin_inset Formula $\mu_{h}^{\left(2\right)}=0.217\pm0.008\frac{m^{2}}{V\cdot sec}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ניתן לראות שישנה הסכמה בין התוצאות של שתי דרכי המדידה שכן 
+\begin_inset Formula $R_{H}^{\left(1\right)}$
+\end_inset
+
+ ו
+\begin_inset Formula $R_{H}^{\left(2\right)}$
+\end_inset
+
+ חופפים בחלק מתחומי השגיאה שלהם.
+ כך גם עבור הצפיפויות 
+\begin_inset Formula $p^{\left(1\right)}$
+\end_inset
+
+ ו 
+\begin_inset Formula $p^{(2)}$
+\end_inset
+
+ אך אין לנו ערך תיאורטי להשוות אליו.גם עבור המוביליות 
+\begin_inset Formula $\mu_{h}^{\left(1\right)}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\mu_{h}^{\left(2\right)}$
+\end_inset
+
+ התקבלה חפיפה מסוימת בין תחומי השגיאה של הערכים.
+ ואומנם הערכים המקובלים בספרות [
+\numeric on
+1
+\numeric off
+] של המוביליות לא מוכלים בתחומי השגיאה של המדידות של שני החלקים, כש 
+\begin_inset Formula $\mu_{h,literature}=0.19\frac{m^{2}}{Vs}$
+\end_inset
+
+.
+ כיוון שישנה התאמה בשתי המדידות שונות, אנו מניחים שפער זה נובע משגיאה שיטתית
+ שלא שמנו לב אליה במהלך המדידות וגורמת להזחה קבועה.
+ על מנת לאשש השארה זו יש לחזור על המדידות בזהירות.
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset space \space{}
 \end_inset
@@ -3592,7 +4002,11 @@ E_{g}=0.26\pm0.02eV
 \uwave default
 \noun default
 \color inherit
-3
+
+\begin_inset Formula $3$
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -3820,7 +4234,7 @@ noprefix "false"
 \numeric on
 1
 \numeric off
-( תדריך __.
+( תדריך אפקט הול.
 \end_layout
 
 \begin_layout Standard
