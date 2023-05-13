@@ -260,7 +260,7 @@ plt.figure(fig)
 fit = linregress(X,Y)
 Reg_print(fit)
 f = lambda x,a,b: a*x+b
-plt.plot(X,f(X,fit.slope,fit.intercept),"-.",label="Regression")
+plt.plot(uval(1/T[::-1]),f(uval(1/T[::-1]),fit.slope,fit.intercept),"-.",label="Regression")
 plt.legend()
 plt.savefig("fig/part4_2")
 

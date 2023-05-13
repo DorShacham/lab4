@@ -465,7 +465,7 @@ today
 \color inherit
 2
 \numeric off
-, הוסקו גדלים אלו במדידה אחרת, של מתח הול כאשר הזרם היה קבוע והשדה הומגנטי
+, הוסקו גדלים אלו במדידה שונה, של מתח הול כאשר הזרם היה קבוע והשדה המגנטי
  הוא זה שהשתנה.
  בחלק
 \family roman
@@ -499,7 +499,7 @@ today
 , נמדדה התנגדות הדגם כתלות בשדה המגנטי - תלות הנקראת מגנטורסיסטנס.
  בדקנו האם התלות הנצפית מוסברת במידה מספקת על ידי קיום שני סוגי נושאי מטען
  או שלאפקט של גודל סופי של הדגם יש גם תרומה לאפקט ואם כן איזה מהתופעות היא
- הדומיננטית יותר.
+ הדומיננטית יותר ונמצא שהאפקט הראשון הוא הדומיננטי.
  בחלקים
 \family roman
 \series medium
@@ -584,7 +584,116 @@ today
 \noun default
 \color inherit
 נמדדו המתחים כתלות בטמפרטורה ומתלות זו בחלק מתחום מהמדידות הוסק פער האנרגיה
- - הפרש האנרגיה בין פס ההולכה לפס הערכיות, ערך זה הושווה לערך המקובל בספרות.
+ - הפרש האנרגיה בין פס ההולכה לפס הערכיות, ערך זה הושווה לערך המקובל בספרות
+ ונמצא שעבור מדידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הערך בחפיפה ועבור מדידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אינו בחפיפה.
  
 \end_layout
 
@@ -616,7 +725,12 @@ today
 \begin_inset Formula $I_{p}$
 \end_inset
 
- העובר ברכיב, במתח ההול ולמדוד את המתחים, 
+ העובר ברכיב ובמתח הול 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+.
+ כמו כן, ניתן למדוד את המתחים, 
 \begin_inset Formula $U_{p}$
 \end_inset
 
@@ -629,7 +743,7 @@ today
 \begin_inset Formula $T_{p}$
 \end_inset
 
- או ב
+ או בזרם
 \begin_inset Formula $I_{p}$
 \end_inset
 
@@ -643,7 +757,7 @@ today
 \begin_inset Graphics
 	filename fig/hall_intro_module_pic.png
 	lyxscale 50
-	scale 80
+	scale 50
 
 \end_inset
 
@@ -805,6 +919,7 @@ status open
 \begin_inset Graphics
 	filename fig/hall_intro_experiment_pic.png
 	lyxscale 50
+	scale 60
 
 \end_inset
 
@@ -1041,7 +1156,11 @@ R_{H}=\frac{U_{H}d}{IB}=\frac{1}{nq}\label{eq:RH - simple}
 \uwave default
 \noun default
 \color inherit
-0
+
+\begin_inset Formula $0$
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -1055,7 +1174,12 @@ R_{H}=\frac{U_{H}d}{IB}=\frac{1}{nq}\label{eq:RH - simple}
 \uwave off
 \noun off
 \color none
+.
  
+\begin_inset Formula $\rho_{0}$
+\end_inset
+
+
 \family default
 \series default
 \shape default
@@ -1068,7 +1192,7 @@ R_{H}=\frac{U_{H}d}{IB}=\frac{1}{nq}\label{eq:RH - simple}
 \uwave default
 \noun default
 \color inherit
-ונתון על ידי
+ נתון על ידי
 \end_layout
 
 \begin_layout Standard
@@ -1226,8 +1350,8 @@ R_{H}=\frac{U_{H}d}{IB}=\frac{1}{nq}\label{eq:RH - simple}
 \begin_inset Formula $U_{p}$
 \end_inset
 
- כתלות בשדה המגנטי ובודקים האם ישנה התאמה להיותה של הרכיבים האלכסוניים של
- טנזור ההתנגדות הסגולית תלויה ריבועית בשדה המגנטי ושהרכיבים הלא אלכסוניים
+ כתלות בשדה המגנטי ובודקים האם ישנה התאמה לכך שהרכיבים של טנזור ההתנגדות
+ הסגולית תלויים ריבועית בשדה המגנטי ברכיבים האלכסוניים ושהרכיבים הלא אלכסוניים
  תלויים לינארית לפי
 \end_layout
 
@@ -1235,7 +1359,7 @@ R_{H}=\frac{U_{H}d}{IB}=\frac{1}{nq}\label{eq:RH - simple}
 \begin_inset Formula 
 \begin{equation}
 \rho_{ij}=\begin{cases}
-\frac{1}{e(\mu_{e}n+\mu_{h}p)}+B^{2}\frac{\mu_{e}n\mu_{h}p(\mu_{e}+\mu_{h})^{2}}{e\cdot(\mu_{e}n+\mu_{p}p)^{3}} & ij=xx\\
+\frac{1}{e(\mu_{e}n+\mu_{h}p)}+B^{2}\frac{\mu_{e}n\mu_{h}p(\mu_{e}+\mu_{h})^{2}}{e\cdot(\mu_{e}n+\mu_{p}p)^{3}} & i=j\\
 B\cdot\frac{\mu_{h}^{2}p-\mu_{e}^{2}n}{e\cdot(\mu_{e}n+\mu_{p}p)^{2}}=B\cdot R_{H} & ij=yx\\
 -B\cdot\frac{\mu_{h}^{2}p-\mu_{e}^{2}n}{e\cdot(\mu_{e}n+\mu_{p}p)^{2}}=-B\cdot R_{H} & ij=xy
 \end{cases}\label{eq:rxx,rxy}
@@ -1296,7 +1420,7 @@ R(B)-R(0)=\frac{4\rho_{xx}}{\pi d}\frac{\Theta^{2}}{(\frac{\pi}{2})^{2}-\Theta^{
 \end_layout
 
 \begin_layout Standard
-וחלק
+בחלק
 \family roman
 \series medium
 \shape up
@@ -1358,7 +1482,7 @@ R(B)-R(0)=\frac{4\rho_{xx}}{\pi d}\frac{\Theta^{2}}{(\frac{\pi}{2})^{2}-\Theta^{
 \begin_inset Formula $Ge$
 \end_inset
 
- איתו עבדו קיים קשר בין טמפרטורת הרכיב להתנגדות שלו - קשר זה נבדק בחלקים
+ איתו עבדנו קיים קשר בין טמפרטורת הרכיב להתנגדות שלו - קשר זה נבדק בחלקים
 \family roman
 \series medium
 \shape up
@@ -1569,7 +1693,7 @@ U_{H/p}\sim\frac{1}{n_{i}}\sim e^{\frac{E_{g}}{2k_{B}T}}\Rightarrow\ln U_{H/p}=K
 \end_layout
 
 \begin_layout Standard
-הסרנט את החלק המודד את השדה המגנטי וחיברנו את המולטימטר במקביל למתח 
+הסרנו את החלק המודד את השדה המגנטי וחיברנו את המולטימטר במקביל למתח 
 \begin_inset Formula $U_{p}$
 \end_inset
 
@@ -1804,11 +1928,11 @@ R_{0}=53.3\pm0.9\Omega
 \end_inset
 
 .
- בשלב זה כילנו את המערכת קח שהמתח 
+ בשלב זה כילנו את המערכת כך שהמתח 
 \begin_inset Formula $U_{H}$
 \end_inset
 
- הנמדד במולטימטר יהיה יתאפס כאשר אין זרם 
+ הנמדד במולטימטר יתאפס כאשר אין זרם 
 \begin_inset Formula $I_{p}$
 \end_inset
 
@@ -1941,7 +2065,7 @@ status open
 \begin_inset Newline newline
 \end_inset
 
-ניתן לראות כי באופן איכותי כי בקירוב טוב הגרף לינארי כפי שמוצפה על פי נוסחא
+ניתן לראות כי באופן איכותי בקירוב טוב הגרף לינארי כפי שמוצפה על פי נוסחא
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1992,16 +2116,13 @@ R_{H}^{\left(1\right)}=0.0076\pm0.0002\frac{m^{3}}{C}
 \end_layout
 
 \begin_layout Standard
-מהדרך שבו נבנתה המערכת, מדידת מתח שלילי )וכתוצאה מכך 
-\begin_inset Formula $R_{H}$
-\end_inset
-
- שלילי( מעיד על הצטברות מטענים חיובים )חורים( בחלקו התחתון של המל
+מהדרך שבה נבנתה המערכת, מדידת מתח הול שלילי מעידה על הצטברות מטענים חיובים
+ )חורים( בחלקו התחתון של המל
 \begin_inset Quotes erd
 \end_inset
 
-מ )או מטענים שלילים בחלקו העליון( אך על פי כיוון השדה המגנטי וכיוון הזרם
- נסיק שהאפשרות היחידה היא שאלו מטענים חיובים בתחתית המל
+מ )או מטענים שלילים בחלקו העליון(, לפי כיוון השדה המגנטי וכיוון הזרם נסיק
+ שהאפשרות היחידה היא שאלו מטענים חיובים בתחתית המל
 \begin_inset Quotes erd
 \end_inset
 
@@ -2010,11 +2131,16 @@ R_{H}^{\left(1\right)}=0.0076\pm0.0002\frac{m^{3}}{C}
 \end_inset
 
 מ הוא 
-\begin_inset Formula $P\ Type$
+\begin_inset Formula $p-type$
 \end_inset
 
 .
- בדיקה של הלוח אכן אשרה שזהו המצב.
+ תוצאה זו מסתדרת באופן מופתי עם זה שעל הלוח מצוין שהמל"מ שהוצב עליו הוא
+ 
+\begin_inset Formula $p-type$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2072,7 +2198,7 @@ noprefix "false"
 
 \end_inset
 
- את המוביליוט של החורים
+ את המוביליות של החורים
 \end_layout
 
 \begin_layout Standard
@@ -2380,7 +2506,7 @@ noprefix "false"
 
 \end_inset
 
- את המוביליוט של החורים
+ את המוביליות של החורים
 \end_layout
 
 \begin_layout Standard
@@ -2638,8 +2764,18 @@ status open
 \begin_inset Formula $4$
 \end_inset
 
- סרטטנו בקו ירוק את התחזית של השינוי בהתנגדות מהאפקט הגאומטרי לפי נוסחה
- )?( והנתונים שחולצו במהלך הניסוי.
+ סרטטנו בקו ירוק את התחזית של השינוי בהתנגדות מהאפקט הגאומטרי לפי נוסחא
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:geometric effect"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ והנתונים שחולצו במהלך הניסוי.
 \end_layout
 
 \end_inset
@@ -2973,7 +3109,8 @@ noprefix "false"
 \begin_inset Formula $T^{-1}<<1$
 \end_inset
 
- ולכן ניתן לקרב את האקספוננט לפונקציה לינארית ולקבל 
+ ולכן ניתן לקרב את האקספוננט לפונקציה לינארית )קירוב טיילור מסדר ראשון(
+ ולקבל 
 \begin_inset Formula 
 \[
 U_{p}^{-1}\sim1-\frac{E_{g}}{2k_{B}}\cdot T^{-1}
@@ -3364,7 +3501,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-בשנית עבור הטמפ' הגבוהות נעזר בנוסחא 
+כמו בחלק 
+\begin_inset Formula $4$
+\end_inset
+
+, עבור הטמפ' הגבוהות נעזר בנוסחא 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:part4_5_eq"
@@ -3535,13 +3676,6 @@ E_{g}=0.26\pm0.02eV
 \begin_layout Standard
 נשים לב שערך זה הוא כשליש מהערך הקודם שחישבנו עבור האנרגיה, נדון בפער זה
  בדיון.
-\end_layout
-
-\begin_layout Section*
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section*
@@ -3840,7 +3974,7 @@ noprefix "false"
 \begin_inset Formula $p^{\left(1\right)}=\left(8.2\pm0.2\right)10^{20}m^{-3}$
 \end_inset
 
-)שגיאה יחסית של כ
+ )שגיאה יחסית של כ
 \begin_inset Formula $2.5\%$
 \end_inset
 
@@ -3889,7 +4023,7 @@ noprefix "false"
 \color inherit
 2
 \numeric off
-, מרגרגסיה לינארית של מדידות 
+, מרגרסיה לינארית של מדידות 
 \begin_inset Formula $U_{H}$
 \end_inset
 
@@ -3931,7 +4065,7 @@ noprefix "false"
 \begin_inset Formula $p^{\left(2\right)}=\left(8.6\pm0.3\right)10^{20}m^{-3}$
 \end_inset
 
-)שגיאה יחסית של כ
+ )שגיאה יחסית של כ
 \numeric on
 
 \begin_inset Formula $3.5\%$
@@ -3972,7 +4106,8 @@ noprefix "false"
 \begin_inset Formula $p^{(2)}$
 \end_inset
 
- אך אין לנו ערך תיאורטי להשוות אליו.גם עבור המוביליות 
+.
+ עבור המוביליות 
 \begin_inset Formula $\mu_{h}^{\left(1\right)}$
 \end_inset
 
@@ -4319,8 +4454,8 @@ noprefix "false"
 \begin_inset Formula $7.8\%$
 \end_inset
 
-, תוצאה זו רחוקה משמעותית מן תוצאת המדידה הקודמת ומהתוצאה התיאורטית ועל
- כן נסיק שאין אפשרות לבצע מדידת פער האנרגיה בדרך זו ממל
+, תוצאה זו רחוקה משמעותית )לא בטווח השגיאה( מן תוצאת המדידה הקודמת ומהתוצאה
+ התיאורטית ועל כן נסיק שאין אפשרות לבצע מדידת פער האנרגיה בדרך זו ממל
 \begin_inset Quotes erd
 \end_inset
 
@@ -4722,15 +4857,7 @@ noprefix "false"
 \uwave default
 \noun default
 \color inherit
-מניחה הנחות שגויות למשל שניתן להעריך את 
-\begin_inset Formula $E_{g}$
-\end_inset
-
- על ידי שימוש ב 
-\begin_inset Formula $n_{i}\propto e^{-\frac{E_{g}}{2k_{B}T}}$
-\end_inset
-
-.
+מניחה הנחות שגויות.
  כדי להעריך בכל זאת את פער האנרגיה במדידה זו יש להגיע להבנה טובה יותר של
  התיאוריה ולמצוא היכן הקירובים שהשתמשנו בהם קורסים וכיצד ניתן לשפר אותם.
 \end_layout
@@ -4814,7 +4941,7 @@ noprefix "false"
 \family default
 \series bold
 \shape default
-\size default
+\size tiny
 \emph default
 \bar default
 \strikeout default
@@ -4853,7 +4980,7 @@ noprefix "false"
 \family default
 \series bold
 \shape default
-\size default
+\size tiny
 \emph default
 \bar default
 \strikeout default

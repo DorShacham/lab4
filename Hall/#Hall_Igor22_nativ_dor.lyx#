@@ -4811,6 +4811,24 @@ noprefix "false"
 \noun off
 \color none
  
+\family default
+\series bold
+\shape default
+\size tiny
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+
+\begin_inset Formula $\text{Y. P. VARSHNI.(1967).\ TEMPERATURE DEPENDENCE OF THE ENERGY GAP IN SEMICONDUCTORS:Physica,34\ (149-154)}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4835,7 +4853,7 @@ noprefix "false"
 \family default
 \series bold
 \shape default
-\size default
+\size tiny
 \emph default
 \bar default
 \strikeout default
