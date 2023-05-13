@@ -40,9 +40,11 @@
 \makeatother
 \end_preamble
 \use_default_options true
+\begin_removed_modules
+eqs-within-sections
+\end_removed_modules
 \begin_modules
 theorems-ams
-eqs-within-sections
 figs-within-sections
 enumitem
 fixltx2e
@@ -794,7 +796,7 @@ status open
 \end_inset
 
  שעל כל זרוע בה הוצב סליל בצורה כזו כך שבעת הזרמת זרם דרך הסליל נוצר שדה
- מכנטי דרך הליבה ועובר דרך רכיב ה
+ מגנטי דרך הליבה ועובר דרך רכיב ה
 \begin_inset Formula $Ge$
 \end_inset
 
@@ -866,7 +868,7 @@ status open
 \uwave default
 \noun default
 \color inherit
-1
+2
 \numeric off
 :
 \series default
@@ -951,7 +953,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-במקרה שבו יש נושא מטען יחיד עקרי, בהנתן זרם דרך הדגם 
+במקרה שבו יש נושא מטען יחיד עיקרי, בהנתן זרם דרך הדגם 
 \begin_inset Formula $I-[A]$
 \end_inset
 
@@ -972,9 +974,9 @@ status open
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-(1)\,R_{H}=\frac{U_{H}d}{IB}=\frac{1}{nq}
-\]
+\begin{equation}
+R_{H}=\frac{U_{H}d}{IB}=\frac{1}{nq}\label{eq:RH - simple}
+\end{equation}
 
 \end_inset
 
@@ -1003,9 +1005,9 @@ status open
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-(2)\,\mu=\frac{\sigma}{nq}=\frac{|R_{H}|}{\rho_{0}}
-\]
+\begin{equation}
+\mu=\frac{\sigma}{nq}=\frac{|R_{H}|}{\rho_{0}}\label{eq:mu}
+\end{equation}
 
 \end_inset
 
@@ -1080,9 +1082,9 @@ status open
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-(3)\,\rho_{0}=\frac{R_{0}\cdot d\cdot W}{L}
-\]
+\begin{equation}
+\rho_{0}=\frac{R_{0}\cdot d\cdot W}{L}\label{eq:rho0}
+\end{equation}
 
 \end_inset
 
@@ -1240,9 +1242,9 @@ status open
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-(4)\,\rho_{xx}=\frac{1}{e(\mu_{e}n+\mu_{h}p)}+B^{2}\frac{\mu_{e}n\mu_{h}p(\mu_{e}+\mu_{h})^{2}}{e\cdot(\mu_{e}n+\mu_{p}p)^{3}}\,\rho_{yx}=-\rho_{xy}=B\cdot\frac{\mu_{h}^{2}p-\mu_{e}^{2}n}{e\cdot(\mu_{e}n+\mu_{p}p)^{2}}=B\cdot R_{H}
-\]
+\begin{equation}
+\rho_{xx}=\frac{1}{e(\mu_{e}n+\mu_{h}p)}+B^{2}\frac{\mu_{e}n\mu_{h}p(\mu_{e}+\mu_{h})^{2}}{e\cdot(\mu_{e}n+\mu_{p}p)^{3}}\ \ \ \ \,\rho_{yx}=-\rho_{xy}=B\cdot\frac{\mu_{h}^{2}p-\mu_{e}^{2}n}{e\cdot(\mu_{e}n+\mu_{p}p)^{2}}=B\cdot R_{H}\label{eq:rxx,rxy}
+\end{equation}
 
 \end_inset
 
@@ -1289,9 +1291,9 @@ status open
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-(5)\,R(B)-R(0)=\frac{4\rho_{xx}}{\pi d}\frac{\Theta^{2}}{(\frac{\pi}{2})^{2}-\Theta^{2}}=\frac{4}{\pi d}\frac{\rho_{xx}\rho_{xy}^{2}}{(\frac{\pi}{2})^{2}-\rho_{xy}^{2}}
-\]
+\begin{equation}
+R(B)-R(0)=\frac{4\rho_{xx}}{\pi d}\frac{\Theta^{2}}{(\frac{\pi}{2})^{2}-\Theta^{2}}=\frac{4}{\pi d}\frac{\rho_{xx}^{3}\rho_{xy}^{2}}{(\frac{\pi}{2})^{2}\rho_{xx}^{2}-\rho_{xy}^{2}}\label{eq:geometric effect}
+\end{equation}
 
 \end_inset
 
@@ -1477,14 +1479,36 @@ status open
 \end_layout
 
 \begin_layout Standard
-\align center
-
-\series bold
-__לבדוק כתיבת שגיאות__ּ
-\end_layout
-
-\begin_layout Standard
-חיברנו את המערכת כפי שמצוין בסרטוט )?(.
+חיברנו את המערכת כפי שמצוין באיור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
 \end_layout
 
 \begin_layout Standard
@@ -1901,8 +1925,18 @@ status open
 \begin_inset Newline newline
 \end_inset
 
-ניתן לראות כי באופן איכותי כי בקירוב טוב הגרף לינארי כפי שמוצפה על פי נוסחה
- )?(.
+ניתן לראות כי באופן איכותי כי בקירוב טוב הגרף לינארי כפי שמוצפה על פי נוסחא
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
  לגרף בוצעה רגרסיה לניארית והתקבלה הפונקציה 
 \begin_inset Formula 
 \[
@@ -1920,22 +1954,25 @@ y=\left(-1.91\pm0.03\right)x+\left(0.0024\pm0.0005\right)
 \end_inset
 
 .
- על פי נוסחה )?( ונתוני המערכת חולץ קבוע הול והתקבל 
+ על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ונתוני המערכת חולץ קבוע הול והתקבל 
 \begin_inset Formula 
 \[
-R_{H}^{\left(1\right)}=-0.0076\pm0.0002\frac{m^{3}}{C}
+R_{H}^{\left(1\right)}=0.0076\pm0.0002\frac{m^{3}}{C}
 \]
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\series bold
-__האם צריך להסיר את המטען?__
 \end_layout
 
 \begin_layout Standard
@@ -1965,7 +2002,17 @@ __האם צריך להסיר את המטען?__
 \end_layout
 
 \begin_layout Standard
-מתוך הקשר )?( חולצה צפיפות רוב המטענים )החיובים( והתקבלה התוצאה:
+מתוך הקשר 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ חולצה צפיפות רוב המטענים )החיובים( והתקבלה התוצאה:
 \begin_inset Formula 
 \[
 p^{\left(1\right)}=\left(8.2\pm0.2\right)10^{20}m^{-3}
@@ -1985,7 +2032,31 @@ p^{\left(1\right)}=\left(8.2\pm0.2\right)10^{20}m^{-3}
 \begin_inset Formula $0$
 \end_inset
 
- חילצנו לפי נוסחה )?( את המוביליוט של החורים
+ וממדי המערכת חישבנו את 
+\begin_inset Formula $\rho_{0}$
+\end_inset
+
+ לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rho0"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ וממנו חילצנו בעזרת נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:mu"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ את המוביליוט של החורים
 \end_layout
 
 \begin_layout Standard
@@ -2199,11 +2270,21 @@ status open
 \end_inset
 
 בדומה לחלק הקודם, ניתן לראות כי באופן איכותי כי בקירוב טוב הגרף לינארי כפי
- שמוצפה על פי נוסחה )?(.
+ שמוצפה על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
  לגרף בוצעה רגרסיה לניארית והתקבלה הפונקציה 
 \begin_inset Formula 
 \[
-y=\left(-0.217+/-0.003\right)x+\left(0.0015+/-0.0004\right)
+y=\left(-0.217\pm0.003\right)x+\left(0.0015\pm0.0004\right)
 \]
 
 \end_inset
@@ -2217,10 +2298,20 @@ y=\left(-0.217+/-0.003\right)x+\left(0.0015+/-0.0004\right)
 \end_inset
 
 .
- על פי נוסחה )?( ונתוני המערכת חולץ קבוע הול והתקבל 
+ על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ונתוני המערכת חולץ קבוע הול והתקבל 
 \begin_inset Formula 
 \[
-R_{H}^{\left(2\right)}=-0.0072+/-0.0003\frac{m^{3}}{C}
+R_{H}^{\left(2\right)}=0.0072\pm0.0003\frac{m^{3}}{C}
 \]
 
 \end_inset
@@ -2229,18 +2320,21 @@ R_{H}^{\left(2\right)}=-0.0072+/-0.0003\frac{m^{3}}{C}
 \end_layout
 
 \begin_layout Standard
-\align center
-
-\series bold
-__האם צריך להסיר את המטען?__
-\end_layout
-
-\begin_layout Standard
 כפי שניתן לראות יש חפיפה אם הערך שהתקבל במדידה מהמדידה הקודמת.
 \end_layout
 
 \begin_layout Standard
-מתוך הקשר )?( חולצה צפיפות רוב המטענים )החיובים( והתקבלה התוצאה:
+מתוך הקשר 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ חולצה צפיפות רוב המטענים )החיובים( והתקבלה התוצאה:
 \begin_inset Formula 
 \[
 p^{\left(2\right)}=\left(8.6\pm0.3\right)10^{20}m^{-3}
@@ -2257,14 +2351,20 @@ p^{\left(2\right)}=\left(8.6\pm0.3\right)10^{20}m^{-3}
 
 \begin_layout Standard
 בעזרת 
-\begin_inset Formula $R_{0}$
+\begin_inset Formula $\rho_{0}$
 \end_inset
 
- שחישבנו בחלק 
-\begin_inset Formula $0$
+ חילצנו לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:mu"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
- חילצנו לפי נוסחה )?( את המוביליוט של החורים
+ את המוביליוט של החורים
 \end_layout
 
 \begin_layout Standard
@@ -2618,27 +2718,36 @@ y=\left(15.6\pm0.5\right)x+\left(52.04\pm0.02\right)
 \end_layout
 
 \begin_layout Standard
-\align center
-
-\series bold
-__לוודא את המסקנה הבאה__
-\end_layout
-
-\begin_layout Standard
 כפי שציינו ניתן לראות שההתנגדות מתנהגת בקירוב טוב באופן לינארי לריבוע השדה
- בהתאם לנוסחה )?(, תוצאה זה עם העובדה שבאופן איכותי האפקט הגאומטרי נראה
- זניח ביחס לשינוי בהתנגדות בגרף 
-\begin_inset Formula $4$
+ בהתאם לנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rxx,rxy"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Standard
-\align center
+בנוסף לפי הביטוי עבור האופקט הגאומטרי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:geometric effect"
+plural "false"
+caps "false"
+noprefix "false"
 
-\series bold
-_האם צריך לעשות עוד משהו?__
+\end_inset
+
+ נחשב את ההשפעה התיאורטית, ניתן לראות בגרף 
+\begin_inset Formula $4$
+\end_inset
+
+ כי היא זניחה לעומת השינוי בהתנגדות.
 \end_layout
 
 \begin_layout Standard

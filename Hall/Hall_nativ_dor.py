@@ -320,5 +320,5 @@ Reg_print(fit)
 
 m = ufloat(fit.slope,fit.stderr*2)
 kB = physical_constants["Boltzmann constant in eV/K"][0]
-Eg = 2*kB*m
+Eg = 2*kB*(m-3/2)
 print(f"Eg = {Eg}")

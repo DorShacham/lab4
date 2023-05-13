@@ -1,0 +1,3653 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsart
+\begin_preamble
+% Necessary Commands
+\usepackage{autobreak}
+\usepackage[T1]{fontenc}
+
+% Set space between words to be wider:
+\spaceskip=1.3\fontdimen2\font plus 1\fontdimen3\font minus 1.5\fontdimen4\font
+
+% This Part convert the Lyx colors into more pleasent colors
+\usepackage{xcolor}
+\definecolor{blue}{RGB}{0, 0, 140}
+\definecolor{green}{RGB}{0, 140, 0}
+\definecolor{red}{RGB}{220, 0, 0}
+
+% Convert the QED Symbol at the end of proofs to a solid black square (credit: Yakir Oz)
+\usepackage{amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+% This part makes the layout more similar to Hebrew Article, which I am more used to
+\renewcommand*{\@seccntformat}[1]{\hspace{0.5cm}\csname the#1\endcsname\hspace{0.5cm}} 
+\usepackage{titlesec}
+\titleformat{\section}{\fontsize{20}{20}\bfseries}{\thesection}{10pt}{}
+\titleformat{\subsection}{\fontsize{15}{15}\bfseries}{\thesubsection}{10pt}{}
+\titleformat{\subsubsection}{\bfseries}{\thesubsubsection}{10pt}{}
+
+% This part corrects the reversed parentheses in labels
+\usepackage{polyglossia}
+\setmainlanguage{hebrew}
+\newfontfamily{\hebrewfont}{David}
+\makeatletter
+\def\maketag@@@#1{\hbox{\m@th\normalfont\LRE{#1}}}
+\def\tagform@#1{\maketag@@@{(\ignorespaces#1\unskip)}}
+\makeatother
+\end_preamble
+\use_default_options true
+\begin_removed_modules
+eqs-within-sections
+\end_removed_modules
+\begin_modules
+theorems-ams
+figs-within-sections
+enumitem
+fixltx2e
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Style Section
+	Align        Right
+	Font
+	  Series     Medium
+	  Shape      Smallcaps
+	  Size       Larger
+	  Series     Bold
+	EndFont
+	TocLevel 1
+End
+
+
+Style Section*
+	Align        Right
+	Font
+	  Series     Medium
+	  Shape      Smallcaps
+	  Size      Larger
+	  Series     Bold
+	EndFont
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "cmr" "David"
+\font_sans "cmss" "David"
+\font_typewriter "cmtt" "David"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth -2
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "../../../../../../AppData/Local/LyX 2.3/Resources/templates/_templates/MacrosHeb.lyx"
+
+\end_inset
+
+
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "20pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+אפקט הול במוליך למחצה עשוי גרמניום - מציאת סוג תכונות נושאי המטען, מגנטורסיסטנס
+ ופער האנרגיה בין פס ההולכה לפס הערכיות
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+שם: נתיב מאור | ת
+\begin_inset Quotes erd
+\end_inset
+
+ז:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+319002911
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+| דוא
+\begin_inset Quotes erd
+\end_inset
+
+ל: 
+\begin_inset Formula $\text{nativ.maor@campus.technion.ac.il}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+שם: דור חי שחם | ת
+\begin_inset Quotes erd
+\end_inset
+
+ז:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+318258555
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+| דוא
+\begin_inset Quotes erd
+\end_inset
+
+ל: 
+\begin_inset Formula $\text{dor-hay.sha@campus.technion.ac.il}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תקציר
+\end_layout
+
+\begin_layout Standard
+בניסוי זה נחקרה התופעה של אפקט הול במוליך למחצה העשוי מדגם גרמניום )
+\begin_inset Formula $Ge$
+\end_inset
+
+(.
+ הניסוי בוצע במספר שלבים שבכל אחד מהם חובר המוליך למחצה למעגל חשמלי בתנאים
+ משתנים )כגון זרם משתנה העובר דרך המוליך, שדה מגנטי הניצב לדוגמית וטמפרטורה(
+ נמדדו תכונות המעגל כתלות בתנאים אלו ומהם הוסקו תכונות המערכת.
+ בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, כחלק מקדים על מנת למדוד את התנגדות הדגם נמדד המתח עליו כתלות בזרם.
+ לאחר מכן, בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, הופעל שדה מגנטי קבוע ונמדד מתח הול כתלות בזרם, לפי מתח זה וכיוון השדה
+ המגנטי נקבע סוג נושאי המטען, צפיפותם והמוביליות שלהם - ערכים שהשווינו לערכים
+ המקובלים בספרות ונמצאו להיות 
+\begin_inset Quotes eld
+\end_inset
+
+?
+\begin_inset Quotes erd
+\end_inset
+
+.
+ בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, הוסקו גדלים אלו במדידה אחרת, של מתח הול כאשר הזרם היה קבוע והשדה הומגנטי
+ הוא זה שהשתנה.
+ בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, נמדדה התנגדות הדגם כתלות בשדה המגנטי - תלות הנקראת מגנטורסיסטנס.
+ בדקנו האם התלות הנצפית מוסברת במידה מספקת על ידי קיום שני סוגי נושאי מטען
+ או שלאפקט של גודל סופי של הדגם יש גם תרומה לאפקט ואם כן איזה מהתופעות היא
+ הדומיננטית יותר.
+ בחלקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נמדדו המתחים כתלות בטמפרטורה ומתלות זו בחלק מתחום מהמדידות הוסק פער האנרגיה
+ - הפרש האנרגיה בין פס ההולכה לפס הערכיות, ערך זה הושבה לערך המקובל בספרות.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מבוא
+\end_layout
+
+\begin_layout Standard
+מערכת הניסוי בחלקיו השונים הורכבה מרכיב 
+\begin_inset Quotes eld
+\end_inset
+
+מודול-אפקט הול
+\begin_inset Quotes erd
+\end_inset
+
+ המכיל דגם 
+\begin_inset Formula $Ge$
+\end_inset
+
+ שניתן לשלוט דרכו על הזרם 
+\begin_inset Formula $I_{p}$
+\end_inset
+
+ העובר ברכיב, במתח ההול ולמדוד את המתחים, 
+\begin_inset Formula $U_{p}$
+\end_inset
+
+ המתח במעגל דרכו זורם הזרם דרך הרכיב ואת 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+.
+ כמו כן, המרכיב מכיל צג בו ניתן לצפות בטמפרטורה של הדגם 
+\begin_inset Formula $T_{p}$
+\end_inset
+
+ או ב
+\begin_inset Formula $I_{p}$
+\end_inset
+
+.
+ בנוסף ישנה אפשרות לחמם את הדגם על ידי לחיצה על כפתור חימום.
+ הרכיב מוצג בתמונה הבאה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/hall_intro_module_pic.png
+	lyxscale 50
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+איור
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\series default
+חלקו הקדמי של מרכיב 
+\begin_inset Quotes eld
+\end_inset
+
+מודול- אפקט הול
+\begin_inset Quotes erd
+\end_inset
+
+ )איור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתדריך(
+\end_layout
+
+\begin_layout Plain Layout
+בתמונה מוצג דגם ה 
+\begin_inset Formula $Ge$
+\end_inset
+
+ והמעגל אליו הוא מחובר עם מתגי השליטה בו ,הצג וחיבורים למדידת המתח.
+ כפתור החימום נמצא בצד האחורי.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המודול הורכב על גבי ליבת ברזל בצורת 
+\begin_inset Formula $U$
+\end_inset
+
+ שעל כל זרוע בה הוצב סליל בצורה כזו כך שבעת הזרמת זרם דרך הסליל נוצר שדה
+ מגנטי דרך הליבה ועובר דרך רכיב ה
+\begin_inset Formula $Ge$
+\end_inset
+
+ שעל המודול.
+ 
+\end_layout
+
+\begin_layout Standard
+סידור מערכת הניסוי בשלמותו, יחד עם ספק הזרם, מד המתח והמגנטומטר מוצגים בתמונה
+ הבאה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/hall_intro_experiment_pic.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+איור
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\series default
+תמונה של מערכת הניסוי עם מכשירי המדידה )איור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בתדריך(
+\end_layout
+
+\begin_layout Plain Layout
+בצד ימין ניתן לראות את הולטמטר מתחת למגנטומטר, באמצע את המודול שהורכב על
+ הליבה המגנטית והסלילים ומימין את ספק הזרם.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפקט הול במוליך מלבני הוא אפקט שבו בעת הזרמת זרם דרך מוליך, עקב הפעלת שדה
+ מגנטי ניצב לכיוון הזרם, נוצר כוח על נושאי המטען הניצב לזרם ולשדה )לפי כוח
+ לורנץ( וגורם להצטברות מטענים מנוגדים בשניים מדפנות המוליך - הצטברות המטענים
+ על הדפנות מבוטאת בהפרש מתחים הניתן למדידה הנקרא מתח הול ומסומן בניסוי זה
+ ב
+\begin_inset Formula $U_{H}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+במקרה שבו יש נושא מטען יחיד עיקרי, בהנתן זרם דרך הדגם 
+\begin_inset Formula $I-[A]$
+\end_inset
+
+, עובי הדגם 
+\begin_inset Formula $d-[m]$
+\end_inset
+
+ ושדה מגנטי 
+\begin_inset Formula $B-[T]$
+\end_inset
+
+ קבועים הביטוי למתח הול פרופורציוני לגודל הנקרא קבוע הול 
+\begin_inset Formula $R_{H}-[\frac{m^{3}}{C}]$
+\end_inset
+
+ על ידי הנוסחא הבאה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{H}=\frac{U_{H}d}{IB}=\frac{1}{nq}\label{eq:RH - simple}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n-[\frac{1}{m^{3}}]$
+\end_inset
+
+ היא צפיפות המטען ו
+\begin_inset Formula $q-[C]$
+\end_inset
+
+ הוא מטען נושאי המטען.
+ 
+\end_layout
+
+\begin_layout Standard
+המוביליות של נושאי המטען 
+\begin_inset Formula $\mu-[\frac{m^{2}}{V\cdot sec}]$
+\end_inset
+
+ נתונה על ידי הקשר הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mu=\frac{\sigma}{nq}=\frac{|R_{H}|}{\rho_{0}}\label{eq:mu}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $\sigma-[\frac{1}{\Omega\cdot m}]$
+\end_inset
+
+ היא המוליכות ו 
+\begin_inset Formula $\rho_{0}$
+\end_inset
+
+ היא ההתנגדות הסגולית של הדגם בהנחה של חומר איזוטרופי כשהשדה המגנטי הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ונתון על ידי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\rho_{0}=\frac{R_{0}\cdot d\cdot W}{L}\label{eq:rho0}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $R_{0}-[\Omega]$
+\end_inset
+
+ היא התנגדות הדגם כשלא מופעל עליו שדה מגנטי , 
+\begin_inset Formula $W-[m]$
+\end_inset
+
+ רוחב הדגם ו
+\begin_inset Formula $L-[m]$
+\end_inset
+
+ הוא אורכו.
+ במערכת שלנו 
+\begin_inset Formula $d=1[mm],\,L=16[mm]\,W=10[mm]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+בחלקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של הניסוי השתמשנו בהתאמה של המדידות לנוסחאות אלה כדי למצוא את המוביליות
+ של נושאי המטען בהנחה שיש נושא מטען יחיד עיקרי.
+\end_layout
+
+\begin_layout Standard
+בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, אנו מודדים את 
+\begin_inset Formula $U_{p}$
+\end_inset
+
+ כתלות בשדה המגנטי ובודקים האם ישנה התאמה להיותה של הרכיבים האלכסוניים של
+ טנזור ההתנגדות הסגולית תלויה ריבועית בשדה המגנטי ושהרכיבים הלא אלכסוניים
+ תלויים לינארית לפי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\rho_{xx}=\frac{1}{e(\mu_{e}n+\mu_{h}p)}+B^{2}\frac{\mu_{e}n\mu_{h}p(\mu_{e}+\mu_{h})^{2}}{e\cdot(\mu_{e}n+\mu_{p}p)^{3}}\ \ \ \ \,\rho_{yx}=-\rho_{xy}=B\cdot\frac{\mu_{h}^{2}p-\mu_{e}^{2}n}{e\cdot(\mu_{e}n+\mu_{p}p)^{2}}=B\cdot R_{H}\label{eq:rxx,rxy}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $\mu_{e,p}-[\frac{m^{2}}{V\cdot sec}]$
+\end_inset
+
+ הן המוביליות של האלקטרונים )
+\begin_inset Formula $e$
+\end_inset
+
+( או החורים )
+\begin_inset Formula $p$
+\end_inset
+
+(, 
+\begin_inset Formula $p-[\frac{1}{m^{3}}]$
+\end_inset
+
+ צפיפות החורים ו 
+\begin_inset Formula $e-[C]$
+\end_inset
+
+ הוא גודל מטען נושאי המטען שבמקרה שלנו הוא כמטען האלקטרון.
+ בנוסף 
+\begin_inset Formula $R_{H}$
+\end_inset
+
+ מוגדר בנוסחא זו ברכיב 
+\begin_inset Formula $\rho_{yx}$
+\end_inset
+
+ עבור יותר מנושא מטען אחד )שונה מההגדרה הקודמת(.
+\end_layout
+
+\begin_layout Standard
+קיימת תלות נוספת של שינוי ההתנגדות של הדגם כתלות בשדה המגנטי עקב אפקט גיאומטרי
+ הנתון לפי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R(B)-R(0)=\frac{4\rho_{xx}}{\pi d}\frac{\Theta^{2}}{(\frac{\pi}{2})^{2}-\Theta^{2}}=\frac{4}{\pi d}\frac{\rho_{xx}^{3}\rho_{xy}^{2}}{(\frac{\pi}{2})^{2}\rho_{xx}^{2}-\rho_{xy}^{2}}\label{eq:geometric effect}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אנו מודדים איזה מן ההשפעות נצפית בצורה משמעותית יותר בתוצאות הניסוי שלנו.
+\end_layout
+
+\begin_layout Standard
+במוליכים למחצה כמו דגם ה
+\begin_inset Formula $Ge$
+\end_inset
+
+ איתו עבדו קיים קשר בין טמפרטורת הרכיב להתנגדות שלו - קשר זה נבדק בחלקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ כשהציפיה מהתיאוריה היא שיתקיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(6)\,\sigma=\sigma_{0}\cdot e^{-\frac{E_{g}}{2k_{B}T}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $\sigma-[\frac{sec^{3}A^{2}}{kg\cdot m^{3}}]$
+\end_inset
+
+ היא המוליכות הסגולית, 
+\begin_inset Formula $k_{B}=1.38\cdot10^{-23}[\frac{J}{K}]$
+\end_inset
+
+ קבוע בולצמן, 
+\begin_inset Formula $E_{g}-[J]$
+\end_inset
+
+ פער האנרגיה ו
+\begin_inset Formula $T-[K]$
+\end_inset
+
+ טמפרטורת הדגם.
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תוצאות הניסוי
+\end_layout
+
+\begin_layout Standard
+חיברנו את המערכת כפי שמצוין באיור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+: מדידה של המתח 
+\begin_inset Formula $U_{p}$
+\end_inset
+
+ כפונקציה של הזרם 
+\begin_inset Formula $I_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסרנט את החלק המודד את השדה המגנטי וחיברנו את המולטימטר במקביל למתח 
+\begin_inset Formula $U_{p}$
+\end_inset
+
+.
+ ביצענו דגימות של מתח זה עבור זרמים 
+\begin_inset Formula $I_{p}$
+\end_inset
+
+ בין בתחום 
+\begin_inset Formula $\pm30mA$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part0_1.png
+	lyxscale 50
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\series default
+ מתח הדגימה )
+\begin_inset Formula $U_{p}$
+\end_inset
+
+( כפונקציה של הזרם 
+\begin_inset Formula $I_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מייצג את הזרם 
+\begin_inset Formula $I_{p}$
+\end_inset
+
+ ב
+\begin_inset Formula $A$
+\end_inset
+
+ וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ את המתח 
+\begin_inset Formula $U_{p}$
+\end_inset
+
+ ב
+\begin_inset Formula $V$
+\end_inset
+
+.
+ הנקודות הכחולות מייצגות את הדגימות שנלקחו והקו הכתום את הרגרסיה שבוצעה
+ לנתונים.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ניתן לשים לב שמבחינה איכותית הגרף לינארי בקירוב טוב כפי שהיינו מצפים מחוק
+ אוהם.
+ לגרף בוצעה רגרסיה לינארית והתקבלה הפונקציה הבאה 
+\begin_inset Formula 
+\[
+y=\left(53.3\pm0.9\right)x+\left(-0.09\pm0.02\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עם התאמה של 
+\begin_inset Formula $R^{2}=0.9992$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+על פי חוק אוהם חילצנו את ההתנגדות 
+\begin_inset Formula 
+\[
+R_{0}=53.3\pm0.9\Omega
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+: מדידה של המתח הול 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ כפונקציה של הזרם 
+\begin_inset Formula $I_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת חיברנו את המולטימטר למדוד את מתח הול 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+.
+ כילנו את הטסלמטר להציג שדה מגנטי אפסי כאשר המדיד רחוק מהמערכת ולאחר מכן
+ הצבנו אותו במערכת כפי שמוצג בסרטוט.
+\end_layout
+
+\begin_layout Standard
+הפעלנו מתח וזרם על הסלילים המגנטים כך שיווצר שדה מגנטי בעוצמה 
+\begin_inset Formula $251\pm1mT$
+\end_inset
+
+.
+ בשלב זה כילנו את המערכת קח שהמתח 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ הנמדד במולטימטר יהיה יתאפס כאשר אין זרם 
+\begin_inset Formula $I_{p}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לאחר הכיול מדדנו את מתח הול כפונקציה של הזרם עבור זרמים 
+\begin_inset Formula $\pm30mA$
+\end_inset
+
+ התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part1_1.png
+	lyxscale 50
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\series default
+ מתח הול )
+\begin_inset Formula $U_{H}$
+\end_inset
+
+( כפונקציה של הזרם 
+\begin_inset Formula $I_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מייצג את הזרם 
+\begin_inset Formula $I_{p}$
+\end_inset
+
+ ב
+\begin_inset Formula $A$
+\end_inset
+
+ וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ את המתח 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ ב
+\begin_inset Formula $V$
+\end_inset
+
+.
+ הנקודות הכחולות מייצגות את הדגימות שנלקחו והקו הכתום את הרגרסיה שבוצעה
+ לנתונים.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ניתן לראות כי באופן איכותי כי בקירוב טוב הגרף לינארי כפי שמוצפה על פי נוסחא
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ לגרף בוצעה רגרסיה לניארית והתקבלה הפונקציה 
+\begin_inset Formula 
+\[
+y=\left(-1.91\pm0.03\right)x+\left(0.0024\pm0.0005\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עם התאמה של 
+\begin_inset Formula $R^{2}=0.9995$
+\end_inset
+
+.
+ על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ונתוני המערכת חולץ קבוע הול והתקבל 
+\begin_inset Formula 
+\[
+R_{H}^{\left(1\right)}=0.0076\pm0.0002\frac{m^{3}}{C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מהדרך שבו נבנתה המערכת, מדידת מתח שלילי )וכתוצאה מכך 
+\begin_inset Formula $R_{H}$
+\end_inset
+
+ שלילי( מעיד על הצטברות מטענים חיובים )חורים( בחלקו התחתון של המל
+\begin_inset Quotes erd
+\end_inset
+
+מ )או מטענים שלילים בחלקו העליון( אך על פי כיוון השדה המגנטי וכיוון הזרם
+ נסיק שהאפשרות היחידה היא שאלו מטענים חיובים בתחתית המל
+\begin_inset Quotes erd
+\end_inset
+
+מ, כלומר המל
+\begin_inset Quotes erd
+\end_inset
+
+מ הוא 
+\begin_inset Formula $P\ Type$
+\end_inset
+
+.
+ בדיקה של הלוח אכן אשרה שזהו המצב.
+\end_layout
+
+\begin_layout Standard
+מתוך הקשר 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ חולצה צפיפות רוב המטענים )החיובים( והתקבלה התוצאה:
+\begin_inset Formula 
+\[
+p^{\left(1\right)}=\left(8.2\pm0.2\right)10^{20}m^{-3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעזרת 
+\begin_inset Formula $R_{0}$
+\end_inset
+
+ שחישבנו בחלק 
+\begin_inset Formula $0$
+\end_inset
+
+ וממדי המערכת חישבנו את 
+\begin_inset Formula $\rho_{0}$
+\end_inset
+
+ לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rho0"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ וממנו חילצנו בעזרת נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:mu"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ את המוביליוט של החורים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu_{h}^{\left(1\right)}=0.229\pm0.005\frac{m^{2}}{V\cdot sec}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: מדידה של המתח הול 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ כפונקציה של השדה המגנטי
+\end_layout
+
+\begin_layout Standard
+בחלק זה קבענו את הזרם 
+\begin_inset Formula $I_{p}$
+\end_inset
+
+ ל
+\begin_inset Formula $30\pm1mA$
+\end_inset
+
+ ואת הזרם העובר בסלילים המגנטיים לאפס.
+ כילנו את המערכת כך שמולטימטר יציג 
+\begin_inset Formula $0$
+\end_inset
+
+ עבור מדידה של 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת מדדנו את מתח הול עבור ערכים שונים של השדה המגנטי בתחום 
+\begin_inset Formula $\pm300mT$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part2_1.png
+	lyxscale 50
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\series default
+ מתח הול )
+\begin_inset Formula $U_{H}$
+\end_inset
+
+( כפונקציה של השדה המגנטי )
+\begin_inset Formula $B$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Plain Layout
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מייצג את השדה המגנטי 
+\begin_inset Formula $B$
+\end_inset
+
+ ב
+\begin_inset Formula $T$
+\end_inset
+
+ וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ את המתח 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ ב
+\begin_inset Formula $V$
+\end_inset
+
+.
+ הנקודות הכחולות מייצגות את הדגימות שנלקחו והקו הכתום את הרגרסיה שבוצעה
+ לנתונים.
+\end_layout
+
+\begin_layout Plain Layout
+קווי השגיאה קטנים מכדי לראותם בגרף.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+בדומה לחלק הקודם, ניתן לראות כי באופן איכותי כי בקירוב טוב הגרף לינארי כפי
+ שמוצפה על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ לגרף בוצעה רגרסיה לניארית והתקבלה הפונקציה 
+\begin_inset Formula 
+\[
+y=\left(-0.217\pm0.003\right)x+\left(0.0015\pm0.0004\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עם התאמה של 
+\begin_inset Formula $R^{2}=0.9992$
+\end_inset
+
+.
+ על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ונתוני המערכת חולץ קבוע הול והתקבל 
+\begin_inset Formula 
+\[
+R_{H}^{\left(2\right)}=0.0072\pm0.0003\frac{m^{3}}{C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כפי שניתן לראות יש חפיפה אם הערך שהתקבל במדידה מהמדידה הקודמת.
+\end_layout
+
+\begin_layout Standard
+מתוך הקשר 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RH - simple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ חולצה צפיפות רוב המטענים )החיובים( והתקבלה התוצאה:
+\begin_inset Formula 
+\[
+p^{\left(2\right)}=\left(8.6\pm0.3\right)10^{20}m^{-3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כפי שניתן לראות יש חפיפה בין התחומים שהתקבלו במדידה הזו ובמדידה הקודמת.
+\end_layout
+
+\begin_layout Standard
+בעזרת 
+\begin_inset Formula $\rho_{0}$
+\end_inset
+
+ חילצנו לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:mu"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ את המוביליוט של החורים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu_{h}^{\left(2\right)}=0.217\pm0.008\frac{m^{2}}{V\cdot sec}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כפי שניתן לראות יש חפיפה בין התחומים שהתקבלו במדידה הזו ובמדידה הקודמת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+: מדידה של ההתנגדות 
+\begin_inset Formula $R$
+\end_inset
+
+ כפונקציה של השדה המגנטי
+\end_layout
+
+\begin_layout Standard
+חיברנו את המולטימטר במקביל ל
+\begin_inset Formula $U_{p}$
+\end_inset
+
+, קבענו את הזרם 
+\begin_inset Formula $I_{p}$
+\end_inset
+
+ ל
+\begin_inset Formula $30\pm1mA$
+\end_inset
+
+ ואת הזרם העובר בסלילים המגנטיים לאפס.
+ 
+\end_layout
+
+\begin_layout Standard
+כעת מדדנו את המתח 
+\begin_inset Formula $U_{p}$
+\end_inset
+
+ עבור ערכים שונים של השדה המגנטי בתחום 
+\begin_inset Formula $\left[0,300\right]mT$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בעזרת הזרם והמתח חישבנו דרך חוק אוהם את ההתנגדות כפונקציה של השדה המגנטי
+ הנמדד וכפונקציה של השדה המגנטי בריבוע.
+\end_layout
+
+\begin_layout Standard
+התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part3_2.png
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fig/part3_1.png
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4-5
+\family roman
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)משמאל לימין(:
+\series default
+ התנגדות המל
+\begin_inset Quotes erd
+\end_inset
+
+מ כפונקציה של השדה המגנטי )
+\begin_inset Formula $B$
+\end_inset
+
+( וריבוע השדה המגנטי )
+\begin_inset Formula $B^{2}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Plain Layout
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מייצג את השדה המגנטי 
+\begin_inset Formula $B$
+\end_inset
+
+ ב
+\begin_inset Formula $T$
+\end_inset
+
+ בגרף 
+\begin_inset Formula $1$
+\end_inset
+
+ ובגרף 
+\begin_inset Formula $2$
+\end_inset
+
+ את השדה בריבוע 
+\begin_inset Formula $B^{2}$
+\end_inset
+
+ ב
+\begin_inset Formula $T^{2}$
+\end_inset
+
+.
+ ציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ את המתח ההתנגדות ב
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ הנקודות הכחולות מייצגות את הדגימות שנלקחו והקו הכתום את הרגרסיה שבוצעה
+ לנתונים.
+\end_layout
+
+\begin_layout Plain Layout
+כמו כן עבור גרף 
+\begin_inset Formula $4$
+\end_inset
+
+ סרטטנו בקו ירוק את התחזית של השינוי בהתנגדות מהאפקט הגאומטרי לפי נוסחה
+ )?( והנתונים שחולצו במהלך הניסוי.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+עבור גרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $4$
+\end_inset
+
+
+\numeric off
+, ניתן לראות איכותית כי ההתאמה הלינארית לא טובה מאוד.
+ מתוך הרגרסיה התקבלה הפונקציה
+\begin_inset Formula 
+\[
+y=\left(4.7\pm0.5\right)x+\left(51.82\pm0.09\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עם התאמה של 
+\begin_inset Formula $R^{2}=0.95526$
+\end_inset
+
+ אשר מעיד באופן כמותי על כך שההתאמה אינה טובה.
+\end_layout
+
+\begin_layout Standard
+עבור גרף 
+\begin_inset Formula $2$
+\end_inset
+
+, ניתן לראות איכותית כי ההתאמה הלינארית טובה יותר.
+ מתוך הרגרסיה התקבלה הפונקציה
+\begin_inset Formula 
+\[
+y=\left(15.6\pm0.5\right)x+\left(52.04\pm0.02\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עם התאמה של 
+\begin_inset Formula $R^{2}=0.9965$
+\end_inset
+
+ אשר מעיד באופן כמותי כי אכן ההתאמה יותר מוצלחת.
+\end_layout
+
+\begin_layout Standard
+כפי שציינו ניתן לראות שההתנגדות מתנהגת בקירוב טוב באופן לינארי לריבוע השדה
+ בהתאם לנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rxx,rxy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בנוסף לפי הביטוי עבור האופקט הגאומטרי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:geometric effect"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נחשב את ההשפעה התיאורטית, ניתן לראות בגרף 
+\begin_inset Formula $4$
+\end_inset
+
+ כי היא זניחה לעומת השינוי בהתנגדות.תוצאה זה עם העובדה שבאופן איכותי האפקט
+ הגאומטרי נראה זניח ביחס לשינוי בהתנגדות בגרף 
+\begin_inset Formula $4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+_האם צריך לעשות עוד משהו?__
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+: מדידה של המתח 
+\begin_inset Formula $U_{p}$
+\end_inset
+
+ כפונקציה של הטמפ'
+\end_layout
+
+\begin_layout Standard
+כיוונו את הזרם ל
+\begin_inset Formula $30\pm1mA$
+\end_inset
+
+ ואת השדה המגנטי לאפס, חיברנו את המולטימטר במקביל ל
+\begin_inset Formula $U_{p}$
+\end_inset
+
+ וכיוונו את הצוגה להציג את הטמפ' של המערכת.
+ 
+\end_layout
+
+\begin_layout Standard
+חיממנו את המערכת עד 
+\begin_inset Formula $141^{\circ}\pm1^{\circ}$
+\end_inset
+
+ צלזיוס וצילמנו את המערכת בזמן שהיא התקררה לטמפ' החדר.
+ מתוך הצילומים חילצנו את מדידות הטמפ' והמתח.
+\end_layout
+
+\begin_layout Standard
+נציג את התוצאות כגרף של 
+\begin_inset Formula $U_{p}^{-1}$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part4_1.png
+	lyxscale 50
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+:
+\series default
+ 
+\begin_inset Formula $U_{p}^{-1}$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מייצג את אחד חלקי טמפ' המערכת ב
+\begin_inset Formula $K^{-1}$
+\end_inset
+
+ וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ את אחד חלקי המתח הנדגם ב
+\begin_inset Formula $V^{-1}$
+\end_inset
+
+.
+ הנקודות הכחולות מייצגות את הדגימות שנלקחו.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+_להסביר את החלק הימני של הגרף_
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+_להעביר את הפיתוחים הבאים למבוא_
+\end_layout
+
+\begin_layout Standard
+בחלקו השמאלי של הגרף המתייחס לטמפ' גבוהות ניתן לראות כי הגרף בקירוב טוב
+ לינארי ניתן להבין זאת באופן הבא: 
+\end_layout
+
+\begin_layout Standard
+הטמפ' גבוהות ולכן המל
+\begin_inset Quotes erd
+\end_inset
+
+מ נמצא במשטר האינטרינזי, במשטר זה מתקיים 
+\begin_inset Formula 
+\[
+n=p=n_{i}\sim e^{-\frac{E_{g}}{2k_{B}T}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמו כן 
+\begin_inset Formula 
+\[
+U_{p}=\frac{\rho_{xx}L}{Wd}I_{x},\rho_{xx}=\frac{1}{e\left(n\mu_{e}+\mu_{h}p\right)}=\frac{1}{n_{i}e\left(\mu_{e}+\mu_{h}\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow U_{p}^{-1}\sim n_{i}\sim e^{-\frac{E_{g}}{2k_{B}T}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בנוסף, בטמפ' אלו מתקיים 
+\begin_inset Formula $T^{-1}<<1$
+\end_inset
+
+ ולכן ניתן לקרב את האקספוננט לפונקציה לינארית ולקבל 
+\begin_inset Formula 
+\[
+U_{p}^{-1}\sim1-\frac{E_{g}}{2k_{B}}\cdot T^{-1}
+\]
+
+\end_inset
+
+ והרי שקיבלנו שבטמפ' גבוהות אכן אמור להתקיים יחס לינארי מקורב בין 
+\begin_inset Formula $U_{p}^{-1}$
+\end_inset
+
+ לבין 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי לחלץ את האנרגיה 
+\begin_inset Formula $E_{g}$
+\end_inset
+
+ נציג את לוג המתח כפונקציה של 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+ במקרה זה ניתן לכתוב 
+\begin_inset Formula 
+\[
+U_{p}=Ke^{\frac{E_{g}}{2k_{B}T}}\Rightarrow\ln U_{p}=\frac{E_{g}}{2k_{B}}T^{-1}+\ln K
+\]
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula $K$
+\end_inset
+
+ קבוע כלשהו.
+ 
+\end_layout
+
+\begin_layout Standard
+בהצגה של התוצאות כ
+\begin_inset Formula $\ln U_{p}$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+ התקבל הגרף הבא:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part4_2.png
+	lyxscale 50
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\numeric off
+:
+\series default
+ 
+\begin_inset Formula $\ln U_{p}$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מייצג את אחד חלקי טמפ' המערכת ב
+\begin_inset Formula $K^{-1}$
+\end_inset
+
+ וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ את לן המתח הנדגם.
+ הנקודות הכחולות מייצגות את הדגימות שנלקחו והקו הכתום את הרגרסיה שבוצעה
+ לנתונים בתחום הלינארי.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ביצענו רגרסיה לינארית על התחום הלינארי )טמפ' גבוהות( והתקבלה הפונקציה הבא:
+\begin_inset Formula 
+\[
+y=\left(4.48\pm0.09\right)10^{3}x+\left(-11.7\pm0.3\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עם התאמה טובה של 
+\begin_inset Formula $R^{2}=0.9982$
+\end_inset
+
+.
+ מתוך השיפוע נחלץ את האנרגיה 
+\begin_inset Formula 
+\[
+m=\frac{E_{g}}{2k_{B}}\Rightarrow E_{g}=2mk_{B}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ונקבל 
+\begin_inset Formula 
+\[
+E_{g}=0.77\pm0.02eV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+: מדידה של מתח הול 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ כפונקציה של הטמפ'
+\end_layout
+
+\begin_layout Standard
+חיברנו את המולטימטר במקביל למתח הול 
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ וכילנו אותו להיות אפס כאשר הזרם במערכת מתאפס.
+ קבענו את הזרם 
+\begin_inset Formula $I_{p}=30\pm1mA$
+\end_inset
+
+ ואת השדה המגנטי ל
+\begin_inset Formula $300\pm1mT$
+\end_inset
+
+ ולבסוף חיממנו את המערכת עד כ
+\begin_inset Formula $140^{\circ}$
+\end_inset
+
+ צלזיוס.
+ במהלך ההתקררות של המערכת לטמפ' החדר צילמנו את המערכת ומכשירי המדידה ולאחר
+ מכן חילצנו מהם את מדידות הטמפ' ומתח הול.
+\end_layout
+
+\begin_layout Standard
+כפי שנחזה מהתדריך לפי נוסחה )?( 
+\begin_inset Formula $R_{H}$
+\end_inset
+
+ מחליף סימן ומכאן ש
+\begin_inset Formula $U_{H}$
+\end_inset
+
+ מחליף סימן, לכן חישבנו את 
+\begin_inset Formula $\ln\left|U_{H}\right|$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+, התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part5_1.png
+	lyxscale 50
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+:
+\series default
+ 
+\begin_inset Formula $\ln\left|U_{H}\right|$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מייצג את אחד חלקי טמפ' המערכת ב
+\begin_inset Formula $K^{-1}$
+\end_inset
+
+ וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ את לן המתח הנדגם )בערך מוחלט(.
+ הנקודות הכחולות מייצגות את הדגימות .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בטמפ' גבוהות כאשר המל
+\begin_inset Quotes erd
+\end_inset
+
+מ בתחום האינטרינזי מתקיים 
+\begin_inset Formula 
+\[
+U_{H}\sim\frac{1}{n_{i}}\sim e^{\frac{E_{g}}{2k_{B}T}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן 
+\begin_inset Formula 
+\[
+\ln U_{H}=K+\frac{E_{g}}{2k_{B}}T^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נזהה את התחום הלינארי עבור הטמפ' הגבוהות ונבצע עליו רגרסיה לינארית, התקבל
+ הגרף הבא )טמפ' 
+\begin_inset Formula $120^{\circ}-140^{\circ}$
+\end_inset
+
+(:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part5_2.png
+	lyxscale 50
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\numeric off
+:
+\series default
+ 
+\begin_inset Formula $\ln\left|U_{H}\right|$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מייצג את אחד חלקי טמפ' המערכת ב
+\begin_inset Formula $K^{-1}$
+\end_inset
+
+ וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ את לן המתח הנדגם )בערך מוחלט(.
+ הנקודות הכחולות מייצגות את הדגימות והקו הכתום את הרגרסיה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ביצענו רגרסיה לינארית על התחום הלינארי )טמפ' גבוהות( והתקבלה הפונקציה הבא:
+\begin_inset Formula 
+\[
+y=\left(1.48\pm0.08\right)\cdot10^{3}x+\left(-8.9\pm0.2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עם התאמה של 
+\begin_inset Formula $R^{2}=0.9939$
+\end_inset
+
+.
+ מתוך השיפוע נחלץ את האנרגיה 
+\begin_inset Formula 
+\[
+m=\frac{E_{g}}{2k_{B}}\Rightarrow E_{g}=2mk_{B}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ונקבל 
+\begin_inset Formula 
+\[
+E_{g}=0.26\pm0.02eV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דיון בתוצאות
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנות
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מקורות מידע
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\numeric off
+( תדריך __.
+\end_layout
+
+\begin_layout Section*
+נספח
+\end_layout
+
+\begin_layout Itemize
+הנוסחא בה השתמשנו לחישוב השגיאות הנגררות בניסוי:
+\begin_inset Formula 
+\[
+\delta F=\sqrt{\left(\frac{\partial F}{\partial x}\delta x\right)^{2}+\left(\frac{\partial F}{\partial y}\delta y\right)^{2}+\ldots}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\delta x,\delta y,\ldots$
+\end_inset
+
+ הן השגיאות של 
+\begin_inset Formula $x,y,\ldots$
+\end_inset
+
+ ו-
+\begin_inset Formula $\delta F$
+\end_inset
+
+ היא השגיאה הנגררת של 
+\begin_inset Formula $F$
+\end_inset
+
+, שהיא פונקציה של המשתנים 
+\begin_inset Formula $x,y,\ldots$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+הנוסחה בה השתמשנו לחישוב השגיאה היחסית בין הערכים המדודים לתיאורטיים בניסוי:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xi_{rel\ err}=\frac{\delta v}{v}\cdot100\%
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
