@@ -137,3 +137,32 @@ Reg_print(fit)
 a = fit.intercept
 
 #%% part - Range of alpha particles
+time = 0 # sec
+time_err = 0 
+counts = np.array([]) 
+count_err = np.array([])
+R = counts/time
+x = np.array([]) # meter
+
+R = R - R_b
+R = R * (x+a)**2
+fig,fit = one4all(x+a,R,xlabel="range[m]",ylabel="rate[cps]",mode="linear")
+
+
+#%% part - Absorption of Beta Particles and Beta Decay Energy
+# background
+time = 0
+time_err =0
+counts = 0
+R_b = counts/time
+
+thickness = np.array([])
+counts = np.array([])
+
+time = 0
+time_err = 0
+thick_err =0
+R = counts / time
+
+#not sure what to do
+one4all(thickness,R-R_b,xlabel="thickness",ylabel="rate [cps]")
