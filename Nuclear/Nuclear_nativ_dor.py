@@ -76,27 +76,46 @@ def Reg_print(fit):
 
                             ######### Station Number: 3 #########
 #%% part - Pleateau
+parameters={'step_voltage':0,'preset_time':0} # [V],[sec]
+source_chosen=" "
 
 file_name = ""
 df = pd.read_csv(file_name) # read the data.
-counts = np.array(df["counts"]) # need to change to relevant names
+counts = np.array(df["counts"]) # need to change to relevant name
 V = np.array(df["voltage"]) # need to change to relevant names
 one4all(V,counts,xlabel="V[V]",ylabel="counts per second")
 
+'''
+Nativ:
+is counts actually the cps? or should we divide by the elapsed time in seconds
+from the video explaining the experimental setup it seems like the counts is always rising.
+Alternative-
+time_elapsed =np.array(df["time_elapsed"])# need to change to relevant name
+cps=countes/time_elapsed
+one4all(V,cps,xlabel="V[V]",ylabel="counts per second")
+'''
 operatin_V = 0 # volt
 
 #%% part - Statistics of counting
 
-# background meas
+# 2. background meas
 counts = 0
-time = 0 # sec
+time = 100 # sec
 time_err = 0
 background_rate = counts/time 
 
-# get measurments
+# 3. get measurments
+source_name = ''
+
+# 4.
+source_to_counter_distance = '' # at which slot the source was put
+
 time = 1 #sec
 rates = np.array([]) / time
 n_bar = np.mean(rates)
+
+#5.
+#m_prime=150*n_bar #number of measurments
 
 file_name = ""
 df = pd.read_csv(file_name) # read the data.
@@ -115,13 +134,20 @@ print(f"K3={K3}+-{K3_std}")
 
 #%% Inverse square law
 
+
 file_name = ""
 df = pd.read_csv(file_name) # read the data.
 counts = np.array(df["counts"]) # need to change to relevant names
 R = counts/time
+
+# 1.
 x = np.array([]) #m
 x_err = 0
 m = len(R)
+
+# 3.
+beta_source_chosen= ""
+
 
 #R_b = np.random.normal(loc=background_rate,sclae=?,size=m)
 R_b = np.random.poisson(lam=n_bar,size=m)
