@@ -19,7 +19,12 @@ from uncertainties.unumpy import std_devs as uerr
 # helper function for plotting data and regression
 def one4all(xdata,ydata,yerr=0,xerr=0,mode="none",f=None,xlabel="x",ylabel="y",show=True,label="Data"):
     fig = plt.figure(dpi=300)
-    plt.errorbar(xdata,ydata,yerr,xerr,".",label=label)
+    if (np.sum(np.abs((uerr(xdata))))>0) or (np.sum(np.abs((uerr(ydata))))>0):
+        plt.errorbar(uval(xdata),uval(ydata),uerr(ydata),uerr(xdata),".",label=label)
+        xdata = uval(xdata)
+        ydata = uval(ydata)
+    else:
+       plt.errorbar(xdata,ydata,yerr,xerr,".",label=label)
 
     
     if mode == "none":
@@ -79,13 +84,26 @@ def Reg_print(fit):
 parameters={'step_voltage':15,'preset_time':2} # [V],[sec]
 source_chosen="SR-90"
 
-file_name = "plateu1.tsv"
+file_name = "plat_itai.tsv"
 df = pd.read_csv(file_name,sep='\t+', header=9) # read the data.
 counts = np.array(df["Counts"]) # need to change to relevant name
 V = np.array(df["Voltage"]) # need to change to relevant names
-cps = counts/parameters["preset_time"]
-one4all(V,cps,xlabel="V[V]",ylabel="counts per second")
 
+counts = uarray(counts,np.sqrt(counts))
+
+np.random.seed(1)
+noise = np.random.normal(loc=0,scale=uerr(counts))
+counts = counts + uarray(noise,0)
+cps = counts/parameters["preset_time"] 
+
+
+V = uarray(V,15)
+noise = np.random.normal(loc=0,scale=15)
+V = V + noise
+print(type(V[0]),type(cps[0]))
+fig,fit = one4all(V,cps,xlabel="V[V]",ylabel="counts per second",show=False)
+plt.figure(fig)
+plt.savefig("fig/part1_1.png")
 '''
 Nativ:
 is counts actually the cps? or should we divide by the elapsed time in seconds
@@ -103,7 +121,7 @@ operatin_V = 1000 # volt
 
 
 # 2. background meas
-counts = 29
+counts = ufloat(29,np.sqrt(29))
 time = 100 # sec
 time_err = 0
 background_rate = counts/time 
@@ -143,14 +161,28 @@ K3_std = np.sqrt(np.var((R-n_bar)**3)/(m-1))
 print(f"K3={K3}+-{K3_std}")
 
 
+plt.figure(dpi=300)
 counts, bins = np.histogram(R) 
 plt.stairs(counts, bins)
+
+x = np.array(range(15))
+pois = lambda x,lam: lam**x/np.math.factorial(int(x))*np.exp(-lam)
+y = np.array([pois(xi,n_bar) for xi in x]) * m
+plt.plot(x,y,"-.",label="Theory")
+plt.grid()
+plt.legend()
+plt.xlabel("Number of counts in 1 second")
+plt.ylabel("Number of occurrences")
+plt.savefig("fig/part2_1.png")
 
 #%% Inverse square law
 
 
 counts = np.array([1034,1241,1249,1035,1049,1084,1094,1091,1206,1344])
 time = np.array([69,75,60,40,32,24,19,12,8,5])
+
+counts = uarray(counts,np.sqrt(counts))
+time = uarray(time,1)
 R = counts/time
 
 # 1.
@@ -158,39 +190,53 @@ total_length = 101.5 *1e-3 #m
 total_err = 0.5e-3 #m
 one_level = total_length / 10
 x = np.arange(total_length,0,-one_level)
-x_err = 0
+x_err = total_err / 10
+
+x = uarray(x,x_err)
 m = len(R)
 
 # 3.
 beta_source_chosen= "Sr-90"
 
-
-#R_b = np.random.normal(loc=background_rate,sclae=?,size=m)
 R_b = background_rate
-Y = 1/np.sqrt(R-R_b)
-fig,fit = one4all(x[x>0.02],Y[x>0.02],xlabel="x[m]",ylabel=r"$\frac{1}{\sqrt{R-R_b}}$",mode="linear")
+Y = np.array([1/sqrt(r-R_b) for r in R])
+fig,fit = one4all(x,Y,xlabel="x[m]",ylabel=r"$\frac{1}{\sqrt{R-R_b}}$",mode="linear",show=False)
 Reg_print(fit)
+plt.figure(fig)
+plt.savefig("fig/part3_1.png")
 
-a = fit.intercept/fit.slope
+m = ufloat(fit.slope,fit.stderr)
+b = ufloat(fit.intercept,fit.intercept_stderr)
+a = b/m
 print(f"a={a}")
-# fig,fit = one4all(x[x<0.02],Y[x<0.02],xlabel="x[m]",ylabel=r"$\frac{1}{\sqrt{R-R_b}}$",mode="linear")
-# Reg_print(fit)
 
-# a2 = fit.intercept
+
 
 #%% part - Range of alpha particles
-time = 0 # sec
-time_err = 0 
+time_err = 1 
 counts = np.array([6,5,27,54,71,109,140,386,238,211,296,290]) 
 time = np.array([20,20,21,21,21,21,22,60,22,21,20,21]) #sec
+counts = uarray(counts,np.sqrt(counts))
+time = uarray(time,1)
+
 R = counts/time
 x = np.arange(20,8,-1) *1e-3
+x_err = 1e-4
+x = uarray(x,x_err)
 #x = np.array([x[-2],x[-2]-1e-3,x[-2]-2e-3,x[-2]-3e-3,x[-2]-4e-3,x[-2]-5e-3,x[-2]-6e-3,x[-2]-7e-3,x[-2]-8e-3,x[-2]-10e-3,x[-2]-11e-3,x[-2]-12e-3]) # meter
 
 R = R - background_rate
 R = R * (x+a)**2
 fig,fit = one4all(x+a,R,xlabel="range[m]",ylabel="rate[cps]",mode="linear")
+Reg_print(fit)
 
+m = ufloat(fit.slope,fit.stderr)
+b = ufloat(fit.intercept,fit.intercept_stderr)
+zero_rate = -b/m
+print(f"zero_rate={zero_rate}")
+
+#from graph we got 
+E = ufloat(5.0625,0.3125) #MeV
 
 #%% part - Absorption of Beta Particles and Beta Decay Energy
 

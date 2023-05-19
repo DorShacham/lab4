@@ -151,7 +151,7 @@ End
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "../../../../../AppData/Local/LyX 2.3/Resources/templates/_templates/MacrosHeb.lyx"
+filename "../../../../../../AppData/Local/LyX 2.3/Resources/templates/_templates/MacrosHeb.lyx"
 
 \end_inset
 
@@ -382,6 +382,468 @@ today
 
 \begin_layout Section*
 תוצאות הניסוי
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+חלק ראשון - 
+\begin_inset Formula $\text{Plateau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הדלקנו את מערכת ה
+\begin_inset Formula $ST-360$
+\end_inset
+
+ ואת תוכנת המחשב 
+\begin_inset Formula $STX$
+\end_inset
+
+, הנחנו את דגימת ה
+\begin_inset Formula $SR-90$
+\end_inset
+
+ במדף העליון במ
+\begin_inset Quotes erd
+\end_inset
+
+ג )מונה גייגר(.
+ ביצענו מדידה של כמות המיתוגים במונה כפונקציה של מתח העבודה בין המתחים 
+\begin_inset Formula $\left[500,1200\right]V$
+\end_inset
+
+ כאשר המדידות התבצעו בקפיצות של 
+\begin_inset Formula $15V$
+\end_inset
+
+ למשך 
+\begin_inset Formula $2$
+\end_inset
+
+ שניות למדידה.
+ התקבל הגרף הבא:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part1_1.png
+	lyxscale 40
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\series default
+ קצב המיתוגים של מ
+\begin_inset Quotes erd
+\end_inset
+
+ג כפונקציה של מתח העבודה.
+\end_layout
+
+\begin_layout Standard
+מתוך הגרף בחרנו אזור בו נראה שקצב המיתוגים )
+\begin_inset Formula $counts\ per\ second$
+\end_inset
+
+( אינה תלויה במתח ובתוכו בחרנו את מתח העבודה להיות 
+\begin_inset Formula $V=1000V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+משלב זה כיוונו את מתח העבודה להיות 
+\begin_inset Formula $1000V$
+\end_inset
+
+ והשארנו אותו כך.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+חלק שני - 
+\lang english
+
+\begin_inset Formula $\text{Statistics of counting and Background Radiation Measurement }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הרחקנו את המקורות הרדיואקטיביים מהמ
+\begin_inset Quotes erd
+\end_inset
+
+ג ומדדנו את מספר המיתוגים 
+\begin_inset Formula $\left(counts\right)$
+\end_inset
+
+ במשך 
+\begin_inset Formula $100$
+\end_inset
+
+ שניות בשביל למצוא את קצב המיתוגים של קרינת הרקע, התקבל:
+\begin_inset Formula 
+\[
+R_{b}=0.29\pm0.05\ cps
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $cps\equiv counts\ per\ second$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כעת לקחנו מקור רדיאקטיבי - 
+\begin_inset Formula $Co-60$
+\end_inset
+
+ וביצענו כ
+\begin_inset Formula $740$
+\end_inset
+
+ מדידות של שנייה אחת.
+ התקבלה ההתפלגות הבאה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part2_1.png
+	lyxscale 40
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+_להשאיר כתום פואסוני?_
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\series default
+ התפלגות תצפיות המדידות.
+\end_layout
+
+\begin_layout Standard
+מתוך מדידות אלו חישבו את הקצב הממוצע ואת סטיית התקן שלו 
+\begin_inset Formula 
+\[
+\overline{n}=4.181\pm0.075cps,\ STD\left(n\right)=2.045
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $0.075$
+\end_inset
+
+ היא סטיית התקן של 
+\begin_inset Formula $\overline{n}$
+\end_inset
+
+ ו
+\begin_inset Formula $2.045$
+\end_inset
+
+ היא סטיית התקן של הקצב.
+\end_layout
+
+\begin_layout Standard
+בנוסף חושב המקדם 
+\begin_inset Formula $K_{3}$
+\end_inset
+
+ וסטיית התקן שלו והתקבל 
+\begin_inset Formula 
+\[
+K_{3}=3.7\pm1.7
+\]
+
+\end_inset
+
+ קיבלנו שהתחום של 
+\begin_inset Formula $\overline{n}$
+\end_inset
+
+ מוכל בתחום של 
+\begin_inset Formula $K_{3}$
+\end_inset
+
+ לכן באופן מובהק סטטיסטי ניתן להגיד ש
+\begin_inset Formula $\overline{n}=K_{3}$
+\end_inset
+
+ ולכן על פי התאוריה קרינת הרקע מתפלגת פאוסונית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+חלק שלישי - 
+\lang english
+
+\begin_inset Formula $\text{Inverse Square Law}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מדדנו את המרחקים בין המדפים השונים במ
+\begin_inset Quotes erd
+\end_inset
+
+ג, לאחר מכן, הכנסו דגימה של 
+\begin_inset Formula $Sr-90$
+\end_inset
+
+ למדף התחתון וביצענו מדידות במדפים השונים.
+ בשביל לבדוק את 
+\lang english
+
+\begin_inset Formula $\text{\text{Inverse Square Law}}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ חיסרנו מהמדידות את קרינת הרקע שמדדנו בחלק השני וביצענו התאמה לינארית לפי
+ נוסחה )?(.
+ התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part3_1.png
+	lyxscale 40
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\series default
+ 
+\begin_inset Formula $\frac{1}{\sqrt{R-R_{b}}}$
+\end_inset
+
+ כפונציה של 
+\begin_inset Formula $x$
+\end_inset
+
+ - מרחק הדגימה מהמ
+\begin_inset Quotes erd
+\end_inset
+
+ג במטרים.
+ הדגימות מוצגות בכחול והרגרסיה בכתום.
+\end_layout
+
+\begin_layout Standard
+ניתן לראות שיש התאמה טובה לעקום לינארי הן מבחינה איכותית - העקום עובר דרך
+ כל המדידות בטווח השגיאה והן מבחינה איכותית - התקבלה התאמה של 
+\begin_inset Formula $R^{2}=0.998$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+התאמה זו היא עדות חזקה לקיום התופעת 
+\lang english
+
+\begin_inset Formula $\text{\text{Inverse Square Law}}$
+\end_inset
+
+
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+משוואת העקום שהתקבל היא:
+\begin_inset Formula 
+\[
+y=\left(2.248\pm0.032\right)x+\left(0.038\pm0.002\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתוך נוסחה )?( והמשוואה שהתקבלה ניתן לחלץ את הפקטור הגיאומטרי 
+\begin_inset Formula $a$
+\end_inset
+
+ ולקבל 
+\begin_inset Formula 
+\[
+a=0.0168\pm0.0009m
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
