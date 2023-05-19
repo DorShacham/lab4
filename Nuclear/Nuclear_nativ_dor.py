@@ -76,93 +76,137 @@ def Reg_print(fit):
 
                             ######### Station Number: 3 #########
 #%% part - Pleateau
+parameters={'step_voltage':15,'preset_time':2} # [V],[sec]
+source_chosen="SR-90"
 
-file_name = ""
-df = pd.read_csv(file_name) # read the data.
-counts = np.array(df["counts"]) # need to change to relevant names
-V = np.array(df["voltage"]) # need to change to relevant names
-one4all(V,counts,xlabel="V[V]",ylabel="counts per second")
+file_name = "plateu1.tsv"
+df = pd.read_csv(file_name,sep='\t+', header=9) # read the data.
+counts = np.array(df["Counts"]) # need to change to relevant name
+V = np.array(df["Voltage"]) # need to change to relevant names
+cps = counts/parameters["preset_time"]
+one4all(V,cps,xlabel="V[V]",ylabel="counts per second")
 
-operatin_V = 0 # volt
+'''
+Nativ:
+is counts actually the cps? or should we divide by the elapsed time in seconds
+from the video explaining the experimental setup it seems like the counts is always rising.
+Alternative-
+time_elapsed =np.array(df["time_elapsed"])# need to change to relevant name
+cps=countes/time_elapsed
+one4all(V,cps,xlabel="V[V]",ylabel="counts per second")
+'''
+operatin_V = 1000 # volt
 
 #%% part - Statistics of counting
 
-# background meas
-counts = 0
-time = 0 # sec
+
+
+
+# 2. background meas
+counts = 29
+time = 100 # sec
 time_err = 0
 background_rate = counts/time 
 
-# get measurments
+# 3. get measurments
+source_chosen="Co-60"
+
+# 4.
+source_to_counter_distance = '' # at which slot the source was put
+
+file_name = "stat1.tsv"
+df = pd.read_csv(file_name,sep='\t+', header=9) # read the data.
+counts = np.array(df["Counts"]) # need to change to relevant name
 time = 1 #sec
-rates = np.array([]) / time
-n_bar = np.mean(rates)
+R = counts / time
+n_bar = np.mean(R)
 
-file_name = ""
-df = pd.read_csv(file_name) # read the data.
-counts = np.array(df["counts"]) # need to change to relevant names
-rates = counts/time
+#5.
+#m_prime=150*n_bar #number of measurments
 
-m = len(rates)
-n_bar = np.mean(rates)
-n_std = np.std(rates)
+file_name = "stat2.tsv"
+df = pd.read_csv(file_name,sep='\t+', header=9) # read the data.
+counts = np.array(df["Counts"]) # need to change to relevant names
+R = counts/time
+
+m = len(R)
+n_bar = np.mean(R)
+n_std = np.std(R)
 n_bar_std = n_std/np.sqrt(m-1)
 print(f"n_bar={n_bar}+-{n_bar_std}\nn_std={n_std}")
 
-K3 = 1/(m-1) * np.sum((rates-n_bar)**3)
-K3_std = np.sqrt(np.var((rates-n_bar)**3)/(m-1))
+K3 = 1/(m-1) * np.sum((R-n_bar)**3)
+K3_std = np.sqrt(np.var((R-n_bar)**3)/(m-1))
+
+#def K3(data): n=np.mean(data) K3=np.sum((data-n)**3) K3=K3/(len(data)-1) return K3
+
 print(f"K3={K3}+-{K3_std}")
+
+
+counts, bins = np.histogram(R) 
+plt.stairs(counts, bins)
 
 #%% Inverse square law
 
-file_name = ""
-df = pd.read_csv(file_name) # read the data.
-counts = np.array(df["counts"]) # need to change to relevant names
+
+counts = np.array([1034,1241,1249,1035,1049,1084,1094,1091,1206,1344])
+time = np.array([69,75,60,40,32,24,19,12,8,5])
 R = counts/time
-x = np.array([]) #m
+
+# 1.
+total_length = 101.5 *1e-3 #m
+total_err = 0.5e-3 #m
+one_level = total_length / 10
+x = np.arange(total_length,0,-one_level)
 x_err = 0
 m = len(R)
 
+# 3.
+beta_source_chosen= "Sr-90"
+
+
 #R_b = np.random.normal(loc=background_rate,sclae=?,size=m)
-R_b = np.random.poisson(lam=n_bar,size=m)
+R_b = background_rate
 Y = 1/np.sqrt(R-R_b)
-fig,fit = one4all(x,Y,xlabel="x[m]",ylabel=r"$frac{1}{\sqrt(R-R_b)}$",mode="regression")
+fig,fit = one4all(x[x>0.02],Y[x>0.02],xlabel="x[m]",ylabel=r"$\frac{1}{\sqrt{R-R_b}}$",mode="linear")
 Reg_print(fit)
 
-a = fit.intercept
+a = fit.intercept/fit.slope
+print(f"a={a}")
+# fig,fit = one4all(x[x<0.02],Y[x<0.02],xlabel="x[m]",ylabel=r"$\frac{1}{\sqrt{R-R_b}}$",mode="linear")
+# Reg_print(fit)
 
-fig,fit = one4all(x[x<0.02],Y[x<0.02],xlabel="x[m]",ylabel=r"$frac{1}{\sqrt(R-R_b)}$",mode="regression")
-Reg_print(fit)
-
-a = fit.intercept
+# a2 = fit.intercept
 
 #%% part - Range of alpha particles
 time = 0 # sec
 time_err = 0 
-counts = np.array([]) 
-count_err = np.array([])
+counts = np.array([6,5,27,54,71,109,140,386,238,211,296,290]) 
+time = np.array([20,20,21,21,21,21,22,60,22,21,20,21]) #sec
 R = counts/time
-x = np.array([]) # meter
+x = np.arange(20,8,-1) *1e-3
+#x = np.array([x[-2],x[-2]-1e-3,x[-2]-2e-3,x[-2]-3e-3,x[-2]-4e-3,x[-2]-5e-3,x[-2]-6e-3,x[-2]-7e-3,x[-2]-8e-3,x[-2]-10e-3,x[-2]-11e-3,x[-2]-12e-3]) # meter
 
-R = R - R_b
+R = R - background_rate
 R = R * (x+a)**2
 fig,fit = one4all(x+a,R,xlabel="range[m]",ylabel="rate[cps]",mode="linear")
 
 
 #%% part - Absorption of Beta Particles and Beta Decay Energy
-# background
-time = 0
-time_err =0
-counts = 0
-R_b = counts/time
 
-thickness = np.array([])
-counts = np.array([])
 
-time = 0
-time_err = 0
-thick_err =0
+beta_source_chosen= "Sr-90"
+thickness = np.array([0,40,80,160,240,320,400])*1e-6 #m
+counts = np.array([1305,1124,1145,1055,1067,1267,1055])
+time = np.array([14,13,15,15,17,22,20]) #sec
 R = counts / time
+one4all(thickness,R-background_rate,xlabel="thickness",ylabel="rate [cps]")
+
+
+beta_source_chosen= "Ti-204"
+thickness = np.array([0,40,80,160,240,320,400])*1e-6 #m
+counts = np.array([])
+time = np.array([]) #sec
 
 #not sure what to do
-one4all(thickness,R-R_b,xlabel="thickness",ylabel="rate [cps]")
+one4all(thickness,np.log10(R-R_b),xlabel="thickness",ylabel="rate [cps]")
