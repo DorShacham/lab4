@@ -971,48 +971,15 @@ a=0.0168\pm0.0009m
 \begin_inset Formula $R^{2}=0.948$
 \end_inset
 
-.
-\end_layout
 
-\begin_layout Standard
-מהרגרסיה התקבלה משוואת העקום:
 \begin_inset Formula 
 \[
-y=\left(-0.96\pm0.07\right)x+\left(0.0349\pm0.0022\right)
-\]
-
-\end_inset
-
- מתוך משוואה זו חולץ המקדם החופשי 
-\begin_inset Formula 
-\[
-b=0.0349\pm0.0022m
-\]
-
-\end_inset
-
- אשר מהווה אקסטרפולציה לטווח בו קצב פליטת החלקיקים מתאפס, בעזרת גודל זה
- ואיור )?( הוערכה האנרגיה של חלקיקי ה
-\begin_inset Formula $\alpha$
-\end_inset
-
- להיות 
-\begin_inset Formula 
-\[
-E_{\alpha}=5.06\pm0.3MeV
+==>y=(-0.96+/-0.07)x+(0.0349+/-0.0022),R^{2}=0.9476221397944267
 \]
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-טווח זה מכיל את הנתון הרשום בדף המקורות 
-\begin_inset Formula $E_{\alpha}=5.3MeV$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Section*

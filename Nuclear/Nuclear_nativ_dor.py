@@ -97,7 +97,7 @@ counts = counts + uarray(noise,0)
 cps = counts/parameters["preset_time"] 
 
 
-V = uarray(V,15)
+V = uarray(V,1)
 noise = np.random.normal(loc=0,scale=15)
 V = V + noise
 print(type(V[0]),type(cps[0]))
@@ -217,7 +217,7 @@ time_err = 1
 counts = np.array([6,5,27,54,71,109,140,386,238,211,296,290]) 
 time = np.array([20,20,21,21,21,21,22,60,22,21,20,21]) #sec
 counts = uarray(counts,np.sqrt(counts))
-time = uarray(time,1)
+time = uarray(time,time_err)
 
 R = counts/time
 x = np.arange(20,8,-1) *1e-3
@@ -227,8 +227,11 @@ x = uarray(x,x_err)
 
 R = R - background_rate
 R = R * (x+a)**2
-fig,fit = one4all(x+a,R,xlabel="range[m]",ylabel="rate[cps]",mode="linear")
+fig,fit = one4all(x+a,R,xlabel="d[m]",ylabel="R[cps]",mode="linear")
 Reg_print(fit)
+
+plt.figure(fig)
+plt.savefig("fig/part4_1.png")
 
 m = ufloat(fit.slope,fit.stderr)
 b = ufloat(fit.intercept,fit.intercept_stderr)
