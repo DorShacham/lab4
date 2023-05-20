@@ -442,7 +442,7 @@ today
  שפופרת המונה מכילה גז ושתי אלקטרודות שביניהן הפרש פוטנציאלים.
  כאשר הגז מיונן, נוצרים יונים חיוביים ואלקטרונים חופשיים.
  הם מואצים אל האלקטרודות בעקבות השדה החשמלי כשאקלטרונים חופשיים עולים ליינן
- אטומי גז נופים וכך ליצור מפולת אלקטרונים - בעקבות אפקט זה נוצר פולס והפרש
+ אטומי גז נוספים וכך ליצור מפולת אלקטרונים - בעקבות אפקט זה נוצר פולס והפרש
  מתחים הניתן למדידה על ידי המונה ומתורגם לספירה של אירועי ינון.
  מתח עבודה על שפופרת המונה שייתן תוצאות אופטמיליות נמצא ב'תחום היציב' וצריך
  לקיים שלושה קריטריונים: ראשית, להיות בטווח המתחים בהם הוא מספיק בשביל לאפשר
@@ -558,9 +558,13 @@ K_{1}=\bar{n}=\frac{\sum_{i=1}^{m}n_{i}}{m},\,K_{2}=\frac{\sum_{i=1}^{m}(n_{i}-\
 \begin_layout Standard
 בחלק השלישי של הניסוי נבדק הקשר בין מרחק הדוגמית לעוצמת הקרינה.
  עוצמת קרינת התפרקות רדיואקטיבית צפויה להיות תלויה במרחק לפי 
+\lang english
+
 \begin_inset Formula $\text{Inverse\,Square\,Law}$
 \end_inset
 
+
+\lang hebrew
  -
 \end_layout
 
@@ -610,7 +614,7 @@ I\propto R-R_{b}\propto\frac{1}{d^{2}}=\frac{1}{(x+a)^{2}}\text{\ensuremath{\Rig
 \begin_layout Standard
 בחלק הרביעי של הניסוי מדדנו את התלות של קצב המיתוגים במרחק המקור מהקולט
  כשהמקור הוא מהתפרקות אלפא.
- חלקיקי האלפא מעבדים אנרגיה באוויר ועבור מרחק גדול דיו מהקולט נצפה לקצב
+ חלקיקי האלפא מאבדים אנרגיה באוויר ועבור מרחק גדול דיו מהקולט נצפה לקצב
  מיתוגים קרוב לרקע.
  לפי הקשר הנמדד בין 
 \begin_inset Formula $R\cdot d^{2}$
@@ -644,7 +648,7 @@ I\propto R-R_{b}\propto\frac{1}{d^{2}}=\frac{1}{(x+a)^{2}}\text{\ensuremath{\Rig
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename fig/part3_2.png
+	filename fig/alpha_range_energy.png
 	lyxscale 40
 	scale 40
 
@@ -758,9 +762,13 @@ I=I_{0}e^{-\mu t}\Rightarrow ln(R-R_{b})=ln(CI_{0})-\mu t\label{eq:part5_eq1}
 \end_inset
 
  
+\lang english
+
 \begin_inset Formula $\text{material density-thickness}$
 \end_inset
 
+
+\lang hebrew
 .
  כשהמעבר נובע מהקשר הפרופורציוני בין 
 \begin_inset Formula $R-R_{b}$
@@ -790,7 +798,7 @@ I=I_{0}e^{-\mu t}\Rightarrow ln(R-R_{b})=ln(CI_{0})-\mu t\label{eq:part5_eq1}
 \begin_inset Formula $R=\frac{8ln(2)}{\mu}$
 \end_inset
 
- שממנו ניתן לגזור את האנרגיה המקסימלית של חליקי הבטא לפי נוסחא אמפירית:
+ שממנו ניתן לגזור את האנרגיה המקסימלית של חליקיק הבטא לפי נוסחא אמפירית:
 \end_layout
 
 \begin_layout Standard
@@ -994,7 +1002,7 @@ R_{b}=0.29\pm0.05\ cps
 \begin_inset Newline newline
 \end_inset
 
-כעת לקחנו מקור רדיאקטיבי - 
+לאחר מכן, לקחנו מקור רדיאקטיבי - 
 \begin_inset Formula $Co-60$
 \end_inset
 
@@ -1063,7 +1071,7 @@ R_{b}=0.29\pm0.05\ cps
 \end_layout
 
 \begin_layout Standard
-מתוך מדידות אלו חישבו את הקצב הממוצע ואת סטיית התקן שלו לפי נוסחאות 
+מתוך מדידות אלו חישבנו את הקצב הממוצע ואת סטיית התקן שלו לפי נוסחאות 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:empirical_moments"
@@ -1149,11 +1157,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset space \space{}
-\end_inset
-
-
-\begin_inset Newline newline
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -1265,7 +1269,7 @@ noprefix "false"
 \begin_inset Formula $m^{-\frac{1}{2}}$
 \end_inset
 
- כפונציה של 
+ כפונקציה של 
 \begin_inset Formula $x$
 \end_inset
 
@@ -1279,7 +1283,7 @@ noprefix "false"
 
 \begin_layout Standard
 ניתן לראות שיש התאמה טובה לעקום לינארי הן מבחינה איכותית - העקום עובר דרך
- כל המדידות בטווח השגיאה והן מבחינה איכותית - התקבלה התאמה של 
+ כל המדידות בטווח השגיאה והן מבחינה כמותית - התקבלה התאמה של 
 \begin_inset Formula $R^{2}=0.998$
 \end_inset
 
@@ -1337,11 +1341,7 @@ a=0.0168\pm0.0009m
 \end_layout
 
 \begin_layout Standard
-\begin_inset space \space{}
-\end_inset
-
-
-\begin_inset Newline newline
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -1365,7 +1365,7 @@ a=0.0168\pm0.0009m
 \end_inset
 
 ג, במדף זה מדדנו ומצאנו כי הקצב מתאים לקרינת הרקע.
- לאחר מכן ביצענו מדידות של הקצב בגבהים שונים בעזרת הנחת דיסקיות מתחת דקות
+ לאחר מכן ביצענו מדידות של הקצב בגבהים שונים בעזרת הנחת דיסקיות מתכת דקות
  שונות מתחת למקור.
  לאחר הפחתת קרינת הרקע מהקצב הנמדד התקבל הגרף הבא:
 \end_layout
@@ -1420,10 +1420,10 @@ a=0.0168\pm0.0009m
 \end_inset
 
  ביחדות של 
-\begin_inset Formula $cps\cdot m$
+\begin_inset Formula $cps\cdot m^{2}$
 \end_inset
 
- כפונציה של 
+ כפונקציה של 
 \begin_inset Formula $d$
 \end_inset
 
@@ -1440,7 +1440,7 @@ a=0.0168\pm0.0009m
 \begin_inset Formula $d$
 \end_inset
 
- חושב בעזרת על ידי המרחק הנמדד מהמ
+ חושב על ידי המרחק הנמדד מהמ
 \begin_inset Quotes erd
 \end_inset
 
@@ -1743,7 +1743,7 @@ E_{\beta}=2.24\pm0.14MeV
 \begin_inset Formula $Co-60$
 \end_inset
 
- עליו ביצענו הרבה מדידות מצאנו את הקצב הממוצא של פליטת חלקיקים 
+ עליו ביצענו הרבה מדידות מצאנו את הקצב הממוצע של פליטת חלקיקים 
 \begin_inset Formula $\overline{n}=4.184\pm0.075cps$
 \end_inset
 
@@ -1838,7 +1838,7 @@ E_{\beta}=2.24\pm0.14MeV
 
 ג לא הייתה אופטימלית והשפיעה על תוצאות הניסוי.
  בנוסף, משום ששגיאת המדידה לינארית עם שורש כמות המיתוגים ברוב הניסויים דאגנו
- להמתין מספיק זמן כך שכמות המיתוגים תביא לשגיאה יחית קטנה.
+ להמתין מספיק זמן כך שכמות המיתוגים תביא לשגיאה יחסית קטנה.
  אך במקור בו השתמשנו קצב המיתוגים היה מאוד איטי ולכן, משיקולי זמנים, נאלצו
  לקצר את המדידות, דבר אשר הגדיל את השגיאה היחסית.
  מתוך הרגרסיה הלינארית חושב טווח הדעיכה של חלקיק ה
@@ -1908,7 +1908,7 @@ E_{\beta}=2.24\pm0.14MeV
 \begin_inset Formula $Sr-90$
 \end_inset
 
- מקדם הדעיכה באלומיניום והאנריגה של הקרינה.
+ מקדם הדעיכה באלומיניום והאנרגיה של הקרינה.
  בוצעה התאמה והתקבלה התאמה לניארית בינונית ללוג הקצב של 
 \begin_inset Formula $R^{2}=0.9775$
 \end_inset
@@ -2095,9 +2095,24 @@ E_{\beta}=2.24\pm0.14MeV
 3
 \numeric off
 ( 
-\lang english
+\end_layout
 
-\begin_inset Formula $\text{Baltakmens, T., A simple method for determining the maximum energy of beta emitters by absorption measurements, Nucl. Instr. Meth. Phys. Res. 82, 1970, pp. 264-268}$
+\begin_layout Standard
+
+\size tiny
+\lang english
+\begin_inset Formula $\text{Baltakmens, T., A simple method for determining the maximum energy of beta emitters by absorption measurements,}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+
+\size tiny
+\lang english
+\begin_inset Formula $\text{ Nucl. Instr. Meth. Phys. Res. 82, 1970, pp. 264-268}$
 \end_inset
 
 
