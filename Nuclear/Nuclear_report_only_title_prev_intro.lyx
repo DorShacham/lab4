@@ -1,0 +1,162 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+מדידת תופעות שונות של התפרקות גרעינית בעזרת מונה גייגר-מולר
+\end_layout
+
+\begin_layout Section*
+תקציר
+\end_layout
+
+\begin_layout Standard
+בניסוי זה צפינו במספר תופעות שונות של התפרקות גרעינית בעזרת מונה גייגר-מולר.
+ הניסוי הורכב מחמישה חלקים - בחלק הראשון, כחלק מקדים לניסויים הבאים חיפשנו
+ את 'המתח היציב', מתח שבהפעלתו על מונה הגייגר הוא מתפקד בצורה אופטימלית.
+ יצרנו גרף של מספר המדידות כתלות במתח ובחרנו במתח שעונה על מספר קריטריונים.
+ קבענו את מתח זה להיות מתח ההפעלה בשאר חלקי הניסוי.
+ בחלק השני של הניסוי נמדד 'קצב הרקע', ספירת המונה כשלא הוצב מקור רדיואקטיבי
+ ליד המונה.
+ בקצב זה השתמשנו בשאר הניסויים על ידי כך שהפחתנו אותו מהממדידות של הקצבים
+ שהתקבלו כשכן הצבנו מקור קורן ליד המונה.
+ נוסף על כך מדדנו את שלושת המומנטים הסטטיסטיים הראשונים של קצב הקרינה עבור
+ מקור חלש והסקנו מכך האם האופו של ההתפלגות הוא גאוסי או פאוסוני - מצאנו
+ שההתפלגות היא בעלת אופי פאוסוני.
+ בחלק השלישי, בדקנו את הקשר בין מרחק המקור הקורן מהמונה על ידי לקיחת מספר
+ מדידות כשהמקור הוצב במרחקים שונים.
+ מצאנו שהקשר בין חוזק הקרינה והמרחק הוא ריבועי הפוך 
+\begin_inset Formula $C\propto\frac{1}{d^{2}}$
+\end_inset
+
+, כשנדרש פקטור תיקון 
+\begin_inset Formula $a$
+\end_inset
+
+ למרחוק שנמדד בפועל 
+\begin_inset Formula $x$
+\end_inset
+
+ ל 
+\begin_inset Formula $d$
+\end_inset
+
+ )
+\begin_inset Formula $d=x+a$
+\end_inset
+
+(.
+ הסקנו את 
+\begin_inset Formula $a$
+\end_inset
+
+ מהמדידות והשתמשנו בו בשאר חלקי הניסוי.
+ בחלק זה ראינו התאמה טובה לקשר ריבועי הפוך ו
+\begin_inset Formula $a$
+\end_inset
+
+ שהתקבל הוא 
+\begin_inset Formula $a$
+\end_inset
+
+ סביר.
+ בחלק הרביעי, מדדנו את הטווח שבו חלקיקי אלפא נבלעים באוויר.
+ על ידי קירוב הדוגמית הקורנת אל הגלאי חיפשנו את המרחק מהגלאי שעבור מרחק
+ גדול ממנו הקצב במונה דועך דרסטית אל ערך הקרוב לזה של קרינת הרקע.
+ דרך מרחק זה הערכנו את אנרגיית חלקיקי האלפא וקיבלנו שהערך שהתקבל לא תואם
+ לערך המקובל בספרות, נרחיב על פער זה בהמשך הדוח.
+ בחלק החמישי הצבנו מקור קורן של חלקיקי בטא מול הגלאי והצבנו מול הגלאי חוסמי
+ קרינה עשויים אלומיניום בעובי משתנה.
+ דרך הקשר בין עובי החוסמים לקצב הספירות הסקנו את מקדם הדעיכה 
+\begin_inset Formula $\mu$
+\end_inset
+
+ ואת טווח האנרגיה של חלקיקי הבטא.
+ השווינו את התוצאות לערכים המקובלים בספרות וקיבלנו '?'.
+\end_layout
+
+\begin_layout Section*
+מבוא
+\end_layout
+
+\begin_layout Standard
+מחר
+\end_layout
+
+\end_body
+\end_document
