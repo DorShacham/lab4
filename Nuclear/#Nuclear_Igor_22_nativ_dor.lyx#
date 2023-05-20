@@ -366,6 +366,63 @@ today
 \end_layout
 
 \begin_layout Standard
+בניסוי זה צפינו במספר תופעות שונות של התפרקות גרעינית בעזרת מונה גייגר-מולר.
+ הניסוי הורכב מחמישה חלקים - בחלק הראשון, כחלק מקדים לניסויים הבאים חיפשנו
+ את 'המתח היציב', מתח שבהפעלתו על מונה הגייגר הוא מתפקד בצורה אופטימלית.
+ יצרנו גרף של מספר המדידות כתלות במתח ובחרנו במתח שעונה על מספר קריטריונים.
+ קבענו את מתח זה להיות מתח ההפעלה בשאר חלקי הניסוי.
+ בחלק השני של הניסוי נמדד 'קצב הרקע', ספירת המונה כשלא הוצב מקור רדיואקטיבי
+ ליד המונה.
+ בקצב זה השתמשנו בשאר הניסויים על ידי כך שהפחתנו אותו מהממדידות של הקצבים
+ שהתקבלו כשכן הצבנו מקור קורן ליד המונה.
+ נוסף על כך מדדנו את שלושת המומנטים הסטטיסטיים הראשונים של קצב הקרינה עבור
+ מקור חלש והסקנו מכך האם האופו של ההתפלגות הוא גאוסי או פאוסוני - מצאנו
+ שההתפלגות היא בעלת אופי פאוסוני.
+ בחלק השלישי, בדקנו את הקשר בין מרחק המקור הקורן מהמונה על ידי לקיחת מספר
+ מדידות כשהמקור הוצב במרחקים שונים.
+ מצאנו שהקשר בין חוזק הקרינה והמרחק הוא ריבועי הפוך 
+\begin_inset Formula $C\propto\frac{1}{d^{2}}$
+\end_inset
+
+, כשנדרש פקטור תיקון 
+\begin_inset Formula $a$
+\end_inset
+
+ למרחוק שנמדד בפועל 
+\begin_inset Formula $x$
+\end_inset
+
+ ל 
+\begin_inset Formula $d$
+\end_inset
+
+ )
+\begin_inset Formula $d=x+a$
+\end_inset
+
+(.
+ הסקנו את 
+\begin_inset Formula $a$
+\end_inset
+
+ מהמדידות והשתמשנו בו בשאר חלקי הניסוי.
+ בחלק זה ראינו התאמה טובה לקשר ריבועי הפוך.
+ בחלק הרביעי, מדדנו את הטווח שבו חלקיקי אלפא נבלעים באוויר.
+ על ידי קירוב הדוגמית הקורנת אל הגלאי חיפשנו את המרחק מהגלאי שעבור מרחק
+ גדול ממנו הקצב במונה דועך דרסטית אל ערך הקרוב לזה של קרינת הרקע.
+ דרך מרחק זה הערכנו את אנרגיית חלקיקי האלפא וקיבלנו שהערך שהתקבל תואם לערך
+ המקובל בספרות.
+ בחלק החמישי הצבנו מקור קורן של חלקיקי בטא מול הגלאי והצבנו מול הגלאי חוסמי
+ קרינה עשויים אלומיניום בעובי משתנה.
+ דרך הקשר בין עובי החוסמים לקצב הספירות הסקנו את מקדם הדעיכה 
+\begin_inset Formula $\mu$
+\end_inset
+
+ ואת טווח האנרגיה של חלקיקי הבטא.
+ השווינו את התוצאות לערכים המקובלים בספרות וקיבלנו התאמה לספרות.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -374,6 +431,239 @@ today
 
 \begin_layout Section*
 מבוא
+\end_layout
+
+\begin_layout Standard
+כלי המדידה המרכזי בכל חלקי הניסוי הוא מונה גייגר-מולר.
+ המונה מאפשר זיהוי של קרינה מייננת.
+ שפופרת המונה מכילה גז ושתי אלקטרודות שביניהן הפרש פוטנציאלים.
+ כאשר הגז מיונן, נוצרים יונים חיוביים ואלקטרונים חופשיים.
+ הם מואצים אל האלקטרודות בעקבות השדה החשמלי כשאקלטרונים חופשיים עולים ליינן
+ אטומי גז נופים וכך ליצור מפולת אלקטרונים - בעקבות אפקט זה נוצר פולס והפרש
+ מתחים הניתן למדידה על ידי המונה ומתורגם לספירה של אירועי ינון.
+ מתח עבודה על שפופרת המונה שייתן תוצאות אופטמיליות נמצא ב'תחום היציב' וצריך
+ לקיים שלושה קריטריונים: ראשית, להיות בטווח המתחים בהם הוא מספיק בשביל לאפשר
+ פריקה מלאה לאורך האנודה בכל ספירה )'מעל הברך'(.
+ שנית, שינוי קל במתח לא ישנה או ישנה רק מעט את קצב הספירה.
+ ושלישית שיהיה מתחת למתח הפריצה.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/Nuclear_pics_geiger_plataeu.png
+	lyxscale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+איור 
+\numeric on
+1
+\numeric off
+:
+\series default
+ גרף המציג את התחומים האופייניים עבור מתחים שונים כשבמרכז סביב 
+\begin_inset Formula $1000[Volts]$
+\end_inset
+
+ נמצא התחום היציב 
+\end_layout
+
+\begin_layout Standard
+לאחר שמצאנו מתח העונה על דרישות אלה עבדנו איתו במהלך שאר חלקי הניסוי.
+ 
+\end_layout
+
+\begin_layout Standard
+אופי התפלגות התפרקות של חומרים רדיואקטיבים מתואר לרוב על ידי תהליך רנדומי
+ פאוסוני שלו ההתפלגות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathbb{P}(n)=\frac{\lambda^{n}}{n!}e^{-\lambda},\,AVG=Var=STD^{2}=K_{3}=\lambda,\,K_{3}=\lambda\label{eq:poisson_dist}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש
+\begin_inset Formula $n$
+\end_inset
+
+ מספר האירועים בטווח זמן קבוע כלשהו 
+\begin_inset Formula $\tau[sec]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ הוא פרמטר חסר יחידות המגדיר את ההתפלגות ובמקרה הזה שווה לשלושת המומנטים
+ הראשונים של ההתפלגות 
+\begin_inset Formula $K_{1}=AVG=\langle n\rangle,\,K_{2}=Var=STD^{2},\,K_{3}=K_{3}$
+\end_inset
+
+.
+ כש
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $K_{i}$
+\end_inset
+
+ הוא המומנט ה
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ההערכה אמפירית של מומנטי התפלגות על פי 
+\begin_inset Formula $m$
+\end_inset
+
+ מדידות היא לפי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+K_{1}=\bar{n}=\frac{\sum_{i=1}^{m}n_{i}}{m},\,K_{2}=\frac{\sum_{i=1}^{m}(n_{i}-\bar{n})^{2}}{m-1},\,K_{3}=\frac{\sum_{i=1}^{m}(n_{i}-\bar{n})^{3}}{m-1}\label{eq:empirical_moments}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוצמת התפרקות רדיואקטיבית היא תלויה במרחק לפי 
+\begin_inset Formula $\text{Inverse\,Square\,Law}$
+\end_inset
+
+ -
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I\propto R-R_{b}\propto\frac{1}{d^{2}}=\frac{1}{(x+a)^{2}}\text{\ensuremath{\Rightarrow\frac{1}{\sqrt{R-R_{b}}}\propto x+a}}\label{eq:inv_sqr_law}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש
+\begin_inset Formula $I[\frac{W}{m^{2}}]$
+\end_inset
+
+ עוצמת הקרינה,
+\begin_inset Formula $R$
+\end_inset
+
+ הקצב של ההתפרקויות ו 
+\begin_inset Formula $R_{b}$
+\end_inset
+
+ קצב התפרקויות הרקע , 
+\begin_inset Formula $d[m]$
+\end_inset
+
+ המרחק מהמקור ששווה ל 
+\begin_inset Formula $x+a$
+\end_inset
+
+ כש
+\begin_inset Formula $x$
+\end_inset
+
+ הוא מרחק שנמדד ו
+\begin_inset Formula $a$
+\end_inset
+
+ קבוע הזזה.
+\end_layout
+
+\begin_layout Standard
+בחלק השלישי של הניסוי, בו מדדנו את המרחק שבו חלקיקי אלפא נבלעים באוויר,
+ הקשר בין הטווח הממוצע לאנרגיה הושווה למדידה קודמת מהספרות המוצגת באיור
+ הבא:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part3_2.png
+	lyxscale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+איור 
+\numeric on
+1
+\numeric off
+:
+\series default
+גרף המציג את הקשר בין הטווח הממוצע של הבליעה באוויר לאנרגיה של חלקיקי אלפא.
+ איור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+ מתדריך הניסוי
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
@@ -587,13 +877,6 @@ R_{b}=0.29\pm0.05\ cps
 \align center
 
 \series bold
-_להשאיר כתום פואסוני?_
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\series bold
 גרף
 \family roman
 \shape up
@@ -623,7 +906,15 @@ _להשאיר כתום פואסוני?_
 \numeric off
 :
 \series default
- התפלגות תצפיות המדידות.
+ התפלגות תצפיות המדידות - ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מייצג את כמות המיתוגים בשנייה וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ את כמות המופעים
 \end_layout
 
 \begin_layout Standard
@@ -991,16 +1282,8 @@ y=\left(-0.96\pm0.07\right)x+\left(0.0349\pm0.0022\right)
 
 \end_inset
 
- מתוך משוואה זו חולץ המקדם החופשי 
-\begin_inset Formula 
-\[
-b=0.0349\pm0.0022m
-\]
-
-\end_inset
-
- אשר מהווה אקסטרפולציה לטווח בו קצב פליטת החלקיקים מתאפס, בעזרת גודל זה
- ואיור )?( הוערכה האנרגיה של חלקיקי ה
+ ביצענו אקסטרפולציה לטווח בו קצב פליטת החלקיקים מתאפס, בעזרת גודל זה ואיור
+ )?( הוערכה האנרגיה של חלקיקי ה
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -1040,6 +1323,13 @@ E_{\alpha}=5.06\pm0.3MeV
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+__להוסיף השוואה לתאוריה__
 \end_layout
 
 \begin_layout Standard
@@ -1138,7 +1428,7 @@ y=\left(-0.00516\pm0.00035\right)x+\left(4.492\pm0.021\right)
  מתוך נוסחה )?( ומשוואת הרגרסיה נקבל את מקדם הבליעה
 \begin_inset Formula 
 \[
-\mu=0.00516\pm0.00035\frac{cm^{2}}{mg}
+\mu=\left(5.16\pm0.35\right)\cdot10^{-3}\frac{cm^{2}}{mg}
 \]
 
 \end_inset
@@ -1147,34 +1437,19 @@ y=\left(-0.00516\pm0.00035\right)x+\left(4.492\pm0.021\right)
 \end_layout
 
 \begin_layout Standard
-כמו כן ביצענו אקסטרפולציה לינארית בשביל למצוא את הצפיפות עבורה לא חודרת
- קרינה בכלל ובעזרת איור
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-)?( מצאנו 
+מתוך ערך זה חישבנו על פי נוסחאות )??( את האנרגיה המקסימלית וקיבלנו:
+\begin_inset Formula 
+\[
+E=2.24\pm0.14MeV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אשר מכיל את התחום התיאורטי.
 \end_layout
 
 \begin_layout Section*
