@@ -256,6 +256,7 @@ Ai_dens = 2.7 *1e3 # mg/cm^3
 density_thickness = thickness * Ai_dens
 
 R = counts / time - R_b
+logR = [log(r) for r in R]
 fig,fit = one4all(density_thickness,R,xlabel="Absorber density thickness [mg/cm^2]",ylabel="rate [cps]",show=False)
 plt.figure(fig)
 plt.yscale("log")

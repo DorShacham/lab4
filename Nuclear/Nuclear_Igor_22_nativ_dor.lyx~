@@ -40,9 +40,11 @@
 \makeatother
 \end_preamble
 \use_default_options true
+\begin_removed_modules
+eqs-within-sections
+\end_removed_modules
 \begin_modules
 theorems-ams
-eqs-within-sections
 figs-within-sections
 enumitem
 fixltx2e
@@ -366,14 +368,18 @@ today
 בניסוי זה צפינו במספר תופעות שונות של התפרקות גרעינית בעזרת מונה גייגר-מולר.
  הניסוי הורכב מחמישה חלקים - בחלק הראשון, כחלק מקדים לניסויים הבאים חיפשנו
  את 'המתח היציב', מתח שבהפעלתו על מונה הגייגר הוא מתפקד בצורה אופטימלית.
- יצרנו גרף של מספר המדידות כתלות במתח ובחרנו במתח שעונה על מספר קריטריונים.
+ יצרנו גרף של מספר המיתוגים )קצב מיתוגים 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ קצב התפרקויות שנספרו במונה( כתלות במתח ובחרנו במתח שעונה על מספר קריטריונים.
  קבענו את מתח זה להיות מתח ההפעלה בשאר חלקי הניסוי.
  בחלק השני של הניסוי נמדד 'קצב הרקע', ספירת המונה כשלא הוצב מקור רדיואקטיבי
  ליד המונה.
  בקצב זה השתמשנו בשאר הניסויים על ידי כך שהפחתנו אותו מהממדידות של הקצבים
  שהתקבלו כשכן הצבנו מקור קורן ליד המונה.
- נוסף על כך מדדנו את שלושת המומנטים הסטטיסטיים הראשונים של קצב הקרינה עבור
- מקור חלש והסקנו מכך האם האופו של ההתפלגות הוא גאוסי או פאוסוני - מצאנו
+ נוסף על כך מדדנו את שלושת המומנטים הסטטיסטיים הראשונים של קצב המיתוגים
+ עבור מקור חלש והסקנו מכך האם האופו של ההתפלגות הוא גאוסי או פאוסוני - מצאנו
  שההתפלגות היא בעלת אופי פאוסוני.
  בחלק השלישי, בדקנו את הקשר בין מרחק המקור הקורן מהמונה על ידי לקיחת מספר
  מדידות כשהמקור הוצב במרחקים שונים.
@@ -407,11 +413,11 @@ today
  בחלק הרביעי, מדדנו את הטווח שבו חלקיקי אלפא נבלעים באוויר.
  על ידי קירוב הדוגמית הקורנת אל הגלאי חיפשנו את המרחק מהגלאי שעבור מרחק
  גדול ממנו הקצב במונה דועך דרסטית אל ערך הקרוב לזה של קרינת הרקע.
- דרך מרחק זה הערכנו את אנרגיית חלקיקי האלפא וקיבלנו שהערך שהתקבל תואם לערך
- המקובל בספרות.
+ דרך הקשר בין חוזק הקרינה למרחק הערכנו את אנרגיית חלקיקי האלפא וקיבלנו שהערך
+ שהתקבל תואם לערך המקובל בספרות.
  בחלק החמישי הצבנו מקור קורן של חלקיקי בטא מול הגלאי והצבנו מול הגלאי חוסמי
  קרינה עשויים אלומיניום בעובי משתנה.
- דרך הקשר בין עובי החוסמים לקצב הספירות הסקנו את מקדם הדעיכה 
+ דרך הקשר בין עובי החוסמים לקצב המיתוגים הסקנו את מקדם הדעיכה 
 \begin_inset Formula $\mu$
 \end_inset
 
@@ -550,7 +556,8 @@ K_{1}=\bar{n}=\frac{\sum_{i=1}^{m}n_{i}}{m},\,K_{2}=\frac{\sum_{i=1}^{m}(n_{i}-\
 \end_layout
 
 \begin_layout Standard
-עוצמת התפרקות רדיואקטיבית היא תלויה במרחק לפי 
+בחלק השלישי של הניסוי נבדק הקשר בין מרחק הדוגמית לעוצמת הקרינה.
+ עוצמת קרינת התפרקות רדיואקטיבית צפויה להיות תלויה במרחק לפי 
 \begin_inset Formula $\text{Inverse\,Square\,Law}$
 \end_inset
 
@@ -577,11 +584,11 @@ I\propto R-R_{b}\propto\frac{1}{d^{2}}=\frac{1}{(x+a)^{2}}\text{\ensuremath{\Rig
 \begin_inset Formula $R$
 \end_inset
 
- הקצב של ההתפרקויות ו 
+ קצב המיתוגים הכולל ו 
 \begin_inset Formula $R_{b}$
 \end_inset
 
- קצב התפרקויות הרקע , 
+ קצב מיתוגים מהרקע , 
 \begin_inset Formula $d[m]$
 \end_inset
 
@@ -601,9 +608,37 @@ I\propto R-R_{b}\propto\frac{1}{d^{2}}=\frac{1}{(x+a)^{2}}\text{\ensuremath{\Rig
 \end_layout
 
 \begin_layout Standard
-בחלק השלישי של הניסוי, בו מדדנו את המרחק שבו חלקיקי אלפא נבלעים באוויר,
- הקשר בין הטווח הממוצע לאנרגיה הושווה למדידה קודמת מהספרות המוצגת באיור
- הבא:
+בחלק הרביעי של הניסוי מדדנו את התלות של קצב המיתוגים במרחק המקור מהקולט
+ כשהמקור הוא מהתפרקות אלפא.
+ חלקיקי האלפא מעבדים אנרגיה באוויר ועבור מרחק גדול דיו מהקולט נצפה לקצב
+ מיתוגים קרוב לרקע.
+ לפי הקשר הנמדד בין 
+\begin_inset Formula $R\cdot d^{2}$
+\end_inset
+
+ )המתאר את העוצמה הכוללת - ההכפלה ב
+\begin_inset Formula $d^{2}$
+\end_inset
+
+ מדמה חילוק בזווית המרחבית שבה המונה רואה את המקור( ל 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ נקודת החיתוך עם ציר 
+\begin_inset Formula $d$
+\end_inset
+
+ נקראת הטווח הממוצע 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+.
+ קשר בין 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+ לאנרגיית חלקיקי האלפא ניתן על ידי האיור הבא:
 \end_layout
 
 \begin_layout Standard
@@ -611,6 +646,7 @@ I\propto R-R_{b}\propto\frac{1}{d^{2}}=\frac{1}{(x+a)^{2}}\text{\ensuremath{\Rig
 \begin_inset Graphics
 	filename fig/part3_2.png
 	lyxscale 40
+	scale 40
 
 \end_inset
 
@@ -621,9 +657,32 @@ I\propto R-R_{b}\propto\frac{1}{d^{2}}=\frac{1}{(x+a)^{2}}\text{\ensuremath{\Rig
 \align center
 
 \series bold
-איור 
+איור
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
 \numeric on
-1
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
 \numeric off
 :
 \series default
@@ -658,6 +717,91 @@ I\propto R-R_{b}\propto\frac{1}{d^{2}}=\frac{1}{(x+a)^{2}}\text{\ensuremath{\Rig
 4
 \numeric off
  מתדריך הניסוי
+\end_layout
+
+\begin_layout Standard
+בחלק החמישי של הניסוי, כשהצבנו מקור של התפרקות בטא אל מול הגלאי והצבנו בין
+ המקור לגלאי אלמנטי אלומניום חוסמים בעובי משתנה.
+ בעזרת הקשר בין עובי החוסמים לקצב המיתוגים הסקנו את מקדם הדעיכה 
+\begin_inset Formula $\mu$
+\end_inset
+
+ לפי הקשר שנגזר מחוק 
+\begin_inset Formula $Beer\,Lambert$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I=I_{0}e^{-\mu t}\Rightarrow ln(R-R_{b})=ln(CI_{0})-\mu t\label{eq:part5_eq1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+ היא עוצמת הקרינה ללא מחסום, 
+\begin_inset Formula $\mu[\frac{(cm)^{2}}{mg}]$
+\end_inset
+
+ מקדם הדעיכה ו 
+\begin_inset Formula $t[(\frac{(cm)^{2}}{mg})^{-1}]$
+\end_inset
+
+ 
+\begin_inset Formula $\text{material density-thickness}$
+\end_inset
+
+.
+ כשהמעבר נובע מהקשר הפרופורציוני בין 
+\begin_inset Formula $R-R_{b}$
+\end_inset
+
+ ל 
+\begin_inset Formula $I$
+\end_inset
+
+ ו 
+\begin_inset Formula $C$
+\end_inset
+
+ הוא קבוע הפרופורציה.
+\end_layout
+
+\begin_layout Standard
+דרך 
+\begin_inset Formula $\mu$
+\end_inset
+
+ נגדיר גודל הנקרא טווח )
+\begin_inset Formula $Range$
+\end_inset
+
+( 
+\begin_inset Formula $R=\frac{8ln(2)}{\mu}$
+\end_inset
+
+ שממנו ניתן לגזור את האנרגיה המקסימלית של חליקי הבטא לפי נוסחא אמפירית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{max}=e^{6.63-3.2376\sqrt{10.2145-lnR}}[Mev]\label{eq:Emax_beta}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -765,6 +909,10 @@ I\propto R-R_{b}\propto\frac{1}{d^{2}}=\frac{1}{(x+a)^{2}}\text{\ensuremath{\Rig
 \end_inset
 
 ג כפונקציה של מתח העבודה.
+\end_layout
+
+\begin_layout Standard
+השגיאות בכמות המיתוגים בחלק זה ובשאר חלקי הניסוי חושבו כשורש מספר המיתוגים.
 \end_layout
 
 \begin_layout Standard
@@ -915,7 +1063,17 @@ R_{b}=0.29\pm0.05\ cps
 \end_layout
 
 \begin_layout Standard
-מתוך מדידות אלו חישבו את הקצב הממוצע ואת סטיית התקן שלו 
+מתוך מדידות אלו חישבו את הקצב הממוצע ואת סטיית התקן שלו לפי נוסחאות 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:empirical_moments"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
 \begin_inset Formula 
 \[
 \overline{n}=4.181\pm0.075cps,\ STD\left(n\right)=2.045
@@ -947,7 +1105,17 @@ R_{b}=0.29\pm0.05\ cps
 \begin_inset Formula $K_{3}$
 \end_inset
 
- וסטיית התקן שלו והתקבל 
+ וסטיית התקן שלו )גם לפי נוסחאות 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:empirical_moments"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( והתקבל 
 \begin_inset Formula 
 \[
 K_{3}=3.7\pm1.7
@@ -967,7 +1135,17 @@ K_{3}=3.7\pm1.7
 \begin_inset Formula $\overline{n}=K_{3}$
 \end_inset
 
- ולכן על פי התאוריה קרינת מתפלגת פאוסונית.
+ ולכן על פי התאוריה )נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:poisson_dist"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( קרינת מתפלגת פאוסונית.
 \end_layout
 
 \begin_layout Standard
@@ -1020,7 +1198,17 @@ K_{3}=3.7\pm1.7
 \color none
 \lang hebrew
  חיסרנו מהמדידות את קרינת הרקע שמדדנו בחלק השני וביצענו התאמה לינארית לפי
- נוסחה )?(.
+ נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:inv_sqr_law"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
  התקבלו התוצאות הבאות:
 \end_layout
 
@@ -1123,7 +1311,17 @@ y=\left(2.248\pm0.032\right)x+\left(0.038\pm0.002\right)
 \end_layout
 
 \begin_layout Standard
-מתוך נוסחה )?( והמשוואה שהתקבלה ניתן לחלץ את הפקטור הגיאומטרי 
+מתוך נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:inv_sqr_law"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ והמשוואה שהתקבלה ניתן לחלץ את הפקטור הגיאומטרי 
 \begin_inset Formula $a$
 \end_inset
 
@@ -1280,7 +1478,35 @@ y=\left(-0.96\pm0.07\right)x+\left(0.0349\pm0.0022\right)
 \end_inset
 
  ביצענו אקסטרפולציה לטווח בו קצב פליטת החלקיקים מתאפס, בעזרת גודל זה ואיור
- )?( הוערכה האנרגיה של חלקיקי ה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ הוערכה האנרגיה של חלקיקי ה
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -1419,7 +1645,17 @@ y=\left(-0.00516\pm0.00035\right)x+\left(4.492\pm0.021\right)
 
 \end_inset
 
- מתוך נוסחה )?( ומשוואת הרגרסיה נקבל את מקדם הבליעה
+ מתוך נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:part5_eq1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ומשוואת הרגרסיה נקבל את מקדם הבליעה
 \begin_inset Formula 
 \[
 \mu=\left(5.16\pm0.35\right)\cdot10^{-3}\frac{cm^{2}}{mg}
@@ -1443,19 +1679,17 @@ y=\left(-0.00516\pm0.00035\right)x+\left(4.492\pm0.021\right)
 \end_layout
 
 \begin_layout Standard
-מתוך ערך זה חישבנו על פי נוסחה )?( את הטווח הבליעה המקסימלי 
-\begin_inset Formula 
-\[
-R=1073\pm72\frac{mg}{cm^{2}}
-\]
+מתוך ערך זה חישבנו את האנרגיה המקסימלית לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Emax_beta"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-על פי נוסחה )?( את האנרגיה המקסימלית וקיבלנו:
+ וקיבלנו:
 \begin_inset Formula 
 \[
 E_{\beta}=2.24\pm0.14MeV
@@ -1491,7 +1725,7 @@ E_{\beta}=2.24\pm0.14MeV
 
 \begin_layout Standard
 בחלק הראשון מדדנו את מתח העבודה מצאנו שאכן יש טווח מתחים בו קצב המיתוגים
- אינו תלוי במתח בקירוב טוב כפי שמוצפה מהתאוריה.
+ אינו תלוי במתח בקירוב טוב כפי שמצופה מהתאוריה.
  בטווח זה בחרנו את מתח ההפעלה להיות 
 \begin_inset Formula $V=1000V$
 \end_inset
@@ -1501,7 +1735,7 @@ E_{\beta}=2.24\pm0.14MeV
 
 \begin_layout Standard
 בחלק השני מדדנו את הקצב של המיתוגים של קרינת הרקע וקיבלנו 
-\begin_inset Formula $R=0.29\pm0.05cps$
+\begin_inset Formula $R_{b}=0.29\pm0.05cps$
 \end_inset
 
  בקצב זה השתמשנו בשאר הניסויים בשביל לבודד את הקצב של המקור.
@@ -1528,7 +1762,11 @@ E_{\beta}=2.24\pm0.14MeV
 
 .
  תחת ההנחה של התפלגות פואסונית היינו מצפים לראות חפיפה בטווחים של 
-\begin_inset Formula $\overline{n},K_{3}$
+\begin_inset Formula $K_{3}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\overline{n}$
 \end_inset
 
  ועל פי הנחה של התפלגות נורמלית 
@@ -1541,7 +1779,11 @@ E_{\beta}=2.24\pm0.14MeV
 
  בטווח.
  מן התוצאות קיבלנו באופן מובהק סטטיסטי שיש חפיפה בין 
-\begin_inset Formula $\overline{n},K_{3}$
+\begin_inset Formula $K_{3}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\overline{n}$
 \end_inset
 
  וגם ש 
@@ -1558,7 +1800,7 @@ E_{\beta}=2.24\pm0.14MeV
 
 \begin_layout Standard
 בחלק השלישי בדקנו התאמה של דעיכת עוצמת הקרינה לדעיכה ריבועית במרחק וקיבלנו
- התאמה טובה מאוד של 
+ התאמה לינארית טובה מאוד של 
 \begin_inset Formula $R^{2}=0.998$
 \end_inset
 
@@ -1666,8 +1908,8 @@ E_{\beta}=2.24\pm0.14MeV
 \begin_inset Formula $Sr-90$
 \end_inset
 
- מקדם הדעיכה באלומיניום, מרחק הדעיכה והאנריגה של הקרינה.
- בוצעה התאמה והתקבלה התאמה בינונית של 
+ מקדם הדעיכה באלומיניום והאנריגה של הקרינה.
+ בוצעה התאמה והתקבלה התאמה לניארית בינונית ללוג הקצב של 
 \begin_inset Formula $R^{2}=0.9775$
 \end_inset
 
@@ -1692,15 +1934,7 @@ E_{\beta}=2.24\pm0.14MeV
 \end_inset
 
  נדון בפער זה לאחר הדיון באנרגיה.
- מתוך גודל זה חושב מרחק הדעיכה ונמצא 
-\begin_inset Formula $R_{\beta}=1073\pm72\frac{mg}{cm^{2}}$
-\end_inset
-
-בעל שגיאה יחסית של 
-\begin_inset Formula $6.7\%$
-\end_inset
-
- ומגודל זה חושבה האנרגיה המקסימלית של הקרינה 
+ מתוך גודל זה חושבה האנרגיה המקסימלית של הקרינה 
 \begin_inset Formula $E_{\beta}=2.24\pm0.14MeV$
 \end_inset
 
@@ -1794,6 +2028,35 @@ E_{\beta}=2.24\pm0.14MeV
 
 \begin_layout Section*
 מסקנות
+\end_layout
+
+\begin_layout Standard
+מצאנו שלמעט מקדם הדעיכה 
+\begin_inset Formula $\mu$
+\end_inset
+
+ כל הגדלים הכילו את הגדלים המקובלים בספרות.
+ כמו שראינו בדיון הפער במקדם הדעיכה נבע מחוסר התאמה בגודל הנמדד ולכן כמסקנה
+ יש להשוות לספרות אשר מכילה גודל המתאים לגודל הנמדד.
+ למרות ששאר הגדלים תאמו לתיאוריה השגיאות היחסיות היו לא קטנות )לפחות 
+\begin_inset Formula $6\%$
+\end_inset
+
+ מהגודל הנמדד ברוב המדידות(, כפי שראינו בדיון אנו מייחסים שגיאות אלו לכמות
+ המיתוגים שנלקחה בכל דגימה ושימוש אופטימלי בציוד המעבדה.
+ כמסקנות מכך ניתן להבא להקטין שגיאות אלו בעזרת הקצבת זמן ארוכה בהרבה לניסוי
+ ובכך למדוד מספר גדול של מיתוגים.
+ בנוסף ניתן לסמן על האלומיניום ששימש להגבהת מקור קרינת ה
+\begin_inset Formula $\alpha$
+\end_inset
+
+ את המרכז בשביל לאפשר מיקום מדויק יותר של המקור באמצע הגלאי.
+ מסקנה שלישית היא תכנון ניסוי למדידת האפקט הנובע מפני השטח הלא חלקים של
+ מחסומי האלומניום בחלק השלישי של הניסוי, אנו ציינו בדיון שאפקט זה יכל לגרום
+ להשפעה על תוצאות המדידה אך יש לבדוק באופן מסודר אם אפקט זה מובהק סטטיסטית.
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
