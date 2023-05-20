@@ -174,11 +174,8 @@ framecolor "black"
 backgroundcolor "none"
 status open
 
-\begin_layout Plain Layout
-\align center
-
-\series bold
-כותרת
+\begin_layout Title
+מדידת תופעות שונות של התפרקות גרעינית בעזרת מונה גייגר-מולר
 \end_layout
 
 \begin_layout Plain Layout
@@ -1785,7 +1782,7 @@ E_{\beta}=2.24\pm0.14MeV
 \end_inset
 
  מתאים לאנרגיה שונה מן האנרגיה אשר מצאנו במדידות שלנו לכן אין סיבה שמקדם
- זה יהיה יתאים למקדם שחושב אצלנו.
+ זה יהיה יתאים למקדם שמצאנו בניסוי.
 \end_layout
 
 \begin_layout Section*
