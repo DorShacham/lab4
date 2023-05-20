@@ -89,14 +89,18 @@
 בניסוי זה צפינו במספר תופעות שונות של התפרקות גרעינית בעזרת מונה גייגר-מולר.
  הניסוי הורכב מחמישה חלקים - בחלק הראשון, כחלק מקדים לניסויים הבאים חיפשנו
  את 'המתח היציב', מתח שבהפעלתו על מונה הגייגר הוא מתפקד בצורה אופטימלית.
- יצרנו גרף של מספר המדידות כתלות במתח ובחרנו במתח שעונה על מספר קריטריונים.
+ יצרנו גרף של מספר המיתוגים )קצב מיתוגים 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ קצב התפרקויות שנספרו במונה( כתלות במתח ובחרנו במתח שעונה על מספר קריטריונים.
  קבענו את מתח זה להיות מתח ההפעלה בשאר חלקי הניסוי.
  בחלק השני של הניסוי נמדד 'קצב הרקע', ספירת המונה כשלא הוצב מקור רדיואקטיבי
  ליד המונה.
  בקצב זה השתמשנו בשאר הניסויים על ידי כך שהפחתנו אותו מהממדידות של הקצבים
  שהתקבלו כשכן הצבנו מקור קורן ליד המונה.
- נוסף על כך מדדנו את שלושת המומנטים הסטטיסטיים הראשונים של קצב הקרינה עבור
- מקור חלש והסקנו מכך האם האופו של ההתפלגות הוא גאוסי או פאוסוני - מצאנו
+ נוסף על כך מדדנו את שלושת המומנטים הסטטיסטיים הראשונים של קצב המיתוגים
+ עבור מקור חלש והסקנו מכך האם האופו של ההתפלגות הוא גאוסי או פאוסוני - מצאנו
  שההתפלגות היא בעלת אופי פאוסוני.
  בחלק השלישי, בדקנו את הקשר בין מרחק המקור הקורן מהמונה על ידי לקיחת מספר
  מדידות כשהמקור הוצב במרחקים שונים.
@@ -126,28 +130,27 @@
 \end_inset
 
  מהמדידות והשתמשנו בו בשאר חלקי הניסוי.
- בחלק זה ראינו התאמה טובה לקשר ריבועי הפוך ו
-\begin_inset Formula $a$
-\end_inset
-
- שהתקבל הוא 
-\begin_inset Formula $a$
-\end_inset
-
- סביר.
+ בחלק זה ראינו התאמה טובה לקשר ריבועי הפוך.
  בחלק הרביעי, מדדנו את הטווח שבו חלקיקי אלפא נבלעים באוויר.
  על ידי קירוב הדוגמית הקורנת אל הגלאי חיפשנו את המרחק מהגלאי שעבור מרחק
  גדול ממנו הקצב במונה דועך דרסטית אל ערך הקרוב לזה של קרינת הרקע.
- דרך מרחק זה הערכנו את אנרגיית חלקיקי האלפא וקיבלנו שהערך שהתקבל לא תואם
- לערך המקובל בספרות, נרחיב על פער זה בהמשך הדוח.
+ דרך הקשר בין חוזק הקרינה למרחק הערכנו את אנרגיית חלקיקי האלפא וקיבלנו שהערך
+ שהתקבל תואם לערך המקובל בספרות.
  בחלק החמישי הצבנו מקור קורן של חלקיקי בטא מול הגלאי והצבנו מול הגלאי חוסמי
  קרינה עשויים אלומיניום בעובי משתנה.
- דרך הקשר בין עובי החוסמים לקצב הספירות הסקנו את מקדם הדעיכה 
+ דרך הקשר בין עובי החוסמים לקצב המיתוגים הסקנו את מקדם הדעיכה 
 \begin_inset Formula $\mu$
 \end_inset
 
  ואת טווח האנרגיה של חלקיקי הבטא.
- השווינו את התוצאות לערכים המקובלים בספרות וקיבלנו '?'.
+ השווינו את התוצאות לערכים המקובלים בספרות וקיבלנו התאמה לספרות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -173,7 +176,7 @@
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename fig/Nuclear_pics_geiger_plataeu.png
+	filename ../../../../Google Drive/Technion/Semester 8/Lab 4/Nuclear/fig/Nuclear_pics_geiger_plataeu.png
 	lyxscale 40
 
 \end_inset
@@ -274,7 +277,8 @@ K_{1}=\bar{n}=\frac{\sum_{i=1}^{m}n_{i}}{m},\,K_{2}=\frac{\sum_{i=1}^{m}(n_{i}-\
 \end_layout
 
 \begin_layout Standard
-עוצמת התפרקות רדיואקטיבית היא תלויה במרחק לפי 
+בחלק השלישי של הניסוי נבדק הקשר בין מרחק הדוגמית לעוצמת הקרינה.
+ עוצמת קרינת התפרקות רדיואקטיבית צפויה להיות תלויה במרחק לפי 
 \begin_inset Formula $\text{Inverse\,Square\,Law}$
 \end_inset
 
@@ -301,11 +305,11 @@ I\propto R-R_{b}\propto\frac{1}{d^{2}}=\frac{1}{(x+a)^{2}}\text{\ensuremath{\Rig
 \begin_inset Formula $R$
 \end_inset
 
- הקצב של ההתפרקויות ו 
+ קצב המיתוגים הכולל ו 
 \begin_inset Formula $R_{b}$
 \end_inset
 
- קצב התפרקויות הרקע , 
+ קצב מיתוגים מהרקע , 
 \begin_inset Formula $d[m]$
 \end_inset
 
@@ -325,15 +329,43 @@ I\propto R-R_{b}\propto\frac{1}{d^{2}}=\frac{1}{(x+a)^{2}}\text{\ensuremath{\Rig
 \end_layout
 
 \begin_layout Standard
-בחלק השלישי של הניסוי, בו מדדנו את המרחק שבו חלקיקי אלפא נבלעים באוויר,
- הקשר בין הטווח הממוצע לאנרגיה הושווה למדידה קודמת מהספרות המוצגת באיור
- הבא:
+בחלק הרביעי של הניסוי מדדנו את התלות של קצב המיתוגים במרחק המקור מהקולט
+ כשהמקור הוא מהתפרקות אלפא.
+ חלקיקי האלפא מעבדים אנרגיה באוויר ועבור מרחק גדול דיו מהקולט נצפה לקצב
+ מיתוגים קרוב לרקע.
+ לפי הקשר הנמדד בין 
+\begin_inset Formula $R\cdot d^{2}$
+\end_inset
+
+ )המתאר את העוצמה הכוללת - ההכפלה ב
+\begin_inset Formula $d^{2}$
+\end_inset
+
+ מדמה חילוק בזווית המרחבית שבה המונה רואה את המקור( ל 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ נקודת החיתוך עם ציר 
+\begin_inset Formula $d$
+\end_inset
+
+ נקראת הטווח הממוצע 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+.
+ קשר בין 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+ לאנרגיית חלקיקי האלפא ניתן על ידי האיור הבא:
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename fig/part3_2.png
+	filename ../../../../Google Drive/Technion/Semester 8/Lab 4/Nuclear/fig/part3_2.png
 	lyxscale 40
 
 \end_inset
@@ -382,6 +414,91 @@ I\propto R-R_{b}\propto\frac{1}{d^{2}}=\frac{1}{(x+a)^{2}}\text{\ensuremath{\Rig
 4
 \numeric off
  מתדריך הניסוי
+\end_layout
+
+\begin_layout Standard
+בחלק החמישי של הניסוי, כשהצבנו מקור של התפרקות בטא אל מול הגלאי והצבנו בין
+ המקור לגלאי אלמנטי אלומניום חוסמים בעובי משתנה.
+ בעזרת הקשר בין עובי החוסמים לקצב המיתוגים הסקנו את מקדם הדעיכה 
+\begin_inset Formula $\mu$
+\end_inset
+
+ לפי הקשר שנגזר מחוק 
+\begin_inset Formula $Beer\,Lambert$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I=I_{0}e^{-\mu t}\Rightarrow ln(R-R_{b})=ln(aI_{0})-\mu t\label{eq:part5_eq1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+ היא עוצמת הקרינה ללא מחסום, 
+\begin_inset Formula $\mu[\frac{(cm)^{2}}{mg}]$
+\end_inset
+
+ מקדם הדעיכה ו 
+\begin_inset Formula $t[(\frac{(cm)^{2}}{mg})^{-1}]$
+\end_inset
+
+ 
+\begin_inset Formula $\text{material density-thickness}$
+\end_inset
+
+.
+ כשהמעבר נובע מהקשר הפרופורציוני בין 
+\begin_inset Formula $R-R_{b}$
+\end_inset
+
+ ל 
+\begin_inset Formula $I$
+\end_inset
+
+ ו 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא קבוע הפרופורציה.
+\end_layout
+
+\begin_layout Standard
+דרך 
+\begin_inset Formula $\mu$
+\end_inset
+
+ נגדיר גודל הנקרא טווח )
+\begin_inset Formula $Range$
+\end_inset
+
+( 
+\begin_inset Formula $R=\frac{8ln(2)}{\mu}$
+\end_inset
+
+ שממנו ניתן לגזור את האנרגיה המקסימלית של חליקי הבטא לפי נוסחא אמפירית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{max}=e^{6.63-3.2376\sqrt{10.2145-lnR}}[Mev]\label{eq:Emax_beta}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \end_body
