@@ -268,11 +268,19 @@ plt.plot(xdata,np.exp(f(xdata,fit.slope,fit.intercept)),"-.",label="Regression")
 plt.legend()
 Reg_print(fit)
 
+plt.savefig("fig/part5_1.png")
+
+
+
 m = ufloat(fit.slope,fit.stderr)
 b = ufloat(fit.intercept,fit.intercept_stderr)
+mu = -m
 zero_rate = -b/m
-print(f"zero_rate={zero_rate}")
-print(f"mu={-m}")
-
 E = ufloat(10**(9.5/48),10**(9.5/48)-10**(7/48))
+print(f"zero_rate={zero_rate}")
+print(f"mu={mu}")
+print(f"E={E}")
+
+R = 8 * log(2)/ mu
+E = exp(6.63-3.2376*(10.2146-log(R))**0.5)
 print(f"E={E}")

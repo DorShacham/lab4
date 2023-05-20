@@ -925,7 +925,7 @@ a=0.0168\pm0.0009m
 \uwave default
 \noun default
 \color inherit
-3
+4
 \numeric off
 :
 \series default
@@ -1051,7 +1051,130 @@ E_{\alpha}=5.06\pm0.3MeV
 \begin_inset Quotes erd
 \end_inset
 
-ג במדף השלישי מלמעלה וביצעו מדידות של קצב המיתוגים 
+ג במדף השלישי מלמעלה.
+ ביצענו מדידות כך שבכל מדידה שמנו חסם אלומיניום בעובי שונה ומדדנו את כמות
+ המיתוגים שהתקבלה.
+\end_layout
+
+\begin_layout Standard
+התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part5_1.png
+	lyxscale 40
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+:
+\series default
+ קצב המיתוגים )לאחר הפחתת קרינת הרקע( ביחידות של 
+\begin_inset Formula $cps$
+\end_inset
+
+ כפונקציה של צפיפות העובי ביחידות של 
+\begin_inset Formula $\frac{mg}{cm^{2}}$
+\end_inset
+
+.
+ המדידות מסומנות בכחול והרגרסיה בכתום.
+ מוצג בסקלה לוגריתמית בציר 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מקדם ההתאמה לרגרסיה 
+\begin_inset Formula $R^{2}=0.9775$
+\end_inset
+
+ ומשוואת הרגרסיה שהתקבלה:
+\begin_inset Formula 
+\[
+y=\left(-0.00516\pm0.00035\right)x+\left(4.492\pm0.021\right)
+\]
+
+\end_inset
+
+ מתוך נוסחה )?( ומשוואת הרגרסיה נקבל את מקדם הבליעה
+\begin_inset Formula 
+\[
+\mu=0.00516\pm0.00035\frac{cm^{2}}{mg}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמו כן ביצענו אקסטרפולציה לינארית בשביל למצוא את הצפיפות עבורה לא חודרת
+ קרינה בכלל ובעזרת איור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)?( מצאנו 
 \end_layout
 
 \begin_layout Section*

@@ -925,7 +925,7 @@ a=0.0168\pm0.0009m
 \uwave default
 \noun default
 \color inherit
-3
+4
 \numeric off
 :
 \series default
@@ -1043,6 +1043,13 @@ E_{\alpha}=5.06\pm0.3MeV
 \end_layout
 
 \begin_layout Standard
+\align center
+
+\series bold
+__להוסיף השוואה לתאוריה__
+\end_layout
+
+\begin_layout Standard
 הנחנו מקור של 
 \begin_inset Formula $Sr-90$
 \end_inset
@@ -1052,12 +1059,114 @@ E_{\alpha}=5.06\pm0.3MeV
 \end_inset
 
 ג במדף השלישי מלמעלה.
- ביצענו מדידות כך שבכל מדידה שמנו חסם אלמוניום בעובי שונה ומדדנו את כמות
+ ביצענו מדידות כך שבכל מדידה שמנו חסם אלומיניום בעובי שונה ומדדנו את כמות
  המיתוגים שהתקבלה.
 \end_layout
 
 \begin_layout Standard
 התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/part5_1.png
+	lyxscale 40
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+:
+\series default
+ קצב המיתוגים )לאחר הפחתת קרינת הרקע( ביחידות של 
+\begin_inset Formula $cps$
+\end_inset
+
+ כפונקציה של צפיפות העובי ביחידות של 
+\begin_inset Formula $\frac{mg}{cm^{2}}$
+\end_inset
+
+.
+ המדידות מסומנות בכחול והרגרסיה בכתום.
+ מוצג בסקלה לוגריתמית בציר 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מקדם ההתאמה לרגרסיה 
+\begin_inset Formula $R^{2}=0.9775$
+\end_inset
+
+ ומשוואת הרגרסיה שהתקבלה:
+\begin_inset Formula 
+\[
+y=\left(-0.00516\pm0.00035\right)x+\left(4.492\pm0.021\right)
+\]
+
+\end_inset
+
+ מתוך נוסחה )?( ומשוואת הרגרסיה נקבל את מקדם הבליעה
+\begin_inset Formula 
+\[
+\mu=\left(5.16\pm0.35\right)\cdot10^{-3}\frac{cm^{2}}{mg}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתוך ערך זה חישבנו על פי נוסחאות )??( את האנרגיה המקסימלית וקיבלנו:
+\begin_inset Formula 
+\[
+E=2.24\pm0.14MeV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אשר מכיל את התחום התיאורטי.
 \end_layout
 
 \begin_layout Section*
