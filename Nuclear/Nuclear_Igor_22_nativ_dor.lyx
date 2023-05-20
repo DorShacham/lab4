@@ -970,7 +970,7 @@ K_{3}=3.7\pm1.7
 \begin_inset Formula $\overline{n}=K_{3}$
 \end_inset
 
- ולכן על פי התאוריה קרינת הרקע מתפלגת פאוסונית.
+ ולכן על פי התאוריה קרינת מתפלגת פאוסונית.
 \end_layout
 
 \begin_layout Standard
@@ -1299,8 +1299,12 @@ E_{\alpha}=5.06\pm0.3MeV
 \end_layout
 
 \begin_layout Standard
-טווח זה מכיל את הנתון הרשום בדף המקורות 
-\begin_inset Formula $E_{\alpha}=5.3MeV$
+טווח זה מכיל את הערך התיאורטי[
+\numeric on
+2
+\numeric off
+] 
+\begin_inset Formula $E_{\alpha}^{theory}=5.3MeV$
 \end_inset
 
 .
@@ -1323,13 +1327,6 @@ E_{\alpha}=5.06\pm0.3MeV
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\series bold
-__להוסיף השוואה לתאוריה__
 \end_layout
 
 \begin_layout Standard
@@ -1437,10 +1434,22 @@ y=\left(-0.00516\pm0.00035\right)x+\left(4.492\pm0.021\right)
 \end_layout
 
 \begin_layout Standard
-מתוך ערך זה חישבנו על פי נוסחאות )??( את האנרגיה המקסימלית וקיבלנו:
+ערך זה אינו תואם את הערך התיאורטי[
+\numeric on
+3
+\numeric off
+] 
+\begin_inset Formula $\mu_{theory}=0.035\frac{cm^{2}}{mg}$
+\end_inset
+
+ נדון בפער זה בדיון.
+\end_layout
+
+\begin_layout Standard
+מתוך ערך זה חישבנו על פי נוסחה )?( את הטווח הבליעה המקסימלי 
 \begin_inset Formula 
 \[
-E=2.24\pm0.14MeV
+R=1073\pm72\frac{mg}{cm^{2}}
 \]
 
 \end_inset
@@ -1449,7 +1458,27 @@ E=2.24\pm0.14MeV
 \end_layout
 
 \begin_layout Standard
-אשר מכיל את התחום התיאורטי.
+על פי נוסחה )?( את האנרגיה המקסימלית וקיבלנו:
+\begin_inset Formula 
+\[
+E_{\beta}=2.24\pm0.14MeV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אשר מכיל את התחום התיאורטי[
+\numeric on
+2
+\numeric off
+] 
+\begin_inset Formula $E_{\beta}^{theory}=2.3MeV$
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Section*
@@ -1461,6 +1490,305 @@ E=2.24\pm0.14MeV
 
 \begin_layout Section*
 דיון בתוצאות
+\end_layout
+
+\begin_layout Standard
+בחלק הראשון מדדנו את מתח העבודה מצאנו שאכן יש טווח מתחים בו קצב המיתוגים
+ אינו תלוי במתח בקירוב טוב כפי שמוצפה מהתאוריה.
+ בטווח זה בחרנו את מתח ההפעלה להיות 
+\begin_inset Formula $V=1000V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בחלק השני מדדנו את הקצב של המיתוגים של קרינת הרקע וקיבלנו 
+\begin_inset Formula $R=0.29\pm0.05cps$
+\end_inset
+
+ בקצב זה השתמשנו בשאר הניסויים בשביל לבודד את הקצב של המקור.
+ בעזרת מקור 
+\begin_inset Formula $Co-60$
+\end_inset
+
+ עליו ביצענו הרבה מדידות מצאנו את הקצב הממוצא של פליטת חלקיקים 
+\begin_inset Formula $\overline{n}=4.184\pm0.075cps$
+\end_inset
+
+ ואת סטיית התקן הממוצעת 
+\begin_inset Formula $STD\left(n\right)=2.045$
+\end_inset
+
+.
+ כמו כן חישבנו את המקדם 
+\begin_inset Formula $K_{3}$
+\end_inset
+
+ וסטיית התקן שלו והתקבל 
+\begin_inset Formula $K_{3}=3.7\pm1.7$
+\end_inset
+
+.
+ תחת ההנחה של התפלגות פואסונית היינו מצפים לראות חפיפה בטווחים של 
+\begin_inset Formula $\overline{n},K_{3}$
+\end_inset
+
+ ועל פי הנחה של התפלגות נורמלית 
+\begin_inset Formula $K_{3}$
+\end_inset
+
+ אמור להכיל את 
+\begin_inset Formula $0$
+\end_inset
+
+ בטווח.
+ מן התוצאות קיבלנו באופן מובהק סטטיסטי שיש חפיפה בין 
+\begin_inset Formula $\overline{n},K_{3}$
+\end_inset
+
+ וגם ש 
+\begin_inset Formula $K_{3}$
+\end_inset
+
+ אינו מכיל את 
+\begin_inset Formula $0$
+\end_inset
+
+ בתחום ולכן נסיק שההתפלגות של הקרינה היא פואסונית.
+ 
+\end_layout
+
+\begin_layout Standard
+בחלק השלישי בדקנו התאמה של דעיכת עוצמת הקרינה לדעיכה ריבועית במרחק וקיבלנו
+ התאמה טובה מאוד של 
+\begin_inset Formula $R^{2}=0.998$
+\end_inset
+
+ בנוסף ממדידה זו חילצנו את הקבוע הגאומטרי 
+\begin_inset Formula $a=0.0168\pm0.0009m$
+\end_inset
+
+ אשר שימש אותנו לשאר המדידות.
+\end_layout
+
+\begin_layout Standard
+בחלק הרביעי מדדנו את האנרגיה ומרחק הדעיכה של חלקיק 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ בעזרת מקור 
+\begin_inset Formula $Po-210$
+\end_inset
+
+.
+ השגיאות שהתקבלו מהמדידה היו גדולות וההתאמה הלינארית לא טובה במיוחד 
+\begin_inset Formula $R^{2}=0.948$
+\end_inset
+
+ אך ניתן לראות בגרף 
+\begin_inset Formula $4$
+\end_inset
+
+ שרוב המדידות נמצאות בטווח השגיאה.
+ אנו מייחסים את השגיאות הגדולות וחוסר ההתאמה לכך שהדוגמית מוקמה על משטחים
+ מגביהם אשר הסתירו את הסימון על המדף שעזר לנו למקם את המקור באמצע התא, לכן
+ במהלך חלק המהמדידות המקור לא נמצא באמצע התא ולכן הזווית בה היה ביחס למ
+\begin_inset Quotes erd
+\end_inset
+
+ג לא הייתה אופטימלית והשפיעה על תוצאות הניסוי.
+ בנוסף, משום ששגיאת המדידה לינארית עם שורש כמות המיתוגים ברוב הניסויים דאגנו
+ להמתין מספיק זמן כך שכמות המיתוגים תביא לשגיאה יחית קטנה.
+ אך במקור בו השתמשנו קצב המיתוגים היה מאוד איטי ולכן, משיקולי זמנים, נאלצו
+ לקצר את המדידות, דבר אשר הגדיל את השגיאה היחסית.
+ מתוך הרגרסיה הלינארית חושב טווח הדעיכה של חלקיק ה
+\begin_inset Formula $\alpha$
+\end_inset
+
+ והתקבל 
+\begin_inset Formula $R_{\alpha}=34.9\pm2.2mm$
+\end_inset
+
+ בעל שגיאה יחסית של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $6.3\%$
+\end_inset
+
+ ומתוך ערך זה חולצה האנרגיה של החלקיק והתקבלה 
+\begin_inset Formula $E_{\alpha}=5.06\pm0.3MeV$
+\end_inset
+
+ בעלת שגיאה יחסית של 
+\begin_inset Formula $5.9\%$
+\end_inset
+
+.
+ האנרגיה הושוותה לתיאוריה[
+\numeric on
+2
+\numeric off
+] והתקבל שהיא מכילה את הערך התאורטי 
+\begin_inset Formula $E_{\alpha}^{theory}=5.3MeV$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בחלק החמישי חושב עבור קרינת 
+\begin_inset Formula $\beta$
+\end_inset
+
+ הנובעת ממקור 
+\begin_inset Formula $Sr-90$
+\end_inset
+
+ מקדם הדעיכה באלומיניום, מרחק הדעיכה והאנריגה של הקרינה.
+ בוצעה התאמה והתקבלה התאמה בינונית של 
+\begin_inset Formula $R^{2}=0.9775$
+\end_inset
+
+ מבחינה איכותית רוב הדיגמות נמצאות בטווח השגיאה מהרגרסיה.
+ אנו חושדים ששגיאות אלו נבעו מכך שמחסומי האלומיניום ששומשו לא היו בעל פני
+ שטח חלקים דבר אשר גרם לפיזור חלקיקים לא עיקבי בין החסמים השונים והסיט את
+ תוצאות המדידה.
+ מתוך ההתאמה נמצא מקדם הדעיכה באלומיניום להיות 
+\begin_inset Formula $\mu=\left(5.16\pm0.35\right)\cdot10^{-3}\frac{cm^{2}}{mg}$
+\end_inset
+
+ בעל שגיאה יחסית של 
+\begin_inset Formula $6.8\%$
+\end_inset
+
+, ערך אשר לא תאם את הערך התיאורטי[
+\numeric on
+3
+\numeric off
+] 
+\begin_inset Formula $\mu_{theory}=0.035\frac{cm^{2}}{mg}$
+\end_inset
+
+ נדון בפער זה לאחר הדיון באנרגיה.
+ מתוך גודל זה חושב מרחק הדעיכה ונמצא 
+\begin_inset Formula $R_{\beta}=1073\pm72\frac{mg}{cm^{2}}$
+\end_inset
+
+בעל שגיאה יחסית של 
+\begin_inset Formula $6.7\%$
+\end_inset
+
+ ומגודל זה חושבה האנרגיה המקסימלית של הקרינה 
+\begin_inset Formula $E_{\beta}=2.24\pm0.14MeV$
+\end_inset
+
+ בעל שגיאה יחסית של 
+\begin_inset Formula $6.25\%$
+\end_inset
+
+ תחום זה מכיל את הערך התיאורטי עבור הדעיכה השנייה של 
+\begin_inset Formula $Sr-90$
+\end_inset
+
+[
+\numeric on
+2
+\numeric off
+] 
+\begin_inset Formula $E_{\beta}^{theory}=2.3MeV$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+כעת נדון בפער במקדם הדעיכה, על פי מקור 
+\begin_inset Formula $3$
+\end_inset
+
+ לפיו לקחנו את הערך התיאורטי של מקדם הדעיכה האנרגיה שמתאימה לקרינה בטא ב
+\begin_inset Formula $Sr-90$
+\end_inset
+
+ היא 
+\begin_inset Formula $0.54MeV$
+\end_inset
+
+, ערך אשר מתאים לדעיכה הראשונה של 
+\begin_inset Formula $Sr-90$
+\end_inset
+
+ על פי מקור 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ היות וראינו שהאנרגיה מחושבת על ידי מרחק הדעיכה והוא מחושב בעזרת 
+\begin_inset Formula $\mu$
+\end_inset
+
+ נסיק שהם תלויים.
+ מקדם הדעיכה שהוצג במקור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $2$
+\end_inset
+
+ מתאים לאנרגיה שונה מן האנרגיה אשר מצאנו במדידות שלנו לכן אין סיבה שמקדם
+ זה יהיה יתאים למקדם שמצאנו בניסוי.
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
@@ -1484,7 +1812,35 @@ E=2.24\pm0.14MeV
 \numeric on
 1
 \numeric off
-( תדריך __.
+( תדריך התפרקות גרעינית - 
+\lang english
+
+\begin_inset Formula $\text{Nuclear Physics Lab Manual 8March2023}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\numeric off
+( דף מקורות קרינה גרינית.
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+3
+\numeric off
+( 
+\lang english
+
+\begin_inset Formula $\text{Baltakmens, T., A simple method for determining the maximum energy of beta emitters by absorption measurements, Nucl. Instr. Meth. Phys. Res. 82, 1970, pp. 264-268}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
