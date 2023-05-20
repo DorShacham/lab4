@@ -97,7 +97,7 @@ counts = counts + uarray(noise,0)
 cps = counts/parameters["preset_time"] 
 
 
-V = uarray(V,15)
+V = uarray(V,1)
 noise = np.random.normal(loc=0,scale=15)
 V = V + noise
 print(type(V[0]),type(cps[0]))
@@ -200,7 +200,7 @@ beta_source_chosen= "Sr-90"
 
 R_b = background_rate
 Y = np.array([1/sqrt(r-R_b) for r in R])
-fig,fit = one4all(x,Y,xlabel="x[m]",ylabel=r"$\frac{1}{\sqrt{R-R_b}}$",mode="linear",show=False)
+fig,fit = one4all(x,Y,xlabel="x[m]",ylabel=r"$\frac{1}{\sqrt{R-R_b}}[m^{-\frac{1}{2}}]$",mode="linear",show=False)
 Reg_print(fit)
 plt.figure(fig)
 plt.savefig("fig/part3_1.png")
@@ -217,7 +217,7 @@ time_err = 1
 counts = np.array([6,5,27,54,71,109,140,386,238,211,296,290]) 
 time = np.array([20,20,21,21,21,21,22,60,22,21,20,21]) #sec
 counts = uarray(counts,np.sqrt(counts))
-time = uarray(time,1)
+time = uarray(time,time_err)
 
 R = counts/time
 x = np.arange(20,8,-1) *1e-3
@@ -227,8 +227,11 @@ x = uarray(x,x_err)
 
 R = R - background_rate
 R = R * (x+a)**2
-fig,fit = one4all(x+a,R,xlabel="range[m]",ylabel="rate[cps]",mode="linear")
+fig,fit = one4all(x+a,R,xlabel=r"$d[m]$",ylabel=r"$Rd^2[cps * m]$",mode="linear")
 Reg_print(fit)
+
+plt.figure(fig)
+plt.savefig("fig/part4_1.png")
 
 m = ufloat(fit.slope,fit.stderr)
 b = ufloat(fit.intercept,fit.intercept_stderr)
@@ -242,17 +245,34 @@ E = ufloat(5.0625,0.3125) #MeV
 
 
 beta_source_chosen= "Sr-90"
-thickness = np.array([0,40,80,160,240,320,400])*1e-6 #m
+thickness = np.array([0,40,80,160,240,320,400])*1e-4 #cm
 counts = np.array([1305,1124,1145,1055,1067,1267,1055])
 time = np.array([14,13,15,15,17,22,20]) #sec
-R = counts / time
-one4all(thickness,R-background_rate,xlabel="thickness",ylabel="rate [cps]")
+time_err = 0 #sec
 
+counts = uarray(counts,np.sqrt(counts))
+time = uarray(time,time_err)
+Ai_dens = 2.7 *1e3 # mg/cm^3
+density_thickness = thickness * Ai_dens
 
-beta_source_chosen= "Ti-204"
-thickness = np.array([0,40,80,160,240,320,400])*1e-6 #m
-counts = np.array([])
-time = np.array([]) #sec
+R = counts / time - R_b
+fig,fit = one4all(density_thickness,R,xlabel="Absorber density thickness [mg/cm^2]",ylabel="rate [cps]",show=False)
+plt.figure(fig)
+plt.yscale("log")
 
-#not sure what to do
-one4all(thickness,np.log10(R-R_b),xlabel="thickness",ylabel="rate [cps]")
+xdata = uval(density_thickness)
+ydata = np.log(uval(R))
+fit = linregress(xdata,ydata)
+f = lambda x,a,b: a*x+b        
+plt.plot(xdata,np.exp(f(xdata,fit.slope,fit.intercept)),"-.",label="Regression")
+plt.legend()
+Reg_print(fit)
+
+m = ufloat(fit.slope,fit.stderr)
+b = ufloat(fit.intercept,fit.intercept_stderr)
+zero_rate = -b/m
+print(f"zero_rate={zero_rate}")
+print(f"mu={-m}")
+
+E = ufloat(10**(9.5/48),10**(9.5/48)-10**(7/48))
+print(f"E={E}")
