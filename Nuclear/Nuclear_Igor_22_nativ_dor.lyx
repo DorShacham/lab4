@@ -379,7 +379,7 @@ today
  בקצב זה השתמשנו בשאר הניסויים על ידי כך שהפחתנו אותו מהממדידות של הקצבים
  שהתקבלו כשכן הצבנו מקור קורן ליד המונה.
  נוסף על כך מדדנו את שלושת המומנטים הסטטיסטיים הראשונים של קצב המיתוגים
- עבור מקור חלש והסקנו מכך האם האופו של ההתפלגות הוא גאוסי או פאוסוני - מצאנו
+ עבור מקור חלש והסקנו מכך האם האופי של ההתפלגות הוא גאוסי או פאוסוני - מצאנו
  שההתפלגות היא בעלת אופי פאוסוני.
  בחלק השלישי, בדקנו את הקשר בין מרחק המקור הקורן מהמונה על ידי לקיחת מספר
  מדידות כשהמקור הוצב במרחקים שונים.
@@ -391,7 +391,7 @@ today
 \begin_inset Formula $a$
 \end_inset
 
- למרחוק שנמדד בפועל 
+ למרחק שנמדד בפועל 
 \begin_inset Formula $x$
 \end_inset
 
@@ -399,7 +399,7 @@ today
 \begin_inset Formula $d$
 \end_inset
 
- )
+, המרחק הכולל )
 \begin_inset Formula $d=x+a$
 \end_inset
 
@@ -493,7 +493,7 @@ today
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathbb{P}(n)=\frac{\lambda^{n}}{n!}e^{-\lambda},\,AVG=Var=STD^{2}=K_{3}=\lambda,\,K_{3}=\lambda\label{eq:poisson_dist}
+\mathbb{P}(n)=\frac{\lambda^{n}}{n!}e^{-\lambda},\,AVG=Var=STD^{2}=K_{3}=\lambda\label{eq:poisson_dist}
 \end{equation}
 
 \end_inset
@@ -517,7 +517,7 @@ today
 
  הוא פרמטר חסר יחידות המגדיר את ההתפלגות ובמקרה הזה שווה לשלושת המומנטים
  הראשונים של ההתפלגות 
-\begin_inset Formula $K_{1}=AVG=\langle n\rangle,\,K_{2}=Var=STD^{2},\,K_{3}=K_{3}$
+\begin_inset Formula $K_{1}=AVG=\langle n\rangle,\,K_{2}=Var=STD^{2}$
 \end_inset
 
 .
@@ -940,7 +940,7 @@ E_{max}=e^{6.63-3.2376\sqrt{10.2145-lnR}}[Mev]\label{eq:Emax_beta}
 \begin_inset Formula $1000V$
 \end_inset
 
- והשארנו אותו כך.
+ והשארנו אותו כך בשאר חלקי הניסוי.
 \end_layout
 
 \begin_layout Standard
