@@ -89,8 +89,8 @@ def smooth(y, box_pts):
      y_smooth = np.convolve(y, box, mode='same')
      return y_smooth
 
-def plot_spec(file_name,f=None, height = 100, prominence=40):
-    Mes1 = pd.read_csv('Mes1.txt',sep='\t',header=1) # read the data.
+def plot_spec(file_name,f=None, height = 10, prominence=8):
+    Mes1 = pd.read_csv(file_name,sep='\t',header=1) # read the data.
     Counts = np.array(Mes1['Impulses/#']) # Impulses
     Counts_smoothed=smooth(Counts, 10) # smooth the data over 10 channels
     Channels = np.array(Mes1['Channel/#']) # Channel
@@ -99,8 +99,8 @@ def plot_spec(file_name,f=None, height = 100, prominence=40):
 
     xlabel = "Channels"
     if f is not None:
-        Channels = f(np.array(Channels))
-        xlabel = "Energy [eV]"
+        Channels = f(np.array(Channels))/1e3
+        xlabel = "Energy [KeV]"
 
     plt.figure(dpi=300)
     plt.plot(Channels ,Counts_smoothed, label='Original Mo-tube spectrum')
@@ -108,25 +108,77 @@ def plot_spec(file_name,f=None, height = 100, prominence=40):
     label='Lines')
     plt.ylabel('Impulses')
     plt.xlabel(xlabel)
+    plt.grid()
     plt.legend()
+    
+    if f is not None:
+        return f(np.array(peaks))
+    return peaks
+    
+
 #%% Information and configuration
-                            ######### Station Number: _ #########
+                            ######### Station Number: 3 #########
 
 # congirusation we used to setup the experiment system:
-# ____ : _____
-# ____ : _____
-# ____ : _____
-
+    
+# The tume is Mo
+# offset : 3
+# gain : 2
+# angle : 1.9 degree
+# 
 
 #%%
+#42 Mo 17,479.34 17,374.3 19,608.3 
+#28 Ni 7,478.15 7,460.89 8,264.66
+#29 Cu 8,047.78 8,027.83 8,905.29
+#30 Zn 8,638.86 8,615.78 9,572.0 
+#26 Fe 6,403.84 6,390.84 7,057.98
+#82 Pb 10,551.5 10,449.5 12,613.7 12,622.6 14,764.4 2,345.5 
 
-channel = np.array([])
-E = np.array([]) # eV
+
+channel = np.array([1973, 2240,763, 859,827,942,909,1019,635,715, 1136 ,1385 ,1646])
+E = np.array([17400, 19608,7469.52, 8264.66,8037.805, 8905.29,8627.32,9572,6397.34,7057.98,10500.5,12618.15,14764.4]) # eV
 
 fig,fit = one4all(channel,E,xlabel="#Channel",ylabel="E[eV]",mode="linear")
 
 f = lambda x: fit.slope*x+fit.intercept
 
 
-plot_spec("some file.csv") # with channels 
-plot_spec("some file.csv",f=f) # with energy
+
+#plot_spec("pre_calibreation.txt", height = 10, prominence=9,f=f) # with energy
+
+
+
+#%%
+peak = plot_spec("pre_calibreation.txt", height = 10, prominence=9)
+# I = 0.02 mA
+peak = plot_spec("Ni.txt", height = 10, prominence=9)
+
+peak = plot_spec("Cu.txt", height = 10, prominence=9)
+
+peak = plot_spec("Zn.txt", height = 10, prominence=9)
+# I = 0.03 mA
+peak = plot_spec("Fe.txt", height = 10, prominence=10)
+
+peak = plot_spec("Pb.txt", height = 10, prominence=11)
+
+print(peak)
+
+
+#%% alloys
+# Number 11 - FeTiO3
+peak = plot_spec("alloy11.txt", height = 10, prominence=11,f=f)
+
+print(peak)
+
+#%% alloys
+# Number 23 - Sb2S3
+peak = plot_spec("alloy23.txt", height = 10, prominence=11,f=f)
+
+print(peak)
+
+#%% a measure with only the rubber and the holding
+# Number 23 - Sb2S3
+peak = plot_spec("background.txt", height = 10, prominence=11,f=f)
+
+print(peak)
