@@ -89,7 +89,7 @@ def smooth(y, box_pts):
      y_smooth = np.convolve(y, box, mode='same')
      return y_smooth
 
-def plot_spec(file_name,f=None, height = 10, prominence=8):
+def plot_spec(file_name,f=None, height = 10, prominence=8, name= "Mo-tube", background = None):
     Mes1 = pd.read_csv(file_name,sep='\t',header=1) # read the data.
     Counts = np.array(Mes1['Impulses/#']) # Impulses
     Counts_smoothed=smooth(Counts, 10) # smooth the data over 10 channels
@@ -102,9 +102,18 @@ def plot_spec(file_name,f=None, height = 10, prominence=8):
         Channels = f(np.array(Channels))/1e3
         xlabel = "Energy [KeV]"
 
+    if background is not None:
+        new_peaks = []
+        for p in peaks:
+            if np.min(np.abs(f(p)-np.array(background))) > 50:
+                new_peaks.append(p)
+        final_peaks = np.array(new_peaks)
+    else:
+        final_peaks = peaks
+
     plt.figure(dpi=300)
-    plt.plot(Channels ,Counts_smoothed, label='Original Mo-tube spectrum')
-    plt.plot(Channels[peaks] ,Counts_smoothed[peaks],"x",color='red',
+    plt.plot(Channels ,Counts_smoothed, label=str(f'Original {name} spectrum'))
+    plt.plot(Channels[final_peaks] ,Counts_smoothed[final_peaks],"x",color='red',
     label='Lines')
     plt.ylabel('Impulses')
     plt.xlabel(xlabel)
@@ -112,8 +121,9 @@ def plot_spec(file_name,f=None, height = 10, prominence=8):
     plt.legend()
     
     if f is not None:
-        return f(np.array(peaks))
-    return peaks
+        return f(np.array(final_peaks))
+    else:
+        return final_peaks
     
 
 #%% Information and configuration
@@ -143,42 +153,51 @@ fig,fit = one4all(channel,E,xlabel="#Channel",ylabel="E[eV]",mode="linear")
 
 f = lambda x: fit.slope*x+fit.intercept
 
+Reg_print(fit)
 
+plt.figure(fig)
+plt.savefig("fig/reg.png")
 
 #plot_spec("pre_calibreation.txt", height = 10, prominence=9,f=f) # with energy
 
 
 
 #%%
-peak = plot_spec("pre_calibreation.txt", height = 10, prominence=9)
-# I = 0.02 mA
-peak = plot_spec("Ni.txt", height = 10, prominence=9)
+peak = plot_spec("pre_calibreation.txt", height = 10, prominence=9.2)
+print(peak)
 
+#%%
+# I = 0.02 mA
+peak = plot_spec("Ni.txt", height = 10, prominence=9,f=f,name="Ni")
+print(peak)
+
+#%%
 peak = plot_spec("Cu.txt", height = 10, prominence=9)
 
 peak = plot_spec("Zn.txt", height = 10, prominence=9)
 # I = 0.03 mA
 peak = plot_spec("Fe.txt", height = 10, prominence=10)
 
+#%%
 peak = plot_spec("Pb.txt", height = 10, prominence=11)
 
 print(peak)
 
 
+#%% a measure with only the rubber and the holding
+background_peak = plot_spec("background.txt", height = 7, prominence=7,f=f)
+print(background_peak)
+
 #%% alloys
 # Number 11 - FeTiO3
-peak = plot_spec("alloy11.txt", height = 10, prominence=11,f=f)
+peak = plot_spec("alloy11.txt", height = 5, prominence=4.3,f=f, name= "Alloy 11")
+
 
 print(peak)
 
 #%% alloys
 # Number 23 - Sb2S3
-peak = plot_spec("alloy23.txt", height = 10, prominence=11,f=f)
-
-print(peak)
-
-#%% a measure with only the rubber and the holding
-# Number 23 - Sb2S3
-peak = plot_spec("background.txt", height = 10, prominence=11,f=f)
+# print(peak)
+peak = plot_spec("alloy23.txt", height = 1, prominence=12,f=f,name="Alloy 23")
 
 print(peak)
