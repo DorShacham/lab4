@@ -620,7 +620,7 @@ _הכנס מקור_
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename fig/reg.png
+	filename fig/reg.PNG
 	lyxscale 30
 
 \end_inset
@@ -772,6 +772,86 @@ _הכנס מקור_
 \end_layout
 
 \begin_layout Standard
+התקבלה ההיסטוגרמה הבאה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/background.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+היסטוגרמה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+:
+\series default
+ מספר הפולסים שנקלטו מזרוע המתקן כפונקציה של האנרגיה.
+ ב
+\begin_inset Formula $X$
+\end_inset
+
+ מסומנים המקסימום אשר זוההו כקווי הפליטה.
+\end_layout
+
+\begin_layout Standard
+מתוך קווים אלו זיהינו את היסודות 
+\begin_inset Formula $Zn,Nb$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+שווה לציין שבהמשך נזהה את יסודות האלו ונגיד שהם שייכים לזרוע אך אם הקריסטל
+ מכיל את יסודות אלו גם כן לא נדע להבחין בכך.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 לאחר מכן, מדדנו את דגימה 
 \begin_inset Formula $11$
 \end_inset
@@ -819,12 +899,12 @@ _הכנס מקור_
 \uwave default
 \noun default
 \color inherit
-4
+5
 \numeric off
 :
 \series default
- מספר הפולסים שנקלטו מפיסת ה
-\begin_inset Formula $Ni$
+ מספר הפולסים שנקלטו מדוגמית 
+\begin_inset Formula $11$
 \end_inset
 
  כפונקציה של האנרגיה.
@@ -843,37 +923,20 @@ _הכנס מקור_
 \begin_inset Newline newline
 \end_inset
 
-ניתן לשים לב לשני מקסימום )באזור 
-\begin_inset Formula $\sim8.6,16keV$
-\end_inset
-
-( אשר לא סומנו באיקס היות והם נובעים מקווי הפליטה של הזרוע.
-\end_layout
-
-\begin_layout Standard
-קווי הפליטה התקבלו באנרגיות
-\begin_inset Formula 
-\[
-\left[4564.52225856,6408.12985624,6498.66415791,7107.71309643\right]
-\]
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Standard
-לאחר מעבר על רשימה של קווי פליטה של היסודות והצלבה עם הקווים שאנו יכולים
- למדוד ועם הקווים שנמדדו התקבלו שהיסודות אשר יכולים לפלוט אנרגיות בקווים
- אלו הם:
-\begin_inset Formula 
-\[
-Ti,Fe
-\]
-
+את שני הקווים הימניים זיהינו כמתאים ליסודות של הזרוע ומשאר הקווים זהינו
+ את 
+\begin_inset Formula $Ti,Fe$
 \end_inset
 
- ואומנם החומר שנמדד הייתה דגימה של 
+.
+\end_layout
+
+\begin_layout Standard
+ואומנם החומר שנמדד הייתה דגימה של 
 \begin_inset Formula $FeTiO_{3}$
 \end_inset
 
@@ -904,7 +967,7 @@ Ti,Fe
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename fig/alloy11.png
+	filename fig/alloy23.png
 	lyxscale 30
 
 \end_inset
@@ -941,12 +1004,12 @@ Ti,Fe
 \uwave default
 \noun default
 \color inherit
-4
+6
 \numeric off
 :
 \series default
- מספר הפולסים שנקלטו מפיסת ה
-\begin_inset Formula $Ni$
+ מספר הפולסים שנקלטו מדוגמית 
+\begin_inset Formula $23$
 \end_inset
 
  כפונקציה של האנרגיה.
@@ -965,38 +1028,22 @@ Ti,Fe
 \begin_inset Newline newline
 \end_inset
 
-ניתן לשים לב לשני מקסימום )באזור 
-\begin_inset Formula $\sim8.6,16keV$
-\end_inset
-
-( אשר לא סומנו באיקס היות והם נובעים מקווי הפליטה של הזרוע.
+בדומה למדידה הקודמת גם במקרה זה ארבעת הקווים האמצעים נובעים מיסודות המרכיבים
+ את זרוע.
+ 
 \end_layout
 
 \begin_layout Standard
-קווי הפליטה התקבלו באנרגיות
-\begin_inset Formula 
-\[
-\left[4564.52225856,6408.12985624,6498.66415791,7107.71309643\right]
-\]
-
+את הקו הימיני והשמאלי ניתן לשייך לאחד מהיסודות הבאים: 
+\begin_inset Formula $Cd,Sn,Sb$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
-לאחר מעבר על רשימה של קווי פליטה של היסודות והצלבה עם הקווים שאנו יכולים
- למדוד ועם הקווים שנמדדו התקבלו שהיסודות אשר יכולים לפלוט אנרגיות בקווים
- אלו הם:
-\begin_inset Formula 
-\[
-Ti,Fe
-\]
-
-\end_inset
-
- ואומנם החומר שנמדד הייתה דגימה של 
-\begin_inset Formula $FeTiO_{3}$
+החומר שנמדד הייתה דגימה של 
+\begin_inset Formula $Sb_{2}S_{3}$
 \end_inset
 
 .
@@ -1004,12 +1051,73 @@ Ti,Fe
 \end_layout
 
 \begin_layout Standard
-לא הייתה באפשרותנו לזהות את החמצן היות וקווי הפליטה שלו אינם בטווח המדידה
- שביצענו.
+לא הייתה באפשרותנו לזהות את 
+\begin_inset Formula $S$
+\end_inset
+
+ היות וקווי הפליטה שלו אינם בטווח המדידה שביצענו.
+ כמו כן היות וכל היסודות שציינו חולקים את הקווים שזיהינו לא הייתה לנו יכולת
+ להבדיל בינהם.
 \end_layout
 
 \begin_layout Section*
 דיון בתוצאות
+\end_layout
+
+\begin_layout Standard
+בחלקו הראשון של הניסוי מצאנו התאמה מאוד טובה של קשר לינארי בין מספר הערוץ
+ לכמות האנרגיה, הן מבחינה איכותית והן מבחינה כמותית 
+\begin_inset Formula $\left(R^{2}=0.99996\right)$
+\end_inset
+
+.
+ דבר המעיד על כך שההנחה של היצרן לקשר לינארי אכן מוצדקת.
+\end_layout
+
+\begin_layout Standard
+בשלב השני בו זיהינו חומרים בעזרת זיהוי קווי הפליטה שלהם הצלחנו לזהות באופן
+ מוצלח את שניים מתוך שלושת החומרים בדגימה 
+\begin_inset Formula $11$
+\end_inset
+
+ - זיהינו את 
+\begin_inset Formula $Fe,Ti$
+\end_inset
+
+ כאשר הדגימה הייתה של 
+\begin_inset Formula $FeTiO_{3}$
+\end_inset
+
+ וכאמור את קווי הפליטה של 
+\begin_inset Formula $O_{3}$
+\end_inset
+
+ לא הייתה אפשרות לזהות בשיטה זאת היות שהאנרגיה שלהם נמוכה מדי.
+\end_layout
+
+\begin_layout Standard
+עבור דגימה 
+\begin_inset Formula $23$
+\end_inset
+
+ התוצאות היו פחות חד משמעיות - הצענו שלושה חומרים אשר התאימו לשניים מקווי
+ הפליטה 
+\begin_inset Formula $\left(Cd,Sn,Sb\right)$
+\end_inset
+
+ כאשר הדגימה הייתה של 
+\begin_inset Formula $Sb_{2}S_{3}$
+\end_inset
+
+.
+ גם כן לא הייתה אפשרות לזהות את 
+\begin_inset Formula $S$
+\end_inset
+
+ היות וקווי הפליטה שלו בעלי אנרגיה נמוכה מדי.
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
@@ -1018,6 +1126,32 @@ Ti,Fe
 
 \begin_layout Section*
 מסקנות
+\end_layout
+
+\begin_layout Standard
+מסקנה ראשונה היא שבהתאם לטענת היצרן יש קשר לינארי בקירוב מצוין בין מספר
+ הערוץ לכמות האנרגיה שמייצג ערוץ זה.
+ קשר זה מעיד על כך שאפשר עם שגיאה קטנה מאוד לזהות את הספקטרום קרני ה
+\begin_inset Formula $X$
+\end_inset
+
+ האנרגטי של חומרים שונים בעזרת המכשיר בו השתשמנו.
+\end_layout
+
+\begin_layout Standard
+במהלך זיהוי החומרים ראינו זיהוי מוצלח לדגימה 
+\begin_inset Formula $11$
+\end_inset
+
+ )זיהינו את כל החומרים שיכולנו מבחינה אנרגיטית באופן חד-משמעי( אך הזיהוי
+ של דגימה 
+\begin_inset Formula $23$
+\end_inset
+
+ היה פחות חד-משמעי )לא הצלחנו לזהות באופן יחיד את אחד הח
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
