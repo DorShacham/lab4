@@ -1076,8 +1076,9 @@ noprefix "false"
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename fig/background.png
+	filename fig/background_edited.png
 	lyxscale 30
+	scale 35
 
 \end_inset
 
@@ -1160,8 +1161,9 @@ noprefix "false"
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename fig/alloy11.png
+	filename fig/alloy11_edited.png
 	lyxscale 30
+	scale 35
 
 \end_inset
 
@@ -1265,8 +1267,9 @@ noprefix "false"
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename fig/alloy23.png
+	filename fig/alloy23_edited.png
 	lyxscale 30
+	scale 35
 
 \end_inset
 
