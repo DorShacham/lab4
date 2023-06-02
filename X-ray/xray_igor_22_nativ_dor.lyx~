@@ -180,7 +180,11 @@ status open
 \align center
 
 \series bold
-כותרת
+זיהוי יסודות המרכיבים סגסוגות בעזרת קווי פליטה של קרני 
+\begin_inset Formula $X-ray$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -368,6 +372,115 @@ today
 \end_layout
 
 \begin_layout Standard
+בניסוי זה מטרתנו הייתה למצוא קווי פליטה של קרני 
+\begin_inset Formula $X-ray$
+\end_inset
+
+ )נקרא להם 
+\begin_inset Quotes eld
+\end_inset
+
+קווי פליטה
+\begin_inset Quotes erd
+\end_inset
+
+( מסגסוגות מתכות שונות ובכך לזהות אילו יסודות מרכיבים אותן.
+ תחילה, ביצענו 'מדידות כיול', בהן מצאנו קווי פליטה של מתכות שונות ) 
+\begin_inset Formula $Ni,Cu,Zn,Fe,Pb$
+\end_inset
+
+ ( שקווי הפליטה שלהם ידועים לנו.
+ המדידות נעשו בעזרת גלאי אנרגיה המחובר ל 
+\begin_inset Formula $MCA$
+\end_inset
+
+ שהפלט שלו הוא היסטוגרמה של מספר פולסים הנקלטים ב'ערוץ' קלט מסוים.
+ בעזרת מספר מדידות, התאמנו בין 
+\begin_inset Quotes eld
+\end_inset
+
+ערוץ
+\begin_inset Quotes erd
+\end_inset
+
+ לאנרגיה, ציפינו שההמרה תהיה המרה לינארית ואכן כך מסתמן מתוצאות הניסוי שכן
+ הייתה התאמה לינארית טובה.
+ לאחר מכן, כשיש בידינו המרה בין 'ערוץ' לאנרגיה', בדקנו אילו קווי פליטה של
+ הסגסגות תואמים לאלה של המתכות שנבדקו.
+ הסגסוגות אותם בדקנו היו 
+\begin_inset Formula $FeTiO_{3}$
+\end_inset
+
+ )דוגמית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\numeric off
+( ו
+\begin_inset Formula $Sb_{2}S_{3}$
+\end_inset
+
+ )דוגמית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+23
+\numeric off
+(, מצאנו שחלק מהיסודות בסגסוגות התגלו וחלקן לא - כצפוי מהתיאוריה ושיטת המדידה
+ שמאפשרת גילוי של יסודות רק בטווח מסוים של פליטה.
+ על כך נרחיב בדיון בתוצאות.
+ כמו כן צפינו בקווי פליטה נוספים שהיו משותפים ברוב המדידות ואני מייחסים
+ אותן ליסודות המרכיבים את החומר ממנו עשויה הזרוע שהחזיקה את הדוגמיות.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -376,6 +489,168 @@ today
 
 \begin_layout Section*
 מבוא
+\end_layout
+
+\begin_layout Standard
+כאשר אלומת אלקטרונים באנרגיה גבוהה פוגעת באטום ניתן לצפות בתופעת פיזור של
+ קרינה מהאטום הנפגע.
+ ישנן שתי תופעות עיקריות, אחת מהן קוראת תמיד והיא ספקטרום רציף הנקראת 
+\begin_inset Quotes eld
+\end_inset
+
+קרינת העצירה 
+\begin_inset Formula $\left(Bremsstrahlung\right)$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ תופעה זו נובעת מהאטת האלקטרון עקב אנטרציה עם הגרעין.
+ תופעה שניה מתרחשת כאשר לאלקטרון הפוגע מספיק אנרגיה כדי ליינן את האטום.
+ יינון האטום גורם לשחרור אחת מרמות האכלוס הנמוכות ומאפשר דעיכה של רמה גבוה
+ יותר אל הרמה שהתפנתה )דעיכה שלפני כן לא התאפשרה עקב איסור פאולי(.
+ דעיכה כזו גורמת לשחרור של פוטון באנרגיה הנקבעת לפי 
+\begin_inset Formula $h\nu_{photon}=E_{initial}-E_{final}$
+\end_inset
+
+ כש
+\begin_inset Formula $h$
+\end_inset
+
+ קבוע פלאנק 
+\begin_inset Formula $\nu_{photon}$
+\end_inset
+
+ היא תדירות הפוטון ו
+\begin_inset Formula $E_{initial/final}$
+\end_inset
+
+ הם הרמות אנרגיה שהאקלטרון עבר ביניהן.
+ אנרגיה זו תלויה אך ורק בסוג האטום )שכן הוא זה שגדיר את הפרש רמות האנרגיה(
+ ולכן עבור כל סוג אטום נצפה לעליה חדה בפליטת אנרגיה באנרגיה הספצפית של 
+\begin_inset Formula $hv_{photon}$
+\end_inset
+
+.
+ עקב היות פסי האנרגיה מאפיין יחודי של היסודות, בעזרת קליטה של קרינה כזו
+ מחומר נוכל לזהות אילו יסודות מרכיבים אותו.
+\end_layout
+
+\begin_layout Standard
+הניסוי שלנו הורכב ממערכת המכילה שפופרת 
+\begin_inset Formula $X-ray$
+\end_inset
+
+ שבעת חימומה פולטת קרינת 
+\begin_inset Formula $X-ray$
+\end_inset
+
+ אל תוך תא המכיל דוגמית וגלאי.
+ 
+\end_layout
+
+\begin_layout Standard
+מערכת הניסוי מוצגת בתמונה הבאה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/xray_setup.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+תרשים 
+\numeric on
+1
+\numeric off
+:
+\series default
+ מערכת הניסוי.
+ משמאל יחידת ה
+\begin_inset Formula $X-ray$
+\end_inset
+
+ המכילה את שפופרת ה
+\begin_inset Formula $X-ray$
+\end_inset
+
+ בתא השמאלי ותא ימני עם הגלאי והזרוע המחזיקה את הדוגמית.
+ 
+\end_layout
+
+\begin_layout Standard
+שפופרת ה
+\begin_inset Formula $X-ray$
+\end_inset
+
+ הכילה אטומי 
+\begin_inset Formula $Mo$
+\end_inset
+
+, כשאלומת אלקטרונים מואצת בתוך השפופרת במתח גבוה, מתח ההאצה קובע את אנרגית
+ הקרינה הנפלטת מהשפופרת והזרם קובע את עוצמת הקרינה.
+ הקרינה נפלטת אל תוך התא הימני, כשהתא הימני מכיל זרוע שניתן לחבר אליה דוגמיות
+ מתכת וגלאי, כשבחלק העיקרי של הניסוי הקרינה מהשפופרת פוגעת בדוגמית וקרינה
+ שנפלטת מהדוגמית בעקבות זאת נקלטת על ידי הגלאי.
+ קריאות הגלאי מוצגות בעזרת 
+\begin_inset Formula $MCA$
+\end_inset
+
+ כמספר פולסים שהתקבלו בערוץ מסוים בגלאי.
+ בגלאי איתו עבדנו אנו מצפים )בעקבות הוראות יצרן( שההמרה תהיה המרה לינארית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E=a\cdot C+b\label{eq:Energy_channel_convertion}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $E$
+\end_inset
+
+ אנרגיה ביחידות 
+\begin_inset Formula $[keV]$
+\end_inset
+
+ , 
+\begin_inset Formula $C$
+\end_inset
+
+ הוא הערוץ )חסר יחידות( ו
+\begin_inset Formula $a$
+\end_inset
+
+,
+\begin_inset Formula $b$
+\end_inset
+
+ הם קבועים של ההמרה שלהם יחידות של 
+\begin_inset Formula $[keV]$
+\end_inset
+
+ גם כן.
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
@@ -395,7 +670,7 @@ today
 \end_layout
 
 \begin_layout Standard
-הכנו את המערכת המתואר במבוא.
+הכנו את מערכת הניסוי המתוארת במבוא.
  קבענו את ה
 \begin_inset Formula $offset$
 \end_inset
@@ -496,27 +771,34 @@ today
 \begin_inset Formula $\left(Bremsstrahlung\right)$
 \end_inset
 
- אשר נגרמת מאינטרקציה חשמלית של האלקטרונים עם הגרעינים )
-\series bold
-אולי שווה להבהיר או למחוק
-\series default
-(.
+ אותה הצגנו במבוא.
+ 
 \end_layout
 
 \begin_layout Standard
 בשביל להתאים את מספר הערוצים לאנרגיה המתאימה נעזר בקווי הפליטה הידועים [
-\series bold
-_הכנס מקור_
-\series default
-] ולכן נוכל לבצע רגרסיה לניארית לפי נוסחה )?(.
+\numeric on
+2
+\numeric off
+] ולכן נוכל לבצע רגרסיה לניארית לפי נוסחה )
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Energy_channel_convertion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(.
 \end_layout
 
 \begin_layout Standard
-לשם התאמה טובה של הרגרסיה, נבצע מדידות נוספות של החומרים הבאים 
+לשם התאמה כזו נבצע מדידות נוספות של החומרים הבאים 
 \begin_inset Formula $\left(Ni,Cu,Zn,Fe,Pb\right)$
 \end_inset
 
- ונתאים את מספר הערוץ לאנרגיה.
+ וכך נוכל להתאים את מספר הערוץ לאנרגיה בעזרת רגרסיה.
  
 \end_layout
 
@@ -614,13 +896,23 @@ _הכנס מקור_
 \begin_inset Newline newline
 \end_inset
 
-לאחר התאמת הערוצים לאנרגיות וביצוע רגרסיה לפי נוסחה )?( התקבלה הרגרסיה הבאה:
+לאחר התאמת הערוצים לאנרגיות וביצוע רגרסיה לפי נוסחה )
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Energy_channel_convertion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( התקבלה הרגרסיה הבאה:
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename fig/reg.png
+	filename fig/reg.PNG
 	lyxscale 30
 
 \end_inset
@@ -762,7 +1054,13 @@ _הכנס מקור_
 
 \begin_layout Standard
 בשלב זה לקחנו שני חומרים וביצענו להם מדידה, בעזרת הרגרסיה זיהינו את האנרגיה
- של קווי הפליטה שלהם ובעזרת קווי הפליטה אפיינו את החומרים.
+ של קווי הפליטה שלהם ובעזרת קווי הפליטה אפיינו את החומרים - חיפשנו במקורות
+ )
+\numeric on
+2,3
+\numeric off
+( אחר חומרים עם קווי פליטה באנרגיות המתאימות בעלות עוצמה גבוהה שעבורם כל
+ הקווים בעלי עוצמה גבוהה נצפים במדידה.
 \end_layout
 
 \begin_layout Standard
@@ -836,8 +1134,8 @@ _הכנס מקור_
 \end_layout
 
 \begin_layout Standard
-שווה לציין שבהמשך נזהה את יסודות האלו ונגיד שהם שייכים לזרוע אך אם הקריסטל
- מכיל את יסודות אלו גם כן לא נדע להבחין בכך.
+נציין שבהמשך נזהה את יסודות האלו ונגיד שהם שייכים לזרוע אך אם הקריסטל מכיל
+ את יסודות אלו גם כן לא נדע להבחין בכך.
 \end_layout
 
 \begin_layout Standard
@@ -927,7 +1225,7 @@ _הכנס מקור_
 \end_layout
 
 \begin_layout Standard
-את שני הקווים הימניים זיהינו כמתאים ליסודות של הזרוע ומשאר הקווים זהינו
+את שני הקווים הימניים זיהינו כמתאימים ליסודות של הזרוע ומשאר הקווים זהינו
  את 
 \begin_inset Formula $Ti,Fe$
 \end_inset
@@ -1034,15 +1332,11 @@ _הכנס מקור_
 \end_layout
 
 \begin_layout Standard
-את הקו הימיני והשמאלי ניתן לשייך לאחד מהיסודות הבאים: 
-\begin_inset Formula $Cd,Sn,Sb$
+את הקו הימיני והשמאלי ניתן לשייך לאחד ל
+\begin_inset Formula $Sb$
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-החומר שנמדד הייתה דגימה של 
+ ואומנם החומר שנמדד הייתה דגימה של 
 \begin_inset Formula $Sb_{2}S_{3}$
 \end_inset
 
@@ -1056,12 +1350,72 @@ _הכנס מקור_
 \end_inset
 
  היות וקווי הפליטה שלו אינם בטווח המדידה שביצענו.
- כמו כן היות וכל היסודות שציינו חולקים את הקווים שזיהינו לא הייתה לנו יכולת
- להבדיל בינהם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
 דיון בתוצאות
+\end_layout
+
+\begin_layout Standard
+בחלקו הראשון של הניסוי מצאנו התאמה מאוד טובה של קשר לינארי בין מספר הערוץ
+ לכמות האנרגיה, הן מבחינה איכותית והן מבחינה כמותית 
+\begin_inset Formula $\left(R^{2}=0.99996\right)$
+\end_inset
+
+.
+ דבר המעיד על כך שההנחה של היצרן לקשר לינארי אכן מוצדקת.
+\end_layout
+
+\begin_layout Standard
+בשלב השני בו זיהינו חומרים בעזרת זיהוי קווי הפליטה שלהם הצלחנו לזהות באופן
+ מוצלח את שניים מתוך שלושת החומרים בדגימה 
+\begin_inset Formula $11$
+\end_inset
+
+ - זיהינו את 
+\begin_inset Formula $Fe,Ti$
+\end_inset
+
+ כאשר הדגימה הייתה של 
+\begin_inset Formula $FeTiO_{3}$
+\end_inset
+
+ וכאמור את קווי הפליטה של 
+\begin_inset Formula $O_{3}$
+\end_inset
+
+ לא הייתה אפשרות לזהות בשיטה זאת היות שהאנרגיה שלהם נמוכה מדי.
+\end_layout
+
+\begin_layout Standard
+עבור דגימה 
+\begin_inset Formula $23$
+\end_inset
+
+ הצלחנו גם כן לזהות את היסוד 
+\begin_inset Formula $Sb$
+\end_inset
+
+ כאשר הדוגמית הייתה של 
+\begin_inset Formula $Sb_{2}S_{3}$
+\end_inset
+
+.
+ גם כאן לא הייתה אפשרות לזהות את 
+\begin_inset Formula $S$
+\end_inset
+
+ היות וקווי הפליטה שלו בעלי אנרגיה נמוכה מדי.
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
@@ -1070,6 +1424,53 @@ _הכנס מקור_
 
 \begin_layout Section*
 מסקנות
+\end_layout
+
+\begin_layout Standard
+מסקנה ראשונה היא שבהתאם לטענת היצרן יש קשר לינארי בקירוב מצוין בין מספר
+ הערוץ לכמות האנרגיה שמייצג ערוץ זה.
+ קשר זה מעיד על כך שאפשר עם שגיאה קטנה מאוד לזהות את הספקטרום קרני ה
+\begin_inset Formula $X$
+\end_inset
+
+ האנרגטי של חומרים שונים בעזרת המכשיר בו השתשמנו.
+\end_layout
+
+\begin_layout Standard
+במהלך זיהוי החומרים ראינו זיהוי מוצלח עבור שתי הדגימות 
+\begin_inset Formula $11,23$
+\end_inset
+
+ )זיהינו את כל החומרים שיכולנו מבחינה אנרגיטית באופן חד-משמעי(.
+\end_layout
+
+\begin_layout Standard
+במהלך הזיהוי ביצענו מדידה של הזרוע האוחזת את הדגימה בשביל לזהות את החומרים
+ המרכיבים אותה ולסנן אותם מתוצאות את הדגימות שמדדנו, שיטה זו עבדה באופן
+ מוצלח יחסית היות והצלחנו לזהות קווים שנבעו מהזרוע במדידת הדגימות ומבלי
+ שיטה זו היינו עלולים לזהות אותם כחלק מהדגימה.
+ עם זאת, אם הדגימות היו חולקות חומרים עם הזרוע, לא הייתה באפשרותנו להבחין
+ בכך.
+\end_layout
+
+\begin_layout Standard
+מסקנה מכך היא לבדוק אפשרות לשימוש בזרוע המורכבת מחומרים אשר ספקטרום קרני
+ ה
+\begin_inset Formula $X$
+\end_inset
+
+ שלהם אינו בטווח המדידה של הגלאי, בצורה זו הזרוע תהיה 
+\begin_inset Quotes eld
+\end_inset
+
+שקופה
+\begin_inset Quotes erd
+\end_inset
+
+ ונדע שכל קווי הספקטרום שייכים לאוביקט הנמדד.
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
@@ -1085,7 +1486,35 @@ _הכנס מקור_
 \numeric on
 1
 \numeric off
-( תדריך __.
+( תדריך 
+\begin_inset Formula $X-ray$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\numeric off
+( טבלת 
+\begin_inset Formula $X-ray\ Emission\ Lines$
+\end_inset
+
+ מהמודל.
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+3
+\numeric off
+( 
+\begin_inset Formula $X-ray\ data\ Booklet$
+\end_inset
+
+ מהמודל.
 \end_layout
 
 \begin_layout Section*
