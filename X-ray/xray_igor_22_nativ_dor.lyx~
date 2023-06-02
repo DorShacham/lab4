@@ -747,7 +747,7 @@ E=a\cdot C+b\label{eq:Energy_channel_convertion}
 \begin_inset Formula $X$
 \end_inset
 
- מסומנים המקסימום אשר זוההו כקווי הפליטה.
+ מסומנים המקסימום אשר זוהו כקווי הפליטה.
 \end_layout
 
 \begin_layout Standard
@@ -780,7 +780,7 @@ E=a\cdot C+b\label{eq:Energy_channel_convertion}
 \numeric on
 2
 \numeric off
-] ולכן נוכל לבצע רגרסיה לניארית לפי נוסחה )
+] ולכן נוכל לבצע רגרסיה לניארית לפי נוסחא )
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Energy_channel_convertion"
@@ -872,7 +872,7 @@ noprefix "false"
 \begin_inset Formula $X$
 \end_inset
 
- מסומנים המקסימום אשר זוההו כקווי הפליטה.
+ מסומנים המקסימום אשר זוהו כקווי הפליטה.
 \end_layout
 
 \begin_layout Standard
@@ -896,7 +896,7 @@ noprefix "false"
 \begin_inset Newline newline
 \end_inset
 
-לאחר התאמת הערוצים לאנרגיות וביצוע רגרסיה לפי נוסחה )
+לאחר התאמת הערוצים לאנרגיות וביצוע רגרסיה לפי נוסחא )
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Energy_channel_convertion"
@@ -1029,12 +1029,12 @@ noprefix "false"
 \begin_inset Formula $Ni$
 \end_inset
 
- כפונקציה של מספר הערוץ.
+ כפונקציה של האנרגיה.
  ב
 \begin_inset Formula $X$
 \end_inset
 
- מסומנים המקסימום אשר זוההו כקווי הפליטה.
+ מסומנים המקסימום אשר זוהו כקווי הפליטה.
 \end_layout
 
 \begin_layout Standard
@@ -1122,7 +1122,7 @@ noprefix "false"
 \begin_inset Formula $X$
 \end_inset
 
- מסומנים המקסימום אשר זוההו כקווי הפליטה.
+ מסומנים המקסימום אשר זוהו כקווי הפליטה.
 \end_layout
 
 \begin_layout Standard
@@ -1210,7 +1210,7 @@ noprefix "false"
 \begin_inset Formula $X$
 \end_inset
 
- מסומנים המקסימום אשר זוההו כקווי הפליטה.
+ מסומנים המקסימום אשר זוהו כקווי הפליטה.
 \end_layout
 
 \begin_layout Standard
@@ -1315,7 +1315,7 @@ noprefix "false"
 \begin_inset Formula $X$
 \end_inset
 
- מסומנים המקסימום אשר זוההו כקווי הפליטה.
+ מסומנים המקסימום אשר זוהו כקווי הפליטה.
 \end_layout
 
 \begin_layout Standard
@@ -1332,7 +1332,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-את הקו הימיני והשמאלי ניתן לשייך לאחד ל
+את הקו הימיני והשמאלי ביותר ניתן לשייך לאחד ל
 \begin_inset Formula $Sb$
 \end_inset
 
@@ -1369,8 +1369,7 @@ noprefix "false"
 \begin_inset Formula $\left(R^{2}=0.99996\right)$
 \end_inset
 
-.
- דבר המעיד על כך שההנחה של היצרן לקשר לינארי אכן מוצדקת.
+, דבר המעיד על כך שההנחה של היצרן לקשר לינארי אכן מוצדקת.
 \end_layout
 
 \begin_layout Standard
@@ -1560,7 +1559,7 @@ noprefix "false"
 
 \end_deeper
 \begin_layout Itemize
-הנוסחה בה השתמשנו לחישוב השגיאה היחסית בין הערכים המדודים לתיאורטיים בניסוי:
+הנוסחא בה השתמשנו לחישוב השגיאה היחסית בין הערכים המדודים לתיאורטיים בניסוי:
 \end_layout
 
 \begin_deeper
