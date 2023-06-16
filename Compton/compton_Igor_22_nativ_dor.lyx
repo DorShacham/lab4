@@ -1,0 +1,1186 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsart
+\begin_preamble
+% Necessary Commands
+\usepackage{autobreak}
+\usepackage[T1]{fontenc}
+
+% Set space between words to be wider:
+\spaceskip=1.3\fontdimen2\font plus 1\fontdimen3\font minus 1.5\fontdimen4\font
+
+% This Part convert the Lyx colors into more pleasent colors
+\usepackage{xcolor}
+\definecolor{blue}{RGB}{0, 0, 140}
+\definecolor{green}{RGB}{0, 140, 0}
+\definecolor{red}{RGB}{220, 0, 0}
+
+% Convert the QED Symbol at the end of proofs to a solid black square (credit: Yakir Oz)
+\usepackage{amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+% This part makes the layout more similar to Hebrew Article, which I am more used to
+\renewcommand*{\@seccntformat}[1]{\hspace{0.5cm}\csname the#1\endcsname\hspace{0.5cm}} 
+\usepackage{titlesec}
+\titleformat{\section}{\fontsize{20}{20}\bfseries}{\thesection}{10pt}{}
+\titleformat{\subsection}{\fontsize{15}{15}\bfseries}{\thesubsection}{10pt}{}
+\titleformat{\subsubsection}{\bfseries}{\thesubsubsection}{10pt}{}
+
+% This part corrects the reversed parentheses in labels
+\usepackage{polyglossia}
+\setmainlanguage{hebrew}
+\newfontfamily{\hebrewfont}{David}
+\makeatletter
+\def\maketag@@@#1{\hbox{\m@th\normalfont\LRE{#1}}}
+\def\tagform@#1{\maketag@@@{(\ignorespaces#1\unskip)}}
+\makeatother
+\end_preamble
+\use_default_options true
+\begin_removed_modules
+eqs-within-sections
+figs-within-sections
+\end_removed_modules
+\begin_modules
+theorems-ams
+enumitem
+fixltx2e
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Style Section
+	Align        Right
+	Font
+	  Series     Medium
+	  Shape      Smallcaps
+	  Size       Larger
+	  Series     Bold
+	EndFont
+	TocLevel 1
+End
+
+
+Style Section*
+	Align        Right
+	Font
+	  Series     Medium
+	  Shape      Smallcaps
+	  Size      Larger
+	  Series     Bold
+	EndFont
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "cmr" "David"
+\font_sans "cmss" "David"
+\font_typewriter "cmtt" "David"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth -2
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "../../../../../../AppData/Local/LyX 2.3/Resources/templates/_templates/MacrosHeb.lyx"
+
+\end_inset
+
+
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "20pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+כותרת
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+שם: נתיב מאור | ת
+\begin_inset Quotes erd
+\end_inset
+
+ז:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+319002911
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+| דוא
+\begin_inset Quotes erd
+\end_inset
+
+ל: 
+\begin_inset Formula $\text{nativ.maor@campus.technion.ac.il}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+שם: דור חי שחם | ת
+\begin_inset Quotes erd
+\end_inset
+
+ז:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+318258555
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+| דוא
+\begin_inset Quotes erd
+\end_inset
+
+ל: 
+\begin_inset Formula $\text{dor-hay.sha@campus.technion.ac.il}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תקציר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מבוא
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תוצאות הניסוי
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+כיול המערכת
+\bar default
+:
+\end_layout
+
+\begin_layout Standard
+הכנו את מערכת הניסוי המתוארת במבוא.
+ קבענו את ה
+\begin_inset Formula $offset$
+\end_inset
+
+ להיות 
+\begin_inset Formula $3$
+\end_inset
+
+ וה
+\begin_inset Formula $gain$
+\end_inset
+
+ להיות 
+\begin_inset Formula $2$
+\end_inset
+
+ בשביל להעלים את רעשים ולקבל תמונה מלאה של הערוצים בהם נקלטים אותות בהתאמה.
+\end_layout
+
+\begin_layout Standard
+לקחנו מדידה של הקרינה של המערכת בשביל לקבל מדידות של 
+\begin_inset Formula $Mo$
+\end_inset
+
+.
+ לאחר מכן מדדנו את הספקטרום של
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Descloizite\ \left(PbZn\left(OH\right)VO_{4}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+התקבלה ההיסטוגרמות הבאות:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/crystal_spec.jpg
+	lyxscale 30
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fig/Mo_spec.jpg
+	lyxscale 30
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+היסטוגרמה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1-2
+\numeric off
+:
+\series default
+ היסטורגמה 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ מדידת 
+\begin_inset Formula $Mo$
+\end_inset
+
+ והיסטוגרמה 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+ מדידת 
+\begin_inset Formula $Descloizite$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+מספר הפולסים שנקלטו כפונקציה של מספר הערוץ.
+ ב
+\begin_inset Formula $X$
+\end_inset
+
+ מסומנים המקסימום אשר זוהו כקווי הפליטה.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זיהינו את השיאים שהתקבלו והתאמנו אותם לאנרגיות שמתאימות לקווי הפליטה המוכרים
+ של יסודות אלו )במקרה של 
+\begin_inset Formula $Descloizite$
+\end_inset
+
+ - היסודות שמרכיבים אותו(.
+\end_layout
+
+\begin_layout Standard
+ביצענו רגרסיה לינארית להתאמה לפי נוסחה )?(, התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/regression.jpg
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\series default
+ אנרגיה כפונקציה של מספר הערוץ.
+ הנקודות הכחולות הן הנקודות שנמדדו והקו הכתום מייצג את ההתאמה הלינארית.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ניתן לראות באופן איכותי שהתקבלה התאמה לינארית טובה מאוד.
+ מתוך הרגרסיה קיבלנו את המקדמים של נוסחה )?( אשר מהווה המרה בין ערוצי ה
+\begin_inset Formula $MCA$
+\end_inset
+
+ לאנרגיות.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+להלן ההמרה לאנרגיות של המדידות שביצענו לשם הכיול:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/crystal_spec_E.jpg
+	lyxscale 30
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fig/Mo_spec_E.jpg
+	lyxscale 30
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+היסטוגרמה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3-4
+\numeric off
+:
+\series default
+ היסטורגמה 
+\begin_inset Formula $\left(3\right)$
+\end_inset
+
+ מדידת 
+\begin_inset Formula $Mo$
+\end_inset
+
+ והיסטוגרמה 
+\begin_inset Formula $\left(4\right)$
+\end_inset
+
+ מדידת 
+\begin_inset Formula $Descloizite$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+מספר הפולסים שנקלטו כפונקציה של האנרגיה.
+ ב
+\begin_inset Formula $X$
+\end_inset
+
+ מסומנים המקסימום אשר זוהו כקווי הפליטה.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+מדידת הפיזור
+\bar default
+:
+\end_layout
+
+\begin_layout Standard
+הוצאנו את דוגמית ה
+\begin_inset Formula $Descloizite$
+\end_inset
+
+ ומיקמנו במערכת דוגמית פלקסיגלס.
+ בשביל למדוד את האנרגיה המתפזרת כתלות בזווית ביצענו מדידות במשך זמן קבוע
+ של 
+\begin_inset Formula $5$
+\end_inset
+
+ דקות לכל זווית של הראש המודד בין 
+\begin_inset Formula $10^{\circ}$
+\end_inset
+
+ ל
+\begin_inset Formula $140^{\circ}$
+\end_inset
+
+ ביחס לדוגמית.
+ הסיבה לזמן הקבוע היא היא שקצב הפליטה פורפורציוני לעוצמה )לאמפליטודה( ולכן
+ בשביל למדוד את העוצמה יש למדוד את הקצב ומכאן שהזמן חייב להיות קבוע.
+\end_layout
+
+\begin_layout Standard
+ביצענו התאמה לגאוסין של כל מדידה ובעזרתו זיהינו את עוצמת המדידה המקסימלית
+ והאנרגיה בה היא מתקבלת כאשר נעזרנו בכיול בשביל להמיר את הערוצים לאנרגיות.
+\end_layout
+
+\begin_layout Standard
+התקבל הגרף הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/measure.jpg
+	lyxscale 30
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\series default
+ עוצמת הפיזור בזוויות שונות כפונקציה של האנרגיה שנמדדה.
+ ב
+\begin_inset Formula $X$
+\end_inset
+
+ אדום מסומנים השיאים שזוהו.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מתוך השיאים חילצנו את האנרגיות בהן התקבלו השיאים ומנוסחה )?( חילצנו את אורכי
+ הגל המתאימים.
+ 
+\end_layout
+
+\begin_layout Standard
+ביצענו רגרסיה לפי הקשר בין זווית הפיזור לשינוי באורך הגל לפי נוסחה )?( התקבל
+ הגרף הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/comp_reg.jpg
+	lyxscale 30
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\series default
+ השינוי באורך הגל במטרים כפונקציה של קוסינוס זווית הפיזור.
+ הנקודות הכחולות הן הנקודות שנמדדו והקו הכתום מייצג את ההתאמה הלינארית.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ניתן לראות התאמה איכותית טובה כמצופה לפי הנוסחה לפיזור קומפטון.
+ מתוך הרגרסיה חילצנו את אורך גל קומפטון לפי נוסחה )?( והתקבל 
+\begin_inset Formula 
+\[
+\lambda_{e}=\left(2.56\pm0.03\right)\cdot10^{-12}m
+\]
+
+\end_inset
+
+ כאשר השגיאות חולצו מהרגרסיה הלניארית והשגיאות הנגררות חושבו לפי הנוסחא
+ בנספח.
+\end_layout
+
+\begin_layout Standard
+תוצאה זו מכילה את הערך התיאורטי 
+\begin_inset Formula $\lambda_{e}^{theory}=2.51\cdot10^{-12}m$
+\end_inset
+
+ במרווח של שתי סטיות תקן.
+\end_layout
+
+\begin_layout Standard
+בנוסף, מאורך גל קומפטון חולצה מסת האלקטרון לפי נוסחה )?( והתקבל 
+\begin_inset Formula 
+\[
+m_{e}=\left(8.9\pm0.1\right)\cdot10^{-31}kg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תוצאה זו מכילה את הערך התיאורטי 
+\begin_inset Formula $\lambda_{e}^{theory}=9.1\cdot10^{-31}kg$
+\end_inset
+
+ במרווח של שתי סטיות תקן.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לבסוף שרטטנו את המדידות של האמפליטודה כתלות בזווית הפיזור והשוונו לתוצאות
+ התיאורטיות לפי נוסחת קליין-נשינה )?(, התקבל הגרף הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/klein_nish.jpg
+	lyxscale 30
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+:
+\series default
+ אמפליטודת הפיזור כפונקציה של זווית הפיזור במעלות.
+ הנקודות הכחולות מייצגו תאת המדידות והקו הכתום את הערך התיאורטי.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ניתן לראות איכותית התנהגות דומה אך אין התאמה ממשית בין התוצאות הנסיוניות
+ לתיאורטיות.
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דיון בתוצאות
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנות
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מקורות מידע
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\numeric off
+( תדריך __.
+\end_layout
+
+\begin_layout Section*
+נספח
+\end_layout
+
+\begin_layout Itemize
+הנוסחא בה השתמשנו לחישוב השגיאות הנגררות בניסוי:
+\begin_inset Formula 
+\[
+\delta F=\sqrt{\left(\frac{\partial F}{\partial x}\delta x\right)^{2}+\left(\frac{\partial F}{\partial y}\delta y\right)^{2}+\ldots}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\delta x,\delta y,\ldots$
+\end_inset
+
+ הן השגיאות של 
+\begin_inset Formula $x,y,\ldots$
+\end_inset
+
+ ו-
+\begin_inset Formula $\delta F$
+\end_inset
+
+ היא השגיאה הנגררת של 
+\begin_inset Formula $F$
+\end_inset
+
+, שהיא פונקציה של המשתנים 
+\begin_inset Formula $x,y,\ldots$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+הנוסחא בה השתמשנו לחישוב השגיאה היחסית בין הערכים המדודים לתיאורטיים בניסוי:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xi_{rel\ err}=\frac{\delta v}{v}\cdot100\%
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

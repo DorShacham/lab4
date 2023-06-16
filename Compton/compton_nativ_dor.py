@@ -119,7 +119,7 @@ def smooth(y, box_pts):
      y_smooth = np.convolve(y, box, mode='same')
      return y_smooth
 
-def plot_spec(file_name,f=None, height = 10, prominence=8, name= "Mo-tube", background = None):
+def plot_spec(file_name,f=None, height = 10, prominence=8, name= "Mo-tube", background = None, save_to_file = None,title = None):
     Mes1 = pd.read_csv(file_name,sep='\t',header=1) # read the data.
     Counts = np.array(Mes1['Impulses/#']) # Impulses
     Counts_smoothed=smooth(Counts, 10) # smooth the data over 10 channels
@@ -149,7 +149,12 @@ def plot_spec(file_name,f=None, height = 10, prominence=8, name= "Mo-tube", back
     plt.xlabel(xlabel)
     plt.grid()
     plt.legend()
+    if title is not None:
+       plt.title(title)
     
+    if save_to_file is not None:
+       plt.savefig(save_to_file)
+
     if f is not None:
         return f(np.array(final_peaks))
     else:
@@ -184,11 +189,9 @@ Descloizite = (Pb,Zn)2VO4OH
 # 
 
 #%%
-peak = plot_spec("Mo0.txt", height = 8, prominence=6.6)
-#print(peak)
+peak = plot_spec("Mo0.txt", height = 8, prominence=6.6, save_to_file="fig/Mo_spec.jpg",title="(1)")
 
-peak = plot_spec("crystal0.txt", height = 8, prominence=6.6)
-print(peak)
+peak = plot_spec("crystal0.txt", height = 8, prominence=6.6,name="Descloizite",save_to_file="fig/crystal_spec.jpg",title="(2)")
 
 #%% finding the conversion between channel and energy
 channel = [1973,2249.5,909,1019,1131,1384,1672] ##
@@ -201,10 +204,16 @@ channel = np.array(channel)
 E = np.array(E)
 
 
-fig,fit = one4all(channel,E,xlabel="#Channel",ylabel="E[eV]",mode="linear")
+fig,fit = one4all(channel,E,xlabel="#Channel",ylabel="E[eV]",mode="linear",show=False)
+fig = plt.figure(fig)
+plt.savefig("fig/regression.jpg")
 
 conv = lambda x: fit.slope*x+fit.intercept
 Reg_print(fit)
+
+peak = plot_spec("Mo0.txt", height = 8, prominence=6.6, save_to_file="fig/Mo_spec_E.jpg",title="(3)", f=conv)
+
+peak = plot_spec("crystal0.txt", height = 8, prominence=6.6,name="Descloizite",save_to_file="fig/crystal_spec_E.jpg",title="(4)", f = conv)
 #%% The loop
 # Define the line energy and amplitudes
 comp_amp=[]
@@ -214,7 +223,7 @@ comp_ang=[]
 colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple',
 'pink', 'brown', 'black', 'gray', 'cyan', 'magenta', 'lime', 'navy']
 # The loop run on different angles
-plt.figure(dpi=300)
+plt.figure(dpi=300, figsize=(12,6))
 plt.grid()
 plt.xlabel("Energy[eV]")
 plt.ylabel("Amplittude")
@@ -243,12 +252,15 @@ for i in range(1,15):
  # Fit the line to gaussian. p0 is the initial guess
  parameters, covariance = curve_fit(Gauss, x, y,p0=[10,y[peaks].item(),x[peaks].item(), 500]);
 
- plt.plot(x,Gauss(x,parameters[0],parameters[1],parameters[2],parameters[3]),'--',color=colors[i-1])
+ plt.plot(x,Gauss(x,parameters[0],parameters[1],parameters[2],parameters[3]),'--',color=colors[i-1],label=fr"$\theta={10*i}^\circ$")
 
  #acumulate the line energies and amplitudes
  comp_amp.append(Gauss(parameters[2],parameters[0],parameters[1],parameters[2],parameters[3]))
  comp_eng.append(parameters[2]) # eV
  comp_ang.append(10*i)
+
+plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+plt.savefig("fig/measure.jpg")
 
  #%% compton
 comp_ang = np.array(comp_ang)
@@ -261,11 +273,11 @@ lam0=e2lam(E0)
 delta_lam = comp_lam -  lam0
 
 x = np.cos(comp_ang * np.pi/180)
-fig,fit = one4all(x,delta_lam,mode="linear",xlabel=r"$cos(\theta)$",ylabel=r"$\Delta\lambda$[m]")
+fig,fit = one4all(x,delta_lam,mode="linear",xlabel=r"$cos(\theta)$",ylabel=r"$\Delta\lambda$[m]",show=False)
 Reg_print(fit)
 plt.figure(fig)
-#plt.plot(x,comp(comp_eng),label="Theory")
-plt.legend()
+plt.savefig("fig/comp_reg.jpg")
+
 
 m = ufloat(fit.slope,fit.stderr)
 lam_e = - m
@@ -285,9 +297,11 @@ print(f"me theory = {me} kg")
 
 #%% The Klein-Nishina formula
 
-fig, fit = one4all(comp_ang,comp_amp,xlabel=r"$\theta$[Degree]",ylabel=r"Amplitude")
+fig, fit = one4all(comp_ang,comp_amp,xlabel=r"$\theta$ [Degree]",ylabel=r"Amplitude",show=False)
 plt.figure(fig)
 
 re = 2.8179403262e-15 # m
 plt.plot(comp_ang,klein_nish(7,comp_ang),label="Theory")
 plt.legend()
+
+plt.savefig("fig/klein_nish.jpg")

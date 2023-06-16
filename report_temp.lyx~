@@ -40,10 +40,12 @@
 \makeatother
 \end_preamble
 \use_default_options true
-\begin_modules
-theorems-ams
+\begin_removed_modules
 eqs-within-sections
 figs-within-sections
+\end_removed_modules
+\begin_modules
+theorems-ams
 enumitem
 fixltx2e
 \end_modules
