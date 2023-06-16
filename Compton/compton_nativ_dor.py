@@ -90,7 +90,7 @@ def e2lam(e):
 
 # compton shift in whavelength
 def comp(theo_angles):
- h=6.626*10**-34 # eV*s
+ h=6.626*10**-34 # J*s
  c=2.9*10**8; # m/s
  me=9.1*10**-31; # kg
  return h/(me*c)*(1-np.cos(theo_angles * np.pi/180))+e2lam(17479)
@@ -160,7 +160,7 @@ def plot_spec(file_name,f=None, height = 10, prominence=8, name= "Mo-tube", back
 #%% Preparation Questions
 '''
 Descloizite = (Pb,Zn)2VO4OH
-#82 Pb 74,969.4 72,804.2 84,936 (10,551.5 10,449.5 12,613.7 12,622.6 14,764.4) 2,345.5 
+#82 Pb (10,551.5 10,449.5 12,613.7 12,622.6 14,764.4) 2,345.5 
 #30 Zn (8,638.86 8,615.78 9,572.0) 1,011.7 1,011.7 1,034.7 
 #23 V (4,952.20 4,944.64 5,427.29) 511.3 511.3 519.2 
 #8 O 524.9 
@@ -177,15 +177,29 @@ Descloizite = (Pb,Zn)2VO4OH
 
 # congirusation we used to setup the experiment system:
     
-# The tube is __
-# offset : _
-# gain : _
+# The tube is Mo
+# offset : 3
+# gain : 2
 # angle : ___ degree
 # 
 
+#%%
+peak = plot_spec("Mo0.txt", height = 8, prominence=6.6)
+#print(peak)
+
+peak = plot_spec("crystal0.txt", height = 8, prominence=6.6)
+print(peak)
+
 #%% finding the conversion between channel and energy
-channel = np.array([]) ##
-E = np.array([]) #ev
+channel = [1973,2249.5,909,1019,1131,1384,1672] ##
+E = [17426.82, 19608,8627.32,9572,10500.5,12613,14764] #ev
+z = zip(channel,E)
+z_sort = sorted(z,key = lambda x: x[0])
+channel,E = zip(*z_sort)
+
+channel = np.array(channel)
+E = np.array(E)
+
 
 fig,fit = one4all(channel,E,xlabel="#Channel",ylabel="E[eV]",mode="linear")
 
@@ -195,14 +209,18 @@ Reg_print(fit)
 # Define the line energy and amplitudes
 comp_amp=[]
 comp_eng=[]
+comp_ang=[]
 # Define 14 colors
 colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple',
 'pink', 'brown', 'black', 'gray', 'cyan', 'magenta', 'lime', 'navy']
 # The loop run on different angles
 plt.figure(dpi=300)
+plt.grid()
+plt.xlabel("Energy[eV]")
+plt.ylabel("Amplittude")
 for i in range(1,15):
  # import the data
- data=pd.read_csv('run{}'.format(i), sep='\t', header=1)
+ data=pd.read_csv('comp{}.txt'.format(i), sep='\t', header=1)
  chanals=np.array(data['Channel/#'])
  Impulses=np.array(data['Impulses/#'])
  Imp_smooth=smooth(Impulses,50)
@@ -216,6 +234,7 @@ for i in range(1,15):
 
  # plot the relevant interval
  plt.plot(x,y,':',color=colors[i-1])
+ 
 
  # first estimate the line energy
  peaks, properties = find_peaks(y, prominence=5,width=20,distance=1000)
@@ -229,8 +248,10 @@ for i in range(1,15):
  #acumulate the line energies and amplitudes
  comp_amp.append(Gauss(parameters[2],parameters[0],parameters[1],parameters[2],parameters[3]))
  comp_eng.append(parameters[2]) # eV
+ comp_ang.append(10*i)
 
  #%% compton
+comp_ang = np.array(comp_ang)
 comp_amp = np.array(comp_amp)
 comp_eng = np.array(comp_eng)
 comp_lam = e2lam(comp_eng)
@@ -239,17 +260,17 @@ E0=17479 # eV . The line energy without the Plexiglas
 lam0=e2lam(E0)
 delta_lam = comp_lam -  lam0
 
-x = np.cos(comp_eng * np.pi/180)
-fig,fit = one4all(x,delta_lam,mode="linear")
+x = np.cos(comp_ang * np.pi/180)
+fig,fit = one4all(x,delta_lam,mode="linear",xlabel=r"$cos(\theta)$",ylabel=r"$\Delta\lambda$[m]")
 Reg_print(fit)
 plt.figure(fig)
-plt.plot(x,comp(comp_eng),label="Theory")
+#plt.plot(x,comp(comp_eng),label="Theory")
 plt.legend()
 
 m = ufloat(fit.slope,fit.stderr)
 lam_e = - m
 
-h=6.626*10**-34 # eV*s
+h=6.626*10**-34 # J*s
 c=2.9*10**8; # m/s
 me=9.1*10**-31; # kg
 lam_e_theory =  h/(me*c)
@@ -257,11 +278,16 @@ lam_e_theory =  h/(me*c)
 print(f"Lam_e = {lam_e}")
 print(f"Lam_e theory = {lam_e_theory}")
 
+me_exp = h/(lam_e*c)
+print(f"me = {me_exp} kg")
+print(f"me theory = {me} kg")
+
+
 #%% The Klein-Nishina formula
 
-fig, fit = one4all(comp_eng,comp_amp)
+fig, fit = one4all(comp_ang,comp_amp,xlabel=r"$\theta$[Degree]",ylabel=r"Amplitude")
 plt.figure(fig)
 
 re = 2.8179403262e-15 # m
-plt.plot(comp_eng,klein_nish(re,comp_eng),label="Theory")
+plt.plot(comp_ang,klein_nish(7,comp_ang),label="Theory")
 plt.legend()
