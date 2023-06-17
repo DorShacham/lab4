@@ -1479,7 +1479,7 @@ status open
 
 \begin_layout Standard
 כאשר בדקנו את הקשר בין הפרש אורכי הגל הנכנס והיוצא לזווית הפיזור מצאנו שהקשר
- המצופה מנוסחא ) 
+ המצופה מנוסחא )
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:compton_scattering_eq"
@@ -1523,8 +1523,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-הקשר שהתקבל בין אורכי הגל היוצאים והנכנסים וזווית הפיזור לא התאים לעקום
- התיאורטי של נוסחא )
+הקשר שהתקבל בין אורכי הגל היוצאים והנכנסים וזווית הפיזור אל האמפליטודה לא
+ התאים לעקום התיאורטי של נוסחא )
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:klein_nishina"
@@ -1631,7 +1631,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-ניסוי אפשרי נוסף הוא מדידת פיזור קומפטון עם דוגמיות שונות של פלקסיגלס בעלי
+ניסוי אפשרי נוסף הוא מדידת פיזור קומפטון עם דוגמיות שונות של פלקסיגלס בעלות
  עובי שונה בשביל לבדוק את השפעת הפיזורים השונים בתוך הפלקסיגלס על אמפליטודת
  הפיזור הנמדדת.
 \end_layout
@@ -1653,10 +1653,6 @@ noprefix "false"
 1
 \numeric off
 ( תדריך פיזור קומפטון.
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Section*
