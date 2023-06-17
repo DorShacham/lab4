@@ -546,7 +546,7 @@ E=a\cdot C+b\label{eq:Energy_channel_convertion}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E=h\frac{c}{\lambda}\Rightarrow\lambda=\frac{E}{hc}\label{eq:E_wavelen_relation}
+E=h\frac{c}{\lambda}\Rightarrow\lambda=\frac{hc}{E}\label{eq:E_wavelen_relation}
 \end{equation}
 
 \end_inset
@@ -1455,6 +1455,126 @@ status open
 
 \begin_layout Section*
 דיון בתוצאות
+\end_layout
+
+\begin_layout Standard
+בשלב הכיול מצאנו התאמה מאוד טובה של קשר לינארי בין מספר הערוץ לכמות האנרגיה,
+ הן מבחינה איכותית והן מבחינה כמותית 
+\begin_inset Formula $\left(R^{2}=\right)$
+\end_inset
+
+, דבר המעיד על כך שההנחה של היצרן לקשר לינארי אכן מוצדקת.
+\end_layout
+
+\begin_layout Standard
+כאשר בדקנו את הקשר בין הפרש אורכי הגל הנכנס והיוצא לזווית הפיזור מצאנו שהקשר
+ המצופה מנוסחא ) 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:compton_scattering_eq"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( מתקבל בקירוב טוב כשההתאמה ברגרסיה לינארית בין 
+\begin_inset Formula $cos\theta$
+\end_inset
+
+ להפרש אורכי הגל היוצא והנכנס היא מתאימה ממבט איכותי ובנוסף עם 
+\begin_inset Formula $R^{2}=$
+\end_inset
+
+.
+ מתוך ההתאמה לנוסחאת קומפטון חולץ אורך גל קומפטון 
+\begin_inset Formula $\lambda_{e}=\left(2.56\pm0.03\right)\cdot10^{-12}m$
+\end_inset
+
+ כשהערך המקובל בספרות הוא 
+\begin_inset Formula $\lambda_{e}^{theory}=2.51\cdot10^{-12}m$
+\end_inset
+
+ , כלומר הערך התיאורטי מוכל בטווח שתי סטיות תקן של הערך שהתקבל בניסוי.
+\end_layout
+
+\begin_layout Standard
+הקשר שהתקבל בין אורכי הגל היוצאים והנכנסים וזווית הפיזור לא התאים לעקום
+ התיאורטי של נוסחא )
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:klein_nishina"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(, אומנם המינימום של שני העקומים הוא יחיד ומתקבל בזווית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+90
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעלות, אך הגרפים לא מתלכדים עבור אף קבוע פרופורציה ונוסף על כך תחומי הקעירות
+ שונים בין העקומים.
+ יתכן שהפערים נובעים מכך שחלק מההנחות הנדרשות לפיתוח התיאורטי של קליין נישינה
+ לא מתקיימות במערכת הניסוי.
+ למשל, המודל התיאורטי מתעלם מהאפשרות של פיזור ממספר אלמנטים שונים )למשל
+ אלקטרונים בשכבות שונות של הפלקסיגלס( והאפשרות של קליטת קרינה ישירה היוצאת
+ מהחריץ שלא עוברת פיזור )דבר שיכול להסביר במידה מסוימת את השוני בעוצמה בזוויות
+ הנמוכות(.
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
