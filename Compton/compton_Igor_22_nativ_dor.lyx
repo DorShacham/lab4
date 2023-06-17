@@ -180,9 +180,8 @@ status open
 \align center
 
 \series bold
-פיזור קומפטון: אימות נוסחאת קומפטון - הקשר בין אורכי הגל הפוגעים והיוצאים
- בזווית הפיזור של הפוטונים, וניסיון לאימות נוסחאת קליין נישינה - קשר בין
- זווית הפיזור ואורכי הגל הפוגעים והיוצאים לעוצמת הפיזור
+בדיקת הקשר בין השינוי באורכי הגל ואמפליטודת הפיזור כפונקציה של זווית הפיזור
+ בפיזור קומפטון
 \end_layout
 
 \begin_layout Plain Layout
@@ -381,7 +380,7 @@ today
 \end_inset
 
  ובתוכו גלאי שניתן לשלוט בזווית שלו ביחס לדוגמית שממוקמת על הציר האופטי
- ומהווה מקור לאלמנטים המפזרים )במקרה שלנו אלקטרונים חופשיים בפלקסיגלס(.
+ ומהווה מקור לאלמנטים המפזרים )במקרה שלנו אלקטרונים קווזי-חופשיים בפלקסיגלס(.
  לאחר כיול המערכת המאפשר המרה בין ערוץ בגלאי 
 \begin_inset Formula $MCA$
 \end_inset
@@ -439,8 +438,8 @@ today
 
 .
  הקרינה עוברת אל התא הימני דרך חריץ, כשבתא הימני מוקמה זרוע שציר הסיבוב
- שלה ממוקם על הציר האופטי של הקרן ועליו הוצבה דוגמית הפלקסיגלאס, כשבסוף
- הזרוע הוצב גלאי שניתן לקבוע את הזווית שלו ביחס לדוגמית.
+ שלה ממוקם על הציר האופטי של הקרן ועליו הוצבה דוגמית הפלקסיגלאס.
+ בסוף הזרוע הוצב גלאי שניתן לקבוע את הזווית שלו ביחס לדוגמית.
  הקרן פוגעת בדוגמית ומפוזרת לכל הכיוונים ובין היתר גם אל הגלאי.
 \end_layout
 
@@ -536,7 +535,7 @@ E=a\cdot C+b\label{eq:Energy_channel_convertion}
 \end_layout
 
 \begin_layout Standard
-את המרה זו עשינו בעזרת כיול מדוגמית עשויה סגסוגת שמרכיביה ידועים לנו.
+את המרה זו עשינו בעזרת כיול מדוגמית שמרכיביה ידועים לנו.
 \end_layout
 
 \begin_layout Standard
@@ -546,7 +545,7 @@ E=a\cdot C+b\label{eq:Energy_channel_convertion}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E=h\frac{c}{\lambda}\Rightarrow\lambda=\frac{E}{hc}\label{eq:E_wavelen_relation}
+E=h\frac{c}{\lambda}\Rightarrow\lambda=\frac{hc}{E}\label{eq:E_wavelen_relation}
 \end{equation}
 
 \end_inset
@@ -715,6 +714,9 @@ I_{out}(\theta)\propto\frac{d\sigma}{d\Omega}=\frac{1}{2}r_{e}^{2}(\frac{\lambda
 
 .
  לאחר מכן מדדנו את הספקטרום של 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $Descloizite\ \left(PbZn\left(OH\right)VO_{4}\right)$
 \end_inset
 
@@ -723,7 +725,7 @@ I_{out}(\theta)\propto\frac{d\sigma}{d\Omega}=\frac{1}{2}r_{e}^{2}(\frac{\lambda
 \end_layout
 
 \begin_layout Standard
-התקבלה ההיסטוגרמות הבאות:
+התקבלו ההיסטוגרמות הבאות:
 \end_layout
 
 \begin_layout Standard
@@ -923,7 +925,12 @@ status open
 \begin_inset Newline newline
 \end_inset
 
-ניתן לראות באופן איכותי שהתקבלה התאמה לינארית טובה מאוד.
+ניתן לראות באופן איכותי שהתקבלה התאמה לינארית טובה מאוד, מבחינה כמותית התקבל
+ 
+\begin_inset Formula $R^{2}=0.9997$
+\end_inset
+
+.
  מתוך הרגרסיה קיבלנו את המקדמים של נוסחא )
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1071,12 +1078,12 @@ noprefix "false"
 \end_inset
 
  ביחס לדוגמית.
- הסיבה לזמן הקבוע היא היא שקצב הפליטה פורפורציוני לעוצמה )לאמפליטודה( ולכן
- בשביל למדוד את העוצמה יש למדוד את הקצב ומכאן שהזמן חייב להיות קבוע.
+ הסיבה לזמן הקבוע היא שקצב הפליטה פורפורציוני לעוצמה )לאמפליטודה( ולכן בשביל
+ למדוד את העוצמה יש למדוד את הקצב ומכאן שהזמן חייב להיות קבוע.
 \end_layout
 
 \begin_layout Standard
-ביצענו התאמה לגאוסין של כל מדידה ובעזרתו זיהינו את עוצמת המדידה המקסימלית
+ביצענו התאמה לגאוסיאן של כל מדידה ובעזרתו זיהינו את עוצמת המדידה המקסימלית
  והאנרגיה בה היא מתקבלת כאשר נעזרנו בכיול בשביל להמיר את הערוצים לאנרגיות.
 \end_layout
 
@@ -1278,7 +1285,11 @@ status open
 \begin_inset Newline newline
 \end_inset
 
-ניתן לראות התאמה איכותית טובה כמצופה לפי הנוסחא לפיזור קומפטון.
+ניתן לראות התאמה איכותית טובה )ומבחינה כמותית 
+\begin_inset Formula $R^{2}=0.9984$
+\end_inset
+
+( כמצופה לפי הנוסחא לפיזור קומפטון.
  מתוך הרגרסיה חילצנו את אורך גל קומפטון לפי נוסחא )
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1348,7 +1359,7 @@ m_{e}=\left(8.9\pm0.1\right)\cdot10^{-31}kg
 \end_inset
 
 לבסוף שרטטנו את המדידות של האמפליטודה כתלות בזווית הפיזור והשוונו לתוצאות
- התיאורטיות לפי נוסחת קליין-נשינה )
+ התיאורטיות לפי נוסחה )
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:klein_nishina"
@@ -1463,6 +1474,24 @@ status open
 
 \begin_layout Section*
 מסקנות
+\end_layout
+
+\begin_layout Standard
+מהניסוי נסיק שנוסחת קומפטון אכן מתקיימת בקירוב טוב.
+ בנוסף, הסקנו שבעזרת פיזור קומפטון ניתן למדוד את מסת האלקטרון בדיוק לא רע
+ )כ
+\begin_inset Formula $1\%$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+כמו כן, נראה שמערכת הניסוי אינה מתאימה לבחון את נכונות נוסחת קליין-נשינה
+ ולשם כך יש לתכנן ניסוי אשר יתחשב באידאליזציות שעשינו למערכת.
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
@@ -1478,7 +1507,7 @@ status open
 \numeric on
 1
 \numeric off
-( תדריך __.
+( תדריך פיזור קומפטון.
 \end_layout
 
 \begin_layout Section*

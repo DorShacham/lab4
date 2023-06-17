@@ -296,6 +296,7 @@ print(f"me theory = {me} kg")
 
 
 #%% The Klein-Nishina formula
+comp_amp_normalized = (comp_amp)/np.max(comp_amp)
 
 fig, fit = one4all(comp_ang,comp_amp,xlabel=r"$\theta$ [Degree]",ylabel=r"Amplitude",show=False)
 plt.figure(fig)
