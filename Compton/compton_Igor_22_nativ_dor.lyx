@@ -180,7 +180,14 @@ status open
 \align center
 
 \series bold
-כותרת
+פיזור קומפטון בתא 
+\begin_inset Formula $Xray$
+\end_inset
+
+: אימות נוסחאת קומפטון - הקשר בין אורכי הגל הפוגעים והיוצאים בזווית הפיזור
+ של הפוטונים.
+ וניסיון לאימות נוסחת קליין נישינה -קשר בין זווית הפיזור ואורכי הגל הפוגעים
+ והיוצאים לעוצמת הפיזור- .
 \end_layout
 
 \begin_layout Plain Layout
@@ -368,6 +375,36 @@ today
 \end_layout
 
 \begin_layout Standard
+בניסוי זה בחנו את תופעת הפיזור המתרחשת כאשר פוטונים פוגעים באלקטרונים חופשיים.
+ דימינו אלקטרונים חופשיים ופגענו בהם בעזרת קרן פוטונים בתחום ה
+\begin_inset Formula $Xray$
+\end_inset
+
+ במערכת המכילה תא 
+\begin_inset Formula $Xray$
+\end_inset
+
+ ובתוכו גלאי שניתן לשלוט בזווית שלו ביחס לדוגמית שממוקמת על הציר האופטי
+ ומהווה מקור לאלמנטים המפזרים )במקרה שלנו אלקטרונים חופשיים בפלקסיגלס(.
+ לאחר כיול המערכת המאפשר המרה בין ערוץ בגלאי 
+\begin_inset Formula $MCA$
+\end_inset
+
+ לאנרגיה המתאימה לו בעזרת דוגמית שקווי הפליטה שלה ידועים לנו, בדקנו את הקשר
+ בין אורכי הגל הפוגעים והיוצאים מהפיזור בזוויות שונות.
+ ציפינו שהקשר יקיים את נוסחאת קומפטון ואכן התקבלה התאמה טובה לכך מתוצאות
+ הניסוי.
+ הסקנו מההתאמה לנוסחת קומפטון את אורך גל קומפטון של האלקטרונים ומכך הסקנו
+ את המסה שלהם, קיבלנו תוצאה שמכילה את הערך המקובל בספרות למסת האלקטרונים
+ במרווח של שתי סטיות תקן.
+ נוסף על כך, בדקנו את הקשר המתקבל בין זווית הפיזור ואורכי הגל הפוגעים והיוצאים
+ של הפוטונים לעוצמת הפיזור והשווינו את הקשר לנוסחת קליין נישינה המנבאת קשר
+ זה משיקולים תיאורטיים, קבלנו שאין התאמה בין הנוסחא למתקבל מהניסוי, נדון
+ על פער זה בדיון ותוצאות.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -376,6 +413,264 @@ today
 
 \begin_layout Section*
 מבוא
+\end_layout
+
+\begin_layout Standard
+לשם דימוי מקור האלקטרונים החופשיים השתמשנו בדוגמית פלקסיגלאס בצורת מנסרה.
+ בפלקסיגלאס יש אלקטרונים קוואזי-חופשיים, שהם אלקטרונים שאנרגית הקשר שלהם
+ היא נמוכה מאוד בהשוואה לאנרגיה של הפוטונים הפוגעים בהם, ולכן הם מדמים בצורה
+ טובה אלקטרונים חופשיים לשם הניסוי.
+ הדוגמית הוצבה בתוך תא 
+\begin_inset Formula $Xray$
+\end_inset
+
+ שבחלקו השמאלי שפופרת 
+\begin_inset Formula $Xray$
+\end_inset
+
+ המכילה אטומי 
+\begin_inset Formula $Mo$
+\end_inset
+
+ הפולטת קרינת 
+\begin_inset Formula $Xray$
+\end_inset
+
+ בתחום הקווים האופייניים ל
+\begin_inset Formula $Mo$
+\end_inset
+
+.
+ הקרינה עוברת אל התא הימני דרך חריץ, כשבתא הימני מוקמה זרוע שציר הסיבוב
+ שלה ממוקם על הציר האופטי של הקרן ועליו הוצבה דוגמית הפלקסיגלאס, כשבסוף
+ הזרוע הוצב גלאי שניתן לקבוע את הזווית שלו ביחס לדוגמית.
+\end_layout
+
+\begin_layout Standard
+מערכת הניסוי מוצגת בתמונה הבאה:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/xray_setup.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+תרשים 
+\numeric on
+1
+\numeric off
+:
+\series default
+ מערכת הניסוי.
+ משמאל יחידת ה
+\begin_inset Formula $X-ray$
+\end_inset
+
+ המכילה את שפופרת ה
+\begin_inset Formula $X-ray$
+\end_inset
+
+ בתא השמאלי ותא ימני עם הגלאי והזרוע המחזיקה את הדוגמית.
+ 
+\end_layout
+
+\begin_layout Standard
+קרינת הפיזור נקלטת על ידי הגלאי שקריאותיו מוצגות בעזרת 
+\begin_inset Formula $MCA$
+\end_inset
+
+ )
+\begin_inset Formula $multichannel-analyzer$
+\end_inset
+
+( כמספר פולסים שהתקבלו בערוץ מסוים בגלאי.
+ בגלאי איתו עבדנו אנו מצפים )בעקבות הוראות יצרן( שההמרה בין ערוץ הנקלט לאנרגיה
+ הנקלטת תהיה המרה לינארית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E=a\cdot C+b\label{eq:Energy_channel_convertion}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $E$
+\end_inset
+
+ אנרגיה ביחידות 
+\begin_inset Formula $[keV]$
+\end_inset
+
+ , 
+\begin_inset Formula $C$
+\end_inset
+
+ הוא הערוץ )חסר יחידות( ו
+\begin_inset Formula $a$
+\end_inset
+
+,
+\begin_inset Formula $b$
+\end_inset
+
+ הם קבועים של ההמרה שלהם יחידות של 
+\begin_inset Formula $[keV]$
+\end_inset
+
+ גם כן.
+\end_layout
+
+\begin_layout Standard
+את המרה זו עשינו בעזרת כיול מדוגמית שמרכיביה ידועים לנו.
+\end_layout
+
+\begin_layout Standard
+כמו כן, האנרגיה של הפוטונים מתקשרת לאורך הגל שלהם על ידי הנוסחא הבאה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E=h\frac{c}{\lambda}\Rightarrow\lambda=\frac{E}{hc}\label{eq:E_wavelen_relation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $h-[eV\cdot S]$
+\end_inset
+
+ קבוע פלאנק , 
+\begin_inset Formula $c-[\frac{m}{sec}]$
+\end_inset
+
+ מהירות האור ,
+\begin_inset Formula $E$
+\end_inset
+
+ האנרגיה של הפוטון ב 
+\begin_inset Formula $[eV]$
+\end_inset
+
+ ו
+\begin_inset Formula $\lambda$
+\end_inset
+
+ אורך גל הפוטון ב
+\begin_inset Formula $[m]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+בעזרת הקשר הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל ושיקולים של שימור אנרגיה ותנע נקבל את הקשר המתאר את פיזור קומפטון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\lambda'-\lambda=\frac{h}{m_{e}}c(1-cos\theta)\label{eq:compton_scattering_eq}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש
+\begin_inset Formula $\lambda-[m]$
+\end_inset
+
+ אורך הגל הפוגע, 
+\begin_inset Formula $\lambda'-[m]$
+\end_inset
+
+ אורך הגל המפוזר, 
+\begin_inset Formula $m_{e}-[kg]$
+\end_inset
+
+ מסת חלקיק הפיזור )שבמקרה שלנו הוא אלקטרון( ו 
+\begin_inset Formula $\theta-[rad]$
+\end_inset
+
+ זווית הפיזור.
+\end_layout
+
+\begin_layout Standard
+נוסף על כך, מפיתוחים הנובאים מאלקטרודינמיקה קוונטית )
+\begin_inset Formula $QED$
+\end_inset
+
+( ניתן לקבל את חתך הפעולה הדפרנציאלי של פיזור קומפטון )שהוא פרופורציוני
+ לעוצמת הקרן היוצאת המתגלת בגלאי לפי הגדרה( מהגדלים הידועים לנו מהנוסחא
+ הקודמת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I_{out}(\theta)\propto\frac{d\sigma}{d\Omega}=\frac{1}{2}r_{e}^{2}(\frac{\lambda}{\lambda'})^{2}(\frac{\lambda}{\lambda'}+\frac{\lambda'}{\lambda}-sin^{2}\theta)\label{eq:klein_nishina}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $I_{out}$
+\end_inset
+
+ הוא גודל פרופורציוני לעוצמה של הקרינה המתגלת בגלאי, 
+\begin_inset Formula $\frac{d\sigma}{d\Omega}-[m^{2}]$
+\end_inset
+
+ חתך הפעולה הדפרנציאלי ו
+\begin_inset Formula $r_{e}[m]$
+\end_inset
+
+ הוא 
+\begin_inset Quotes eld
+\end_inset
+
+רדיוס האלקטרון הקלאסי
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
@@ -540,7 +835,17 @@ today
 \end_layout
 
 \begin_layout Standard
-ביצענו רגרסיה לינארית להתאמה לפי נוסחה )?(, התקבלו התוצאות הבאות:
+ביצענו רגרסיה לינארית להתאמה לפי נוסחא )
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Energy_channel_convertion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(, התקבלו התוצאות הבאות:
 \end_layout
 
 \begin_layout Standard
@@ -624,7 +929,17 @@ status open
 \end_inset
 
 ניתן לראות באופן איכותי שהתקבלה התאמה לינארית טובה מאוד.
- מתוך הרגרסיה קיבלנו את המקדמים של נוסחה )?( אשר מהווה המרה בין ערוצי ה
+ מתוך הרגרסיה קיבלנו את המקדמים של נוסחא )
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Energy_channel_convertion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( אשר מהווה המרה בין ערוצי ה
 \begin_inset Formula $MCA$
 \end_inset
 
@@ -859,14 +1174,32 @@ status open
 \begin_inset Newline newline
 \end_inset
 
-מתוך השיאים חילצנו את האנרגיות בהן התקבלו השיאים ומנוסחה )?( חילצנו את אורכי
- הגל המתאימים.
+מתוך השיאים חילצנו את האנרגיות בהן התקבלו השיאים ומנוסחא )
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:E_wavelen_relation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( חילצנו את אורכי הגל המתאימים.
  
 \end_layout
 
 \begin_layout Standard
-ביצענו רגרסיה לפי הקשר בין זווית הפיזור לשינוי באורך הגל לפי נוסחה )?( התקבל
- הגרף הבא:
+ביצענו רגרסיה לפי הקשר בין זווית הפיזור לשינוי באורך הגל לפי נוסחא )
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:compton_scattering_eq"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( התקבל הגרף הבא:
 \end_layout
 
 \begin_layout Standard
@@ -950,8 +1283,18 @@ status open
 \begin_inset Newline newline
 \end_inset
 
-ניתן לראות התאמה איכותית טובה כמצופה לפי הנוסחה לפיזור קומפטון.
- מתוך הרגרסיה חילצנו את אורך גל קומפטון לפי נוסחה )?( והתקבל 
+ניתן לראות התאמה איכותית טובה כמצופה לפי הנוסחא לפיזור קומפטון.
+ מתוך הרגרסיה חילצנו את אורך גל קומפטון לפי נוסחא )
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:compton_scattering_eq"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( והתקבל 
 \begin_inset Formula 
 \[
 \lambda_{e}=\left(2.56\pm0.03\right)\cdot10^{-12}m
@@ -972,7 +1315,17 @@ status open
 \end_layout
 
 \begin_layout Standard
-בנוסף, מאורך גל קומפטון חולצה מסת האלקטרון לפי נוסחה )?( והתקבל 
+בנוסף, מאורך גל קומפטון חולצה מסת האלקטרון לפי נוסחא )
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:compton_scattering_eq"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( והתקבל 
 \begin_inset Formula 
 \[
 m_{e}=\left(8.9\pm0.1\right)\cdot10^{-31}kg
@@ -1000,7 +1353,17 @@ m_{e}=\left(8.9\pm0.1\right)\cdot10^{-31}kg
 \end_inset
 
 לבסוף שרטטנו את המדידות של האמפליטודה כתלות בזווית הפיזור והשוונו לתוצאות
- התיאורטיות לפי נוסחת קליין-נשינה )?(, התקבל הגרף הבא:
+ התיאורטיות לפי נוסחת קליין-נשינה )
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:klein_nishina"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(, התקבל הגרף הבא:
 \end_layout
 
 \begin_layout Standard
