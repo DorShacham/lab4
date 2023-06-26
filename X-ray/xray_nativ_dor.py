@@ -89,7 +89,7 @@ def smooth(y, box_pts):
      y_smooth = np.convolve(y, box, mode='same')
      return y_smooth
 
-def plot_spec(file_name,f=None, height = 10, prominence=8, name= "Mo-tube", background = None):
+def plot_spec(file_name,f=None, height = 10, prominence=8, name= "Original Mo-tube", background = None):
     Mes1 = pd.read_csv(file_name,sep='\t',header=1) # read the data.
     Counts = np.array(Mes1['Impulses/#']) # Impulses
     Counts_smoothed=smooth(Counts, 10) # smooth the data over 10 channels
@@ -112,7 +112,7 @@ def plot_spec(file_name,f=None, height = 10, prominence=8, name= "Mo-tube", back
         final_peaks = peaks
 
     plt.figure(dpi=300)
-    plt.plot(Channels ,Counts_smoothed, label=str(f'Original {name} spectrum'))
+    plt.plot(Channels ,Counts_smoothed, label=str(f'{name} spectrum'))
     plt.plot(Channels[final_peaks] ,Counts_smoothed[final_peaks],"x",color='red',
     label='Lines')
     plt.ylabel('Impulses')
@@ -149,7 +149,13 @@ def plot_spec(file_name,f=None, height = 10, prominence=8, name= "Mo-tube", back
 channel = np.array([1973, 2240,763, 859,827,942,909,1019,635,715, 1136 ,1385 ,1646])
 E = np.array([17400, 19608,7469.52, 8264.66,8037.805, 8905.29,8627.32,9572,6397.34,7057.98,10500.5,12618.15,14764.4]) # eV
 
-fig,fit = one4all(channel,E,xlabel="#Channel",ylabel="E[eV]",mode="linear")
+zipped = zip(channel,E)
+zipped = sorted(zipped,key=lambda x: x[0])
+channel,E = zip(*zipped)
+channel = np.array(channel)
+E = np.array(E)
+
+fig,fit = one4all(channel,E,xlabel="#Channel",ylabel="E[eV]",mode="linear",show=False)
 
 f = lambda x: fit.slope*x+fit.intercept
 
@@ -169,6 +175,7 @@ print(peak)
 #%%
 # I = 0.02 mA
 peak = plot_spec("Ni.txt", height = 10, prominence=9,f=f,name="Ni")
+peak = plot_spec("Ni.txt", height = 10, prominence=9,name="Ni")
 print(peak)
 
 #%%
@@ -185,12 +192,12 @@ print(peak)
 
 
 #%% a measure with only the rubber and the holding
-background_peak = plot_spec("background.txt", height = 7, prominence=7,f=f)
+background_peak = plot_spec("background.txt", height = 7, prominence=7,f=f, name="Background")
 print(background_peak)
 
 #%% alloys
 # Number 11 - FeTiO3
-peak = plot_spec("alloy11.txt", height = 5, prominence=4.3,f=f, name= "Alloy 11")
+peak = plot_spec("alloy11.txt", height = 5, prominence=4.3,f=f, name= "Ilmenite")
 
 
 print(peak)
@@ -198,6 +205,6 @@ print(peak)
 #%% alloys
 # Number 23 - Sb2S3
 # print(peak)
-peak = plot_spec("alloy23.txt", height = 1, prominence=12,f=f,name="Alloy 23")
+peak = plot_spec("alloy23.txt", height = 1, prominence=12,f=f,name="Antimony trisulfide")
 
 print(peak)
